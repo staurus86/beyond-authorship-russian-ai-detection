@@ -41,4 +41,5 @@
 
 ## Как ссылаться
 
-Цитирование — `CITATION.cff`. Релиз архивирован в Zenodo, DOI указан в `README.md`.
+Цитирование — `CITATION.cff`. Репозиторий — https://github.com/staurus86/beyond-authorship-russian-ai-detection, архивная запись Zenodo —
+[10.5281/zenodo.21749574](https://doi.org/10.5281/zenodo.21749574).

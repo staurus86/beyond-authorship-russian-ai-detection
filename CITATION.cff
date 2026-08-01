@@ -19,7 +19,8 @@ keywords:
   - preprocessing sensitivity
 license: CC-BY-4.0
 license-url: https://creativecommons.org/licenses/by/4.0/
-repository-code: '[URL репозитория подставляется при релизе]'
-doi: '[DOI подставляется при релизе]'
+repository-code: 'https://github.com/staurus86/beyond-authorship-russian-ai-detection'
+doi: '10.5281/zenodo.21749574'
+url: 'https://doi.org/10.5281/zenodo.21749574'
 version: 1.0.0
 date-released: '2026-08-01'

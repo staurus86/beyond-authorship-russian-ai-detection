@@ -125,14 +125,16 @@ draft, Writing — review and editing.
 
 > Code, feature matrices, run manifests with input and code hashes, preregistration
 > and amendments are available in a public GitHub repository, archived with a
-> versioned release in Zenodo (DOI: [assigned on release]). Source texts of the
+> versioned release in Zenodo (DOI: 10.5281/zenodo.21749574). Source texts of the
 > human subcorpus are distributed as links rather than copies: they remain under the
 > licences of their sources. For each such document the repository publishes the
 > URL, the access date and the hash of the normalised text, which is sufficient to
 > reproduce the feature extraction.
 
-`[DOI подставляется после создания релиза — до подачи препринта. Адрес репозитория
-тоже: он ещё не создан.]`
+Репозиторий опубликован 2026-08-02:
+`https://github.com/staurus86/beyond-authorship-russian-ai-detection`, коммит
+`1f0da5b6`. Архивная запись Zenodo: concept DOI `10.5281/zenodo.21749574` ведёт на последнюю версию,
+первая опубликованная версия — `10.5281/zenodo.21749575`. В статье печатается concept DOI.
 
 ## 6. Ethics statement
 
@@ -210,12 +212,12 @@ appendix о воспроизводимости, а не в этой деклар
 детектор коммерчески не лицензировался, площадка для кода — GitHub с релизом в
 Zenodo, версии инструментов опубликованы в том объёме, в каком записаны в журналах.
 
-Что подставляется перед подачей, без содержательных решений:
+Закрыто 2026-08-02: репозиторий опубликован, DOI зарезервирован.
 
-| Что | Когда |
+| Что | Значение |
 |---|---|
-| Адрес репозитория | после создания репозитория |
-| DOI релиза Zenodo | после создания релиза |
-| Имена в Acknowledgements | если PI решит кого-то назвать поимённо |
+| Адрес репозитория | `github.com/staurus86/beyond-authorship-russian-ai-detection` |
+| DOI записи Zenodo | concept `10.5281/zenodo.21749574`, версия `10.5281/zenodo.21749575` |
+| Имена в Acknowledgements | поимённых благодарностей нет |
 
 Страна аффилиации заполняется, только если её запросит редакция Cambridge.

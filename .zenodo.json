@@ -17,5 +17,13 @@
     "preprocessing sensitivity"
   ],
   "notes": "Код под MIT, данные и текст под CC BY 4.0; исходные тексты третьих лиц не распространяются. Реестр псевдонимизирован, но не анонимен.",
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "doi": "10.5281/zenodo.21749574",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/staurus86/beyond-authorship-russian-ai-detection",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
 }

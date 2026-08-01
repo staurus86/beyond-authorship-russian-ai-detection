@@ -1,6 +1,6 @@
 # Условия производства текста как конфаундер оценки машинности
 
-Сборка 2026-08-01T18:28:30+00:00 по `08-paper/paper-assembly-manifest.md`. Источники сверены по хешам; исключения §2 манифеста применены.
+Сборка 2026-08-01T22:02:51+00:00 по `08-paper/paper-assembly-manifest.md`. Источники сверены по хешам; исключения §2 манифеста применены.
 
 ---
 
@@ -639,6 +639,16 @@ P3 и тем самым смещал бы первичный исход. Отк�
 | Шаблонные материалы | 2 | `seo` | 231 |
 | Стандартизованная проза | 3 | `science` | 167 |
 | Тексты языкового контакта | не присваивается | `translation` | 73 |
+
+Шесть документов страты `seo` — 0.7% человеческой части — взяты из архива автора
+2016–2017 годов, существовавшего до начала исследования. Они прошли ту же обработку
+и ту же разметку, что остальные документы. Их отдельное влияние на публикуемые
+оценки не измерялось.
+
+> Публикуемая формулировка: Six SEO documents (0.7% of the human subset) were drawn
+> from the author's pre-existing 2016–2017 archive. They were processed and
+> annotated under the same rules as the remaining documents. Their separate
+> influence on the reported estimates was not evaluated.
 
 Подгруппы hard-human размечены как пометы поверх корпуса, а не как отдельная
 страта: документ входит в общий расчёт ложных срабатываний один раз и затем
@@ -1721,13 +1731,17 @@ draft, Writing — review and editing.
 от вердикта. Владение собственным инструментом исследование не дискредитирует, но
 раскрывается прямо.
 
-Подтверждено PI 2026-08-01: детектор коммерчески не лицензировался.
+Подтверждено PI 2026-08-01: детектор коммерчески не лицензировался. Тогда же
+раскрыт второй факт — автор внёс шесть документов в человеческую часть корпуса,
+которую сам же размечал и анализировал.
 
 **Публикуемый текст:**
 
 > The author developed and owns the text-detection system evaluated as one of the
-> four operationalizations in this study. The detector has not been commercially
-> licensed. The author declares no other competing interests.
+> four operationalizations and contributed six pre-existing documents to the human
+> reference corpus. The detector has not been commercially licensed. These
+> relationships are disclosed because the author also performed the corpus
+> annotation and analysis.
 
 Что работает против подозрения в предвзятости: собственная процедура эталоном не
 назначена, и результаты, невыгодные ей, опубликованы наравне с прочими. У индекса
@@ -1766,14 +1780,16 @@ draft, Writing — review and editing.
 
 > Code, feature matrices, run manifests with input and code hashes, preregistration
 > and amendments are available in a public GitHub repository, archived with a
-> versioned release in Zenodo (DOI: [assigned on release]). Source texts of the
+> versioned release in Zenodo (DOI: 10.5281/zenodo.21749574). Source texts of the
 > human subcorpus are distributed as links rather than copies: they remain under the
 > licences of their sources. For each such document the repository publishes the
 > URL, the access date and the hash of the normalised text, which is sufficient to
 > reproduce the feature extraction.
 
-`[DOI подставляется после создания релиза — до подачи препринта. Адрес репозитория
-тоже: он ещё не создан.]`
+Репозиторий опубликован 2026-08-02:
+`https://github.com/staurus86/beyond-authorship-russian-ai-detection`, коммит
+`1f0da5b6`. Архивная запись Zenodo: concept DOI `10.5281/zenodo.21749574` ведёт на последнюю версию,
+первая опубликованная версия — `10.5281/zenodo.21749575`. В статье печатается concept DOI.
 
 ### 6. Ethics statement
 
