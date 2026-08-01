@@ -1,0 +1,23 @@
+# Сопоставимость inner-разбиений P2b между clf-v1 и clf-v2
+
+Собрано 2026-07-29T10:44:02+00:00 скриптом `09-tools/inner_folds_carry.py`.
+
+`GroupKFold` распределяет группы с учётом их размера, поэтому сокращение TexTerra и Dr.Max могло сдвинуть человеческие источники между inner fold-ами так же, как это произошло во внешнем разбиении.
+
+| Outer fold | Канал | Групп в train | Сменили inner fold | Исчезли из train |
+|---|---|---|---|---|
+| 0 | gpt | 96 | 85 | 0 |
+| 1 | real_claude | 96 | 79 | 0 |
+| 2 | deepseek_pro | 97 | 14 | 0 |
+| 3 | nemotron | 95 | 86 | 0 |
+
+## Группы, сменившие inner fold при пересборке
+
+**outer 0 (gpt):** `convertmonster`, `gazeta`, `labrika`, `lenta`, `madcats_ru`, `optimizatorsha_ru`, `rusltc:source-10`, `rusltc:source-101`, `rusltc:source-134`, `rusltc:source-15`, `rusltc:source-16`, `rusltc:source-162`, `rusltc:source-165`, `rusltc:source-167`, `rusltc:source-168`, `rusltc:source-174`, `rusltc:source-178`, `rusltc:source-179`, `rusltc:source-180`, `rusltc:source-182`, `rusltc:source-185`, `rusltc:source-187`, `rusltc:source-19`, `rusltc:source-2`, `rusltc:source-205`, `rusltc:source-207`, `rusltc:source-208`, `rusltc:source-21`, `rusltc:source-210`, `rusltc:source-211`, `rusltc:source-243`, `rusltc:source-247`, `rusltc:source-248`, `rusltc:source-278`, `rusltc:source-283`, `rusltc:source-286`, `rusltc:source-293`, `rusltc:source-295`, `rusltc:source-298`, `rusltc:source-31` …;
+**outer 1 (real_claude):** `buriy_2014`, `convertmonster`, `drmax_su`, `labrika`, `lenta`, `optimizatorsha_ru`, `rusltc:source-101`, `rusltc:source-134`, `rusltc:source-140`, `rusltc:source-16`, `rusltc:source-162`, `rusltc:source-164`, `rusltc:source-167`, `rusltc:source-168`, `rusltc:source-17`, `rusltc:source-178`, `rusltc:source-179`, `rusltc:source-18`, `rusltc:source-182`, `rusltc:source-185`, `rusltc:source-186`, `rusltc:source-19`, `rusltc:source-2`, `rusltc:source-204`, `rusltc:source-207`, `rusltc:source-208`, `rusltc:source-209`, `rusltc:source-210`, `rusltc:source-211`, `rusltc:source-213`, `rusltc:source-247`, `rusltc:source-248`, `rusltc:source-273`, `rusltc:source-283`, `rusltc:source-286`, `rusltc:source-288`, `rusltc:source-295`, `rusltc:source-298`, `rusltc:source-306`, `rusltc:source-312` …;
+**outer 2 (deepseek_pro):** `labrika`, `madcats_ru`, `rusltc:source-7`, `seoprofy_ua`, `seopulses`, `shakin_ru`, `Государственное образовательное учреждение высшего профессионального образования «Национальный исследовательский Томский политехнический университет»`, `Институт проблем освоения Севера Сибирского отделения Российской академии наук`, `ООО «ГРУППА РЕМЕДИУМ»`, `Федеральное государственное автономное образовательное учреждение высшего образования «Белгородский государственный национальный исследовательский университет»`, `Федеральное государственное автономное образовательное учреждение высшего образования «Южный федеральный университет»`, `Федеральное государственное бюджетное образовательное учреждение высшего профессионального образования «Томский государственный педагогический университет»`, `Федеральное государственное бюджетное учреждение «Новосибирский научно-исследовательский институт травматологии и ортопедии им. Я. Л. Цивьяна» Минздрава России`, `Федеральное государственное унитарное предприятие «Тихоокеанский научно-исследовательский рыбохозяйственный центр»`;
+**outer 3 (nemotron):** `alaev`, `buriy_2014`, `drmax`, `lenta`, `madcats_ru`, `rusltc:source-10`, `rusltc:source-101`, `rusltc:source-140`, `rusltc:source-15`, `rusltc:source-16`, `rusltc:source-164`, `rusltc:source-165`, `rusltc:source-167`, `rusltc:source-17`, `rusltc:source-174`, `rusltc:source-178`, `rusltc:source-18`, `rusltc:source-180`, `rusltc:source-182`, `rusltc:source-186`, `rusltc:source-187`, `rusltc:source-19`, `rusltc:source-204`, `rusltc:source-205`, `rusltc:source-207`, `rusltc:source-209`, `rusltc:source-21`, `rusltc:source-210`, `rusltc:source-213`, `rusltc:source-243`, `rusltc:source-247`, `rusltc:source-273`, `rusltc:source-278`, `rusltc:source-283`, `rusltc:source-288`, `rusltc:source-293`, `rusltc:source-295`, `rusltc:source-306`, `rusltc:source-31`, `rusltc:source-312` …;
+
+**Соответствия различаются, поэтому взят перенос.** Прежнее распределение `группа → inner fold` зафиксировано на составе до исключения и записано в `p2b-inner-folds-carried.json`; исключённые документы вычитаются, группы не перераспределяются. Тогда различие clf-v1 → clf-v2 отражает коррекцию корпуса, а не смену tuning split.
+
+Файл читает `clf_run` при пересчёте на prep-v5: подбор регуляризации обязан идти по этому распределению, а не строить своё.

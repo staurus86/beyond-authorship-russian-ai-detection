@@ -1,0 +1,1793 @@
+{
+  "purpose": "статус каждого файла результатов: какой ряд действующий, а какой оставлен как история",
+  "statuses": {
+    "current": "действующий результат, на него опирается статья",
+    "superseded": "прогон завершён штатно, но заменён более поздней ревизией; область пригодности указана в поле note",
+    "invalidated": "прогон признан негодным, числа из него в статью не идут",
+    "diagnostic": "вспомогательный вариант для сопоставления, не основной результат",
+    "specification": "спецификация или протокол процедуры",
+    "decision-record": "запись решения: амендмент, инвалидация, разбор дефекта",
+    "audit": "аудит, шлюз или сверка",
+    "unclassified": "автоматическое правило не сработало"
+  },
+  "counts": {
+    "decision-record": 15,
+    "audit": 72,
+    "current": 94,
+    "superseded": 53,
+    "invalidated": 49,
+    "specification": 12
+  },
+  "entries": [
+    {
+      "file": "results/amendment-stress-r10-addendum-r11.json",
+      "status": "decision-record",
+      "basis": "правило именования",
+      "note": "запись решения"
+    },
+    {
+      "file": "results/analysis-closure.md",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/analysis-closure.sha256.md",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/calibration-v1-by-holdout.csv",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующий разбор: единственная серия этой процедуры"
+    },
+    {
+      "file": "results/calibration-v1-manifest.json",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующий разбор: единственная серия этой процедуры"
+    },
+    {
+      "file": "results/calibration-v1-report.md",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующий разбор: единственная серия этой процедуры"
+    },
+    {
+      "file": "results/calibration-v1.sha256.md",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующий разбор: единственная серия этой процедуры"
+    },
+    {
+      "file": "results/clf-lifecycle-current.md",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/clf-v1-manifest.json",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/clf-v1-p2a-metrics.csv",
+      "status": "superseded",
+      "basis": "правило именования",
+      "note": "серия v1: аудит чувствительности к дефектам корпуса и пайплайна"
+    },
+    {
+      "file": "results/clf-v1-p2a-slices.csv",
+      "status": "superseded",
+      "basis": "правило именования",
+      "note": "серия v1: аудит чувствительности к дефектам корпуса и пайплайна"
+    },
+    {
+      "file": "results/clf-v1-p2b-metrics.csv",
+      "status": "superseded",
+      "basis": "правило именования",
+      "note": "серия v1: аудит чувствительности к дефектам корпуса и пайплайна"
+    },
+    {
+      "file": "results/clf-v1-p2b-o1-contrasts.csv",
+      "status": "superseded",
+      "basis": "правило именования",
+      "note": "серия v1: аудит чувствительности к дефектам корпуса и пайплайна"
+    },
+    {
+      "file": "results/clf-v1-report.md",
+      "status": "superseded",
+      "basis": "правило именования",
+      "note": "серия v1: аудит чувствительности к дефектам корпуса и пайплайна"
+    },
+    {
+      "file": "results/clf-v1-split-degeneracy.md",
+      "status": "superseded",
+      "basis": "правило именования",
+      "note": "серия v1: аудит чувствительности к дефектам корпуса и пайплайна"
+    },
+    {
+      "file": "results/clf-v2-comparison.md",
+      "status": "current",
+      "basis": "файл жизненного цикла: clf-v2",
+      "note": "отмена инвалидации: причина, записанная 31 июля, оказалась ошибочной. Прогон шёл на feature-matrix-v5.csv, где D04 и D05 посчитаны по prep-v5 корректно; дефект был в аудите, который сравнивал их с пересчётом по prep-v4"
+    },
+    {
+      "file": "results/clf-v2-legacy-lifecycle-reinstated-2026-08-01.json",
+      "status": "current",
+      "basis": "файл жизненного цикла: clf-v2-legacy",
+      "note": "отмена инвалидации: причина, записанная 31 июля, оказалась ошибочной. Прогон шёл на feature-matrix-v5.csv, где D04 и D05 посчитаны по prep-v5 корректно; дефект был в аудите, который сравнивал их с пересчётом по prep-v4"
+    },
+    {
+      "file": "results/clf-v2-legacy-lifecycle.json",
+      "status": "current",
+      "basis": "файл жизненного цикла: clf-v2-legacy",
+      "note": "отмена инвалидации: причина, записанная 31 июля, оказалась ошибочной. Прогон шёл на feature-matrix-v5.csv, где D04 и D05 посчитаны по prep-v5 корректно; дефект был в аудите, который сравнивал их с пересчётом по prep-v4"
+    },
+    {
+      "file": "results/clf-v2-legacy-manifest.json",
+      "status": "current",
+      "basis": "файл жизненного цикла: clf-v2-legacy",
+      "note": "отмена инвалидации: причина, записанная 31 июля, оказалась ошибочной. Прогон шёл на feature-matrix-v5.csv, где D04 и D05 посчитаны по prep-v5 корректно; дефект был в аудите, который сравнивал их с пересчётом по prep-v4"
+    },
+    {
+      "file": "results/clf-v2-legacy-p2a-metrics.csv",
+      "status": "current",
+      "basis": "файл жизненного цикла: clf-v2-legacy",
+      "note": "отмена инвалидации: причина, записанная 31 июля, оказалась ошибочной. Прогон шёл на feature-matrix-v5.csv, где D04 и D05 посчитаны по prep-v5 корректно; дефект был в аудите, который сравнивал их с пересчётом по prep-v4"
+    },
+    {
+      "file": "results/clf-v2-legacy-p2a-slices.csv",
+      "status": "current",
+      "basis": "файл жизненного цикла: clf-v2-legacy",
+      "note": "отмена инвалидации: причина, записанная 31 июля, оказалась ошибочной. Прогон шёл на feature-matrix-v5.csv, где D04 и D05 посчитаны по prep-v5 корректно; дефект был в аудите, который сравнивал их с пересчётом по prep-v4"
+    },
+    {
+      "file": "results/clf-v2-legacy-p2b-metrics.csv",
+      "status": "current",
+      "basis": "файл жизненного цикла: clf-v2-legacy",
+      "note": "отмена инвалидации: причина, записанная 31 июля, оказалась ошибочной. Прогон шёл на feature-matrix-v5.csv, где D04 и D05 посчитаны по prep-v5 корректно; дефект был в аудите, который сравнивал их с пересчётом по prep-v4"
+    },
+    {
+      "file": "results/clf-v2-legacy-p2b-o1-contrasts.csv",
+      "status": "current",
+      "basis": "файл жизненного цикла: clf-v2-legacy",
+      "note": "отмена инвалидации: причина, записанная 31 июля, оказалась ошибочной. Прогон шёл на feature-matrix-v5.csv, где D04 и D05 посчитаны по prep-v5 корректно; дефект был в аудите, который сравнивал их с пересчётом по prep-v4"
+    },
+    {
+      "file": "results/clf-v2-legacy-report.md",
+      "status": "current",
+      "basis": "файл жизненного цикла: clf-v2-legacy",
+      "note": "отмена инвалидации: причина, записанная 31 июля, оказалась ошибочной. Прогон шёл на feature-matrix-v5.csv, где D04 и D05 посчитаны по prep-v5 корректно; дефект был в аудите, который сравнивал их с пересчётом по prep-v4"
+    },
+    {
+      "file": "results/clf-v2-lifecycle-reinstated-2026-08-01.json",
+      "status": "current",
+      "basis": "файл жизненного цикла: clf-v2",
+      "note": "отмена инвалидации: причина, записанная 31 июля, оказалась ошибочной. Прогон шёл на feature-matrix-v5.csv, где D04 и D05 посчитаны по prep-v5 корректно; дефект был в аудите, который сравнивал их с пересчётом по prep-v4"
+    },
+    {
+      "file": "results/clf-v2-lifecycle.json",
+      "status": "current",
+      "basis": "файл жизненного цикла: clf-v2",
+      "note": "отмена инвалидации: причина, записанная 31 июля, оказалась ошибочной. Прогон шёл на feature-matrix-v5.csv, где D04 и D05 посчитаны по prep-v5 корректно; дефект был в аудите, который сравнивал их с пересчётом по prep-v4"
+    },
+    {
+      "file": "results/clf-v2-manifest.json",
+      "status": "current",
+      "basis": "файл жизненного цикла: clf-v2",
+      "note": "отмена инвалидации: причина, записанная 31 июля, оказалась ошибочной. Прогон шёл на feature-matrix-v5.csv, где D04 и D05 посчитаны по prep-v5 корректно; дефект был в аудите, который сравнивал их с пересчётом по prep-v4"
+    },
+    {
+      "file": "results/clf-v2-p2a-metrics.csv",
+      "status": "current",
+      "basis": "файл жизненного цикла: clf-v2",
+      "note": "отмена инвалидации: причина, записанная 31 июля, оказалась ошибочной. Прогон шёл на feature-matrix-v5.csv, где D04 и D05 посчитаны по prep-v5 корректно; дефект был в аудите, который сравнивал их с пересчётом по prep-v4"
+    },
+    {
+      "file": "results/clf-v2-p2a-slices.csv",
+      "status": "current",
+      "basis": "файл жизненного цикла: clf-v2",
+      "note": "отмена инвалидации: причина, записанная 31 июля, оказалась ошибочной. Прогон шёл на feature-matrix-v5.csv, где D04 и D05 посчитаны по prep-v5 корректно; дефект был в аудите, который сравнивал их с пересчётом по prep-v4"
+    },
+    {
+      "file": "results/clf-v2-p2b-metrics.csv",
+      "status": "current",
+      "basis": "файл жизненного цикла: clf-v2",
+      "note": "отмена инвалидации: причина, записанная 31 июля, оказалась ошибочной. Прогон шёл на feature-matrix-v5.csv, где D04 и D05 посчитаны по prep-v5 корректно; дефект был в аудите, который сравнивал их с пересчётом по prep-v4"
+    },
+    {
+      "file": "results/clf-v2-p2b-o1-contrasts.csv",
+      "status": "current",
+      "basis": "файл жизненного цикла: clf-v2",
+      "note": "отмена инвалидации: причина, записанная 31 июля, оказалась ошибочной. Прогон шёл на feature-matrix-v5.csv, где D04 и D05 посчитаны по prep-v5 корректно; дефект был в аудите, который сравнивал их с пересчётом по prep-v4"
+    },
+    {
+      "file": "results/clf-v2-report.md",
+      "status": "current",
+      "basis": "файл жизненного цикла: clf-v2",
+      "note": "отмена инвалидации: причина, записанная 31 июля, оказалась ошибочной. Прогон шёл на feature-matrix-v5.csv, где D04 и D05 посчитаны по prep-v5 корректно; дефект был в аудите, который сравнивал их с пересчётом по prep-v4"
+    },
+    {
+      "file": "results/clf-v2-schemes.sha256.md",
+      "status": "current",
+      "basis": "файл жизненного цикла: clf-v2",
+      "note": "отмена инвалидации: причина, записанная 31 июля, оказалась ошибочной. Прогон шёл на feature-matrix-v5.csv, где D04 и D05 посчитаны по prep-v5 корректно; дефект был в аудите, который сравнивал их с пересчётом по prep-v4"
+    },
+    {
+      "file": "results/clf-v2r2-legacy-lifecycle.json",
+      "status": "invalidated",
+      "basis": "файл жизненного цикла: clf-v2r2-legacy",
+      "note": "суффикс ревизии увёл схему A на схему B: прогон повторил valid-r2 строка в строку"
+    },
+    {
+      "file": "results/clf-v2r2-legacy-manifest.json",
+      "status": "invalidated",
+      "basis": "файл жизненного цикла: clf-v2r2-legacy",
+      "note": "суффикс ревизии увёл схему A на схему B: прогон повторил valid-r2 строка в строку"
+    },
+    {
+      "file": "results/clf-v2r2-legacy-p2a-metrics.csv",
+      "status": "invalidated",
+      "basis": "файл жизненного цикла: clf-v2r2-legacy",
+      "note": "суффикс ревизии увёл схему A на схему B: прогон повторил valid-r2 строка в строку"
+    },
+    {
+      "file": "results/clf-v2r2-legacy-p2a-slices.csv",
+      "status": "invalidated",
+      "basis": "файл жизненного цикла: clf-v2r2-legacy",
+      "note": "суффикс ревизии увёл схему A на схему B: прогон повторил valid-r2 строка в строку"
+    },
+    {
+      "file": "results/clf-v2r2-legacy-p2b-metrics.csv",
+      "status": "invalidated",
+      "basis": "файл жизненного цикла: clf-v2r2-legacy",
+      "note": "суффикс ревизии увёл схему A на схему B: прогон повторил valid-r2 строка в строку"
+    },
+    {
+      "file": "results/clf-v2r2-legacy-p2b-o1-contrasts.csv",
+      "status": "invalidated",
+      "basis": "файл жизненного цикла: clf-v2r2-legacy",
+      "note": "суффикс ревизии увёл схему A на схему B: прогон повторил valid-r2 строка в строку"
+    },
+    {
+      "file": "results/clf-v2r2-legacy-report.md",
+      "status": "invalidated",
+      "basis": "файл жизненного цикла: clf-v2r2-legacy",
+      "note": "суффикс ревизии увёл схему A на схему B: прогон повторил valid-r2 строка в строку"
+    },
+    {
+      "file": "results/clf-v2r2-lifecycle.json",
+      "status": "invalidated",
+      "basis": "файл жизненного цикла: clf-v2r2",
+      "note": "прогон шёл кодом, где суффикс ревизии отключал жёсткую проверку одноклассового validation"
+    },
+    {
+      "file": "results/clf-v2r2-manifest.json",
+      "status": "invalidated",
+      "basis": "файл жизненного цикла: clf-v2r2",
+      "note": "прогон шёл кодом, где суффикс ревизии отключал жёсткую проверку одноклассового validation"
+    },
+    {
+      "file": "results/clf-v2r2-p2a-metrics.csv",
+      "status": "invalidated",
+      "basis": "файл жизненного цикла: clf-v2r2",
+      "note": "прогон шёл кодом, где суффикс ревизии отключал жёсткую проверку одноклассового validation"
+    },
+    {
+      "file": "results/clf-v2r2-p2a-slices.csv",
+      "status": "invalidated",
+      "basis": "файл жизненного цикла: clf-v2r2",
+      "note": "прогон шёл кодом, где суффикс ревизии отключал жёсткую проверку одноклассового validation"
+    },
+    {
+      "file": "results/clf-v2r2-p2b-metrics.csv",
+      "status": "invalidated",
+      "basis": "файл жизненного цикла: clf-v2r2",
+      "note": "прогон шёл кодом, где суффикс ревизии отключал жёсткую проверку одноклассового validation"
+    },
+    {
+      "file": "results/clf-v2r2-p2b-o1-contrasts.csv",
+      "status": "invalidated",
+      "basis": "файл жизненного цикла: clf-v2r2",
+      "note": "прогон шёл кодом, где суффикс ревизии отключал жёсткую проверку одноклассового validation"
+    },
+    {
+      "file": "results/clf-v2r2-report.md",
+      "status": "invalidated",
+      "basis": "файл жизненного цикла: clf-v2r2",
+      "note": "прогон шёл кодом, где суффикс ревизии отключал жёсткую проверку одноклассового validation"
+    },
+    {
+      "file": "results/clf-v2r2b-legacy-lifecycle.json",
+      "status": "superseded",
+      "basis": "файл жизненного цикла: clf-v2r2b-legacy",
+      "note": "то же: схема A пересобрана вместе с пакетом"
+    },
+    {
+      "file": "results/clf-v2r2b-legacy-manifest.json",
+      "status": "superseded",
+      "basis": "файл жизненного цикла: clf-v2r2b-legacy",
+      "note": "то же: схема A пересобрана вместе с пакетом"
+    },
+    {
+      "file": "results/clf-v2r2b-legacy-p2a-metrics.csv",
+      "status": "superseded",
+      "basis": "файл жизненного цикла: clf-v2r2b-legacy",
+      "note": "то же: схема A пересобрана вместе с пакетом"
+    },
+    {
+      "file": "results/clf-v2r2b-legacy-p2a-slices.csv",
+      "status": "superseded",
+      "basis": "файл жизненного цикла: clf-v2r2b-legacy",
+      "note": "то же: схема A пересобрана вместе с пакетом"
+    },
+    {
+      "file": "results/clf-v2r2b-legacy-p2b-metrics.csv",
+      "status": "superseded",
+      "basis": "файл жизненного цикла: clf-v2r2b-legacy",
+      "note": "то же: схема A пересобрана вместе с пакетом"
+    },
+    {
+      "file": "results/clf-v2r2b-legacy-p2b-o1-contrasts.csv",
+      "status": "superseded",
+      "basis": "файл жизненного цикла: clf-v2r2b-legacy",
+      "note": "то же: схема A пересобрана вместе с пакетом"
+    },
+    {
+      "file": "results/clf-v2r2b-legacy-report.md",
+      "status": "superseded",
+      "basis": "файл жизненного цикла: clf-v2r2b-legacy",
+      "note": "то же: схема A пересобрана вместе с пакетом"
+    },
+    {
+      "file": "results/clf-v2r2b-lifecycle.json",
+      "status": "superseded",
+      "basis": "файл жизненного цикла: clf-v2r2b",
+      "note": "прогон корректен, но пакет пересобран целиком под одной ревизией допуска"
+    },
+    {
+      "file": "results/clf-v2r2b-manifest.json",
+      "status": "superseded",
+      "basis": "файл жизненного цикла: clf-v2r2b",
+      "note": "прогон корректен, но пакет пересобран целиком под одной ревизией допуска"
+    },
+    {
+      "file": "results/clf-v2r2b-p2a-metrics.csv",
+      "status": "superseded",
+      "basis": "файл жизненного цикла: clf-v2r2b",
+      "note": "прогон корректен, но пакет пересобран целиком под одной ревизией допуска"
+    },
+    {
+      "file": "results/clf-v2r2b-p2a-slices.csv",
+      "status": "superseded",
+      "basis": "файл жизненного цикла: clf-v2r2b",
+      "note": "прогон корректен, но пакет пересобран целиком под одной ревизией допуска"
+    },
+    {
+      "file": "results/clf-v2r2b-p2b-metrics.csv",
+      "status": "superseded",
+      "basis": "файл жизненного цикла: clf-v2r2b",
+      "note": "прогон корректен, но пакет пересобран целиком под одной ревизией допуска"
+    },
+    {
+      "file": "results/clf-v2r2b-p2b-o1-contrasts.csv",
+      "status": "superseded",
+      "basis": "файл жизненного цикла: clf-v2r2b",
+      "note": "прогон корректен, но пакет пересобран целиком под одной ревизией допуска"
+    },
+    {
+      "file": "results/clf-v2r2b-report.md",
+      "status": "superseded",
+      "basis": "файл жизненного цикла: clf-v2r2b",
+      "note": "прогон корректен, но пакет пересобран целиком под одной ревизией допуска"
+    },
+    {
+      "file": "results/clf-v2r3-comparison.md",
+      "status": "invalidated",
+      "basis": "файл жизненного цикла: clf-v2r3",
+      "note": "прогон шёл на feature-matrix-v5-r2, где D04 и D05 записаны по профилям prep-v4; исходная матрица v5 была корректна"
+    },
+    {
+      "file": "results/clf-v2r3-legacy-lifecycle.json",
+      "status": "invalidated",
+      "basis": "файл жизненного цикла: clf-v2r3-legacy",
+      "note": "прогон шёл на feature-matrix-v5-r2, где D04 и D05 записаны по профилям prep-v4; исходная матрица v5 была корректна"
+    },
+    {
+      "file": "results/clf-v2r3-legacy-manifest.json",
+      "status": "invalidated",
+      "basis": "файл жизненного цикла: clf-v2r3-legacy",
+      "note": "прогон шёл на feature-matrix-v5-r2, где D04 и D05 записаны по профилям prep-v4; исходная матрица v5 была корректна"
+    },
+    {
+      "file": "results/clf-v2r3-legacy-p2a-metrics.csv",
+      "status": "invalidated",
+      "basis": "файл жизненного цикла: clf-v2r3-legacy",
+      "note": "прогон шёл на feature-matrix-v5-r2, где D04 и D05 записаны по профилям prep-v4; исходная матрица v5 была корректна"
+    },
+    {
+      "file": "results/clf-v2r3-legacy-p2a-slices.csv",
+      "status": "invalidated",
+      "basis": "файл жизненного цикла: clf-v2r3-legacy",
+      "note": "прогон шёл на feature-matrix-v5-r2, где D04 и D05 записаны по профилям prep-v4; исходная матрица v5 была корректна"
+    },
+    {
+      "file": "results/clf-v2r3-legacy-p2b-metrics.csv",
+      "status": "invalidated",
+      "basis": "файл жизненного цикла: clf-v2r3-legacy",
+      "note": "прогон шёл на feature-matrix-v5-r2, где D04 и D05 записаны по профилям prep-v4; исходная матрица v5 была корректна"
+    },
+    {
+      "file": "results/clf-v2r3-legacy-p2b-o1-contrasts.csv",
+      "status": "invalidated",
+      "basis": "файл жизненного цикла: clf-v2r3-legacy",
+      "note": "прогон шёл на feature-matrix-v5-r2, где D04 и D05 записаны по профилям prep-v4; исходная матрица v5 была корректна"
+    },
+    {
+      "file": "results/clf-v2r3-legacy-report.md",
+      "status": "invalidated",
+      "basis": "файл жизненного цикла: clf-v2r3-legacy",
+      "note": "прогон шёл на feature-matrix-v5-r2, где D04 и D05 записаны по профилям prep-v4; исходная матрица v5 была корректна"
+    },
+    {
+      "file": "results/clf-v2r3-lifecycle.json",
+      "status": "invalidated",
+      "basis": "файл жизненного цикла: clf-v2r3",
+      "note": "прогон шёл на feature-matrix-v5-r2, где D04 и D05 записаны по профилям prep-v4; исходная матрица v5 была корректна"
+    },
+    {
+      "file": "results/clf-v2r3-manifest.json",
+      "status": "invalidated",
+      "basis": "файл жизненного цикла: clf-v2r3",
+      "note": "прогон шёл на feature-matrix-v5-r2, где D04 и D05 записаны по профилям prep-v4; исходная матрица v5 была корректна"
+    },
+    {
+      "file": "results/clf-v2r3-p2a-metrics.csv",
+      "status": "invalidated",
+      "basis": "файл жизненного цикла: clf-v2r3",
+      "note": "прогон шёл на feature-matrix-v5-r2, где D04 и D05 записаны по профилям prep-v4; исходная матрица v5 была корректна"
+    },
+    {
+      "file": "results/clf-v2r3-p2a-slices.csv",
+      "status": "invalidated",
+      "basis": "файл жизненного цикла: clf-v2r3",
+      "note": "прогон шёл на feature-matrix-v5-r2, где D04 и D05 записаны по профилям prep-v4; исходная матрица v5 была корректна"
+    },
+    {
+      "file": "results/clf-v2r3-p2b-metrics.csv",
+      "status": "invalidated",
+      "basis": "файл жизненного цикла: clf-v2r3",
+      "note": "прогон шёл на feature-matrix-v5-r2, где D04 и D05 записаны по профилям prep-v4; исходная матрица v5 была корректна"
+    },
+    {
+      "file": "results/clf-v2r3-p2b-o1-contrasts.csv",
+      "status": "invalidated",
+      "basis": "файл жизненного цикла: clf-v2r3",
+      "note": "прогон шёл на feature-matrix-v5-r2, где D04 и D05 записаны по профилям prep-v4; исходная матрица v5 была корректна"
+    },
+    {
+      "file": "results/clf-v2r3-report.md",
+      "status": "invalidated",
+      "basis": "файл жизненного цикла: clf-v2r3",
+      "note": "прогон шёл на feature-matrix-v5-r2, где D04 и D05 записаны по профилям prep-v4; исходная матрица v5 была корректна"
+    },
+    {
+      "file": "results/code-drift-verification-2026-07-31-clf-run.json",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/construct-coverage.md",
+      "status": "specification",
+      "basis": "правило именования",
+      "note": "спецификация, протокол или регистрация процедуры"
+    },
+    {
+      "file": "results/corpus-audit-d04-d05.json",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/defect-2026-08-01-d04-d05-wrong-profile.json",
+      "status": "decision-record",
+      "basis": "правило именования",
+      "note": "запись решения"
+    },
+    {
+      "file": "results/defect-origin-v1.csv",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующий разбор: единственная серия этой процедуры"
+    },
+    {
+      "file": "results/defect-origin-v1.md",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующий разбор: единственная серия этой процедуры"
+    },
+    {
+      "file": "results/design-support-table.md",
+      "status": "specification",
+      "basis": "правило именования",
+      "note": "спецификация, протокол или регистрация процедуры"
+    },
+    {
+      "file": "results/error-analysis-protocol.md",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующая серия"
+    },
+    {
+      "file": "results/error-analysis.csv",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующая серия"
+    },
+    {
+      "file": "results/error-v1-cases.md",
+      "status": "superseded",
+      "basis": "правило именования",
+      "note": "серия v1: аудит чувствительности к дефектам корпуса и пайплайна"
+    },
+    {
+      "file": "results/error-v1-manifest.json",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/error-v1-spec.md",
+      "status": "specification",
+      "basis": "правило именования",
+      "note": "спецификация, протокол или регистрация процедуры"
+    },
+    {
+      "file": "results/error-v2-analysis.csv",
+      "status": "current",
+      "basis": "файл жизненного цикла: error-v2",
+      "note": "отмена инвалидации: причина, записанная 31 июля, оказалась ошибочной. Прогон шёл на feature-matrix-v5.csv, где D04 и D05 посчитаны по prep-v5 корректно; дефект был в аудите, который сравнивал их с пересчётом по prep-v4"
+    },
+    {
+      "file": "results/error-v2-cases.md",
+      "status": "current",
+      "basis": "файл жизненного цикла: error-v2",
+      "note": "отмена инвалидации: причина, записанная 31 июля, оказалась ошибочной. Прогон шёл на feature-matrix-v5.csv, где D04 и D05 посчитаны по prep-v5 корректно; дефект был в аудите, который сравнивал их с пересчётом по prep-v4"
+    },
+    {
+      "file": "results/error-v2-lifecycle-reinstated-2026-08-01.json",
+      "status": "current",
+      "basis": "файл жизненного цикла: error-v2",
+      "note": "отмена инвалидации: причина, записанная 31 июля, оказалась ошибочной. Прогон шёл на feature-matrix-v5.csv, где D04 и D05 посчитаны по prep-v5 корректно; дефект был в аудите, который сравнивал их с пересчётом по prep-v4"
+    },
+    {
+      "file": "results/error-v2-lifecycle.json",
+      "status": "current",
+      "basis": "файл жизненного цикла: error-v2",
+      "note": "отмена инвалидации: причина, записанная 31 июля, оказалась ошибочной. Прогон шёл на feature-matrix-v5.csv, где D04 и D05 посчитаны по prep-v5 корректно; дефект был в аудите, который сравнивал их с пересчётом по prep-v4"
+    },
+    {
+      "file": "results/error-v2-manifest.json",
+      "status": "current",
+      "basis": "файл жизненного цикла: error-v2",
+      "note": "отмена инвалидации: причина, записанная 31 июля, оказалась ошибочной. Прогон шёл на feature-matrix-v5.csv, где D04 и D05 посчитаны по prep-v5 корректно; дефект был в аудите, который сравнивал их с пересчётом по prep-v4"
+    },
+    {
+      "file": "results/error-v2r3-analysis.csv",
+      "status": "invalidated",
+      "basis": "файл жизненного цикла: error-v2r3",
+      "note": "прогон шёл на feature-matrix-v5-r2, где D04 и D05 записаны по профилям prep-v4; исходная матрица v5 была корректна"
+    },
+    {
+      "file": "results/error-v2r3-cases.md",
+      "status": "invalidated",
+      "basis": "файл жизненного цикла: error-v2r3",
+      "note": "прогон шёл на feature-matrix-v5-r2, где D04 и D05 записаны по профилям prep-v4; исходная матрица v5 была корректна"
+    },
+    {
+      "file": "results/error-v2r3-lifecycle.json",
+      "status": "invalidated",
+      "basis": "файл жизненного цикла: error-v2r3",
+      "note": "прогон шёл на feature-matrix-v5-r2, где D04 и D05 записаны по профилям prep-v4; исходная матрица v5 была корректна"
+    },
+    {
+      "file": "results/error-v2r3-manifest.json",
+      "status": "invalidated",
+      "basis": "файл жизненного цикла: error-v2r3",
+      "note": "прогон шёл на feature-matrix-v5-r2, где D04 и D05 записаны по профилям prep-v4; исходная матрица v5 была корректна"
+    },
+    {
+      "file": "results/fairness-audit.md",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/fairness-v1-groups.csv",
+      "status": "superseded",
+      "basis": "правило именования",
+      "note": "серия v1: аудит чувствительности к дефектам корпуса и пайплайна"
+    },
+    {
+      "file": "results/fairness-v1-manifest.json",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/fairness-v1-report.md",
+      "status": "superseded",
+      "basis": "правило именования",
+      "note": "серия v1: аудит чувствительности к дефектам корпуса и пайплайна"
+    },
+    {
+      "file": "results/fairness-v1-spec.md",
+      "status": "specification",
+      "basis": "правило именования",
+      "note": "спецификация, протокол или регистрация процедуры"
+    },
+    {
+      "file": "results/fairness-v2-groups.csv",
+      "status": "current",
+      "basis": "файл жизненного цикла: fairness-v2",
+      "note": "отмена инвалидации: причина, записанная 31 июля, оказалась ошибочной. Прогон шёл на feature-matrix-v5.csv, где D04 и D05 посчитаны по prep-v5 корректно; дефект был в аудите, который сравнивал их с пересчётом по prep-v4"
+    },
+    {
+      "file": "results/fairness-v2-lifecycle-reinstated-2026-08-01.json",
+      "status": "current",
+      "basis": "файл жизненного цикла: fairness-v2",
+      "note": "отмена инвалидации: причина, записанная 31 июля, оказалась ошибочной. Прогон шёл на feature-matrix-v5.csv, где D04 и D05 посчитаны по prep-v5 корректно; дефект был в аудите, который сравнивал их с пересчётом по prep-v4"
+    },
+    {
+      "file": "results/fairness-v2-lifecycle.json",
+      "status": "current",
+      "basis": "файл жизненного цикла: fairness-v2",
+      "note": "отмена инвалидации: причина, записанная 31 июля, оказалась ошибочной. Прогон шёл на feature-matrix-v5.csv, где D04 и D05 посчитаны по prep-v5 корректно; дефект был в аудите, который сравнивал их с пересчётом по prep-v4"
+    },
+    {
+      "file": "results/fairness-v2-manifest.json",
+      "status": "current",
+      "basis": "файл жизненного цикла: fairness-v2",
+      "note": "отмена инвалидации: причина, записанная 31 июля, оказалась ошибочной. Прогон шёл на feature-matrix-v5.csv, где D04 и D05 посчитаны по prep-v5 корректно; дефект был в аудите, который сравнивал их с пересчётом по prep-v4"
+    },
+    {
+      "file": "results/fairness-v2-report.md",
+      "status": "current",
+      "basis": "файл жизненного цикла: fairness-v2",
+      "note": "отмена инвалидации: причина, записанная 31 июля, оказалась ошибочной. Прогон шёл на feature-matrix-v5.csv, где D04 и D05 посчитаны по prep-v5 корректно; дефект был в аудите, который сравнивал их с пересчётом по prep-v4"
+    },
+    {
+      "file": "results/fairness-v2r3-groups.csv",
+      "status": "invalidated",
+      "basis": "файл жизненного цикла: fairness-v2r3",
+      "note": "прогон шёл на feature-matrix-v5-r2, где D04 и D05 записаны по профилям prep-v4; исходная матрица v5 была корректна"
+    },
+    {
+      "file": "results/fairness-v2r3-lifecycle.json",
+      "status": "invalidated",
+      "basis": "файл жизненного цикла: fairness-v2r3",
+      "note": "прогон шёл на feature-matrix-v5-r2, где D04 и D05 записаны по профилям prep-v4; исходная матрица v5 была корректна"
+    },
+    {
+      "file": "results/fairness-v2r3-manifest.json",
+      "status": "invalidated",
+      "basis": "файл жизненного цикла: fairness-v2r3",
+      "note": "прогон шёл на feature-matrix-v5-r2, где D04 и D05 записаны по профилям prep-v4; исходная матрица v5 была корректна"
+    },
+    {
+      "file": "results/fairness-v2r3-report.md",
+      "status": "invalidated",
+      "basis": "файл жизненного цикла: fairness-v2r3",
+      "note": "прогон шёл на feature-matrix-v5-r2, где D04 и D05 записаны по профилям prep-v4; исходная матрица v5 была корректна"
+    },
+    {
+      "file": "results/feature-reuse-gate-v5.md",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "аудит, шлюз или сверка"
+    },
+    {
+      "file": "results/genre-percentile-contract-withdrawn-2026-08-01.json",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/genre-percentile-d04-d05-contract.md",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/genre-percentile-d04-d05-recompute.json",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/inner-cv-audit-v5.md",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/inner-folds-carry.md",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/instability-v1-blind-session.json",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующий разбор: единственная серия этой процедуры"
+    },
+    {
+      "file": "results/instability-v1-blind-verdicts.csv",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующий разбор: единственная серия этой процедуры"
+    },
+    {
+      "file": "results/instability-v1-blinding-key.json",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующий разбор: единственная серия этой процедуры"
+    },
+    {
+      "file": "results/instability-v1-blinding-spec.md",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующий разбор: единственная серия этой процедуры"
+    },
+    {
+      "file": "results/instability-v1-manifest.json",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующий разбор: единственная серия этой процедуры"
+    },
+    {
+      "file": "results/instability-v1-spec.md",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующий разбор: единственная серия этой процедуры"
+    },
+    {
+      "file": "results/invalidation-decision-2026-07-31-clf-r2-series-name.json",
+      "status": "decision-record",
+      "basis": "правило именования",
+      "note": "запись решения"
+    },
+    {
+      "file": "results/invalidation-decision-2026-07-31-p2-discourse-addendum-1.json",
+      "status": "decision-record",
+      "basis": "правило именования",
+      "note": "запись решения"
+    },
+    {
+      "file": "results/invalidation-decision-2026-07-31-p2-discourse.json",
+      "status": "decision-record",
+      "basis": "правило именования",
+      "note": "запись решения"
+    },
+    {
+      "file": "results/judge-provenance.md",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/judge-v1-agreement.md",
+      "status": "superseded",
+      "basis": "правило именования",
+      "note": "серия v1: аудит чувствительности к дефектам корпуса и пайплайна"
+    },
+    {
+      "file": "results/judge-v1-manifest.json",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/judge-v1-o1-contrasts.csv",
+      "status": "superseded",
+      "basis": "правило именования",
+      "note": "серия v1: аудит чувствительности к дефектам корпуса и пайплайна"
+    },
+    {
+      "file": "results/judge-v1-scores.csv",
+      "status": "superseded",
+      "basis": "правило именования",
+      "note": "серия v1: аудит чувствительности к дефектам корпуса и пайплайна"
+    },
+    {
+      "file": "results/judge-v2-agreement.md",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующая серия"
+    },
+    {
+      "file": "results/judge-v2-manifest.json",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/judge-v2-o1-contrasts.csv",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующая серия"
+    },
+    {
+      "file": "results/judge-v2-scores.csv",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующая серия"
+    },
+    {
+      "file": "results/m01-direction-manifest.json",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующий разбор: единственная серия этой процедуры"
+    },
+    {
+      "file": "results/m01-direction.csv",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующий разбор: единственная серия этой процедуры"
+    },
+    {
+      "file": "results/m01-direction.md",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующий разбор: единственная серия этой процедуры"
+    },
+    {
+      "file": "results/metrics-spec.md",
+      "status": "specification",
+      "basis": "правило именования",
+      "note": "спецификация, протокол или регистрация процедуры"
+    },
+    {
+      "file": "results/mixed-identifiability.json",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующая серия"
+    },
+    {
+      "file": "results/mixed-identifiability.md",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующая серия"
+    },
+    {
+      "file": "results/mixed-m1-v2.json",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующая серия"
+    },
+    {
+      "file": "results/mixed-m1-v2.md",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующая серия"
+    },
+    {
+      "file": "results/nll-v1-manifest.json",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/nll-v1-o1-contrasts.csv",
+      "status": "superseded",
+      "basis": "правило именования",
+      "note": "серия v1: аудит чувствительности к дефектам корпуса и пайплайна"
+    },
+    {
+      "file": "results/nll-v1-report.md",
+      "status": "superseded",
+      "basis": "правило именования",
+      "note": "серия v1: аудит чувствительности к дефектам корпуса и пайплайна"
+    },
+    {
+      "file": "results/nll-v1-retest-followup.md",
+      "status": "superseded",
+      "basis": "правило именования",
+      "note": "серия v1: аудит чувствительности к дефектам корпуса и пайплайна"
+    },
+    {
+      "file": "results/nll-v1-scores.csv",
+      "status": "superseded",
+      "basis": "правило именования",
+      "note": "серия v1: аудит чувствительности к дефектам корпуса и пайплайна"
+    },
+    {
+      "file": "results/nll-v2-manifest.json",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/nll-v2-o1-contrasts.csv",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующая серия"
+    },
+    {
+      "file": "results/nll-v2-report.md",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующая серия"
+    },
+    {
+      "file": "results/nll-v2-scores.csv",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующая серия"
+    },
+    {
+      "file": "results/p2-stress-units.sha256.md",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/p2a-inner-carry.md",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/p2a-inner-valid.md",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "снимок входов, диагностика или сверка стресс-прогона"
+    },
+    {
+      "file": "results/posthoc-descriptives-2026-07-29.md",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующая серия"
+    },
+    {
+      "file": "results/preflight-v2-run.md",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующая серия"
+    },
+    {
+      "file": "results/preflight-v5-gates.md",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/prep-v5-correction-report.md",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/prep-v5-qa.md",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/prep-v5-residual-audit.md",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/proc2-classifier-spec.md",
+      "status": "specification",
+      "basis": "правило именования",
+      "note": "спецификация, протокол или регистрация процедуры"
+    },
+    {
+      "file": "results/proc3-zeroshot-spec.md",
+      "status": "specification",
+      "basis": "правило именования",
+      "note": "спецификация, протокол или регистрация процедуры"
+    },
+    {
+      "file": "results/proc4-judge-spec.md",
+      "status": "specification",
+      "basis": "правило именования",
+      "note": "спецификация, протокол или регистрация процедуры"
+    },
+    {
+      "file": "results/procedures-2-4-manifest.json",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/procedures-2-4-registration.md",
+      "status": "specification",
+      "basis": "правило именования",
+      "note": "спецификация, протокол или регистрация процедуры"
+    },
+    {
+      "file": "results/procedures-2-4.sha256.md",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/repeat-scan-v2-manifest.json",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующий разбор: единственная серия этой процедуры"
+    },
+    {
+      "file": "results/repeat-scan-v2-prep-v4.csv",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующий разбор: единственная серия этой процедуры"
+    },
+    {
+      "file": "results/repeat-scan-v2-prep-v5.csv",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующий разбор: единственная серия этой процедуры"
+    },
+    {
+      "file": "results/repeat-scan-v2-report.md",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующий разбор: единственная серия этой процедуры"
+    },
+    {
+      "file": "results/repeat-scan-v2-spec.md",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующий разбор: единственная серия этой процедуры"
+    },
+    {
+      "file": "results/repeat-scan-v2-verdicts.csv",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующий разбор: единственная серия этой процедуры"
+    },
+    {
+      "file": "results/repeat-scan-v2-verdicts.md",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующий разбор: единственная серия этой процедуры"
+    },
+    {
+      "file": "results/reuse-gate-v5.md",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "аудит, шлюз или сверка"
+    },
+    {
+      "file": "results/rollback-decision-2026-08-01-d04-d05.json",
+      "status": "decision-record",
+      "basis": "правило именования",
+      "note": "запись решения"
+    },
+    {
+      "file": "results/run-manifest-v2-prebuild.json",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/run-manifest-v2-rev10.json",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/run-manifest-v2-rev11.json",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/run-manifest-v2-rev12.json",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/run-manifest-v2-rev13.json",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/run-manifest-v2-rev14.json",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/run-manifest-v2-rev15.json",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/run-manifest-v2-rev2.json",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/run-manifest-v2-rev3.json",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/run-manifest-v2-rev4.json",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/run-manifest-v2-rev5.json",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/run-manifest-v2-rev6.json",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/run-manifest-v2-rev7.json",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/run-manifest-v2-rev8.json",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/run-manifest-v2-rev9.json",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/run-manifest-v2.json",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/score-v1-descriptive-o2-o3.csv",
+      "status": "superseded",
+      "basis": "правило именования",
+      "note": "серия v1: аудит чувствительности к дефектам корпуса и пайплайна"
+    },
+    {
+      "file": "results/score-v1-incomplete-pairs.csv",
+      "status": "superseded",
+      "basis": "правило именования",
+      "note": "серия v1: аудит чувствительности к дефектам корпуса и пайплайна"
+    },
+    {
+      "file": "results/score-v1-index-decomposition.md",
+      "status": "superseded",
+      "basis": "правило именования",
+      "note": "серия v1: аудит чувствительности к дефектам корпуса и пайплайна"
+    },
+    {
+      "file": "results/score-v1-manifest.json",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/score-v1-missingness.csv",
+      "status": "superseded",
+      "basis": "правило именования",
+      "note": "серия v1: аудит чувствительности к дефектам корпуса и пайплайна"
+    },
+    {
+      "file": "results/score-v1-o1-contrasts.csv",
+      "status": "superseded",
+      "basis": "правило именования",
+      "note": "серия v1: аудит чувствительности к дефектам корпуса и пайплайна"
+    },
+    {
+      "file": "results/score-v1-pairs.csv",
+      "status": "superseded",
+      "basis": "правило именования",
+      "note": "серия v1: аудит чувствительности к дефектам корпуса и пайплайна"
+    },
+    {
+      "file": "results/score-v1-report-addendum.md",
+      "status": "superseded",
+      "basis": "правило именования",
+      "note": "серия v1: аудит чувствительности к дефектам корпуса и пайплайна"
+    },
+    {
+      "file": "results/score-v1-report.md",
+      "status": "superseded",
+      "basis": "правило именования",
+      "note": "серия v1: аудит чувствительности к дефектам корпуса и пайплайна"
+    },
+    {
+      "file": "results/score-v1-results.sha256.md",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/score-v1-scores.csv",
+      "status": "superseded",
+      "basis": "правило именования",
+      "note": "серия v1: аудит чувствительности к дефектам корпуса и пайплайна"
+    },
+    {
+      "file": "results/score-v2-descriptive-o2-o3.csv",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующая серия"
+    },
+    {
+      "file": "results/score-v2-index-decomposition.md",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующая серия"
+    },
+    {
+      "file": "results/score-v2-missingness.csv",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующая серия"
+    },
+    {
+      "file": "results/score-v2-o1-contrasts.csv",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующая серия"
+    },
+    {
+      "file": "results/score-v2-report.md",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующая серия"
+    },
+    {
+      "file": "results/score-v2-scores.csv",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующая серия"
+    },
+    {
+      "file": "results/scoring-spec-erratum-2026-08-01.md",
+      "status": "decision-record",
+      "basis": "правило именования",
+      "note": "документальная поправка к замороженной спецификации"
+    },
+    {
+      "file": "results/scoring-spec.erratum.json",
+      "status": "decision-record",
+      "basis": "правило именования",
+      "note": "документальная поправка к замороженной спецификации"
+    },
+    {
+      "file": "results/scoring-spec.md",
+      "status": "specification",
+      "basis": "правило именования",
+      "note": "спецификация, протокол или регистрация процедуры"
+    },
+    {
+      "file": "results/sensitivity-v1-gate.md",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующий разбор: единственная серия этой процедуры"
+    },
+    {
+      "file": "results/sensitivity-v1-inputs-manifest.json",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующий разбор: единственная серия этой процедуры"
+    },
+    {
+      "file": "results/sensitivity-v1-m01.csv",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующий разбор: единственная серия этой процедуры"
+    },
+    {
+      "file": "results/sensitivity-v1-m01.json",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующий разбор: единственная серия этой процедуры"
+    },
+    {
+      "file": "results/sensitivity-v1-rejection.json",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующий разбор: единственная серия этой процедуры"
+    },
+    {
+      "file": "results/splits-spec.md",
+      "status": "specification",
+      "basis": "правило именования",
+      "note": "спецификация, протокол или регистрация процедуры"
+    },
+    {
+      "file": "results/splits-v5-carry.md",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/splits-v5-dropped-ids.csv",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующий вход анализа: панель стресс-теста и список выпавших документов"
+    },
+    {
+      "file": "results/stress-embed-nondeterminism.md",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "снимок входов, диагностика или сверка стресс-прогона"
+    },
+    {
+      "file": "results/stress-format-features-defect.md",
+      "status": "decision-record",
+      "basis": "правило именования",
+      "note": "разбор дефекта или инцидента прогона"
+    },
+    {
+      "file": "results/stress-format-gate.md",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/stress-p1-invalidation.md",
+      "status": "decision-record",
+      "basis": "правило именования",
+      "note": "разбор дефекта или инцидента прогона"
+    },
+    {
+      "file": "results/stress-p1-manifest.json",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/stress-p1-r2-manifest.json",
+      "status": "invalidated",
+      "basis": "правило именования",
+      "note": "ранняя ревизия стресс-прогона"
+    },
+    {
+      "file": "results/stress-p1-r2-scores.csv",
+      "status": "invalidated",
+      "basis": "правило именования",
+      "note": "ранняя ревизия стресс-прогона"
+    },
+    {
+      "file": "results/stress-p1-r3-baseline-vs-v2.csv",
+      "status": "invalidated",
+      "basis": "правило именования",
+      "note": "ранняя ревизия стресс-прогона"
+    },
+    {
+      "file": "results/stress-p1-r3-gate.md",
+      "status": "invalidated",
+      "basis": "правило именования",
+      "note": "ранняя ревизия стресс-прогона"
+    },
+    {
+      "file": "results/stress-p1-r3-manifest.json",
+      "status": "invalidated",
+      "basis": "правило именования",
+      "note": "ранняя ревизия стресс-прогона"
+    },
+    {
+      "file": "results/stress-p1-r3-scores.csv",
+      "status": "invalidated",
+      "basis": "правило именования",
+      "note": "ранняя ревизия стресс-прогона"
+    },
+    {
+      "file": "results/stress-p1-r4-baseline-vs-v2.csv",
+      "status": "superseded",
+      "basis": "файл жизненного цикла: stress-p1-r4",
+      "note": "t14 переведено в not executable амендментом r5; прогон завершён штатно, десять преобразований остаются корректной исторической частью"
+    },
+    {
+      "file": "results/stress-p1-r4-lifecycle.json",
+      "status": "superseded",
+      "basis": "файл жизненного цикла: stress-p1-r4",
+      "note": "t14 переведено в not executable амендментом r5; прогон завершён штатно, десять преобразований остаются корректной исторической частью"
+    },
+    {
+      "file": "results/stress-p1-r4-manifest.json",
+      "status": "superseded",
+      "basis": "файл жизненного цикла: stress-p1-r4",
+      "note": "t14 переведено в not executable амендментом r5; прогон завершён штатно, десять преобразований остаются корректной исторической частью"
+    },
+    {
+      "file": "results/stress-p1-r4-scores.csv",
+      "status": "superseded",
+      "basis": "файл жизненного цикла: stress-p1-r4",
+      "note": "t14 переведено в not executable амендментом r5; прогон завершён штатно, десять преобразований остаются корректной исторической частью"
+    },
+    {
+      "file": "results/stress-p1-scores.csv",
+      "status": "invalidated",
+      "basis": "правило именования",
+      "note": "ранний стресс-прогон на одиннадцати преобразованиях; действующий знаменатель — десять"
+    },
+    {
+      "file": "results/stress-p3-manifest.json",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/stress-p3-r4-lifecycle.json",
+      "status": "superseded",
+      "basis": "файл жизненного цикла: stress-p3-r4",
+      "note": "t14 переведено в not executable амендментом r5; прогон завершён штатно, десять преобразований остаются корректной исторической частью"
+    },
+    {
+      "file": "results/stress-p3-r4-manifest.json",
+      "status": "superseded",
+      "basis": "файл жизненного цикла: stress-p3-r4",
+      "note": "t14 переведено в not executable амендментом r5; прогон завершён штатно, десять преобразований остаются корректной исторической частью"
+    },
+    {
+      "file": "results/stress-p3-r4-scores.csv",
+      "status": "superseded",
+      "basis": "файл жизненного цикла: stress-p3-r4",
+      "note": "t14 переведено в not executable амендментом r5; прогон завершён штатно, десять преобразований остаются корректной исторической частью"
+    },
+    {
+      "file": "results/stress-p3-scores.csv",
+      "status": "invalidated",
+      "basis": "правило именования",
+      "note": "ранний стресс-прогон на одиннадцати преобразованиях; действующий знаменатель — десять"
+    },
+    {
+      "file": "results/stress-p4-r4-lifecycle.json",
+      "status": "superseded",
+      "basis": "файл жизненного цикла: stress-p4-r4",
+      "note": "t14 переведено в not executable амендментом r5; прогон завершён штатно и служит источником деривации P4 r5"
+    },
+    {
+      "file": "results/stress-p4-r4-manifest.json",
+      "status": "superseded",
+      "basis": "файл жизненного цикла: stress-p4-r4",
+      "note": "t14 переведено в not executable амендментом r5; прогон завершён штатно и служит источником деривации P4 r5"
+    },
+    {
+      "file": "results/stress-p4-r4-scores.csv",
+      "status": "superseded",
+      "basis": "файл жизненного цикла: stress-p4-r4",
+      "note": "t14 переведено в not executable амендментом r5; прогон завершён штатно и служит источником деривации P4 r5"
+    },
+    {
+      "file": "results/stress-p4-r5-derivation.md",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующая ревизия стресс-теста"
+    },
+    {
+      "file": "results/stress-p4-r5-manifest.json",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующая ревизия стресс-теста"
+    },
+    {
+      "file": "results/stress-p4-r5-scores.csv",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующая ревизия стресс-теста"
+    },
+    {
+      "file": "results/stress-panel-v1.csv",
+      "status": "superseded",
+      "basis": "правило именования",
+      "note": "серия v1: аудит чувствительности к дефектам корпуса и пайплайна"
+    },
+    {
+      "file": "results/stress-panel-v1.md",
+      "status": "superseded",
+      "basis": "правило именования",
+      "note": "серия v1: аудит чувствительности к дефектам корпуса и пайплайна"
+    },
+    {
+      "file": "results/stress-panel-v1.sha256.md",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/stress-r10-code.sha256.md",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/stress-r11-code.sha256.md",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/stress-r3-code.sha256.md",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/stress-r4-code.sha256.md",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/stress-r5/p2-execution-inputs.json",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "снимок входов, диагностика или сверка стресс-прогона"
+    },
+    {
+      "file": "results/stress-r5/p2-runtime-snapshot.json",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "снимок входов, диагностика или сверка стресс-прогона"
+    },
+    {
+      "file": "results/stress-r5/stress-p2a-r11-baseline-scores.csv",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующая ревизия стресс-теста"
+    },
+    {
+      "file": "results/stress-r5/stress-p2a-r11-by-document.csv",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующая ревизия стресс-теста"
+    },
+    {
+      "file": "results/stress-r5/stress-p2a-r11-by-holdout.csv",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующая ревизия стресс-теста"
+    },
+    {
+      "file": "results/stress-r5/stress-p2a-r11-cells.csv",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующая ревизия стресс-теста"
+    },
+    {
+      "file": "results/stress-r5/stress-p2a-r11-eligible-holdouts.csv",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующая ревизия стресс-теста"
+    },
+    {
+      "file": "results/stress-r5/stress-p2a-r11-features.csv",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующая ревизия стресс-теста"
+    },
+    {
+      "file": "results/stress-r5/stress-p2a-r11-manifest.json",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующая ревизия стресс-теста"
+    },
+    {
+      "file": "results/stress-r5/stress-p2a-r11-scores.csv",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующая ревизия стресс-теста"
+    },
+    {
+      "file": "results/stress-r5-active-inputs.json",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "снимок входов, диагностика или сверка стресс-прогона"
+    },
+    {
+      "file": "results/stress-r5-code.sha256.md",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/stress-r5-known-issues.json",
+      "status": "decision-record",
+      "basis": "правило именования",
+      "note": "разбор дефекта или инцидента прогона"
+    },
+    {
+      "file": "results/stress-r5-model-dependencies.json",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "снимок входов, диагностика или сверка стресс-прогона"
+    },
+    {
+      "file": "results/stress-r5-p1-orphaned-run.md",
+      "status": "decision-record",
+      "basis": "правило именования",
+      "note": "разбор дефекта или инцидента прогона"
+    },
+    {
+      "file": "results/stress-r5-p2-five-features-regression.json",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "снимок входов, диагностика или сверка стресс-прогона"
+    },
+    {
+      "file": "results/stress-r5p2-code.sha256.md",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/stress-r5p2b-code.sha256.md",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/stress-r6-code.sha256.md",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/stress-r8-code.sha256.md",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/stress-r9-code.sha256.md",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/stress-run-manifest.json",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/stress-t10-t11-volume-defect.md",
+      "status": "decision-record",
+      "basis": "правило именования",
+      "note": "разбор дефекта или инцидента прогона"
+    },
+    {
+      "file": "results/stress-t14-cliche-source-defect.md",
+      "status": "decision-record",
+      "basis": "правило именования",
+      "note": "разбор дефекта или инцидента прогона"
+    },
+    {
+      "file": "results/stress-t14-defect.md",
+      "status": "decision-record",
+      "basis": "правило именования",
+      "note": "разбор дефекта или инцидента прогона"
+    },
+    {
+      "file": "results/stress-tests.md",
+      "status": "specification",
+      "basis": "правило именования",
+      "note": "спецификация стресс-теста"
+    },
+    {
+      "file": "results/stress-transforms-docstring-drift.json",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/synthesis-o1-manifest.json",
+      "status": "audit",
+      "basis": "правило именования",
+      "note": "манифест, шлюз или сверка"
+    },
+    {
+      "file": "results/synthesis-o1-report.md",
+      "status": "superseded",
+      "basis": "правило именования",
+      "note": "синтез серии v1; действующий — synthesis-o1-v2"
+    },
+    {
+      "file": "results/synthesis-o1-v2-lifecycle-reinstated-2026-08-01.json",
+      "status": "current",
+      "basis": "файл жизненного цикла: synthesis-o1-v2",
+      "note": "отмена инвалидации: причина, записанная 31 июля, оказалась ошибочной. Прогон шёл на feature-matrix-v5.csv, где D04 и D05 посчитаны по prep-v5 корректно; дефект был в аудите, который сравнивал их с пересчётом по prep-v4"
+    },
+    {
+      "file": "results/synthesis-o1-v2-lifecycle.json",
+      "status": "current",
+      "basis": "файл жизненного цикла: synthesis-o1-v2",
+      "note": "отмена инвалидации: причина, записанная 31 июля, оказалась ошибочной. Прогон шёл на feature-matrix-v5.csv, где D04 и D05 посчитаны по prep-v5 корректно; дефект был в аудите, который сравнивал их с пересчётом по prep-v4"
+    },
+    {
+      "file": "results/synthesis-o1-v2-manifest.json",
+      "status": "current",
+      "basis": "файл жизненного цикла: synthesis-o1-v2",
+      "note": "отмена инвалидации: причина, записанная 31 июля, оказалась ошибочной. Прогон шёл на feature-matrix-v5.csv, где D04 и D05 посчитаны по prep-v5 корректно; дефект был в аудите, который сравнивал их с пересчётом по prep-v4"
+    },
+    {
+      "file": "results/synthesis-o1-v2-report.md",
+      "status": "current",
+      "basis": "файл жизненного цикла: synthesis-o1-v2",
+      "note": "отмена инвалидации: причина, записанная 31 июля, оказалась ошибочной. Прогон шёл на feature-matrix-v5.csv, где D04 и D05 посчитаны по prep-v5 корректно; дефект был в аудите, который сравнивал их с пересчётом по prep-v4"
+    },
+    {
+      "file": "results/synthesis-o1-v2.csv",
+      "status": "current",
+      "basis": "файл жизненного цикла: synthesis-o1-v2",
+      "note": "отмена инвалидации: причина, записанная 31 июля, оказалась ошибочной. Прогон шёл на feature-matrix-v5.csv, где D04 и D05 посчитаны по prep-v5 корректно; дефект был в аудите, который сравнивал их с пересчётом по prep-v4"
+    },
+    {
+      "file": "results/synthesis-o1-v2r3-lifecycle.json",
+      "status": "invalidated",
+      "basis": "файл жизненного цикла: synthesis-o1-v2r3",
+      "note": "прогон шёл на feature-matrix-v5-r2, где D04 и D05 записаны по профилям prep-v4; исходная матрица v5 была корректна"
+    },
+    {
+      "file": "results/synthesis-o1-v2r3-manifest.json",
+      "status": "invalidated",
+      "basis": "файл жизненного цикла: synthesis-o1-v2r3",
+      "note": "прогон шёл на feature-matrix-v5-r2, где D04 и D05 записаны по профилям prep-v4; исходная матрица v5 была корректна"
+    },
+    {
+      "file": "results/synthesis-o1-v2r3-report.md",
+      "status": "invalidated",
+      "basis": "файл жизненного цикла: synthesis-o1-v2r3",
+      "note": "прогон шёл на feature-matrix-v5-r2, где D04 и D05 записаны по профилям prep-v4; исходная матрица v5 была корректна"
+    },
+    {
+      "file": "results/synthesis-o1-v2r3.csv",
+      "status": "invalidated",
+      "basis": "файл жизненного цикла: synthesis-o1-v2r3",
+      "note": "прогон шёл на feature-matrix-v5-r2, где D04 и D05 записаны по профилям prep-v4; исходная матрица v5 была корректна"
+    },
+    {
+      "file": "results/synthesis-o1.csv",
+      "status": "superseded",
+      "basis": "правило именования",
+      "note": "синтез серии v1; действующий — synthesis-o1-v2"
+    },
+    {
+      "file": "results/text-defects-v1.csv",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующий разбор: единственная серия этой процедуры"
+    },
+    {
+      "file": "results/text-defects-v1.md",
+      "status": "current",
+      "basis": "правило именования",
+      "note": "действующий разбор: единственная серия этой процедуры"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "manifest": "clf-v2-manifest.json",
+  "manifest_sha256": "6a47501dbc637ef16f15c1c2cb7aea3c5c3ef25560a02ae32c8afa4bede374ce",
+  "execution_status": "exploratory",
+  "lifecycle_status": "invalidated",
+  "reason": "D04 и D05 посчитаны по текстам до коррекции извлечения; пересчёт на матрице v5-r2",
+  "reusable_scope": "",
+  "basis": "07-analysis/invalidation-decision-2026-07-31-p2-discourse.json",
+  "basis_sha256": "e31cf1b74f08f443c0a90eb40475cd1af68650a6ee51bdaa3791bc06f232f7b2",
+  "recorded_at_utc": "2026-07-31T19:20:09+00:00",
+  "recorded_at_moscow": "2026-07-31T22:20:09+03:00",
+  "superseded_by": "clf-v2r2b-manifest.json",
+  "superseded_by_sha256": "1e322c9cb0e9e384f4dc8e8d421aade55a88c3ac81b54e06d7316e53899c7711"
+}

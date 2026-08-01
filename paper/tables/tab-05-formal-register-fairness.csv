@@ -1,0 +1,7 @@
+Подгруппа,Помета hard-human,Holdout с подгруппой,Медиана FPR,Размах FPR,Медиана разности с остальным тестом,Худший holdout
+весь человеческий тест,—,18,0.0380,0.0255–0.3098,—,genre_seo
+genre=science,HH-formal-register,18,0.0659,0.0419–0.5210,0.0429,genre_seo
+genre=translation,HH-translation,18,0.0342,0.0137–0.1233,−0.0087,genre_seo
+genre=news,HH-polished,18,0.0132,0.0000–0.0658,−0.0380,genre_prose
+genre=seo,—,4,0.0261,0.0000–0.3766,−0.0095,genre_seo
+genre=prose,—,2,0.0639,0.0000–0.1278,0.0089,genre_prose

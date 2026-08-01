@@ -1,0 +1,61 @@
+{
+  "defect": "аудит и пересчёт D04 и D05 шли по профилям prep-v4 вместо prep-v5",
+  "severity": "матрица feature-matrix-v5-r2.csv содержит неверные значения; исходная матрица была корректна",
+  "where": {
+    "root_cause": "09-tools/extract_discourse.py:46 — PREP_VERSION = \"prep-v4\", модульная константа, меняется только аргументом командной строки в main()",
+    "propagation": "09-tools/build_matrix_v5_r2.py:63-64 — recompute() читает disc.PREP_VERSION напрямую, поэтому брал манифест и хеши входов prep-v4",
+    "audit": "07-analysis/corpus-audit-d04-d05.json — поле prep_version: prep-v4"
+  },
+  "evidence": {
+    "исходная матрица v5, 68 документов аудита": "совпадает с пересчётом по prep-v5 у 68 из 68, с prep-v4 у 0",
+    "исходная матрица v5, контрольная выборка вне списка": "40 из 40 совпали с prep-v5",
+    "матрица v5-r2, те же 68 документов": "совпадает с prep-v4 у 68 из 68, с prep-v5 у 0",
+    "пример": {
+      "document_id": "human_seo_devaka_ru_0004",
+      "prep-v4": {
+        "слов": 1596,
+        "D04": "9.3985",
+        "D05": "10.0251"
+      },
+      "prep-v5": {
+        "слов": 924,
+        "D04": "5.41126",
+        "D05": "8.65801"
+      },
+      "в матрице v5-r2": {
+        "D04": "9.3985",
+        "D05": "10.0251"
+      },
+      "в матрице v5": {
+        "D04": "5.41126",
+        "D05": "8.65801"
+      }
+    }
+  },
+  "conclusion": "дефекта, ради которого собиралась матрица v5-r2, не было. Расхождение в аудите возникло потому, что пересчёт сравнивался с текстами прежней версии препроцессинга. Матрица v5-r2 заменила корректные значения на значения по prep-v4",
+  "artifacts_built_on_wrong_matrix": [
+    "clf-v2-valid-r2, r2b, r3 и clf-v2-legacy-r2, r2b, r3",
+    "fairness-v2-r3, error-v2-r3, synthesis-v2-r3",
+    "clf-v2r3-comparison.md",
+    "числа процедуры 2 и fairness в 08-paper/main-claim-and-limitations.md",
+    "ревизии допуска run-manifest-v2-rev7 … rev13",
+    "записи об инвалидировании clf-v2, clf-v2-legacy, fairness-v2, error-v2, synthesis-o1-v2",
+    "стресс-ревизии r6 и r7: вход P2 переведён на v5-r2"
+  ],
+  "not_affected": {
+    "процедуры 1, 3, 4": "D04 и D05 не читают",
+    "находка о пяти непосчитанных признаках стресс-P2": "верна и не связана с этим дефектом",
+    "пересчёт genre_percentile": "опирался на те же значения матрицы v5-r2 и требует перепроверки"
+  },
+  "files": {
+    "06-features/feature-matrix-v5.csv": "421fc634e69ed20fa9ffac1b965905cb2b2a675d93fb214f1e995cd53706636d",
+    "06-features/feature-matrix-v5-r2.csv": "ceaf9b6a18a8081ed68ea65ef259bc462e1752ba7ec21419a872ad5c8f01f592",
+    "07-analysis/corpus-audit-d04-d05.json": "c891ffbc3d0a537a8f925ace94da489c49bb980b6afb361e991ab16635f1b820",
+    "09-tools/build_matrix_v5_r2.py": "b260ee35ffac46774bc04942e1080631838129984359c33d7653f448b47a085a",
+    "09-tools/extract_discourse.py": "b9145ad50d48055ab86438a1f4a67d9ea4f6aaf015ed1712cfa5e98f0cf02726"
+  },
+  "found_by": "независимая проверка вторым агентом при разборе подключения disc-v1 к стресс-тесту",
+  "found_at_utc": "2026-07-31T21:21:07+00:00",
+  "found_at_moscow": "2026-08-01T00:21:07+03:00",
+  "status": "ожидает решения PI; расчёты остановлены"
+}

@@ -1,0 +1,957 @@
+{
+  "scheme": "B — двухклассовый validation",
+  "rule": "группы класса по убыванию размера, при равенстве по имени, по кругу; классы раскладываются независимо",
+  "amendment": "amendment-clf-v2-inner-cv.md",
+  "inner_folds_requested": 3,
+  "created_at": "2026-07-29T13:19:36+00:00",
+  "splits": {
+    "holdout_author": {
+      "source": "перенос из clf-v1, все validation двухклассовы",
+      "n_folds": 3,
+      "assignments": {
+        "deepseek_pro": 2,
+        "gpt": 1,
+        "taiga_arzamas": 0,
+        "taiga_proza": 1,
+        "alaev": 0,
+        "convertmonster": 0,
+        "devaka_ru": 2,
+        "drmax": 1,
+        "drmax_su": 1,
+        "madcats": 2,
+        "madcats_ru": 0,
+        "optimizatorsha_ru": 1,
+        "seoprofy_ua": 2,
+        "seopulses_ru": 2,
+        "shakin": 1,
+        "shakin_ru": 1,
+        "sosnovskij": 2,
+        "sosnovskij_ru": 2,
+        "author_archive": 0,
+        "texterra_ru": 0,
+        "real_claude": 0
+      },
+      "composition": [
+        {
+          "fold": 0,
+          "documents_A": 270,
+          "documents_H": 100,
+          "groups_A": 1,
+          "groups_H": 6
+        },
+        {
+          "fold": 1,
+          "documents_A": 270,
+          "documents_H": 104,
+          "groups_A": 1,
+          "groups_H": 6
+        },
+        {
+          "fold": 2,
+          "documents_A": 270,
+          "documents_H": 104,
+          "groups_A": 1,
+          "groups_H": 6
+        }
+      ]
+    },
+    "holdout_genre_analytics": {
+      "source": "перенос из clf-v1, все validation двухклассовы",
+      "n_folds": 3,
+      "assignments": {
+        "deepseek_pro": 2,
+        "gpt": 1,
+        "taiga_arzamas": 2,
+        "taiga_magazines": 1,
+        "taiga_proza": 1,
+        "alaev": 2,
+        "convertmonster": 1,
+        "devaka_ru": 2,
+        "drmax": 1,
+        "drmax_su": 1,
+        "labrika": 1,
+        "madcats": 2,
+        "madcats_ru": 0,
+        "optimizatorsha_ru": 0,
+        "seoprofy_ua": 2,
+        "seopulses": 2,
+        "seopulses_ru": 2,
+        "shakin": 1,
+        "shakin_ru": 0,
+        "sosnovskij": 1,
+        "sosnovskij_ru": 2,
+        "author_archive": 1,
+        "texterra_ru": 2,
+        "nemotron": 0,
+        "real_claude": 0
+      },
+      "composition": [
+        {
+          "fold": 0,
+          "documents_A": 360,
+          "documents_H": 19,
+          "groups_A": 2,
+          "groups_H": 3
+        },
+        {
+          "fold": 1,
+          "documents_A": 180,
+          "documents_H": 198,
+          "groups_A": 1,
+          "groups_H": 9
+        },
+        {
+          "fold": 2,
+          "documents_A": 180,
+          "documents_H": 194,
+          "groups_A": 1,
+          "groups_H": 9
+        }
+      ]
+    },
+    "holdout_genre_commercial": {
+      "source": "перенос из clf-v1, все validation двухклассовы",
+      "n_folds": 3,
+      "assignments": {
+        "deepseek_pro": 2,
+        "gpt": 1,
+        "taiga_arzamas": 2,
+        "taiga_magazines": 1,
+        "taiga_proza": 1,
+        "alaev": 2,
+        "convertmonster": 1,
+        "devaka_ru": 2,
+        "drmax": 1,
+        "drmax_su": 1,
+        "labrika": 1,
+        "madcats": 2,
+        "madcats_ru": 2,
+        "optimizatorsha_ru": 2,
+        "seoprofy_ua": 0,
+        "seopulses": 0,
+        "seopulses_ru": 0,
+        "shakin": 1,
+        "shakin_ru": 2,
+        "sosnovskij": 1,
+        "sosnovskij_ru": 2,
+        "author_archive": 1,
+        "texterra_ru": 2,
+        "nemotron": 0,
+        "real_claude": 0
+      },
+      "composition": [
+        {
+          "fold": 0,
+          "documents_A": 359,
+          "documents_H": 20,
+          "groups_A": 2,
+          "groups_H": 3
+        },
+        {
+          "fold": 1,
+          "documents_A": 180,
+          "documents_H": 198,
+          "groups_A": 1,
+          "groups_H": 9
+        },
+        {
+          "fold": 2,
+          "documents_A": 180,
+          "documents_H": 193,
+          "groups_A": 1,
+          "groups_H": 9
+        }
+      ]
+    },
+    "holdout_genre_news": {
+      "source": "перестроено по правилу амендмента",
+      "n_folds": 3,
+      "groups_A": 4,
+      "groups_H": 21,
+      "reason": "три fold-а возможны",
+      "assignments": {
+        "deepseek_pro": 0,
+        "gpt": 1,
+        "real_claude": 2,
+        "nemotron": 0,
+        "taiga_arzamas": 0,
+        "taiga_magazines": 1,
+        "taiga_proza": 2,
+        "devaka_ru": 0,
+        "madcats": 1,
+        "drmax": 2,
+        "alaev": 0,
+        "sosnovskij": 1,
+        "shakin": 2,
+        "sosnovskij_ru": 0,
+        "texterra_ru": 1,
+        "seopulses": 2,
+        "madcats_ru": 0,
+        "drmax_su": 1,
+        "author_archive": 2,
+        "optimizatorsha_ru": 0,
+        "seopulses_ru": 1,
+        "labrika": 2,
+        "seoprofy_ua": 0,
+        "shakin_ru": 1,
+        "convertmonster": 2
+      },
+      "composition": [
+        {
+          "fold": 0,
+          "documents_A": 539,
+          "documents_H": 150,
+          "groups_A": 2,
+          "groups_H": 7
+        },
+        {
+          "fold": 1,
+          "documents_A": 270,
+          "documents_H": 138,
+          "groups_A": 1,
+          "groups_H": 7
+        },
+        {
+          "fold": 2,
+          "documents_A": 270,
+          "documents_H": 123,
+          "groups_A": 1,
+          "groups_H": 7
+        }
+      ]
+    },
+    "holdout_genre_prose": {
+      "source": "перестроено по правилу амендмента",
+      "n_folds": 3,
+      "groups_A": 4,
+      "groups_H": 18,
+      "reason": "три fold-а возможны",
+      "assignments": {
+        "deepseek_pro": 0,
+        "gpt": 1,
+        "real_claude": 2,
+        "nemotron": 0,
+        "devaka_ru": 0,
+        "madcats": 1,
+        "drmax": 2,
+        "alaev": 0,
+        "sosnovskij": 1,
+        "shakin": 2,
+        "sosnovskij_ru": 0,
+        "texterra_ru": 1,
+        "seopulses": 2,
+        "madcats_ru": 0,
+        "drmax_su": 1,
+        "author_archive": 2,
+        "optimizatorsha_ru": 0,
+        "seopulses_ru": 1,
+        "labrika": 2,
+        "seoprofy_ua": 0,
+        "shakin_ru": 1,
+        "convertmonster": 2
+      },
+      "composition": [
+        {
+          "fold": 0,
+          "documents_A": 539,
+          "documents_H": 90,
+          "groups_A": 2,
+          "groups_H": 6
+        },
+        {
+          "fold": 1,
+          "documents_A": 270,
+          "documents_H": 78,
+          "groups_A": 1,
+          "groups_H": 6
+        },
+        {
+          "fold": 2,
+          "documents_A": 270,
+          "documents_H": 63,
+          "groups_A": 1,
+          "groups_H": 6
+        }
+      ]
+    },
+    "holdout_genre_science": {
+      "source": "перестроено по правилу амендмента",
+      "n_folds": 3,
+      "groups_A": 4,
+      "groups_H": 21,
+      "reason": "три fold-а возможны",
+      "assignments": {
+        "deepseek_pro": 0,
+        "gpt": 1,
+        "real_claude": 2,
+        "nemotron": 0,
+        "taiga_arzamas": 0,
+        "taiga_magazines": 1,
+        "taiga_proza": 2,
+        "devaka_ru": 0,
+        "madcats": 1,
+        "drmax": 2,
+        "alaev": 0,
+        "sosnovskij": 1,
+        "shakin": 2,
+        "sosnovskij_ru": 0,
+        "texterra_ru": 1,
+        "seopulses": 2,
+        "madcats_ru": 0,
+        "drmax_su": 1,
+        "author_archive": 2,
+        "optimizatorsha_ru": 0,
+        "seopulses_ru": 1,
+        "labrika": 2,
+        "seoprofy_ua": 0,
+        "shakin_ru": 1,
+        "convertmonster": 2
+      },
+      "composition": [
+        {
+          "fold": 0,
+          "documents_A": 539,
+          "documents_H": 150,
+          "groups_A": 2,
+          "groups_H": 7
+        },
+        {
+          "fold": 1,
+          "documents_A": 270,
+          "documents_H": 138,
+          "groups_A": 1,
+          "groups_H": 7
+        },
+        {
+          "fold": 2,
+          "documents_A": 270,
+          "documents_H": 123,
+          "groups_A": 1,
+          "groups_H": 7
+        }
+      ]
+    },
+    "holdout_genre_seo": {
+      "source": "перестроено по правилу амендмента",
+      "n_folds": 3,
+      "groups_A": 4,
+      "groups_H": 3,
+      "reason": "три fold-а возможны",
+      "assignments": {
+        "deepseek_pro": 0,
+        "gpt": 1,
+        "real_claude": 2,
+        "nemotron": 0,
+        "taiga_arzamas": 0,
+        "taiga_magazines": 1,
+        "taiga_proza": 2
+      },
+      "composition": [
+        {
+          "fold": 0,
+          "documents_A": 359,
+          "documents_H": 60,
+          "groups_A": 2,
+          "groups_H": 1
+        },
+        {
+          "fold": 1,
+          "documents_A": 180,
+          "documents_H": 60,
+          "groups_A": 1,
+          "groups_H": 1
+        },
+        {
+          "fold": 2,
+          "documents_A": 180,
+          "documents_H": 60,
+          "groups_A": 1,
+          "groups_H": 1
+        }
+      ]
+    },
+    "holdout_genre_translation": {
+      "source": "перестроено по правилу амендмента",
+      "n_folds": 3,
+      "groups_A": 4,
+      "groups_H": 21,
+      "reason": "три fold-а возможны",
+      "assignments": {
+        "deepseek_pro": 0,
+        "gpt": 1,
+        "real_claude": 2,
+        "nemotron": 0,
+        "taiga_arzamas": 0,
+        "taiga_magazines": 1,
+        "taiga_proza": 2,
+        "devaka_ru": 0,
+        "madcats": 1,
+        "drmax": 2,
+        "alaev": 0,
+        "sosnovskij": 1,
+        "shakin": 2,
+        "sosnovskij_ru": 0,
+        "texterra_ru": 1,
+        "seopulses": 2,
+        "madcats_ru": 0,
+        "drmax_su": 1,
+        "author_archive": 2,
+        "optimizatorsha_ru": 0,
+        "seopulses_ru": 1,
+        "labrika": 2,
+        "seoprofy_ua": 0,
+        "shakin_ru": 1,
+        "convertmonster": 2
+      },
+      "composition": [
+        {
+          "fold": 0,
+          "documents_A": 539,
+          "documents_H": 150,
+          "groups_A": 2,
+          "groups_H": 7
+        },
+        {
+          "fold": 1,
+          "documents_A": 270,
+          "documents_H": 138,
+          "groups_A": 1,
+          "groups_H": 7
+        },
+        {
+          "fold": 2,
+          "documents_A": 270,
+          "documents_H": 123,
+          "groups_A": 1,
+          "groups_H": 7
+        }
+      ]
+    },
+    "holdout_model_Anthropic": {
+      "source": "перенос из clf-v1, все validation двухклассовы",
+      "n_folds": 3,
+      "assignments": {
+        "deepseek_pro": 1,
+        "gpt": 0,
+        "taiga_arzamas": 0,
+        "taiga_magazines": 1,
+        "taiga_proza": 2,
+        "alaev": 1,
+        "convertmonster": 1,
+        "devaka_ru": 2,
+        "drmax": 1,
+        "drmax_su": 2,
+        "labrika": 1,
+        "madcats": 0,
+        "madcats_ru": 1,
+        "optimizatorsha_ru": 2,
+        "seoprofy_ua": 0,
+        "seopulses": 2,
+        "seopulses_ru": 0,
+        "shakin": 1,
+        "shakin_ru": 2,
+        "sosnovskij": 0,
+        "sosnovskij_ru": 0,
+        "author_archive": 0,
+        "texterra_ru": 2,
+        "nemotron": 2
+      },
+      "composition": [
+        {
+          "fold": 0,
+          "documents_A": 270,
+          "documents_H": 140,
+          "groups_A": 1,
+          "groups_H": 7
+        },
+        {
+          "fold": 1,
+          "documents_A": 270,
+          "documents_H": 137,
+          "groups_A": 1,
+          "groups_H": 7
+        },
+        {
+          "fold": 2,
+          "documents_A": 269,
+          "documents_H": 134,
+          "groups_A": 1,
+          "groups_H": 7
+        }
+      ]
+    },
+    "holdout_model_DeepSeek": {
+      "source": "перенос из clf-v1, все validation двухклассовы",
+      "n_folds": 3,
+      "assignments": {
+        "gpt": 0,
+        "taiga_arzamas": 0,
+        "taiga_magazines": 1,
+        "taiga_proza": 2,
+        "alaev": 1,
+        "convertmonster": 1,
+        "devaka_ru": 2,
+        "drmax": 1,
+        "drmax_su": 2,
+        "labrika": 1,
+        "madcats": 0,
+        "madcats_ru": 1,
+        "optimizatorsha_ru": 2,
+        "seoprofy_ua": 0,
+        "seopulses": 2,
+        "seopulses_ru": 0,
+        "shakin": 1,
+        "shakin_ru": 2,
+        "sosnovskij": 0,
+        "sosnovskij_ru": 0,
+        "author_archive": 0,
+        "texterra_ru": 2,
+        "nemotron": 2,
+        "real_claude": 1
+      },
+      "composition": [
+        {
+          "fold": 0,
+          "documents_A": 270,
+          "documents_H": 140,
+          "groups_A": 1,
+          "groups_H": 7
+        },
+        {
+          "fold": 1,
+          "documents_A": 270,
+          "documents_H": 137,
+          "groups_A": 1,
+          "groups_H": 7
+        },
+        {
+          "fold": 2,
+          "documents_A": 269,
+          "documents_H": 134,
+          "groups_A": 1,
+          "groups_H": 7
+        }
+      ]
+    },
+    "holdout_model_NVIDIA": {
+      "source": "перенос из clf-v1, все validation двухклассовы",
+      "n_folds": 3,
+      "assignments": {
+        "deepseek_pro": 1,
+        "gpt": 0,
+        "taiga_arzamas": 1,
+        "taiga_magazines": 2,
+        "taiga_proza": 0,
+        "alaev": 2,
+        "convertmonster": 2,
+        "devaka_ru": 0,
+        "drmax": 2,
+        "drmax_su": 0,
+        "labrika": 2,
+        "madcats": 1,
+        "madcats_ru": 2,
+        "optimizatorsha_ru": 0,
+        "seoprofy_ua": 1,
+        "seopulses": 0,
+        "seopulses_ru": 1,
+        "shakin": 2,
+        "shakin_ru": 0,
+        "sosnovskij": 1,
+        "sosnovskij_ru": 1,
+        "author_archive": 1,
+        "texterra_ru": 0,
+        "real_claude": 2
+      },
+      "composition": [
+        {
+          "fold": 0,
+          "documents_A": 270,
+          "documents_H": 134,
+          "groups_A": 1,
+          "groups_H": 7
+        },
+        {
+          "fold": 1,
+          "documents_A": 270,
+          "documents_H": 140,
+          "groups_A": 1,
+          "groups_H": 7
+        },
+        {
+          "fold": 2,
+          "documents_A": 270,
+          "documents_H": 137,
+          "groups_A": 1,
+          "groups_H": 7
+        }
+      ]
+    },
+    "holdout_model_OpenAI": {
+      "source": "перенос из clf-v1, все validation двухклассовы",
+      "n_folds": 3,
+      "assignments": {
+        "deepseek_pro": 0,
+        "taiga_arzamas": 0,
+        "taiga_magazines": 1,
+        "taiga_proza": 2,
+        "alaev": 1,
+        "convertmonster": 1,
+        "devaka_ru": 2,
+        "drmax": 1,
+        "drmax_su": 2,
+        "labrika": 1,
+        "madcats": 0,
+        "madcats_ru": 1,
+        "optimizatorsha_ru": 2,
+        "seoprofy_ua": 0,
+        "seopulses": 2,
+        "seopulses_ru": 0,
+        "shakin": 1,
+        "shakin_ru": 2,
+        "sosnovskij": 0,
+        "sosnovskij_ru": 0,
+        "author_archive": 0,
+        "texterra_ru": 2,
+        "nemotron": 2,
+        "real_claude": 1
+      },
+      "composition": [
+        {
+          "fold": 0,
+          "documents_A": 270,
+          "documents_H": 140,
+          "groups_A": 1,
+          "groups_H": 7
+        },
+        {
+          "fold": 1,
+          "documents_A": 270,
+          "documents_H": 137,
+          "groups_A": 1,
+          "groups_H": 7
+        },
+        {
+          "fold": 2,
+          "documents_A": 269,
+          "documents_H": 134,
+          "groups_A": 1,
+          "groups_H": 7
+        }
+      ]
+    },
+    "holdout_prompt_P1": {
+      "source": "перенос из clf-v1, все validation двухклассовы",
+      "n_folds": 3,
+      "assignments": {
+        "deepseek_pro": 2,
+        "gpt": 1,
+        "taiga_arzamas": 2,
+        "taiga_magazines": 1,
+        "taiga_proza": 1,
+        "alaev": 2,
+        "convertmonster": 1,
+        "devaka_ru": 2,
+        "drmax": 1,
+        "drmax_su": 1,
+        "labrika": 1,
+        "madcats": 2,
+        "madcats_ru": 2,
+        "optimizatorsha_ru": 2,
+        "seoprofy_ua": 0,
+        "seopulses": 0,
+        "seopulses_ru": 0,
+        "shakin": 1,
+        "shakin_ru": 2,
+        "sosnovskij": 1,
+        "sosnovskij_ru": 2,
+        "author_archive": 1,
+        "texterra_ru": 2,
+        "nemotron": 0,
+        "real_claude": 0
+      },
+      "composition": [
+        {
+          "fold": 0,
+          "documents_A": 359,
+          "documents_H": 20,
+          "groups_A": 2,
+          "groups_H": 3
+        },
+        {
+          "fold": 1,
+          "documents_A": 180,
+          "documents_H": 198,
+          "groups_A": 1,
+          "groups_H": 9
+        },
+        {
+          "fold": 2,
+          "documents_A": 180,
+          "documents_H": 193,
+          "groups_A": 1,
+          "groups_H": 9
+        }
+      ]
+    },
+    "holdout_prompt_P2": {
+      "source": "перенос из clf-v1, все validation двухклассовы",
+      "n_folds": 3,
+      "assignments": {
+        "deepseek_pro": 2,
+        "gpt": 1,
+        "taiga_arzamas": 2,
+        "taiga_magazines": 1,
+        "taiga_proza": 1,
+        "alaev": 2,
+        "convertmonster": 1,
+        "devaka_ru": 2,
+        "drmax": 1,
+        "drmax_su": 1,
+        "labrika": 1,
+        "madcats": 2,
+        "madcats_ru": 2,
+        "optimizatorsha_ru": 2,
+        "seoprofy_ua": 0,
+        "seopulses": 0,
+        "seopulses_ru": 0,
+        "shakin": 1,
+        "shakin_ru": 2,
+        "sosnovskij": 1,
+        "sosnovskij_ru": 2,
+        "author_archive": 1,
+        "texterra_ru": 2,
+        "nemotron": 0,
+        "real_claude": 0
+      },
+      "composition": [
+        {
+          "fold": 0,
+          "documents_A": 359,
+          "documents_H": 20,
+          "groups_A": 2,
+          "groups_H": 3
+        },
+        {
+          "fold": 1,
+          "documents_A": 180,
+          "documents_H": 198,
+          "groups_A": 1,
+          "groups_H": 9
+        },
+        {
+          "fold": 2,
+          "documents_A": 180,
+          "documents_H": 193,
+          "groups_A": 1,
+          "groups_H": 9
+        }
+      ]
+    },
+    "holdout_prompt_P3": {
+      "source": "перенос из clf-v1, все validation двухклассовы",
+      "n_folds": 3,
+      "assignments": {
+        "deepseek_pro": 2,
+        "gpt": 1,
+        "taiga_arzamas": 2,
+        "taiga_magazines": 1,
+        "taiga_proza": 1,
+        "alaev": 2,
+        "convertmonster": 1,
+        "devaka_ru": 2,
+        "drmax": 1,
+        "drmax_su": 1,
+        "labrika": 1,
+        "madcats": 2,
+        "madcats_ru": 0,
+        "optimizatorsha_ru": 0,
+        "seoprofy_ua": 2,
+        "seopulses": 2,
+        "seopulses_ru": 2,
+        "shakin": 1,
+        "shakin_ru": 0,
+        "sosnovskij": 1,
+        "sosnovskij_ru": 2,
+        "author_archive": 1,
+        "texterra_ru": 2,
+        "nemotron": 0,
+        "real_claude": 0
+      },
+      "composition": [
+        {
+          "fold": 0,
+          "documents_A": 360,
+          "documents_H": 19,
+          "groups_A": 2,
+          "groups_H": 3
+        },
+        {
+          "fold": 1,
+          "documents_A": 180,
+          "documents_H": 198,
+          "groups_A": 1,
+          "groups_H": 9
+        },
+        {
+          "fold": 2,
+          "documents_A": 180,
+          "documents_H": 194,
+          "groups_A": 1,
+          "groups_H": 9
+        }
+      ]
+    },
+    "holdout_source": {
+      "source": "перестроено по правилу амендмента",
+      "n_folds": 2,
+      "groups_A": 2,
+      "groups_H": 16,
+      "reason": "групп A 2, групп H 16: больше 2 двухклассовых fold-ов не построить",
+      "assignments": {
+        "deepseek_pro": 0,
+        "gpt": 1,
+        "taiga_arzamas": 0,
+        "taiga_magazines": 1,
+        "taiga_proza": 0,
+        "devaka_ru": 1,
+        "madcats": 0,
+        "sosnovskij": 1,
+        "sosnovskij_ru": 0,
+        "texterra_ru": 1,
+        "seopulses": 0,
+        "madcats_ru": 1,
+        "drmax_su": 0,
+        "seopulses_ru": 1,
+        "labrika": 0,
+        "seoprofy_ua": 1,
+        "shakin_ru": 0,
+        "convertmonster": 1
+      },
+      "composition": [
+        {
+          "fold": 0,
+          "documents_A": 270,
+          "documents_H": 194,
+          "groups_A": 1,
+          "groups_H": 8
+        },
+        {
+          "fold": 1,
+          "documents_A": 270,
+          "documents_H": 145,
+          "groups_A": 1,
+          "groups_H": 8
+        }
+      ]
+    },
+    "holdout_time": {
+      "source": "перестроено по правилу амендмента",
+      "n_folds": 3,
+      "groups_A": 4,
+      "groups_H": 19,
+      "reason": "три fold-а возможны",
+      "assignments": {
+        "deepseek_pro": 0,
+        "gpt": 1,
+        "real_claude": 2,
+        "nemotron": 0,
+        "taiga_arzamas": 0,
+        "taiga_magazines": 1,
+        "taiga_proza": 2,
+        "devaka_ru": 0,
+        "madcats": 1,
+        "alaev": 2,
+        "sosnovskij": 0,
+        "shakin": 1,
+        "sosnovskij_ru": 2,
+        "texterra_ru": 0,
+        "author_archive": 1,
+        "optimizatorsha_ru": 2,
+        "drmax": 0,
+        "labrika": 1,
+        "shakin_ru": 2,
+        "madcats_ru": 0,
+        "seoprofy_ua": 1,
+        "convertmonster": 2,
+        "drmax_su": 0
+      },
+      "composition": [
+        {
+          "fold": 0,
+          "documents_A": 539,
+          "documents_H": 125,
+          "groups_A": 2,
+          "groups_H": 7
+        },
+        {
+          "fold": 1,
+          "documents_A": 270,
+          "documents_H": 119,
+          "groups_A": 1,
+          "groups_H": 6
+        },
+        {
+          "fold": 2,
+          "documents_A": 270,
+          "documents_H": 101,
+          "groups_A": 1,
+          "groups_H": 6
+        }
+      ]
+    },
+    "holdout_topic": {
+      "source": "перенос из clf-v1, все validation двухклассовы",
+      "n_folds": 3,
+      "assignments": {
+        "deepseek_pro": 2,
+        "gpt": 1,
+        "taiga_arzamas": 2,
+        "taiga_magazines": 1,
+        "taiga_proza": 1,
+        "alaev": 2,
+        "convertmonster": 1,
+        "devaka_ru": 2,
+        "drmax": 1,
+        "drmax_su": 1,
+        "labrika": 1,
+        "madcats": 2,
+        "madcats_ru": 0,
+        "optimizatorsha_ru": 0,
+        "seoprofy_ua": 2,
+        "seopulses": 2,
+        "seopulses_ru": 2,
+        "shakin": 1,
+        "shakin_ru": 0,
+        "sosnovskij": 1,
+        "sosnovskij_ru": 2,
+        "author_archive": 1,
+        "texterra_ru": 2,
+        "nemotron": 0,
+        "real_claude": 0
+      },
+      "composition": [
+        {
+          "fold": 0,
+          "documents_A": 360,
+          "documents_H": 19,
+          "groups_A": 2,
+          "groups_H": 3
+        },
+        {
+          "fold": 1,
+          "documents_A": 180,
+          "documents_H": 198,
+          "groups_A": 1,
+          "groups_H": 9
+        },
+        {
+          "fold": 2,
+          "documents_A": 180,
+          "documents_H": 194,
+          "groups_A": 1,
+          "groups_H": 9
+        }
+      ]
+    }
+  }
+}

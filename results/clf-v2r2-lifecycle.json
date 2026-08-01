@@ -1,0 +1,14 @@
+{
+  "manifest": "clf-v2r2-manifest.json",
+  "manifest_sha256": "2b247e347520cfbd1be3be56f4fa12c6d0ff1b3c5bf00c82a9dfa479bf60f3eb",
+  "execution_status": "exploratory",
+  "lifecycle_status": "invalidated",
+  "reason": "прогон шёл кодом, где суффикс ревизии отключал жёсткую проверку одноклассового validation",
+  "reusable_scope": "",
+  "basis": "07-analysis/invalidation-decision-2026-07-31-clf-r2-series-name.json",
+  "basis_sha256": "90379ec20d120405d8970ea382bb9c92ef4dbccbcf63b164f0e7ea70f8d53db9",
+  "recorded_at_utc": "2026-07-31T19:20:09+00:00",
+  "recorded_at_moscow": "2026-07-31T22:20:09+03:00",
+  "superseded_by": "clf-v2r2b-manifest.json",
+  "superseded_by_sha256": "1e322c9cb0e9e384f4dc8e8d421aade55a88c3ac81b54e06d7316e53899c7711"
+}

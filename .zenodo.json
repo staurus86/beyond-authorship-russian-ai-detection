@@ -1,0 +1,21 @@
+{
+  "title": "Условия производства текста как конфаундер оценки машинности: четыре операционализации на русскоязычном корпусе",
+  "upload_type": "software",
+  "creators": [
+    {
+      "name": "Kirichenko, Stanislav",
+      "orcid": "0009-0001-2914-9541",
+      "affiliation": "Independent Researcher"
+    }
+  ],
+  "license": "cc-by-4.0",
+  "keywords": [
+    "AI-generated text detection",
+    "Russian-language text",
+    "production conditions",
+    "source confounding",
+    "preprocessing sensitivity"
+  ],
+  "notes": "Код под MIT, данные и текст под CC BY 4.0; исходные тексты третьих лиц не распространяются. Реестр псевдонимизирован, но не анонимен.",
+  "version": "1.0.0"
+}

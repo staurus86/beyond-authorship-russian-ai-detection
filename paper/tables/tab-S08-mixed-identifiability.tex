@@ -1,0 +1,24 @@
+\begin{table*}[htbp]
+\centering
+\scriptsize
+\caption{Диагностика идентифицируемости трёх mixed-effects моделей}
+\label{tab:s8}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.092\linewidth}>{\raggedright\arraybackslash}p{0.092\linewidth}>{\raggedright\arraybackslash}p{0.092\linewidth}>{\raggedright\arraybackslash}p{0.092\linewidth}>{\raggedright\arraybackslash}p{0.092\linewidth}>{\raggedright\arraybackslash}p{0.092\linewidth}>{\raggedright\arraybackslash}p{0.092\linewidth}>{\raggedright\arraybackslash}p{0.092\linewidth}>{\raggedright\arraybackslash}p{0.092\linewidth}>{\raggedright\arraybackslash}p{0.092\linewidth}}
+\toprule
+Модель & Наблюдений & Ранг плана & Случайный эффект & Кластеров & Минимальный размер & Медианный размер & Кластеров из одного наблюдения & Слитые уровни & Вердикт \\
+\midrule
+M1 & 1079 & 22 из 23 & задание (brief\_id) & 45 & 23 & 24 & 0 & wrapper=none & не идентифицируема \\
+M1 &  &  & повтор (repeat\_index) & 2 & 539 & 540 & 0 &  &  \\
+M2 & 803 & 7 из 22 & источник & 124 & 1 & 1 & 85 & genre=science; genre=seo; genre=translation; level=1 × genre=prose; level=1 × genre=science; level=1 × genre=seo; level=1 × genre=translation; level=2 × genre=prose; level=2 × genre=science; level=2 × genre=seo; level=2 × genre=translation; level=3 × genre=prose; level=3 × genre=science; level=3 × genre=seo; level=3 × genre=translation & не идентифицируема \\
+M2 &  &  & автор & 302 & 1 & 1 & 244 &  &  \\
+M2 &  &  & задание (brief\_id) & 0 & 0 & 0 & 0 &  &  \\
+M3 & 1882 & 11 из 11 & задание (brief\_id) & 45 & 23 & 24 & 0 & нет & идентифицируема \\
+M3 &  &  & источник & 128 & 1 & 1 & 85 &  &  \\
+M3 &  &  & автор & 306 & 1 & 1 & 244 &  &  \\
+M3 &  &  & канал & 4 & 269 & 270 & 0 &  &  \\
+\bottomrule
+\end{tabular}
+\begin{minipage}{\linewidth}\footnotesize\vspace{2pt}
+\textit{Примечание.} Единица анализа — строка описывает один случайный эффект одной модели. Знаменатель: три модели предрегистрации; 1079, 803 и 1882 наблюдения. Данные: серия v2, диагностика от 2026-07-29. Ранг матрицы плана против числа кандидатных колонок; слитые уровни выявлены до подгонки. Шкала: шкалы нет. Сокращения: слитый уровень — уровень фактора, линейно зависимый от остальных колонок плана; кластер из одного наблюдения не даёт оценить дисперсию случайного эффекта. Пропуски: наблюдения, ранг, слитые уровни и вердикт относятся к модели целиком и стоят в её первой строке; у M2 случайный эффект «задание» имеет ноль кластеров, поскольку человеческие тексты заданий не получают. Оценок эффектов таблица не содержит: проверка идентифицируемости шла до подгонки, и часть моделей до подгонки не дошла. Поправка на множественные сравнения не применялась.
+\end{minipage}
+\end{table*}

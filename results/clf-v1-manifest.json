@@ -1,0 +1,83 @@
+{
+  "created_at": "2026-07-28T10:09:51+00:00",
+  "procedure": "clf-v1",
+  "status": "exploratory",
+  "seed": 20260727,
+  "c_grid": [
+    0.01,
+    0.1,
+    1.0,
+    10.0
+  ],
+  "inner_folds": 3,
+  "features_core": [
+    "L01",
+    "L02",
+    "L04",
+    "L05",
+    "S01",
+    "S02",
+    "S03",
+    "S06",
+    "S08",
+    "R01",
+    "M01",
+    "D04",
+    "D05",
+    "C01",
+    "C02",
+    "F04",
+    "F05",
+    "F06"
+  ],
+  "features_structural": [
+    "F01",
+    "R06",
+    "R07",
+    "P01"
+  ],
+  "m02_policy": "вне основного варианта; sensitivity — модель main+M02 с импутацией медианой train",
+  "inner_selection_metric": "ROC AUC",
+  "post_hoc_decisions": [
+    {
+      "what": "негативный контроль считается как серия из 20 кластерных перестановок",
+      "when": "2026-07-28, после первого прогона",
+      "why": "одна перестановка при четырёх машинных кластерах инвертировала сигнал вместо его снятия: AUROC уходил к 0.01 вместо 0.5"
+    },
+    {
+      "what": "на одноклассовых тестах считается FPR, остальные метрики остаются пустыми",
+      "when": "2026-07-28, после первого прогона",
+      "why": "пять holdout из восемнадцати имеют целиком человеческий тест; молчаливый пропуск скрывал бы цену ложного обвинения на невиданном человеческом жанре"
+    }
+  ],
+  "first_run_preserved": "07-analysis/_clf-v1-run1-before-posthoc/",
+  "inputs": {
+    "documents-registry.csv": "b62fb28f13109050b563728e5854f435ce71b9e0192096a276fc988bd3d47e9e",
+    "feature-matrix.csv": "5ab84d2721add25a82f446a7f5155dd9f15c5756f07940ac276934e8edc030da",
+    "score-v1-pairs.csv": "990f7683ebf95d2ada4a0df059acde4862b25adab42aed9b8118154e3ec72471",
+    "prep-v4/manifest.csv": "a250921bf9eba3d0d0ab8d5b3011ca0d9b3c7bff24aa853a3655bd3a766bff76"
+  },
+  "splits": {
+    "holdout_author_2026-07-25.json": "499c73d09f735fb718b2f59032a1903299d30b0eecbe867276f959b5d7398fc8",
+    "holdout_genre_analytics_2026-07-25.json": "4ecfc50e65af31b875992cc7802f1d1ada98d2c06b0c1366dd009a6bb7995934",
+    "holdout_genre_commercial_2026-07-25.json": "9f4f2af7c44ffe313758b5b6d73b66d0e5317b8fcf5da3d9138b5fed2e769947",
+    "holdout_genre_news_2026-07-25.json": "37e18eeaf41c93025ecc49927ad5fb4c8ef3e5ee73e1820bfcc7f69fa4a95c16",
+    "holdout_genre_prose_2026-07-25.json": "7c21f8cb98443466a1de4f2b4f35a75831b990af6c3662755bf5ab1f356a047e",
+    "holdout_genre_science_2026-07-25.json": "29565b8a054223295a7c1659a12f570f85bbf23b3b66861a2e52d9b7969847b8",
+    "holdout_genre_seo_2026-07-25.json": "098196449bcf2cb6287584c2fc0f9c0dcda55b634d9ea22b278a9078443d1ee7",
+    "holdout_genre_translation_2026-07-25.json": "073c5acfc76625f303d282b5fa866f15874fc0d0704a2c3414ba0d755a3a1035",
+    "holdout_model_Anthropic_2026-07-25.json": "ab9bd41f852ea68b116faa5933e898b14f5cd9b316ec205dfa2a3ddb7aac35ec",
+    "holdout_model_DeepSeek_2026-07-25.json": "c00e2e2fd0ae0d537dc59bfcd15b34d01943214c0a7f8d9b300743cc972ce2b3",
+    "holdout_model_NVIDIA_2026-07-25.json": "1fdbb41d2db3afae9313cf3c15d7fa1c333ed2898a6f96a4aef9e773762c55de",
+    "holdout_model_OpenAI_2026-07-25.json": "676c6a128a9fdf0f02ddcbfcf80c626de13924e32a70cdb3e4334ea763567254",
+    "holdout_prompt_P1_2026-07-25.json": "b148edfbf756e075c947ef16fab39688a219e293574a762ef0cdcb761c02c66f",
+    "holdout_prompt_P2_2026-07-25.json": "81b96e15539a5775da61d53871ebf1578d4c95620ec3630db39ebce0cbdd58ee",
+    "holdout_prompt_P3_2026-07-25.json": "e570c35dd2c8c7407ec8cc3bd872bbad072c24d2c00ef2f4d9ed18b6d194b3e0",
+    "holdout_source_2026-07-25.json": "cc16e162c73d51d2514b54d3586255b2e536010eac8d5ebbc5874b0ad5ee74c4",
+    "holdout_time_2026-07-25.json": "af7805016338435a7d8b509d3e477103da04413cbe01dbbac0e29716836656eb",
+    "holdout_topic_2026-07-25.json": "f2b0bd666d017a2d98984f3d58de6fbd0b84d93a7013be1d879974ef42cdaf0f"
+  },
+  "code_sha256": "49ae19acc015c19bed39cb2bfeaf6ad1cda7513eed7867c2bcb7d3bf900b332c",
+  "bootstrap_reps": 5000,
+  "wild_cluster_reps": 5000
+}

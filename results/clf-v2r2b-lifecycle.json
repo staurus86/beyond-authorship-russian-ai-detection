@@ -1,0 +1,14 @@
+{
+  "manifest": "clf-v2r2b-manifest.json",
+  "manifest_sha256": "1e322c9cb0e9e384f4dc8e8d421aade55a88c3ac81b54e06d7316e53899c7711",
+  "execution_status": "exploratory",
+  "lifecycle_status": "superseded",
+  "reason": "прогон корректен, но пакет пересобран целиком под одной ревизией допуска",
+  "reusable_scope": "числа побитово совпадают с преемником: все четыре расчётных выхода равны файл в файл",
+  "basis": "02-preregistration/amendment-run-manifest-ancestry.md",
+  "basis_sha256": "01911b6eaa2311b2d8af9da07e749bae1cbd5b1e52b3d7ebe696d2be0256f751",
+  "recorded_at_utc": "2026-07-31T20:05:24+00:00",
+  "recorded_at_moscow": "2026-07-31T23:05:24+03:00",
+  "superseded_by": "clf-v2r3-manifest.json",
+  "superseded_by_sha256": "651ec4cf5858d7d024b50540447cddf3480a3804b3a8d9d2899d6f422f68a5da"
+}

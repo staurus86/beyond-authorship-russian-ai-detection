@@ -1,0 +1,95 @@
+{
+  "created_at": "2026-07-29T14:52:16+00:00",
+  "procedure": "clf-v2-legacy",
+  "status": "exploratory",
+  "seed": 20260727,
+  "c_grid": [
+    0.01,
+    0.1,
+    1.0,
+    10.0
+  ],
+  "inner_folds": 3,
+  "features_core": [
+    "L01",
+    "L02",
+    "L04",
+    "L05",
+    "S01",
+    "S02",
+    "S03",
+    "S06",
+    "S08",
+    "R01",
+    "M01",
+    "D04",
+    "D05",
+    "C01",
+    "C02",
+    "F04",
+    "F05",
+    "F06"
+  ],
+  "features_structural": [
+    "F01",
+    "R06",
+    "R07",
+    "P01"
+  ],
+  "m02_policy": "вне основного варианта; sensitivity — модель main+M02 с импутацией медианой train",
+  "inner_selection_metric": "ROC AUC",
+  "post_hoc_decisions": [
+    {
+      "what": "негативный контроль считается как серия из 20 кластерных перестановок",
+      "when": "2026-07-28, после первого прогона",
+      "why": "одна перестановка при четырёх машинных кластерах инвертировала сигнал вместо его снятия: AUROC уходил к 0.01 вместо 0.5"
+    },
+    {
+      "what": "на одноклассовых тестах считается FPR, остальные метрики остаются пустыми",
+      "when": "2026-07-28, после первого прогона",
+      "why": "пять holdout из восемнадцати имеют целиком человеческий тест; молчаливый пропуск скрывал бы цену ложного обвинения на невиданном человеческом жанре"
+    }
+  ],
+  "first_run_preserved": "07-analysis/_clf-v1-run1-before-posthoc/",
+  "inputs": {
+    "documents-registry.csv": "d3cd478ffed7a886004eab8d14494eed687a4a29a112deff7ec80a3ed2cb6fac",
+    "feature-matrix-v5.csv": "421fc634e69ed20fa9ffac1b965905cb2b2a675d93fb214f1e995cd53706636d",
+    "score-v1-pairs.csv": "990f7683ebf95d2ada4a0df059acde4862b25adab42aed9b8118154e3ec72471",
+    "prep-v5/manifest.csv": "b11e84077363fea2e57d7d20f676b839dec8b450bbdf3fc732d782b60f06c7c6"
+  },
+  "splits": {
+    "holdout_author_prep-v5.json": "6cea917b6797b7b1bd840aea74a3d1fbb6da02da3da00c104287e14896b086e9",
+    "holdout_genre_analytics_prep-v5.json": "1c4dc4953a5d47403b08496c62fa230faaae37d04bfc64ee2a311785ccb8a4bc",
+    "holdout_genre_commercial_prep-v5.json": "5c1a7627b6e6f9e3adb97dc51bb57b638990d31875cc623972fe8eda2073e862",
+    "holdout_genre_news_prep-v5.json": "3d0f87722d2e281093cc1e489f005a7699303928e4cbf1a9222964a9b0613112",
+    "holdout_genre_prose_prep-v5.json": "744ee3d223aadb555f53dc778177309d1fbdc6d8a427b57da6067cdad395ffb7",
+    "holdout_genre_science_prep-v5.json": "2ebdb3343f90a36e49ecebcdf61aa85a973fa9b9541027bf5a052634375aaab6",
+    "holdout_genre_seo_prep-v5.json": "bf1452991df9b3548b381dcd60a4e78d4f1dbd6f597328c97ea516c462c2c80d",
+    "holdout_genre_translation_prep-v5.json": "bd260aaf72d398f4fe77b3cf8b08638baf34e40dc158ec12fde61fc31e465775",
+    "holdout_model_Anthropic_prep-v5.json": "f83ff2c7b3294521a93b8081b33a68f9fa3ee880419f69b5fda8b33221f7badd",
+    "holdout_model_DeepSeek_prep-v5.json": "e2c0a880a3b36ca0bd681c1c7aec6cbee4c9efc1da2d441193e20331d5df255f",
+    "holdout_model_NVIDIA_prep-v5.json": "46af844ea8ae2c0f12f9b6f40b930d171818d47c9e716d650fd2d4b7110b2699",
+    "holdout_model_OpenAI_prep-v5.json": "d840736e9200be62a9fc0f27195791ec45eb282d643676f57788c8956c97b80f",
+    "holdout_prompt_P1_prep-v5.json": "cf85fbe22ad1e04e05972df91430dd75290648eaf31108f13056932057d33ae7",
+    "holdout_prompt_P2_prep-v5.json": "035f462b64e8d2e2607d71dc422da25bc9ecc25e87fd61d608e2855837667672",
+    "holdout_prompt_P3_prep-v5.json": "025a4907190e989839d662c521ef9563f992abd2ce08f1ccc216cb96c39d60a6",
+    "holdout_source_prep-v5.json": "afef1cdc67d3243ce7ef739ef1e0f5e3959077fd0b2a43b18a2b4f766d338dc8",
+    "holdout_time_prep-v5.json": "f86247badc7ff48991900311c0e7011a00ce03ac03ba82a7668074c04e8ad9bf",
+    "holdout_topic_prep-v5.json": "66651f8903f97f5764ebe381684d88e19acec7c537eb215d79bc8f02c110da9b"
+  },
+  "code_sha256": "7126b3d518e094a019f78d9cdf246ce9865e5a9bf93c39a1e21707c9b9667c22",
+  "bootstrap_reps": 5000,
+  "wild_cluster_reps": 5000,
+  "carried_splits": {
+    "p2b-outer-folds-carried.json": "935c4fd02f4a4db4cfd491ef41619f94b6fd1634bfdc2919814612e8938470c6",
+    "p2b-inner-folds-carried.json": "5dc64ad1b256fbe2c815c9ac716b817bbb2a6d5925cc609acc89e3e7ec4f8998",
+    "p2a-inner-folds-carried.json": "f3377d62b8abc0ce8a3c5bedd575376e7e06f8b85976f6f78ade2ccfb84e9bfa"
+  },
+  "inner_selection_source": "перенесённое соответствие группа → inner fold в P2a и P2b; построение своего разбиения и fallback на GroupKFold запрещены",
+  "c_rebuild_diagnostic": {
+    "what": "рядом с рабочим C записан c_rebuilt — значение, которое дало бы разбиение, построенное заново на составе prep-v5",
+    "rows_compared": 126,
+    "rows_changed": 31,
+    "decision": "PI, 2026-07-29: перенести и сверить"
+  }
+}

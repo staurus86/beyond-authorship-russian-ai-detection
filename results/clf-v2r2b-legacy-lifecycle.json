@@ -1,0 +1,14 @@
+{
+  "manifest": "clf-v2r2b-legacy-manifest.json",
+  "manifest_sha256": "c6d72265d3ab4848f09b61ff0c3d25c0c3db1c487a122c8a8d81dfc8d8b099ee",
+  "execution_status": "exploratory",
+  "lifecycle_status": "superseded",
+  "reason": "то же: схема A пересобрана вместе с пакетом",
+  "reusable_scope": "числа побитово совпадают с преемником",
+  "basis": "02-preregistration/amendment-run-manifest-ancestry.md",
+  "basis_sha256": "01911b6eaa2311b2d8af9da07e749bae1cbd5b1e52b3d7ebe696d2be0256f751",
+  "recorded_at_utc": "2026-07-31T20:05:24+00:00",
+  "recorded_at_moscow": "2026-07-31T23:05:24+03:00",
+  "superseded_by": "clf-v2r3-legacy-manifest.json",
+  "superseded_by_sha256": "f1216bca78d3722c5ec6a0d267b7d965f1bd90b6472a498096df461b4f65bc15"
+}

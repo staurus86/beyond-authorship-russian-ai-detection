@@ -1,0 +1,158 @@
+{
+  "created_at": "2026-07-28T10:00:46+00:00",
+  "seed": 20260727,
+  "specs": {
+    "procedures-2-4-registration.md": "958443f3f43e72a6a391a369543b09cd7d4a4c8f055996e865b1bbf2242d79a9",
+    "proc2-classifier-spec.md": "64dca27fac84bf5f6ca1909d297056693caa4ef6fb247cfe8362966c29cbc584",
+    "proc3-zeroshot-spec.md": "8da07d34202e9455201f968d9ac9b2f579425c6635dec4bfc80b47ae8b7769e7",
+    "proc4-judge-spec.md": "f4f7218e2b934bf2adb3948f60e78f6bd16d74b47ea45fdba8657a44fc66728e"
+  },
+  "inputs": {
+    "documents-registry.csv": "b62fb28f13109050b563728e5854f435ce71b9e0192096a276fc988bd3d47e9e",
+    "feature-matrix.csv": "5ab84d2721add25a82f446a7f5155dd9f15c5756f07940ac276934e8edc030da"
+  },
+  "p2b_seo_pairs": {
+    "P3-P1": 120,
+    "P2-P1": 120
+  },
+  "p2b_clusters": {
+    "P3-P1": 15,
+    "P2-P1": 15
+  },
+  "p2b_outer_folds": {
+    "0": {
+      "ai": "gpt",
+      "human": [
+        "devaka_ru",
+        "sosnovskij_ru",
+        "author_archive",
+        "labrika"
+      ]
+    },
+    "1": {
+      "ai": "real_claude",
+      "human": [
+        "madcats",
+        "texterra_ru",
+        "drmax_su",
+        "seoprofy_ua"
+      ]
+    },
+    "2": {
+      "ai": "deepseek_pro",
+      "human": [
+        "drmax",
+        "shakin",
+        "madcats_ru",
+        "optimizatorsha_ru",
+        "shakin_ru"
+      ]
+    },
+    "3": {
+      "ai": "nemotron",
+      "human": [
+        "alaev",
+        "sosnovskij",
+        "seopulses",
+        "seopulses_ru",
+        "convertmonster"
+      ]
+    }
+  },
+  "scale_convention": {
+    "proc1_common": {
+      "direction": "as_is",
+      "note": "индекс уже растёт с AI-подобием"
+    },
+    "proc1_format": {
+      "direction": "as_is",
+      "note": "то же"
+    },
+    "p2a_score": {
+      "direction": "as_is",
+      "note": "вероятность класса A"
+    },
+    "p2b_score": {
+      "direction": "as_is",
+      "note": "вероятность класса A"
+    },
+    "proc3_nll": {
+      "direction": "invert",
+      "note": "низкий NLL = лучше предсказуем = более AI-подобно; при синтезе знак обращается"
+    },
+    "proc4_judge": {
+      "direction": "as_is",
+      "note": "шкала рубрики растёт с выраженностью"
+    }
+  },
+  "judge": {
+    "model": "gemma3:12b-it-qat",
+    "digest": "5d4fa005e7bb5931be8bc35224080a9b316c7e1c069c9481a6a51b607f4252e2",
+    "size_bytes": 8928675346,
+    "ollama_version": "0.18.0",
+    "quantization_level": "Q4_0",
+    "parameter_size": "12.2B",
+    "family": "gemma3",
+    "capabilities": [
+      "completion",
+      "vision"
+    ],
+    "declared_context_length": 131072,
+    "num_ctx": 16384,
+    "num_predict": 200,
+    "template": "{{- range $i, $_ := .Messages }}\n{{- $last := eq (len (slice $.Messages $i)) 1 }}\n{{- if or (eq .Role \"user\") (eq .Role \"system\") }}<start_of_turn>user\n{{ .Content }}<end_of_turn>\n{{ if $last }}<start_of_turn>model\n{{ end }}\n{{- else if eq .Role \"assistant\" }}<start_of_turn>model\n{{ .Content }}{{ if not $last }}<end_of_turn>\n{{ end }}\n{{- end }}\n{{- end }}\n",
+    "default_parameters": "temperature                    1\ntop_k                          64\ntop_p                          0.95\nstop                           \"<end_of_turn>\"",
+    "longest_document": "human_science_urfu_0019",
+    "longest_document_tokens": 11960,
+    "sampling": {
+      "temperature": 1.0,
+      "top_p": 1.0,
+      "top_k": 64
+    },
+    "seeds": [
+      20260727,
+      20260728,
+      20260729
+    ],
+    "response_schema": {
+      "type": "object",
+      "properties": {
+        "score": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "reason": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "score",
+        "reason"
+      ]
+    },
+    "documents": 1916,
+    "calls": 5748
+  },
+  "nll": {
+    "model": "ai-forever/rugpt3large_based_on_gpt2",
+    "revision": "29c569320be2e08f29757898ec3866413725acd7",
+    "device": "cpu",
+    "dtype": "float32",
+    "tokenizer_behaviour": {
+      "bos_token_id": 1,
+      "eos_token_id": 2,
+      "adds_bos": false,
+      "n_positions": 2048
+    },
+    "probe_documents": 10,
+    "probe_seconds": 105.0,
+    "projected_full_run_hours": 6.77,
+    "window": 1024,
+    "stride": 512,
+    "weights_sha256": "ce2ca7dbc12badb0a610df6f853168d6d9446a3b51e13e8af9186220eacc05cb",
+    "weights_path": "<HOME>\\.cache\\huggingface\\hub\\models--ai-forever--rugpt3large_based_on_gpt2\\snapshots\\29c569320be2e08f29757898ec3866413725acd7\\pytorch_model.bin"
+  },
+  "preflight_passed": true,
+  "failures": []
+}

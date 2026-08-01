@@ -1,0 +1,14 @@
+{
+  "manifest": "clf-v2-legacy-manifest.json",
+  "manifest_sha256": "ca092ef09c1ebabb1bcd3e7925af760fe29bc1aa25f45779eb5cc532ad97e935",
+  "execution_status": "exploratory",
+  "lifecycle_status": "invalidated",
+  "reason": "тот же дефект входа, схема A на матрице до исправления",
+  "reusable_scope": "",
+  "basis": "07-analysis/invalidation-decision-2026-07-31-p2-discourse.json",
+  "basis_sha256": "e31cf1b74f08f443c0a90eb40475cd1af68650a6ee51bdaa3791bc06f232f7b2",
+  "recorded_at_utc": "2026-07-31T19:20:09+00:00",
+  "recorded_at_moscow": "2026-07-31T22:20:09+03:00",
+  "superseded_by": "clf-v2r2b-legacy-manifest.json",
+  "superseded_by_sha256": "c6d72265d3ab4848f09b61ff0c3d25c0c3db1c487a122c8a8d81dfc8d8b099ee"
+}

@@ -1,0 +1,135 @@
+document_id,source,role,url,snapshot,repeat_raw,repeat_full,repeat_prose,repeat_origin,origin_checked,origin_verdict
+human_news_lenta_0003,lenta,поражённый,https://lenta.ru/news/2010/04/22/freeze/,,0.8333,0.8333,0.8333,0.9792,датасет corus lenta-ru-news,повтор есть в оригинале — не редактировать
+human_news_lenta_0005,lenta,поражённый,https://lenta.ru/news/2010/03/10/parliament/,,0.75,0.75,0.75,0.9583,датасет corus lenta-ru-news,повтор есть в оригинале — не редактировать
+human_news_lenta_0006,lenta,поражённый,https://lenta.ru/news/2010/03/10/against/,,0.8511,0.8511,0.8511,0.9677,датасет corus lenta-ru-news,повтор есть в оригинале — не редактировать
+human_news_lenta_0008,lenta,поражённый,https://lenta.ru/news/2010/04/06/alternative/,,0.7647,0.7647,0.7647,0.9815,датасет corus lenta-ru-news,повтор есть в оригинале — не редактировать
+human_news_lenta_0011,lenta,поражённый,https://lenta.ru/news/2010/06/29/tekebaev/,,0.75,0.75,0.75,0.9535,датасет corus lenta-ru-news,повтор есть в оригинале — не редактировать
+human_news_lenta_0019,lenta,поражённый,https://lenta.ru/news/2010/06/01/jail/,,0.8108,0.8108,0.8108,0.9167,датасет corus lenta-ru-news,повтор есть в оригинале — не редактировать
+human_news_lenta_0020,lenta,поражённый,https://lenta.ru/news/2010/04/29/detain1/,,0.8478,0.8478,0.8478,0.9623,датасет corus lenta-ru-news,повтор есть в оригинале — не редактировать
+human_news_lenta_0025,lenta,поражённый,https://lenta.ru/news/2010/01/18/shot/,,0.881,0.881,0.881,0.963,датасет corus lenta-ru-news,повтор есть в оригинале — не редактировать
+human_news_lenta_0026,lenta,поражённый,https://lenta.ru/news/2010/05/05/vaporize/,,0.8372,0.8372,0.8372,0.9655,датасет corus lenta-ru-news,повтор есть в оригинале — не редактировать
+human_news_lenta_0028,lenta,поражённый,https://lenta.ru/news/2009/11/20/instant/,,0.8478,0.8478,0.8478,0.9672,датасет corus lenta-ru-news,повтор есть в оригинале — не редактировать
+human_news_lenta_0030,lenta,поражённый,https://lenta.ru/news/2010/03/27/titanic/,,0.5882,0.5882,0.5882,0.9677,датасет corus lenta-ru-news,повтор есть в оригинале — не редактировать
+human_news_lenta_0031,lenta,поражённый,https://lenta.ru/news/2010/02/09/greet/,,0.7667,0.7667,0.7667,0.9804,датасет corus lenta-ru-news,повтор есть в оригинале — не редактировать
+human_news_lenta_0032,lenta,поражённый,https://lenta.ru/news/2010/04/16/refuse/,,0.8049,0.8049,0.8049,0.9677,датасет corus lenta-ru-news,повтор есть в оригинале — не редактировать
+human_news_lenta_0033,lenta,поражённый,https://lenta.ru/news/2010/01/19/cancel/,,0.8409,0.8409,0.8409,0.9828,датасет corus lenta-ru-news,повтор есть в оригинале — не редактировать
+human_news_lenta_0035,lenta,поражённый,https://lenta.ru/news/2010/04/06/case1/,,0.7838,0.7838,0.7838,0.9655,датасет corus lenta-ru-news,повтор есть в оригинале — не редактировать
+human_news_lenta_0037,lenta,поражённый,https://lenta.ru/news/2010/01/10/elections/,,0.8182,0.8182,0.8182,0.9692,датасет corus lenta-ru-news,повтор есть в оригинале — не редактировать
+human_news_lenta_0038,lenta,поражённый,https://lenta.ru/news/2010/03/24/nota/,,0.7586,0.7586,0.7586,0.9545,датасет corus lenta-ru-news,повтор есть в оригинале — не редактировать
+human_news_lenta_0043,lenta,поражённый,https://lenta.ru/news/2009/12/08/laar/,,0.7742,0.7742,0.7742,0.9565,датасет corus lenta-ru-news,повтор есть в оригинале — не редактировать
+human_news_lenta_0047,lenta,поражённый,https://lenta.ru/news/2010/06/10/yanukovich/,,0.8571,0.8571,0.8571,0.9868,датасет corus lenta-ru-news,повтор есть в оригинале — не редактировать
+human_news_lenta_0048,lenta,поражённый,https://lenta.ru/news/2010/02/23/party/,,0.7843,0.7843,0.7843,0.9895,датасет corus lenta-ru-news,повтор есть в оригинале — не редактировать
+human_news_lenta_0050,lenta,поражённый,https://lenta.ru/news/2009/12/29/less/,,0.7778,0.7778,0.7778,0.9649,датасет corus lenta-ru-news,повтор есть в оригинале — не редактировать
+human_news_lenta_0052,lenta,поражённый,https://lenta.ru/news/2010/05/25/minister/,,0.8333,0.8333,0.8333,0.9649,датасет corus lenta-ru-news,повтор есть в оригинале — не редактировать
+human_news_lenta_0054,lenta,поражённый,https://lenta.ru/news/2010/01/26/against/,,0.7857,0.7857,0.7857,0.9714,датасет corus lenta-ru-news,повтор есть в оригинале — не редактировать
+human_news_lenta_0056,lenta,поражённый,https://lenta.ru/news/2009/10/29/charge/,,0.7941,0.7941,0.7941,0.963,датасет corus lenta-ru-news,повтор есть в оригинале — не редактировать
+human_news_lenta_0057,lenta,поражённый,https://lenta.ru/news/2010/02/26/save/,,0.7632,0.7632,0.7632,0.9846,датасет corus lenta-ru-news,повтор есть в оригинале — не редактировать
+human_news_lenta_0058,lenta,поражённый,https://lenta.ru/news/2010/04/19/mvd/,,0.7879,0.7879,0.7879,0.9787,датасет corus lenta-ru-news,повтор есть в оригинале — не редактировать
+human_news_lenta_0059,lenta,поражённый,https://lenta.ru/news/2009/11/12/refuse/,,0.7949,0.7949,0.7949,0.9667,датасет corus lenta-ru-news,повтор есть в оригинале — не редактировать
+human_news_lenta_0060,lenta,поражённый,https://lenta.ru/news/2010/06/03/prosecutor/,,0.8462,0.8462,0.8462,0.9592,датасет corus lenta-ru-news,повтор есть в оригинале — не редактировать
+human_seo_drmax_0001,drmax,поражённый,https://drmax.su/cpu-sefu-unused-vozmozhnosti-seo.html,,0.2373,0.2373,0.2414,,,источник оригинала не определён
+human_seo_drmax_0002,drmax,поражённый,https://drmax.su/kak-analizirovat-perelinkovku-sajta.html,,0.6174,0.6174,0.6201,,,источник оригинала не определён
+human_seo_drmax_0003,drmax,поражённый,https://drmax.su/backlinks-analiz-kachestva.html,,0.7014,0.7081,0.7255,,,источник оригинала не определён
+human_seo_drmax_0004,drmax,поражённый,https://drmax.su/outlinks-seo-factors.html,,0.5592,0.5592,0.5646,,,источник оригинала не определён
+human_seo_drmax_0005,drmax,поражённый,https://drmax.su/8-google-update.html,,0.3245,0.3245,0.3267,,,источник оригинала не определён
+human_seo_drmax_0006,drmax,поражённый,https://drmax.su/10-faktorov-ne-vliyayushhih-na-ranzhirovanie.html,,0.33,0.33,0.3166,,,источник оригинала не определён
+human_seo_drmax_0007,drmax,поражённый,https://drmax.su/48-j-sposob-uvelichit-trafik-na-sajte.html,,0.2326,0.2326,0.2344,,,источник оригинала не определён
+human_seo_drmax_0008,drmax,поражённый,https://drmax.su/bold-i-strong-vredyat.html,,0.5472,0.5472,0.5472,,,источник оригинала не определён
+human_seo_drmax_0009,drmax,поражённый,https://drmax.su/yandex-optimizatsiya-2018.html,,0.4556,0.4556,0.4607,,,источник оригинала не определён
+human_seo_drmax_0010,drmax,поражённый,https://drmax.su/re-optimizatsiya-kontenta.html,,0.4828,0.4828,0.4878,,,источник оригинала не определён
+human_seo_drmax_0011,drmax,поражённый,https://drmax.su/crack-wordpress.html,,0.2751,0.2737,0.2781,,,источник оригинала не определён
+human_seo_drmax_0012,drmax,поражённый,https://drmax.su/voice-search-seo-2018.html,,0.2108,0.2108,0.212,,,источник оригинала не определён
+human_seo_drmax_0013,drmax,поражённый,https://drmax.su/seoguru-2018.html,,0.3136,0.3136,0.3274,,,источник оригинала не определён
+human_seo_drmax_0014,drmax,поражённый,https://drmax.su/mobile-first-index.html,,0.3259,0.3134,0.3158,,,источник оригинала не определён
+human_seo_drmax_0016,drmax,поражённый,https://drmax.su/padaet-trafik-google.html,,0.3984,0.3984,0.3984,,,источник оригинала не определён
+human_seo_drmax_0017,drmax,поражённый,https://drmax.su/robots-txt-dlya-sajta.html,,0.4727,0.4727,0.4919,,,источник оригинала не определён
+human_seo_drmax_0018,drmax,поражённый,https://drmax.su/recovering-from-googles-medic-update.html,,0.3051,0.2831,0.2395,,,источник оригинала не определён
+human_seo_drmax_0019,drmax,поражённый,https://drmax.su/bert-algorithm-update.html,,0.1587,0.1587,0.1604,,,источник оригинала не определён
+human_seo_drmax_0020,drmax,поражённый,https://drmax.su/measure-e-a-t.html,,0.2263,0.2263,0.2313,,,источник оригинала не определён
+human_seo_alaev_0012,alaev,поражённый,https://alaev.info/blog/post/2063,,0.3014,0.3056,0.3143,,,источник оригинала не определён
+human_seo_alaev_0013,alaev,поражённый,https://alaev.info/blog/post/2201,,0.2034,0.2069,0.2105,,,источник оригинала не определён
+human_seo_alaev_0019,alaev,поражённый,https://alaev.info/blog/post/2961,,0.1429,0.1441,0.1455,,,источник оригинала не определён
+human_seo_convertmonster_0001,convertmonster,поражённый,https://convertmonster.ru/blog/marketing-blog/master-klass-po-sozdaniju-landing-page-s-vysokoj-konversiej/,,0.1212,0.1212,0.1379,,,источник оригинала не определён
+human_seo_drmax_0021,drmax,поражённый,https://drmax.su/statistika-poiskovyh-sistem-2019.html,,0.3419,0.3419,0.3442,,,источник оригинала не определён
+human_seo_drmax_0024,drmax,поражённый,https://drmax.su/statistika-poiskovyh-sistem-2020.html,,0.1,0.1,0.1056,,,источник оригинала не определён
+human_seo_drmax_0025,drmax,поражённый,https://drmax.su/sitemap-xml-dlya-sajta.html,,0.1792,0.1792,0.1813,,,источник оригинала не определён
+human_seo_madcats_0005,madcats,поражённый,https://madcats.ru/business/taisiya-kudashkina/,,0.2061,0.2061,0.2061,,,источник оригинала не определён
+human_news_buriy_2014_0014,buriy_2014,поражённый,http://www.sovsport.ru/gazeta/article-item/761484,,0.32,0.32,0.32,,,источник оригинала не определён
+human_news_buriy_2014_0024,buriy_2014,поражённый,http://www.ruscur.ru/themes/0/00/37/3762.shtml?news/0/04/91/49168,,0.2353,0.2353,0.2353,,,источник оригинала не определён
+human_news_buriy_2014_0040,buriy_2014,поражённый,http://www.ruscur.ru/themes/0/00/67/6797.shtml?news/0/07/13/71387,,0.2623,0.2623,0.2623,,,источник оригинала не определён
+human_news_buriy_2014_0042,buriy_2014,поражённый,http://www.ruscur.ru/themes/0/00/64/6497.shtml?news/0/06/94/69413,,0.129,0.129,0.1613,,,источник оригинала не определён
+human_news_buriy_2014_0045,buriy_2014,поражённый,http://www.ruscur.ru/themes/0/00/66/6686.shtml?news/0/06/83/68338,,0.3175,0.3175,0.3175,,,источник оригинала не определён
+human_news_buriy_2014_0048,buriy_2014,поражённый,http://www.1tv.ru/news/world/268346,,0.0526,0.0526,0.1053,,,источник оригинала не определён
+human_seo_labrika_0001,labrika,поражённый,https://labrika.ru/blog/google-panda,,0.1296,0.1296,0.1386,,,источник оригинала не определён
+human_seo_labrika_0002,labrika,поражённый,https://labrika.ru/blog/penguin,,0.6496,0.6496,0.6964,,,источник оригинала не определён
+human_science_urfu_0039,urfu,поражённый,,,0.1159,0.1159,0.1168,,,источник оригинала не определён
+human_science_spbgu_0042,spbgu,поражённый,,,0.1346,0.1353,0.1353,,,источник оригинала не определён
+human_science_spbgu_0044,spbgu,поражённый,,,0.1171,0.1176,0.1176,,,источник оригинала не определён
+human_science_spbgu_0062,spbgu,поражённый,,,0.107,0.1351,0.1292,,,источник оригинала не определён
+human_seo_devaka_ru_0001,devaka_ru,поражённый,http://devaka.ru:80/articles/404-contest,https://web.archive.org/web/20110307073945id_/http://devaka.ru:80/articles/404-contest,0.1791,0.1967,0.2791,,снапшот только по ссылке,нужен доступ к снапшоту
+human_seo_devaka_ru_0002,devaka_ru,поражённый,http://devaka.ru:80/articles/404-contest-comments,https://web.archive.org/web/20110403205008id_/http://devaka.ru:80/articles/404-contest-comments,0.1667,0.1905,0.2162,,снапшот только по ссылке,нужен доступ к снапшоту
+human_seo_devaka_ru_0004,devaka_ru,поражённый,http://devaka.ru:80/articles/duplicates,https://web.archive.org/web/20121030102607id_/http://devaka.ru:80/articles/duplicates,0.321,0.321,0.3421,,снапшот только по ссылке,нужен доступ к снапшоту
+human_seo_devaka_ru_0005,devaka_ru,поражённый,http://devaka.ru:80/articles/link-rel-canonical,https://web.archive.org/web/20100112083548id_/http://devaka.ru:80/articles/link-rel-canonical,0.3974,0.4106,0.4476,,снапшот только по ссылке,нужен доступ к снапшоту
+human_seo_devaka_ru_0007,devaka_ru,поражённый,http://devaka.ru:80/articles/mobile-application-vs-website,https://web.archive.org/web/20120108185923id_/http://devaka.ru:80/articles/mobile-application-vs-website,0.4595,0.4595,0.4857,,снапшот только по ссылке,нужен доступ к снапшоту
+human_seo_devaka_ru_0011,devaka_ru,поражённый,http://devaka.ru:80/articles/pagination-problems-solving,https://web.archive.org/web/20100114003053id_/http://devaka.ru:80/articles/pagination-problems-solving,0.339,0.3704,0.3846,,снапшот только по ссылке,нужен доступ к снапшоту
+human_seo_devaka_ru_0012,devaka_ru,поражённый,http://devaka.ru:80/articles/redirect-301,https://web.archive.org/web/20100112083644id_/http://devaka.ru:80/articles/redirect-301,0.3404,0.3409,0.3529,,снапшот только по ссылке,нужен доступ к снапшоту
+human_seo_devaka_ru_0013,devaka_ru,поражённый,http://devaka.ru:80/articles/redirect-rss-newlocation,https://web.archive.org/web/20100128042244id_/http://devaka.ru:80/articles/redirect-rss-newlocation,0.1633,0.1778,0.1951,,снапшот только по ссылке,нужен доступ к снапшоту
+human_seo_devaka_ru_0014,devaka_ru,поражённый,http://devaka.ru:80/articles/redirects-with-url-map,https://web.archive.org/web/20110704173708id_/http://devaka.ru:80/articles/redirects-with-url-map,0.3793,0.3571,0.3462,,снапшот только по ссылке,нужен доступ к снапшоту
+human_seo_devaka_ru_0017,devaka_ru,поражённый,https://devaka.ru/articles/xml-sitemap-exploit,https://web.archive.org/web/20190716150712id_/https://devaka.ru/articles/xml-sitemap-exploit,0.1356,0.1356,0.1356,,снапшот только по ссылке,нужен доступ к снапшоту
+human_seo_devaka_ru_0019,devaka_ru,поражённый,http://devaka.ru:80/articles/yandex-rel-canonical,https://web.archive.org/web/20110527095753id_/http://devaka.ru:80/articles/yandex-rel-canonical,0.093,0.1081,0.1481,,снапшот только по ссылке,нужен доступ к снапшоту
+human_seo_seoprofy_ua_0001,seoprofy_ua,поражённый,http://seoprofy.ua:80/blog/optimizaciya-sajtov/301-redirekt/comment-page-1,https://web.archive.org/web/20160414050348id_/http://seoprofy.ua:80/blog/optimizaciya-sajtov/301-redirekt/comment-page-1,0.4657,0.4608,0.4767,,снапшот только по ссылке,нужен доступ к снапшоту
+human_seo_sosnovskij_ru_0005,sosnovskij_ru,поражённый,https://sosnovskij.ru/pagination-indexing/,https://web.archive.org/web/20190718012610id_/https://sosnovskij.ru/pagination-indexing/,0.4911,0.18,0.1915,,снапшот только по ссылке,нужен доступ к снапшоту
+human_seo_drmax_su_0001,drmax_su,поражённый,http://drmax.su:80/guru-2017-perelinkovka.html/,https://web.archive.org/web/20170709094039id_/http://drmax.su:80/guru-2017-perelinkovka.html/,0.5035,0.5035,0.6061,,снапшот только по ссылке,нужен доступ к снапшоту
+human_seo_drmax_su_0002,drmax_su,поражённый,https://drmax.su/sitemap-xml-dlya-sajta.html,https://web.archive.org/web/20190716081945id_/https://drmax.su/sitemap-xml-dlya-sajta.html,0.127,0.127,0.127,,снапшот только по ссылке,нужен доступ к снапшоту
+human_seo_texterra_ru_0013,texterra_ru,поражённый,https://texterra.ru/clients/chuodo-akademiya-vostochnykh-yazykov-i-kultury-konfutsiy.html,https://web.archive.org/web/20210123044838id_/https://texterra.ru/clients/chuodo-akademiya-vostochnykh-yazykov-i-kultury-konfutsiy.html,0.5556,0.5556,0.5556,,снапшот только по ссылке,нужен доступ к снапшоту
+human_seo_devaka_ru_0021,devaka_ru,поражённый,http://devaka.ru:80/?list=add,https://web.archive.org/web/20100209194337id_/http://devaka.ru:80/?list=add,0.0805,0.0833,0.1034,,снапшот только по ссылке,нужен доступ к снапшоту
+human_seo_devaka_ru_0026,devaka_ru,поражённый,http://devaka.ru:80/?pg=14,https://web.archive.org/web/20100206212109id_/http://devaka.ru:80/?pg=14,0.2301,0.2407,0.2476,,снапшот только по ссылке,нужен доступ к снапшоту
+human_seo_devaka_ru_0027,devaka_ru,поражённый,http://devaka.ru/?pg=15,https://web.archive.org/web/20100923065025id_/http://devaka.ru/?pg=15,0.098,0.1042,0.1316,,снапшот только по ссылке,нужен доступ к снапшоту
+human_seo_texterra_ru_0014,texterra_ru,поражённый,http://texterra.ru:80/7-prichin-podpisatsya-na-nashu-rassylku/,https://web.archive.org/web/20150826224526id_/http://texterra.ru:80/7-prichin-podpisatsya-na-nashu-rassylku/,0.8407,0.8407,0.8962,,снапшот только по ссылке,нужен доступ к снапшоту
+human_seo_texterra_ru_0015,texterra_ru,поражённый,https://texterra.ru/?bxrand=1583677827878,https://web.archive.org/web/20200308143030id_/https://texterra.ru/?bxrand=1583677827878,0.9029,0.9029,0.9167,,снапшот только по ссылке,нужен доступ к снапшоту
+human_seo_texterra_ru_0016,texterra_ru,поражённый,https://texterra.ru/?utm_source=tagline&utm_medium=referral&utm_campaign=search&utm_content=link_texterra_pos-62,https://web.archive.org/web/20201109175650id_/https://texterra.ru/?utm_source=tagline&utm_medium=referral&utm_campaign=search&utm_content=link_texterra_pos-62,0.5217,0.5217,0.5217,,снапшот только по ссылке,нужен доступ к снапшоту
+human_seo_texterra_ru_0017,texterra_ru,поражённый,https://texterra.ru/?utm_source=youtube&utm_medium=1&utm_campaign=video,https://web.archive.org/web/20200826190701id_/https://texterra.ru/?utm_source=youtube&utm_medium=1&utm_campaign=video,0.5806,0.5806,0.5806,,снапшот только по ссылке,нужен доступ к снапшоту
+human_seo_madcats_ru_0007,madcats_ru,поражённый,http://madcats.ru:80/about/pamyatka-dlya-avtorov-kotikov/,https://web.archive.org/web/20180708044447id_/http://madcats.ru:80/about/pamyatka-dlya-avtorov-kotikov/,0.2264,0.2264,0.2353,,снапшот только по ссылке,нужен доступ к снапшоту
+human_seo_drmax_su_0003,drmax_su,поражённый,https://drmax.su/book-audit.html,https://web.archive.org/web/20190716090220id_/https://drmax.su/book-audit.html,0.2254,0.2254,0.2424,,снапшот только по ссылке,нужен доступ к снапшоту
+human_seo_drmax_su_0004,drmax_su,поражённый,http://drmax.su:80/content-audit.html,https://web.archive.org/web/20171031074507id_/http://drmax.su:80/content-audit.html,0.1843,0.1686,0.1633,,снапшот только по ссылке,нужен доступ к снапшоту
+human_seo_drmax_su_0005,drmax_su,поражённый,http://drmax.su/crack-wordpress.html,https://web.archive.org/web/20190126051733id_/http://drmax.su/crack-wordpress.html,0.2781,0.2766,0.2811,,снапшот только по ссылке,нужен доступ к снапшоту
+human_seo_drmax_su_0008,drmax_su,поражённый,http://drmax.su:80/klyuchevye-slova-lsi-algoritm.html,https://web.archive.org/web/20171019143932id_/http://drmax.su:80/klyuchevye-slova-lsi-algoritm.html,0.2544,0.2544,0.2571,,снапшот только по ссылке,нужен доступ к снапшоту
+human_seo_devaka_ru_0033,devaka_ru,поражённый,http://devaka.ru/?pg=23,https://web.archive.org/web/20101121020908id_/http://devaka.ru/?pg=23,0.209,0.2295,0.2456,,снапшот только по ссылке,нужен доступ к снапшоту
+human_seo_devaka_ru_0035,devaka_ru,поражённый,http://devaka.ru/?pg=25,https://web.archive.org/web/20101121020954id_/http://devaka.ru/?pg=25,0.2899,0.3226,0.3333,,снапшот только по ссылке,нужен доступ к снапшоту
+human_seo_alaev_0001,alaev,контроль,https://alaev.info/blog/post/73,,0.0,0.0,0.0,,,источник оригинала не определён
+human_seo_alaev_0002,alaev,контроль,https://alaev.info/blog/post/811,,0.026,0.0263,0.0282,,,источник оригинала не определён
+human_seo_alaev_0003,alaev,контроль,https://alaev.info/blog/post/994,,0.0308,0.0312,0.0,,,источник оригинала не определён
+human_news_buriy_2014_0001,buriy_2014,контроль,http://www.ura.ru/content/chel/03-12-2014/articles/1036263540.html,,0.0,0.0,0.0,,,источник оригинала не определён
+human_news_buriy_2014_0002,buriy_2014,контроль,http://topwar.ru/57080-pochemu-molchit-timoshenko.html,,0.0,0.0,0.0,,,источник оригинала не определён
+human_news_buriy_2014_0003,buriy_2014,контроль,http://rus.tvnet.lv/novosti/za_rubjezhom/274604-putin_podal_pljed_zhjenje_si_czinpina_shokirovav_kitay,,0.0,0.0,0.0,,,источник оригинала не определён
+human_seo_devaka_ru_0003,devaka_ru,контроль,http://devaka.ru:80/articles/404-contest-results,https://web.archive.org/web/20110407062204id_/http://devaka.ru:80/articles/404-contest-results,0.0,0.0,0.0,,снапшот только по ссылке,нужен доступ к снапшоту
+human_seo_devaka_ru_0006,devaka_ru,контроль,http://devaka.ru:80/articles/meta-robots,https://web.archive.org/web/20141224182949id_/http://devaka.ru:80/articles/meta-robots,0.3889,0.0,0.0,,снапшот только по ссылке,нужен доступ к снапшоту
+human_seo_devaka_ru_0008,devaka_ru,контроль,https://devaka.ru/articles/mobile-friendly-results,https://web.archive.org/web/20170712165758id_/https://devaka.ru/articles/mobile-friendly-results,0.0,0.0,0.0,,снапшот только по ссылке,нужен доступ к снапшоту
+human_seo_drmax_0015,drmax,контроль,https://drmax.su/6-step-google-mobile-first.html,,0.0,0.0,0.0,,,источник оригинала не определён
+human_seo_drmax_su_0006,drmax_su,контроль,http://drmax.su:80/faktory-ranzhirovaniya-sajta-2018.html,https://web.archive.org/web/20171118202706id_/http://drmax.su:80/faktory-ranzhirovaniya-sajta-2018.html,0.0,0.0,0.0,,снапшот только по ссылке,нужен доступ к снапшоту
+human_seo_drmax_su_0007,drmax_su,контроль,https://drmax.su/guide-json-ld.html,https://web.archive.org/web/20190716083102id_/https://drmax.su/guide-json-ld.html,0.0,0.0,0.0,,снапшот только по ссылке,нужен доступ к снапшоту
+human_seo_labrika_0003,labrika,контроль,https://labrika.ru/blog/minusinsk,,0.0,0.0,0.0,,,источник оригинала не определён
+human_seo_labrika_0004,labrika,контроль,https://labrika.ru/articles/privacy-policy,,0.0,0.0,0.0,,,источник оригинала не определён
+human_news_lenta_0001,lenta,контроль,https://lenta.ru/news/2019/12/02/tranz/,,0.0,0.0,0.0,0.0,датасет corus lenta-ru-news,"повтора нет ни там, ни там"
+human_news_lenta_0002,lenta,контроль,https://lenta.ru/news/2019/05/26/avdeev_postnauka/,,0.0,0.0,0.0,0.0,датасет corus lenta-ru-news,"повтора нет ни там, ни там"
+human_news_lenta_0004,lenta,контроль,https://lenta.ru/news/1999/11/03/raviv/,,0.0,0.0,0.0,0.0,датасет corus lenta-ru-news,"повтора нет ни там, ни там"
+human_seo_madcats_0001,madcats,контроль,https://madcats.ru/content-marketing/torshina-kak-phiki-razvodjat/,,0.0,0.0,0.0,,,источник оригинала не определён
+human_seo_madcats_0002,madcats,контроль,https://madcats.ru/digital-marketing/xontent-performance-marketing/,,0.0,0.0,0.0,,,источник оригинала не определён
+human_seo_madcats_0003,madcats,контроль,https://madcats.ru/business/5-strategy-ways/,,0.0,0.0,0.0,,,источник оригинала не определён
+human_seo_madcats_ru_0001,madcats_ru,контроль,http://madcats.ru:80/content-marketing/texts-for-mobile/,https://web.archive.org/web/20160528231215id_/http://madcats.ru:80/content-marketing/texts-for-mobile/,0.0,0.0,0.0,,снапшот только по ссылке,нужен доступ к снапшоту
+human_seo_madcats_ru_0002,madcats_ru,контроль,http://madcats.ru:80/digital-marketing/mobile-bolshe-chem-must-have/,https://web.archive.org/web/20180617105317id_/http://madcats.ru:80/digital-marketing/mobile-bolshe-chem-must-have/,0.0,0.0,0.0,,снапшот только по ссылке,нужен доступ к снапшоту
+human_seo_madcats_ru_0003,madcats_ru,контроль,https://madcats.ru/partnerskaya-statya/avtomaticheskaja-perelinkovka-internet-magazina/,https://web.archive.org/web/20201127105739id_/https://madcats.ru/partnerskaya-statya/avtomaticheskaja-perelinkovka-internet-magazina/,0.0,0.0,0.0,,снапшот только по ссылке,нужен доступ к снапшоту
+human_seo_seoprofy_ua_0002,seoprofy_ua,контроль,https://seoprofy.ua/blog/optimizaciya-sajtov/mobile-first-index,https://web.archive.org/web/20190716060104id_/https://seoprofy.ua/blog/optimizaciya-sajtov/mobile-first-index,0.0,0.0,0.0,,снапшот только по ссылке,нужен доступ к снапшоту
+human_seo_seoprofy_ua_0003,seoprofy_ua,контроль,http://seoprofy.ua:80/blog/optimizaciya-sajtov/vnutrennyaya-perelinkovka-sajta,https://web.archive.org/web/20121223094432id_/http://seoprofy.ua:80/blog/optimizaciya-sajtov/vnutrennyaya-perelinkovka-sajta,0.0,0.0,0.0,,снапшот только по ссылке,нужен доступ к снапшоту
+human_seo_sosnovskij_ru_0001,sosnovskij_ru,контроль,http://sosnovskij.ru:80/adaptivnyj-dizajn-ili-mobilnaya-versiya/,https://web.archive.org/web/20150807084301id_/http://sosnovskij.ru:80/adaptivnyj-dizajn-ili-mobilnaya-versiya/,0.0,0.0,0.0,,снапшот только по ссылке,нужен доступ к снапшоту
+human_seo_sosnovskij_ru_0002,sosnovskij_ru,контроль,http://sosnovskij.ru:80/google-mobile-first-index/,https://web.archive.org/web/20180526113328id_/http://sosnovskij.ru:80/google-mobile-first-index/,0.0155,0.0,0.0,,снапшот только по ссылке,нужен доступ к снапшоту
+human_seo_sosnovskij_ru_0003,sosnovskij_ru,контроль,http://sosnovskij.ru:80/icq-mobilnoe-prilozhenie/,https://web.archive.org/web/20101204150939id_/http://sosnovskij.ru:80/icq-mobilnoe-prilozhenie/,0.2286,0.1714,0.0,,снапшот только по ссылке,нужен доступ к снапшоту
+human_science_spbgu_0001,spbgu,контроль,,,0.0,0.0,0.0,,,источник оригинала не определён
+human_science_spbgu_0002,spbgu,контроль,,,0.0,0.0,0.0,,,источник оригинала не определён
+human_science_spbgu_0003,spbgu,контроль,,,0.0,0.0,0.0,,,источник оригинала не определён
+human_seo_texterra_ru_0001,texterra_ru,контроль,http://texterra.ru:80/blog/10-luchshikh-saytov-s-adaptivnoy-verstkoy.html,https://web.archive.org/web/20140420195047id_/http://texterra.ru:80/blog/10-luchshikh-saytov-s-adaptivnoy-verstkoy.html,0.0,0.0,0.0,,снапшот только по ссылке,нужен доступ к снапшоту
+human_seo_texterra_ru_0002,texterra_ru,контроль,http://texterra.ru:80/blog/9-faktov-kotorye-vy-dolzhny-znat-ob-obnovlenii-google-mobile-friendly.html,https://web.archive.org/web/20150419011133id_/http://texterra.ru:80/blog/9-faktov-kotorye-vy-dolzhny-znat-ob-obnovlenii-google-mobile-friendly.html,0.0,0.0,0.0,,снапшот только по ссылке,нужен доступ к снапшоту
+human_seo_texterra_ru_0003,texterra_ru,контроль,http://texterra.ru:80/blog/9-potryasayushchikh-faktov-o-mobilnom-marketinge.html,https://web.archive.org/web/20140531231337id_/http://texterra.ru:80/blog/9-potryasayushchikh-faktov-o-mobilnom-marketinge.html,0.0,0.0,0.0,,снапшот только по ссылке,нужен доступ к снапшоту
+human_science_urfu_0001,urfu,контроль,,,0.0,0.0,0.0,,,источник оригинала не определён
+human_science_urfu_0002,urfu,контроль,,,0.0,0.0,0.0,,,источник оригинала не определён
+human_science_urfu_0003,urfu,контроль,,,0.0,0.0076,0.0077,,,источник оригинала не определён

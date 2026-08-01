@@ -1,0 +1,73 @@
+{
+  "decision": "инвалидирование процедуры 2 и её downstream",
+  "lifecycle_status": "invalidated",
+  "status": "invalidated_for_substantive_use",
+  "recorded_before_new_metrics": true,
+  "note": "решение принято до запуска нового прогона и до просмотра любых его метрик",
+  "reason": "D04 и D05 в feature-matrix-v5.csv посчитаны по текстам до коррекции извлечения correction-v5.0. Расхождение с профилями prep-v5 у 68 документов, все входят и в train, и в test хотя бы одного из восемнадцати holdout. Оба признака входят в FEATURES_CORE, поэтому дефект затрагивает обучение и оценку процедуры 2 и всё, что от неё зависит",
+  "evidence": {
+    "audit": "07-analysis/corpus-audit-d04-d05.json",
+    "audit_sha256": "c891ffbc3d0a537a8f925ace94da489c49bb980b6afb361e991ab16635f1b820",
+    "amendment": "02-preregistration/amendment-feature-matrix-v5-r2-discourse.md",
+    "amendment_sha256": "ed4e0af5136c03d7d8164f23ce1491beaea389360a5d1a0d183ac911f6834feb",
+    "corrected_artifact": "06-features/feature-matrix-v5-r2.csv",
+    "corrected_artifact_sha256": "ceaf9b6a18a8081ed68ea65ef259bc462e1752ba7ec21419a872ad5c8f01f592"
+  },
+  "scope": {
+    "historical_diagnostics": "разрешено: результаты сохраняются как диагностическая история",
+    "substantive_conclusions": "запрещено: выводы и числа статьи на этих результатах не строятся",
+    "files": "не удаляются и не перезаписываются; прежние манифесты не изменяются"
+  },
+  "invalidated": [
+    {
+      "manifest": "manifests-v2/clf-v2-valid-manifest.json",
+      "role": "P2a: восемнадцать моделей, основной результат",
+      "sha256": "802111d5e65183a61d56dc598f445d04b5ae8bc98cce5944fb4ec1b9120e1580"
+    },
+    {
+      "manifest": "manifests-v2/clf-v2-legacy-manifest.json",
+      "role": "P2a: sensitivity-схема inner CV",
+      "sha256": "4789a99a6844165845dc673999698491c51e70d04d509208e73da1837a558489"
+    },
+    {
+      "manifest": "manifests-v2/fairness-v2-manifest.json",
+      "role": "fairness как downstream P2",
+      "sha256": "57cc61dd5ff10c15904d55980f50a8c19a8885c4b86eaafac123a52432d46328"
+    },
+    {
+      "manifest": "manifests-v2/error-v2-manifest.json",
+      "role": "разбор ошибок как downstream P2",
+      "sha256": "627e8ed219766b126561c9f8fa01d01460530a4c2973b4e91814b27f5242c465"
+    },
+    {
+      "manifest": "manifests-v2/synthesis-v2-manifest.json",
+      "role": "синтез O1 как потребитель P2",
+      "sha256": "00823b3c87a3eb9320faa66a98f1e65382212dca81c5d40ae3017981044286c2"
+    }
+  ],
+  "unaffected": [
+    {
+      "manifest": "manifests-v2/proc1-v2-manifest.json",
+      "reason": "процедура 1: индекс не читает D04 и D05",
+      "sha256": "26ce04238c93a5e84c3bd23c02aee3809fc482b3ecf5e790952dfb2f61c32a41",
+      "lifecycle_status": "current"
+    },
+    {
+      "manifest": "manifests-v2/proc3-v2-manifest.json",
+      "reason": "процедура 3: NLL считается по тексту",
+      "sha256": "466f1a7cdcccf5d3dec9969e77e40814444ef25c8e3d6bdc74c598b571e73d00",
+      "lifecycle_status": "current"
+    },
+    {
+      "manifest": "manifests-v2/proc4-v2-manifest.json",
+      "reason": "процедура 4: судья получает текст",
+      "sha256": "9ae4e31785142feecfe6e06dec296dbd9c27bd4860159ec1d3424b1410babda5",
+      "lifecycle_status": "current"
+    }
+  ],
+  "planned_successor_run_id": "p2-recompute-matrix-v5-r2",
+  "successor_hash": null,
+  "successor_note": "хеш преемника здесь не записывается: результата ещё нет. Связь оформляется отдельной записью после успешного завершения каждой процедуры. Если новый расчёт не состоится, прежний результат остаётся инвалидированным без преемника",
+  "decided_at_utc": "2026-07-31T18:55:05+00:00",
+  "decided_at_moscow": "2026-07-31T21:55:05+03:00"
+}

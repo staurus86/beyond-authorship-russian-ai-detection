@@ -1,0 +1,304 @@
+{
+  "created_at": "2026-07-31T19:12:28+00:00",
+  "series": "v2",
+  "preflight_passed": true,
+  "corpus": {
+    "registry_sha256": "d3cd478ffed7a886004eab8d14494eed687a4a29a112deff7ec80a3ed2cb6fac",
+    "documents": 1882,
+    "prep_v5_manifest_sha256": "b11e84077363fea2e57d7d20f676b839dec8b450bbdf3fc732d782b60f06c7c6",
+    "corrections_sha256": "754126358caf80765c0b6a0c169eff435036341e0d339b69d0c702f560ded77e"
+  },
+  "splits": {
+    "holdout_author_prep-v5.json": "6cea917b6797b7b1bd840aea74a3d1fbb6da02da3da00c104287e14896b086e9",
+    "holdout_genre_analytics_prep-v5.json": "1c4dc4953a5d47403b08496c62fa230faaae37d04bfc64ee2a311785ccb8a4bc",
+    "holdout_genre_commercial_prep-v5.json": "5c1a7627b6e6f9e3adb97dc51bb57b638990d31875cc623972fe8eda2073e862",
+    "holdout_genre_news_prep-v5.json": "3d0f87722d2e281093cc1e489f005a7699303928e4cbf1a9222964a9b0613112",
+    "holdout_genre_prose_prep-v5.json": "744ee3d223aadb555f53dc778177309d1fbdc6d8a427b57da6067cdad395ffb7",
+    "holdout_genre_science_prep-v5.json": "2ebdb3343f90a36e49ecebcdf61aa85a973fa9b9541027bf5a052634375aaab6",
+    "holdout_genre_seo_prep-v5.json": "bf1452991df9b3548b381dcd60a4e78d4f1dbd6f597328c97ea516c462c2c80d",
+    "holdout_genre_translation_prep-v5.json": "bd260aaf72d398f4fe77b3cf8b08638baf34e40dc158ec12fde61fc31e465775",
+    "holdout_model_Anthropic_prep-v5.json": "f83ff2c7b3294521a93b8081b33a68f9fa3ee880419f69b5fda8b33221f7badd",
+    "holdout_model_DeepSeek_prep-v5.json": "e2c0a880a3b36ca0bd681c1c7aec6cbee4c9efc1da2d441193e20331d5df255f",
+    "holdout_model_NVIDIA_prep-v5.json": "46af844ea8ae2c0f12f9b6f40b930d171818d47c9e716d650fd2d4b7110b2699",
+    "holdout_model_OpenAI_prep-v5.json": "d840736e9200be62a9fc0f27195791ec45eb282d643676f57788c8956c97b80f",
+    "holdout_prompt_P1_prep-v5.json": "cf85fbe22ad1e04e05972df91430dd75290648eaf31108f13056932057d33ae7",
+    "holdout_prompt_P2_prep-v5.json": "035f462b64e8d2e2607d71dc422da25bc9ecc25e87fd61d608e2855837667672",
+    "holdout_prompt_P3_prep-v5.json": "025a4907190e989839d662c521ef9563f992abd2ce08f1ccc216cb96c39d60a6",
+    "holdout_source_prep-v5.json": "afef1cdc67d3243ce7ef739ef1e0f5e3959077fd0b2a43b18a2b4f766d338dc8",
+    "holdout_time_prep-v5.json": "f86247badc7ff48991900311c0e7011a00ce03ac03ba82a7668074c04e8ad9bf",
+    "holdout_topic_prep-v5.json": "66651f8903f97f5764ebe381684d88e19acec7c537eb215d79bc8f02c110da9b",
+    "p2a-inner-folds-carried.json": "f3377d62b8abc0ce8a3c5bedd575376e7e06f8b85976f6f78ade2ccfb84e9bfa",
+    "p2a-inner-folds-valid.json": "7d49f357f1306842f446529e6503d6d22bbb04581fde10e6ec9bfed82506180f",
+    "p2b-inner-folds-carried.json": "5dc64ad1b256fbe2c815c9ac716b817bbb2a6d5925cc609acc89e3e7ec4f8998",
+    "p2b-outer-folds-carried.json": "935c4fd02f4a4db4cfd491ef41619f94b6fd1634bfdc2919814612e8938470c6"
+  },
+  "code": {
+    "extract_features.py": "ee9e4c89a02ba1677917a00710837449753e54ced2a057b5e94bac0d4d8549a3",
+    "extract_lexicon.py": "10fcece675710d47afe107bfc5d7c8c8fda4c93954f2fa965c52746942c54e3f",
+    "extract_semantic.py": "66084736bd00023d51849f3be2c4775483191d6cc8ac74a6a20c4a582d92e6ac",
+    "extract_ner.py": "a40e1fac9e76e0afb50ed322bf5d5d31cbffd60d49eb76881e2b7b9577e6c1be",
+    "extract_artifacts.py": "d5a5e22fa32ca39599cde91e0fc39f7bb97a9c04919335147525b110b31a6b0e",
+    "extract_discourse.py": "b9145ad50d48055ab86438a1f4a67d9ea4f6aaf015ed1712cfa5e98f0cf02726",
+    "extract_intertext.py": "4c4032777256c6aba096f53401f386059e8b9d13ffa6b545054c2a438ccd3491",
+    "clf_run.py": "0259913a57bbd1762bb353519ac1af96c756fa6f9c51fdd0e1cecb9ea8c3ae1d",
+    "prep.py": "c3bf16d5935bb941c18777861c4aa7e07e100cc89bb2849c193e7e752a07ea6e",
+    "compute_percentiles.py": "60caab74fbb9f74b41f2911159b18ae6f5a688e242acb2ab0ef8c1c2696791d6",
+    "correct_extraction.py": "1c6404efb0a62bb3ac11954f7ca9ba9d00e0901d0259528320f6f0a13e0110f7",
+    "score_style_index.py": "4953acece66f82f28e9934e18fa2a89a3823b61024c355f88c8997afb7d19fc1",
+    "feature_cache.py": "e4f2ec2a8936f65fa0d814c332e27c5ed9a0cc1680c507000844368f489e1f7e",
+    "build_feature_matrix.py": "0103c67334fdb4fcecc39744309ac14c59af599b43c7b5cf7005d6516d31a517",
+    "extract_m03.py": "336c36014ddc1da4819bc92092a6d7f5f2bd1f60b794c5d889b3faf5d3b6fa7a",
+    "nll_zero_shot.py": "b39ee164233c59d0b83b4b6cea9fbe3133bc59c45435f3d4d213480f0f03ed53",
+    "judge_run.py": "4fd706403dcf430697946cae184a1589685b0d80e521c4d35b261467ab870a4c",
+    "fairness_run.py": "9cddf3094fb3e7931120f65157e3b703afe619e81d0aee2aaa59fd606c29fc95",
+    "error_run.py": "2434c4cdddfe21f5138b499f892a90bdc329a1c437a489eb38a98293b504b9d2",
+    "synthesis_o1.py": "09547b5f269d95d7b5aec07c506e69f95327f1b4c67f8d284134b0afb6524b22"
+  },
+  "percentiles": {
+    "upstream_key": {
+      "rule_version": "percentile-v1.0",
+      "rule": {
+        "value": "normalized_value, при пустом — raw_value",
+        "pool": "значения того же feature_id у документов того же genre, где значение есть",
+        "rank": "число элементов пула строго меньше значения (ties по нижней границе)",
+        "formula": "rank / len(pool)",
+        "format": "%.4f",
+        "missing": "документ без значения перцентиля не получает и в пул не входит"
+      },
+      "prep_version": "prep-v5",
+      "registry_sha256": "d3cd478ffed7a886004eab8d14494eed687a4a29a112deff7ec80a3ed2cb6fac",
+      "features_normalized_sha256": "cc4d7cdbc6e9d45ffdd6a24546c690318acf575d47b695f45cf5f09eea241ee8",
+      "features_normalized_file": "features-normalized-prep-v5.csv",
+      "reference_population_definition": "все документы реестра prep-v5, у которых значение признака есть; пул строится внутри пары feature_id × genre; документы без значения в пул не входят",
+      "reference_set": {
+        "documents": 1882
+      },
+      "created_at": "2026-07-29T12:53:47+00:00"
+    },
+    "artifact_sha256": "fc54372fe6c6bf7bcda91db5b6fc865724741e6985f300ebcb5462c16592a2c1",
+    "regression_report_sha256": "60acea89b43d11c74cfb6753ad3420f61ab59a2e6f125c9b599f9ed1a1e3f7f8"
+  },
+  "environment": {
+    "python": "3.14.0",
+    "platform": "win32",
+    "git_commit": null
+  },
+  "seeds": {
+    "splits": "splits-2026-07-25",
+    "clf": 20260727,
+    "judge": [
+      20260727,
+      20260728,
+      20260729
+    ]
+  },
+  "models": {
+    "judge": {
+      "name": "gemma3:12b-it-qat",
+      "digest": "5d4fa005e7bb5931be8bc35224080a9b316c7e1c069c9481a66a51b607f4252e",
+      "ollama": "0.18.0"
+    },
+    "nll": {
+      "name": "ai-forever/rugpt3large_based_on_gpt2",
+      "revision": "29c569320be2",
+      "device": "cpu/float32"
+    }
+  },
+  "invariants": [
+    {
+      "id": 1,
+      "name": "реестр содержит 1882 документа",
+      "status": "passed",
+      "detail": "в реестре 1882, ожидалось 1882"
+    },
+    {
+      "id": 2,
+      "name": "исключённые 34 не попадают в матрицу",
+      "status": "passed",
+      "detail": "найдено исключённых в матрице: 0"
+    },
+    {
+      "id": 3,
+      "name": "raw и normalized у 1814 неизменённых совпадают",
+      "status": "passed",
+      "detail": "неизменённых 1814, расхождений значений 0"
+    },
+    {
+      "id": 4,
+      "name": "percentile-реализация воспроизводит v4",
+      "status": "passed",
+      "detail": "регрессия на составе v4: 0 расхождений"
+    },
+    {
+      "id": 5,
+      "name": "перцентили v5 посчитаны на новой референсной выборке",
+      "status": "passed",
+      "detail": "документов в референсной выборке 1882, хеш реестра совпадает: True"
+    },
+    {
+      "id": 6,
+      "name": "результаты серии v1 на месте и не перезаписаны",
+      "status": "passed",
+      "detail": "проверено файлов: 6"
+    }
+  ],
+  "policy": "результаты пишутся только в серию v2; файлы v1 не перезаписываются",
+  "stage": "final",
+  "stage_policy": {
+    "artifact_build": "экстракторы, перцентили, сборка матрицы — флаг не требуется",
+    "analysis": "процедуры 1–4, fairness, разбор ошибок, синтез — требуется preflight_passed: true"
+  },
+  "artifacts": {
+    "feature-matrix-v5": "421fc634e69ed20fa9ffac1b965905cb2b2a675d93fb214f1e995cd53706636d",
+    "genre-percentiles-v5": "fc54372fe6c6bf7bcda91db5b6fc865724741e6985f300ebcb5462c16592a2c1",
+    "prep-v5": "b11e84077363fea2e57d7d20f676b839dec8b450bbdf3fc732d782b60f06c7c6",
+    "feature-matrix-v5-r2": {
+      "sha256": "ceaf9b6a18a8081ed68ea65ef259bc462e1752ba7ec21419a872ad5c8f01f592",
+      "note": "исправлены D04 и D05 у 68 документов; прочие значения, пропуски, метаданные и порядок строк не менялись"
+    }
+  },
+  "procedure_profiles": {
+    "proc1": {
+      "artifacts": [
+        "feature-matrix-v5",
+        "genre-percentiles-v5"
+      ],
+      "code": [
+        "score_style_index.py"
+      ]
+    },
+    "proc2": {
+      "artifacts": [
+        "feature-matrix-v5"
+      ],
+      "code": [
+        "clf_run.py"
+      ]
+    },
+    "proc3": {
+      "artifacts": [
+        "prep-v5"
+      ],
+      "code": [
+        "nll_zero_shot.py"
+      ],
+      "models": [
+        "nll"
+      ]
+    },
+    "proc4": {
+      "artifacts": [
+        "prep-v5"
+      ],
+      "code": [
+        "judge_run.py"
+      ],
+      "models": [
+        "judge"
+      ]
+    },
+    "fairness": {
+      "artifacts": [
+        "feature-matrix-v5"
+      ],
+      "code": [
+        "fairness_run.py"
+      ]
+    },
+    "error": {
+      "artifacts": [
+        "feature-matrix-v5",
+        "prep-v5"
+      ],
+      "code": [
+        "error_run.py"
+      ]
+    },
+    "synthesis": {
+      "artifacts": [],
+      "code": [
+        "synthesis_o1.py"
+      ]
+    }
+  },
+  "revision": 8,
+  "supersedes": {
+    "file": "run-manifest-v2-rev7.json",
+    "sha256": "dc07b248cc0f940b42bb91e51d179ac0a78a8c432dda6a9a9e8b050b8b76e151",
+    "reason": "исправлен разбор имени серии: схема вложенного CV и строгий режим подбора C сравниваются с базовым именем, суффикс ревизии матрицы больше не уводит прогон на чужую схему"
+  },
+  "invalidation_decision": {
+    "file": "invalidation-decision-2026-07-31-p2-discourse.json",
+    "sha256": "e31cf1b74f08f443c0a90eb40475cd1af68650a6ee51bdaa3791bc06f232f7b2",
+    "status": "invalidated_for_substantive_use"
+  },
+  "audit": {
+    "file": "corpus-audit-d04-d05.json",
+    "sha256": "c891ffbc3d0a537a8f925ace94da489c49bb980b6afb361e991ab16635f1b820"
+  },
+  "recomputes_invalidated_predecessor": {
+    "series": "clf-v2-valid и clf-v2-legacy",
+    "manifests": [
+      "manifests-v2/clf-v2-valid-manifest.json",
+      "manifests-v2/clf-v2-legacy-manifest.json"
+    ],
+    "decision": "invalidation-decision-2026-07-31-p2-discourse.json",
+    "note": "прежние результаты сохраняются как диагностическая история; связь с преемником оформляется отдельной записью после успешного завершения нового прогона"
+  },
+  "scope_rev7": {
+    "recompute": [
+      "P2a",
+      "P2b",
+      "full",
+      "net",
+      "fairness",
+      "error analysis",
+      "synthesis"
+    ],
+    "unchanged": [
+      "процедура 1",
+      "процедура 3",
+      "процедура 4"
+    ],
+    "splits": "переносятся без перераспределения"
+  },
+  "invalidation_decision_series_name": {
+    "file": "invalidation-decision-2026-07-31-clf-r2-series-name.json",
+    "sha256": "90379ec20d120405d8970ea382bb9c92ef4dbccbcf63b164f0e7ea70f8d53db9",
+    "status": "invalidated_for_substantive_use",
+    "targets": [
+      "clf-v2-valid-r2",
+      "clf-v2-legacy-r2"
+    ]
+  },
+  "synthetic_test": {
+    "file": "09-tools/test_series_revision_synth.py",
+    "sha256": "b5e3270f58fd9b1ba40f94ab66b7b77fa96c519262f45e18369f783f22a75f9f",
+    "checks": 21,
+    "failures": 0,
+    "note": "прогнан до нового расчёта, корпуса не касается"
+  },
+  "scope_rev8": {
+    "recompute": [
+      "P2a",
+      "P2b",
+      "full",
+      "net",
+      "fairness",
+      "error analysis",
+      "synthesis"
+    ],
+    "series": [
+      "clf-v2-valid-r2b",
+      "clf-v2-legacy-r2b"
+    ],
+    "unchanged": [
+      "процедура 1",
+      "процедура 3",
+      "процедура 4",
+      "feature-matrix-v5-r2.csv",
+      "разбиения"
+    ],
+    "note": "файлы серий r2 не перезаписываются: у r2b свои имена"
+  }
+}

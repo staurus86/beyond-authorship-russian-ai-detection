@@ -1,0 +1,190 @@
+{
+  "created_at": "2026-07-29T15:16:17+00:00",
+  "procedure": "judge-v2",
+  "status": "exploratory",
+  "judge": {
+    "model": "gemma3:12b-it-qat",
+    "digest": "5d4fa005e7bb5931be8bc35224080a9b316c7e1c069c9481a6a51b607f4252e2",
+    "size_bytes": 8928675346,
+    "ollama_version": "0.18.0",
+    "quantization_level": "Q4_0",
+    "parameter_size": "12.2B",
+    "family": "gemma3",
+    "capabilities": [
+      "completion",
+      "vision"
+    ],
+    "declared_context_length": 131072,
+    "num_ctx": 16384,
+    "num_predict": 200,
+    "template": "{{- range $i, $_ := .Messages }}\n{{- $last := eq (len (slice $.Messages $i)) 1 }}\n{{- if or (eq .Role \"user\") (eq .Role \"system\") }}<start_of_turn>user\n{{ .Content }}<end_of_turn>\n{{ if $last }}<start_of_turn>model\n{{ end }}\n{{- else if eq .Role \"assistant\" }}<start_of_turn>model\n{{ .Content }}{{ if not $last }}<end_of_turn>\n{{ end }}\n{{- end }}\n{{- end }}\n",
+    "default_parameters": "temperature                    1\ntop_k                          64\ntop_p                          0.95\nstop                           \"<end_of_turn>\"",
+    "longest_document": "human_science_urfu_0019",
+    "longest_document_tokens": 11960,
+    "sampling": {
+      "temperature": 1.0,
+      "top_p": 1.0,
+      "top_k": 64
+    },
+    "seeds": [
+      20260727,
+      20260728,
+      20260729
+    ],
+    "response_schema": {
+      "type": "object",
+      "properties": {
+        "score": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "reason": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "score",
+        "reason"
+      ]
+    },
+    "documents": 1916,
+    "calls": 5748
+  },
+  "prompt_sha256": "3e70655f807d3aa0b8c0ef7dae0eb7be3bed7691d134602ad92b4637e3c35b5d",
+  "inputs": {
+    "prep-v5/manifest.csv": "b11e84077363fea2e57d7d20f676b839dec8b450bbdf3fc732d782b60f06c7c6",
+    "score-v1-pairs.csv": "990f7683ebf95d2ada4a0df059acde4862b25adab42aed9b8118154e3ec72471",
+    "proc4-judge-spec.md": "f4f7218e2b934bf2adb3948f60e78f6bd16d74b47ea45fdba8657a44fc66728e",
+    "judge-v1-raw.jsonl": "204b61ddd988d091096f03c236ac0e888b877230a232dfa08ea2978b0f9403b9"
+  },
+  "code_sha256": "4fd706403dcf430697946cae184a1589685b0d80e521c4d35b261467ab870a4c",
+  "call_statuses": {
+    "ok": 213
+  },
+  "agreement": {
+    "documents_with_three": 1878,
+    "exact_match_share": 0.15708200212992546,
+    "mean_range": 4.778427205100956,
+    "median_range": 3.0,
+    "share_range_over_20": 0.004250797024442083,
+    "icc_2_1": 0.47710843781797124,
+    "icc_documents": 1878
+  },
+  "documents_scored": 1882,
+  "documents_missing": 0,
+  "provenance": {
+    "inherited_from_judge_v1": 1814,
+    "recomputed": 68,
+    "excluded_present_in_v1": 34,
+    "excluded_ids": [
+      "human_news_lenta_0003",
+      "human_news_lenta_0005",
+      "human_news_lenta_0006",
+      "human_news_lenta_0008",
+      "human_news_lenta_0011",
+      "human_news_lenta_0019",
+      "human_news_lenta_0020",
+      "human_news_lenta_0025",
+      "human_news_lenta_0026",
+      "human_news_lenta_0028",
+      "human_news_lenta_0030",
+      "human_news_lenta_0031",
+      "human_news_lenta_0032",
+      "human_news_lenta_0033",
+      "human_news_lenta_0035",
+      "human_news_lenta_0037",
+      "human_news_lenta_0038",
+      "human_news_lenta_0043",
+      "human_news_lenta_0047",
+      "human_news_lenta_0048",
+      "human_news_lenta_0050",
+      "human_news_lenta_0052",
+      "human_news_lenta_0054",
+      "human_news_lenta_0056",
+      "human_news_lenta_0057",
+      "human_news_lenta_0058",
+      "human_news_lenta_0059",
+      "human_news_lenta_0060",
+      "human_seo_drmax_0008",
+      "human_seo_texterra_ru_0013",
+      "human_seo_texterra_ru_0014",
+      "human_seo_texterra_ru_0015",
+      "human_seo_texterra_ru_0016",
+      "human_seo_texterra_ru_0017"
+    ],
+    "sentinel_documents": [
+      "deepseek_pro_b001_P1_r1",
+      "deepseek_pro_b001_P1_r2",
+      "deepseek_pro_b001_P2_r1"
+    ],
+    "sentinel_calls": 9,
+    "sentinel_mismatched": 0,
+    "sentinel_detail": [
+      {
+        "document_id": "deepseek_pro_b001_P1_r1",
+        "seed": 20260727,
+        "inherited": 65,
+        "recomputed": 65,
+        "source": "журнал прогона"
+      },
+      {
+        "document_id": "deepseek_pro_b001_P1_r1",
+        "seed": 20260728,
+        "inherited": 68,
+        "recomputed": 68,
+        "source": "журнал прогона"
+      },
+      {
+        "document_id": "deepseek_pro_b001_P1_r1",
+        "seed": 20260729,
+        "inherited": 65,
+        "recomputed": 65,
+        "source": "журнал прогона"
+      },
+      {
+        "document_id": "deepseek_pro_b001_P1_r2",
+        "seed": 20260727,
+        "inherited": 65,
+        "recomputed": 65,
+        "source": "журнал прогона"
+      },
+      {
+        "document_id": "deepseek_pro_b001_P1_r2",
+        "seed": 20260728,
+        "inherited": 68,
+        "recomputed": 68,
+        "source": "журнал прогона"
+      },
+      {
+        "document_id": "deepseek_pro_b001_P1_r2",
+        "seed": 20260729,
+        "inherited": 65,
+        "recomputed": 65,
+        "source": "журнал прогона"
+      },
+      {
+        "document_id": "deepseek_pro_b001_P2_r1",
+        "seed": 20260727,
+        "inherited": 68,
+        "recomputed": 68,
+        "source": "журнал прогона"
+      },
+      {
+        "document_id": "deepseek_pro_b001_P2_r1",
+        "seed": 20260728,
+        "inherited": 65,
+        "recomputed": 65,
+        "source": "журнал прогона"
+      },
+      {
+        "document_id": "deepseek_pro_b001_P2_r1",
+        "seed": 20260729,
+        "inherited": 68,
+        "recomputed": 68,
+        "source": "журнал прогона"
+      }
+    ],
+    "basis": "профиль prose байт-идентичен prep-v4; шлюз — reuse-gate-v5.md"
+  }
+}

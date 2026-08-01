@@ -1,0 +1,17 @@
+{
+  "manifest": "clf-v2-manifest.json",
+  "manifest_sha256": "6a47501dbc637ef16f15c1c2cb7aea3c5c3ef25560a02ae32c8afa4bede374ce",
+  "execution_status": "completed",
+  "lifecycle_status": "current",
+  "supersedes_record": {
+    "file": "clf-v2-lifecycle.json",
+    "sha256": "fc2f4241ecd470b252d533522fdc9dbb67a4e7f2dc17581ef09dc570f882701e"
+  },
+  "reason": "отмена инвалидации: причина, записанная 31 июля, оказалась ошибочной. Прогон шёл на feature-matrix-v5.csv, где D04 и D05 посчитаны по prep-v5 корректно; дефект был в аудите, который сравнивал их с пересчётом по prep-v4",
+  "evidence": "07-analysis/defect-2026-08-01-d04-d05-wrong-profile.json",
+  "basis": "07-analysis/rollback-decision-2026-08-01-d04-d05.json",
+  "basis_sha256": "78bd2a6629f2093d1766e521f14a6e251827ffaebfd9cc09d81199f73793884e",
+  "note": "прежняя запись не изменяется и не удаляется: она остаётся протоколом того, что было решено 31 июля и на каком основании",
+  "recorded_at_utc": "2026-07-31T21:29:46+00:00",
+  "recorded_at_moscow": "2026-08-01T00:29:46+03:00"
+}

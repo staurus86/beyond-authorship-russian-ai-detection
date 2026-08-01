@@ -1,0 +1,126 @@
+{
+  "gate": "воспроизводимость D04, D05, F04-F06 замороженными экстракторами",
+  "panel_documents": 60,
+  "extractors": {
+    "discourse": "disc-v1",
+    "artifacts": "art-v2"
+  },
+  "profiles": {
+    "D04": "prose",
+    "D05": "prose",
+    "F04": "raw",
+    "F05": "raw",
+    "F06": "raw"
+  },
+  "raw_dir_found": "04-corpus\\derived\\raw-v5",
+  "matrix_coverage": {
+    "D04": {
+      "with_value": 60,
+      "with_missing_reason": 0,
+      "absent_from_matrix": 0
+    },
+    "D05": {
+      "with_value": 60,
+      "with_missing_reason": 0,
+      "absent_from_matrix": 0
+    },
+    "F04": {
+      "with_value": 60,
+      "with_missing_reason": 0,
+      "absent_from_matrix": 0
+    },
+    "F05": {
+      "with_value": 60,
+      "with_missing_reason": 0,
+      "absent_from_matrix": 0
+    },
+    "F06": {
+      "with_value": 60,
+      "with_missing_reason": 0,
+      "absent_from_matrix": 0
+    }
+  },
+  "checked_at_utc": "2026-07-31T18:06:29+00:00",
+  "checked_at_moscow": "2026-07-31T21:06:29+03:00",
+  "recompute": {
+    "D04": {
+      "match": 56,
+      "mismatch": 4,
+      "not_computed": 0,
+      "mismatch_examples": [
+        {
+          "doc": "human_seo_devaka_ru_0004",
+          "recomputed": 9.3985,
+          "matrix": 5.41126
+        },
+        {
+          "doc": "human_seo_drmax_0002",
+          "recomputed": 4.35137,
+          "matrix": 3.9604
+        },
+        {
+          "doc": "human_seo_drmax_su_0001",
+          "recomputed": 1.24224,
+          "matrix": 3.1348
+        },
+        {
+          "doc": "human_seo_labrika_0002",
+          "recomputed": 3.52578,
+          "matrix": 3.55114
+        }
+      ],
+      "not_computed_examples": []
+    },
+    "D05": {
+      "match": 56,
+      "mismatch": 4,
+      "not_computed": 0,
+      "mismatch_examples": [
+        {
+          "doc": "human_seo_devaka_ru_0004",
+          "recomputed": 10.0251,
+          "matrix": 8.65801
+        },
+        {
+          "doc": "human_seo_drmax_0002",
+          "recomputed": 7.6149,
+          "matrix": 6.93069
+        },
+        {
+          "doc": "human_seo_drmax_su_0001",
+          "recomputed": 5.59006,
+          "matrix": 7.83699
+        },
+        {
+          "doc": "human_seo_labrika_0002",
+          "recomputed": 1.76289,
+          "matrix": 1.42045
+        }
+      ],
+      "not_computed_examples": []
+    },
+    "F04": {
+      "match": 60,
+      "mismatch": 0,
+      "not_computed": 0,
+      "mismatch_examples": [],
+      "not_computed_examples": []
+    },
+    "F05": {
+      "match": 60,
+      "mismatch": 0,
+      "not_computed": 0,
+      "mismatch_examples": [],
+      "not_computed_examples": []
+    },
+    "F06": {
+      "match": 60,
+      "mismatch": 0,
+      "not_computed": 0,
+      "mismatch_examples": [],
+      "not_computed_examples": []
+    }
+  },
+  "recompute_verdict": "не воспроизводится",
+  "recomputed_at_utc": "2026-07-31T18:08:21+00:00"
+}

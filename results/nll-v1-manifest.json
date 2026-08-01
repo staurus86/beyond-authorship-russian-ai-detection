@@ -1,0 +1,92 @@
+{
+  "created_at": "2026-07-28T10:01:54+00:00",
+  "procedure": "nll-v1",
+  "status": "exploratory",
+  "seed": 20260727,
+  "model": {
+    "name": "ai-forever/rugpt3large_based_on_gpt2",
+    "revision": "29c569320be2e08f29757898ec3866413725acd7",
+    "device": "cpu",
+    "dtype": "float32",
+    "weights_sha256": "ce2ca7dbc12badb0a610df6f853168d6d9446a3b51e13e8af9186220eacc05cb",
+    "bos_token_id": 1,
+    "tokenizer_adds_bos": false,
+    "torch": "2.12.0+cpu",
+    "transformers": "5.9.0"
+  },
+  "window": 1024,
+  "stride": 512,
+  "inputs": {
+    "prep-v4/manifest.csv": "a250921bf9eba3d0d0ab8d5b3011ca0d9b3c7bff24aa853a3655bd3a766bff76",
+    "score-v1-pairs.csv": "990f7683ebf95d2ada4a0df059acde4862b25adab42aed9b8118154e3ec72471"
+  },
+  "code_sha256": "8fdf33b0b2de233389cfd5f9253722af8dd495de593a3fb24751705872201eb0",
+  "retest": {
+    "documents": 10,
+    "max_abs_delta": 4.4640095309134153e-07,
+    "per_document": [
+      {
+        "document_id": "deepseek_pro_b001_P1_r1",
+        "first": 2.747998,
+        "second": 2.7479984221131764,
+        "delta": 4.221131764126085e-07
+      },
+      {
+        "document_id": "deepseek_pro_b001_P1_r2",
+        "first": 2.799307,
+        "second": 2.799306902795018,
+        "delta": 9.720498228560359e-08
+      },
+      {
+        "document_id": "deepseek_pro_b001_P2_r1",
+        "first": 2.954338,
+        "second": 2.9543382841134176,
+        "delta": 2.841134176811977e-07
+      },
+      {
+        "document_id": "deepseek_pro_b001_P2_r2",
+        "first": 2.684695,
+        "second": 2.684695052722098,
+        "delta": 5.272209779860759e-08
+      },
+      {
+        "document_id": "deepseek_pro_b001_P3_r1",
+        "first": 2.762825,
+        "second": 2.76282470788555,
+        "delta": 2.9211444996235514e-07
+      },
+      {
+        "document_id": "deepseek_pro_b001_P3_r2",
+        "first": 2.833102,
+        "second": 2.833101620765104,
+        "delta": 3.792348959308356e-07
+      },
+      {
+        "document_id": "deepseek_pro_b002_P1_r1",
+        "first": 3.033869,
+        "second": 3.0338687705057548,
+        "delta": 2.2949424538509788e-07
+      },
+      {
+        "document_id": "deepseek_pro_b002_P1_r2",
+        "first": 2.879905,
+        "second": 2.879904553599047,
+        "delta": 4.4640095309134153e-07
+      },
+      {
+        "document_id": "deepseek_pro_b002_P2_r1",
+        "first": 2.826128,
+        "second": 2.826127979455792,
+        "delta": 2.054420811248292e-08
+      },
+      {
+        "document_id": "deepseek_pro_b002_P2_r2",
+        "first": 2.822754,
+        "second": 2.822753845882948,
+        "delta": 1.541170520091839e-07
+      }
+    ]
+  },
+  "documents_scored": 1916,
+  "tokens_scored": 4412370
+}

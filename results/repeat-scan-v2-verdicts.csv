@@ -1,0 +1,18 @@
+document_id,source,genre,repeat_share,max_multiplicity,longest_repeated_block,modal_offset,modal_offset_count,structure_markers,mechanism,preliminary,verdict,reviewed_by,reviewed_at,verdict_note
+human_news_buriy_2014_0014,buriy_2014,news,0.32,2,12,44,12,,блочный повтор с постоянным смещением,confirmed_defect,confirmed_defect,PI,2026-08-01,
+human_news_buriy_2014_0045,buriy_2014,news,0.31746,2,10,23,10,,блочный повтор с постоянным смещением,confirmed_defect,confirmed_defect,PI,2026-08-01,
+human_news_buriy_2014_0040,buriy_2014,news,0.262295,2,8,33,8,,блочный повтор с постоянным смещением,confirmed_defect,confirmed_defect,PI,2026-08-01,
+human_news_buriy_2014_0024,buriy_2014,news,0.235294,2,10,11,5,,блочный повтор с постоянным смещением,confirmed_defect,confirmed_defect,PI,2026-08-01,
+human_seo_madcats_0005,madcats,seo,0.206061,2,18,106,2,,разрозненные повторы,legitimate_source_property,legitimate_source_property,PI,2026-08-01,
+human_news_buriy_2014_0042,buriy_2014,news,0.16129,2,5,50,5,,блочный повтор с постоянным смещением,confirmed_defect,confirmed_defect,PI,2026-08-01,
+human_seo_drmax_0013,drmax,seo,0.157303,2,7,52,5,,блочный повтор с постоянным смещением,confirmed_defect,confirmed_defect,PI,2026-08-01,
+human_seo_devaka_ru_0019,devaka_ru,seo,0.148148,2,1,2,2,,разрозненные повторы,unresolved,unresolved,PI,2026-08-01,
+human_seo_convertmonster_0001,convertmonster,seo,0.137931,4,1,,,,кратность выше двух,confirmed_defect,confirmed_defect,PI,2026-08-01,
+human_science_spbgu_0042,spbgu,science,0.135266,8,9,40,10,References,повторы по обе стороны структурного заголовка,legitimate_source_property,legitimate_source_property,PI,2026-08-01,
+human_seo_devaka_ru_0027,devaka_ru,seo,0.131579,2,10,5,5,,блочный повтор с постоянным смещением,confirmed_defect,confirmed_defect,PI,2026-08-01,
+human_science_spbgu_0062,spbgu,science,0.129213,5,5,33,2,References;Литература,кратность выше двух,legitimate_source_property,legitimate_source_property,PI,2026-08-01,
+human_science_spbgu_0044,spbgu,science,0.117647,2,11,36,6,References,повторы по обе стороны структурного заголовка,legitimate_source_property,legitimate_source_property,PI,2026-08-01,
+human_science_urfu_0039,urfu,science,0.116788,2,3,39,5,,блочный повтор с постоянным смещением,unresolved,unresolved,PI,2026-08-01,
+human_seo_drmax_0024,drmax,seo,0.105634,3,4,5,3,,блочный повтор с постоянным смещением,unresolved,unresolved,PI,2026-08-01,
+human_news_buriy_2014_0048,buriy_2014,news,0.105263,2,4,2,2,,разрозненные повторы,unresolved,confirmed_defect,PI,2026-08-01,"нормализация отделила заголовок от текста, и предложение 0 стало идентично предложению 2; вторая пара [1,3] дословно повторялась уже в сыром файле"
+human_seo_devaka_ru_0021,devaka_ru,seo,0.103448,2,6,7,6,,блочный повтор с постоянным смещением,confirmed_defect,confirmed_defect,PI,2026-08-01,

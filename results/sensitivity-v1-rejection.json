@@ -1,0 +1,60 @@
+{
+  "decision": "s01 отклонено на preflight: в текущую sensitivity-проверку не допускается",
+  "approved_by": "PI, 2026-08-01",
+  "s01_status": "rejected_at_preflight",
+  "transform_id": "s01",
+  "transform_name": "paragraph-preserving truncation without verbatim duplication",
+  "amendment": "02-preregistration/amendment-sensitivity-truncation.md",
+  "scope_registered": "процедура 2, решение PI 2026-08-01",
+  "reason": "нарушение зарегистрированного критерия M01",
+  "criterion_registered": {
+    "source": "amendment-sensitivity-truncation.md §3",
+    "median_delta_z_max": 0.0,
+    "per_document_max_growth_sigma": 0.5,
+    "recorded_before": "написания кода преобразования"
+  },
+  "measured": {
+    "documents": 60,
+    "skipped": 0,
+    "documents_above_0_5_sigma": 10,
+    "max_delta_z": 2.854932,
+    "median_delta_z": 0.007913,
+    "min_delta_z": -0.720669,
+    "corpus_sigma": 0.01450127,
+    "evidence_file": "07-analysis/sensitivity-v1-m01.json",
+    "rows_file": "07-analysis/sensitivity-v1-m01.csv"
+  },
+  "post_hoc_diagnostics": {
+    "note": "диагностика получена после срабатывания шлюза и решения на неё не влияла",
+    "documents_increased": 30,
+    "documents_decreased": 30,
+    "documents_abs_delta_z_above_0_5": 14,
+    "spearman_abs_delta_z_vs_sentences": -0.29,
+    "median_sentences_above_0_5": 41.5,
+    "median_sentences_others": 67.5,
+    "comparison_t11": "у t11 медиана Δz равна +7.86 при росте у всех 60 документов",
+    "mechanism": "M01 — выборочное SD косинусов соседних пар; удаление каждого четвёртого предложения делает соседями новые пары и сокращает их число, поэтому оценка шумит в обе стороны"
+  },
+  "criterion_not_relaxed": {
+    "statement": "порог после просмотра результата не менялся",
+    "rejected_alternative": "перевод критерия на систематический сдвиг (|медиана Δz| ≤ 0.1, доля растущих 40–60%, медиана |Δz| ≤ 0.5)",
+    "why_rejected": "новый порог оказался бы подобран под уже известный результат: на этих данных все три величины заведомо в норме",
+    "kept_as": "предложение для будущего протокола, не для текущей проверки"
+  },
+  "consequences": {
+    "p2_run_on_s01": "не запускался",
+    "sensitivity_results": "отсутствуют",
+    "stress_test_denominator": "10, не менялся",
+    "frozen_values_touched": "нет"
+  },
+  "future_work": {
+    "requires": "новое преобразование S02",
+    "criteria_validation": "критерии проверяются на отдельной development-панели, не на этих 60 документах",
+    "reason": "иначе порог снова подбирается под данные, на которых потом делается вывод"
+  },
+  "publication": "текущая попытка и её отказ публикуются полностью",
+  "limitations_entry": "влияние сокращения длины без сопутствующего изменения распределения M01 проверить не удалось; это не нулевой результат влияния длины, а невыполнимость данной операционализации",
+  "inputs_kept": "04-corpus/derived/sensitivity-v1/s01 — тексты сохранены как след попытки, в расчёты не идут",
+  "decided_at_utc": "2026-08-01T10:35:00+00:00",
+  "decided_at_moscow": "2026-08-01T13:35:00+03:00"
+}

@@ -1,0 +1,43 @@
+{
+  "addendum_to": "invalidation-decision-2026-07-31-p2-discourse.json",
+  "addendum_to_sha256": "e31cf1b74f08f443c0a90eb40475cd1af68650a6ee51bdaa3791bc06f232f7b2",
+  "reason": "независимая проверка вторым агентом нашла потребителей матрицы, не вошедших в исходное решение: stress_run_p2.py читает feature-matrix-v5.csv и включает D04/D05 в FEATURES_FULL, а clf_v2_compare сравнивает две инвалидированные схемы",
+  "lifecycle_status": "invalidated",
+  "status": "invalidated_for_substantive_use",
+  "additional_invalidated": [
+    {
+      "file": "07-analysis/clf-v2-comparison.md",
+      "role": "сравнение схем inner CV: обе стороны сравнения инвалидированы",
+      "sha256": "09eb749400b9fa5a34ee22ce86b39e481a4b28b0ebd3778f2819a51ef7640fcd"
+    },
+    {
+      "file": "07-analysis/stress-r5-attempts/20260731T172928Z/stress-p2a-r5-manifest.json",
+      "role": "стресс-P2: посчитан на матрице до исправления",
+      "sha256": "9eb541c2b152f88b4981115b21ade0c37dde496b6c1df7b85df647030c98b048"
+    },
+    {
+      "file": "07-analysis/stress-r5-attempts/20260731T171217Z/stress-p2a-r5-manifest.json",
+      "role": "стресс-P2 первой recovery-попытки: та же матрица",
+      "sha256": "4f30e41fc912386f9f55f47c66b9408450fa44e6bbc32f900f06cf3b5bcaf116"
+    }
+  ],
+  "also_requires_update": [
+    {
+      "item": "classifier ablation",
+      "why": "строится на результатах P2"
+    },
+    {
+      "item": "числа статьи, где фигурируют P2, fairness, разбор ошибок и синтез",
+      "why": "источник пересчитан"
+    },
+    {
+      "item": "stress-P2 recovery",
+      "why": "запускается только после завершённого P2 на матрице v5-r2"
+    }
+  ],
+  "scope_note": "исходное решение перечисляло процедуру 2 и её downstream; дополнение доводит область до формулировки амендмента, где названы также ablation, числа статьи и стресс-P2",
+  "recorded_before_new_metrics": false,
+  "timing_note": "дополнение записано после прогона clf-v2-valid-r2, но до чтения его метрик и до любых выводов; перечисленные артефакты инвалидируются по происхождению входа, а не по значениям",
+  "decided_at_utc": "2026-07-31T19:03:01+00:00",
+  "decided_at_moscow": "2026-07-31T22:03:01+03:00"
+}

@@ -1,0 +1,137 @@
+{
+  "created_at": "2026-07-29T14:55:02+00:00",
+  "procedure": "nll-v2",
+  "status": "exploratory",
+  "seed": 20260727,
+  "model": {
+    "name": "ai-forever/rugpt3large_based_on_gpt2",
+    "revision": "29c569320be2e08f29757898ec3866413725acd7",
+    "device": "cpu",
+    "dtype": "float32",
+    "weights_sha256": "ce2ca7dbc12badb0a610df6f853168d6d9446a3b51e13e8af9186220eacc05cb",
+    "bos_token_id": 1,
+    "tokenizer_adds_bos": false,
+    "torch": "2.12.0+cpu",
+    "transformers": "5.9.0"
+  },
+  "window": 1024,
+  "stride": 512,
+  "inputs": {
+    "prep-v5/manifest.csv": "b11e84077363fea2e57d7d20f676b839dec8b450bbdf3fc732d782b60f06c7c6",
+    "score-v1-pairs.csv": "990f7683ebf95d2ada4a0df059acde4862b25adab42aed9b8118154e3ec72471",
+    "nll-v1-scores.csv": "910dc72d8042b3cca8f3af82e2671a82afd87859432e99345ca221c642c23297"
+  },
+  "code_sha256": "b39ee164233c59d0b83b4b6cea9fbe3133bc59c45435f3d4d213480f0f03ed53",
+  "retest": {
+    "documents": 10,
+    "max_abs_delta": 4.4640095309134153e-07,
+    "per_document": [
+      {
+        "document_id": "deepseek_pro_b001_P1_r1",
+        "first": 2.747998,
+        "second": 2.7479984221131764,
+        "delta": 4.221131764126085e-07
+      },
+      {
+        "document_id": "deepseek_pro_b001_P1_r2",
+        "first": 2.799307,
+        "second": 2.799306902795018,
+        "delta": 9.720498228560359e-08
+      },
+      {
+        "document_id": "deepseek_pro_b001_P2_r1",
+        "first": 2.954338,
+        "second": 2.9543382841134176,
+        "delta": 2.841134176811977e-07
+      },
+      {
+        "document_id": "deepseek_pro_b001_P2_r2",
+        "first": 2.684695,
+        "second": 2.684695052722098,
+        "delta": 5.272209779860759e-08
+      },
+      {
+        "document_id": "deepseek_pro_b001_P3_r1",
+        "first": 2.762825,
+        "second": 2.76282470788555,
+        "delta": 2.9211444996235514e-07
+      },
+      {
+        "document_id": "deepseek_pro_b001_P3_r2",
+        "first": 2.833102,
+        "second": 2.833101620765104,
+        "delta": 3.792348959308356e-07
+      },
+      {
+        "document_id": "deepseek_pro_b002_P1_r1",
+        "first": 3.033869,
+        "second": 3.0338687705057548,
+        "delta": 2.2949424538509788e-07
+      },
+      {
+        "document_id": "deepseek_pro_b002_P1_r2",
+        "first": 2.879905,
+        "second": 2.879904553599047,
+        "delta": 4.4640095309134153e-07
+      },
+      {
+        "document_id": "deepseek_pro_b002_P2_r1",
+        "first": 2.826128,
+        "second": 2.826127979455792,
+        "delta": 2.054420811248292e-08
+      },
+      {
+        "document_id": "deepseek_pro_b002_P2_r2",
+        "first": 2.822754,
+        "second": 2.822753845882948,
+        "delta": 1.541170520091839e-07
+      }
+    ]
+  },
+  "documents_scored": 1882,
+  "tokens_scored": 4332862,
+  "provenance": {
+    "inherited_from_nll_v1": 1814,
+    "recomputed": 68,
+    "excluded_present_in_v1": 34,
+    "excluded_ids": [
+      "human_news_lenta_0003",
+      "human_news_lenta_0005",
+      "human_news_lenta_0006",
+      "human_news_lenta_0008",
+      "human_news_lenta_0011",
+      "human_news_lenta_0019",
+      "human_news_lenta_0020",
+      "human_news_lenta_0025",
+      "human_news_lenta_0026",
+      "human_news_lenta_0028",
+      "human_news_lenta_0030",
+      "human_news_lenta_0031",
+      "human_news_lenta_0032",
+      "human_news_lenta_0033",
+      "human_news_lenta_0035",
+      "human_news_lenta_0037",
+      "human_news_lenta_0038",
+      "human_news_lenta_0043",
+      "human_news_lenta_0047",
+      "human_news_lenta_0048",
+      "human_news_lenta_0050",
+      "human_news_lenta_0052",
+      "human_news_lenta_0054",
+      "human_news_lenta_0056",
+      "human_news_lenta_0057",
+      "human_news_lenta_0058",
+      "human_news_lenta_0059",
+      "human_news_lenta_0060",
+      "human_seo_drmax_0008",
+      "human_seo_texterra_ru_0013",
+      "human_seo_texterra_ru_0014",
+      "human_seo_texterra_ru_0015",
+      "human_seo_texterra_ru_0016",
+      "human_seo_texterra_ru_0017"
+    ],
+    "sentinel_recomputed": 10,
+    "sentinel_max_abs_delta": 4.4640095309134153e-07,
+    "basis": "профиль prose байт-идентичен prep-v4; шлюз — reuse-gate-v5.md"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "target": "06-features/preprocessing-spec.md",
+  "target_sha256": "b65c672eda07dea7d7e327a962b25d3cb263d58ad44ee15c694c8a2b3c38808d",
+  "target_unchanged": true,
+  "note": "спецификация не редактировалась; поправка внешняя, хеш сохранён прежним",
+  "errata": [
+    {
+      "id": "erratum-2026-08-01-hyphen-joins",
+      "file": "06-features/preprocessing-spec-erratum-2026-08-01.md",
+      "sha256": "6f3da7a39e5a7d3fdbccd517abafe9240439071fe28c3851520461f973e2251d",
+      "section": "§2.28",
+      "type": "документальная поправка, не методологический амендмент",
+      "recorded": "6940, разбивка urfu 3458 / spbgu 3388 / cyberleninka 91",
+      "actual_prep_v5": "6955 у 124 документов, разбивка urfu 3460 / spbgu 3390 / cyberleninka 100 плюс три единичных случая",
+      "source_of_truth": "04-corpus/derived/prep-v5/manifest.csv, сумма колонки hyphen_joins",
+      "cause": "не установлена",
+      "changes": {
+        "rule": "нет",
+        "code": "нет",
+        "profiles": "нет",
+        "sample": "нет",
+        "results": "нет"
+      },
+      "use_in_text": "в Results и Methods используется 6955",
+      "journal": "00-admin/status-2026-08-01.md"
+    }
+  ],
+  "created_at": "2026-08-01T13:40:50+00:00"
+}

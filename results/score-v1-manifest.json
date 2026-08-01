@@ -1,0 +1,97 @@
+{
+  "created_at": "2026-07-27T14:49:38+00:00",
+  "config": {
+    "version": "score-v1",
+    "seed": 20260727,
+    "status": "exploratory operationalized style index",
+    "normalization": "genre_percentile, терцили → 0 / 0.5 / 1",
+    "reference_sample": "жанр документа внутри корпуса prep-v4",
+    "missing_rule": "признак без значения в среднее категории не входит; категория без признаков исключается; веса не перераспределяются",
+    "excluded_features": [
+      "X01",
+      "X02",
+      "X05",
+      "F08",
+      "M03"
+    ],
+    "excluded_categories": {
+      "Morphological": "механизм — сужение разброса, признаки меряют уровень",
+      "POS": "распределение POS-тегов не считалось",
+      "Emotion": "механизм — сужение разброса, признак меряет уровень",
+      "Psycholinguistic": "механизм — сужение разброса, признак меряет уровень",
+      "Knockoff": "требует прогона нейтрального рерайта, Y01 не рассчитан"
+    },
+    "variants": [
+      "common",
+      "format",
+      "common+format",
+      "O1-full",
+      "O1-net"
+    ],
+    "confirmatory": [
+      "O1-full: P3−P1"
+    ],
+    "registered_secondary": [
+      "O1-full: P2−P1"
+    ],
+    "descriptive_only": [
+      "O2",
+      "O3"
+    ],
+    "multiplicity": "Бонферрони внутри confirmatory-семейства O1; описательные O2 и O3 в семейство не входят",
+    "directions": {
+      "L01": "up",
+      "L02": "up",
+      "L03": "up",
+      "L04": "down",
+      "L05": "down",
+      "S09": "up",
+      "M05": "down",
+      "S03": "down",
+      "S04": "down",
+      "S05": "down",
+      "M01": "up",
+      "M02": "up",
+      "R01": "down",
+      "S02": "down",
+      "R04": "down",
+      "C02": "down",
+      "C01": "down",
+      "S01": "up",
+      "F01": "up",
+      "R06": "up",
+      "R07": "up",
+      "P01": "up"
+    },
+    "weights_common": {
+      "Lexical Richness": 0.3,
+      "Information-theoretic": 0.1,
+      "Dependencies": 0.07,
+      "Semantic": 0.04,
+      "Surface": 0.03,
+      "Named Entities": 0.02,
+      "Readability": 0.01
+    },
+    "weights_format": {
+      "Structural Markers": 0.12
+    }
+  },
+  "inputs": {
+    "documents-registry.csv": "b62fb28f13109050b563728e5854f435ce71b9e0192096a276fc988bd3d47e9e",
+    "feature-matrix.csv": "5ab84d2721add25a82f446a7f5155dd9f15c5756f07940ac276934e8edc030da",
+    "scoring-spec.md": "3d5e18c8abd854c5928b5425fbba727084f819deda381066b66f23551d3893af",
+    "construct-coverage.md": "31c26c20898fbd1d22868927f9ec1f42d6d11795e37105cc571a00c8820f6ab9",
+    "design-support-table.md": "9d868a9a66c28d6fcb28682d278f2bac4aef28d6f8ce8bde9ca2fd12db74b745",
+    "preprocessing-spec.md": "b65c672eda07dea7d7e327a962b25d3cb263d58ad44ee15c694c8a2b3c38808d"
+  },
+  "code": {
+    "preflight_score.py": "482c869ad40fb99d26c9b9411abc0b25078ee3c6af877f56ae706800087d2818",
+    "score_style_index.py": "514c1ba45b1848943dc906ac44967a999c0498197baf8711a97f33b43888df8b"
+  },
+  "pairs": {
+    "P3-P1": 359,
+    "P2-P1": 360
+  },
+  "incomplete_pairs": 1,
+  "preflight_passed": true
+}

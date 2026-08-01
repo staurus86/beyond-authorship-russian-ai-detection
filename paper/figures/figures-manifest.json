@@ -1,0 +1,38 @@
+{
+  "series": "figures-v1",
+  "approved": "комплект из шести иллюстраций, решение PI 2026-08-01",
+  "supersedes": "08-paper/figures-list.md — план из девяти иллюстраций по серии v1, не используется: источники указывают на устаревшие файлы",
+  "data_series": "v2",
+  "note": "скрипт только читает и рисует; ни одно число не пересчитывается",
+  "inputs_sha256": {
+    "04-corpus/documents-registry.csv": "d3cd478ffed7a886004eab8d14494eed687a4a29a112deff7ec80a3ed2cb6fac",
+    "07-analysis/synthesis-o1-v2.csv": "e6d91c736e44c9be422803daa635d487ebaa88fc62a43c426e38397b968a1c7f",
+    "07-analysis/clf-v2-p2a-metrics.csv": "e4f3e8252ba58d8aa98f4efd91ecf6320f0705a610d62f3737e6035b4da64c24",
+    "07-analysis/calibration-v1-by-holdout.csv": "5424ac55573ae8334ece7519514b9d9e7e097d0861247f6983bbe6d3318d9ce8",
+    "07-analysis/calibration-v1-manifest.json": "0e95e54f72bb8b98f12e9131725748610ec509e18b3d6de2a9a95320c25984b0",
+    "07-analysis/stress-r5-attempts/20260731T220132Z/stress-p2a-r11-cells.csv": "c6a28430a87cbcf2471ce5aaf5f0f54380ef7b5295c37693eff7682024045243",
+    "07-analysis/stress-r5-attempts/20260731T220132Z/stress-p2a-r11-scores.csv": "9b5880822e225a8b46a75eafcd833adf15be0bce98ce989e2b7adeaf605e72c8",
+    "04-corpus/derived/prep-v5/full/nemotron_b016_P1_r1.txt": "4f979c30d3264022f8e8af4c3844566cb04a67a00c0d6628f9dc377215b1d6db",
+    "04-corpus/derived/stress-v3/t02/full/nemotron_b016_P1_r1.txt": "4f979c30d3264022f8e8af4c3844566cb04a67a00c0d6628f9dc377215b1d6db",
+    "04-corpus/derived/prep-v5/prose/nemotron_b016_P1_r1.txt": "54f8c2ecea44eab8f346b81a2481553aaba481503f6dab40b07863b330ad9ccc",
+    "04-corpus/derived/stress-v3/t02/prose/nemotron_b016_P1_r1.txt": "cb85e240e90eae8fbac96403ebae1b23847a76025d34142590b905bdff9fdb9d"
+  },
+  "outputs_sha256": {
+    "fig-01-design-and-corpus.pdf": "0b0c71908e220e9a95e5cd82aece5f89aa4d051766bfab967c18b1a4de960c27",
+    "fig-01-design-and-corpus.png": "07b543eb4182055531946f7bca7e518be2cbef4fe10c831ef92e5e1166df4fae",
+    "fig-02-o1-four-procedures.pdf": "ea17dea13bd65a2dc6deea2ec122f8b586711bced515dbb53a357d64006fe36f",
+    "fig-02-o1-four-procedures.png": "7a652059bae977a2d4769ac5ea0650ededde8b5695a1caf09f94595721f817a7",
+    "fig-03-classifier-heterogeneity.pdf": "3df883d51b7b2cbb12af890e0fcf781559ae7a45c746975bcb76c0e53cc516fd",
+    "fig-03-classifier-heterogeneity.png": "4a517361b1deac83ba7a993004101c0b599de57d84844923a8d3f10b4b74892a",
+    "fig-04-calibration-and-risk-coverage.pdf": "b59c15f008ed1ce2da8aad2300acf03f266cb4ac15a580e8697f6f36788fa31e",
+    "fig-04-calibration-and-risk-coverage.png": "7a70a1c8ec24d567c124117c19d70b860f948a89d1b6ef26b72b79490556dfb5",
+    "fig-05-stress-ten-transformations.pdf": "65c469ea00429f52316618c298f2aa63489cd1f1ae7a4e8f27c2ce32b6c38cd9",
+    "fig-05-stress-ten-transformations.png": "a94fb3a18a8eff94463e00a1976d1f39459c2fd8133d614acf9c899cf254a678",
+    "fig-06-t02-pipeline-mechanism.pdf": "8c7a498da60f3a88fb2bd593667d2d9eff1129b66d5f6422593ae412d0b27c7d",
+    "fig-06-t02-pipeline-mechanism.png": "656ec25162a7247a005fa60c6f4222f75befdcd9ec2e042a00f847030ec98698"
+  },
+  "code_sha256": {
+    "build_figures.py": "d81c323c05282c99edf96de9c3a78c522460b03f5b50e63bac74c4719db99548"
+  },
+  "created_at": "2026-08-01T16:04:22+00:00"
+}

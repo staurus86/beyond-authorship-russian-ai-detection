@@ -1,0 +1,60 @@
+{
+  "procedure": "P4",
+  "revision": "r5",
+  "kind": "derivation",
+  "status": "completed",
+  "derived_from": "r4",
+  "judge_called": false,
+  "rule": "drop transform_number == 14",
+  "basis": "02-preregistration/amendment-stress-r5-t14-not-executable.md",
+  "counts": {
+    "raw_in": 1980,
+    "raw_out": 1800,
+    "csv_in": 660,
+    "csv_out": 600,
+    "accepted_scores": 1800
+  },
+  "gates": {
+    "cells": {
+      "rows": 600,
+      "with_median": 600,
+      "expected": 600
+    },
+    "calls": {
+      "records": 1800,
+      "accepted": 1800,
+      "expected": 1800
+    },
+    "t14_removed": {
+      "raw": 0,
+      "csv": 0,
+      "dropped_raw": 180,
+      "dropped_csv": 60,
+      "kept_in_r4_raw": 180,
+      "kept_in_r4_csv": 60
+    },
+    "medians": {
+      "recomputed": 600,
+      "mismatched": 0
+    },
+    "written": {
+      "raw": 1800,
+      "csv": 600,
+      "t14_in_outputs": 0,
+      "r4_unchanged": true
+    }
+  },
+  "inputs": {
+    "stress-p4-r4-raw.jsonl": "70913e933b0f55c58784dd30549f4a193bbcdd1205149b5ec246244b91788158",
+    "stress-p4-r4-scores.csv": "6a9e4b7a34612b678d229e0523b566a1e3e3691fa02aebc00ecdec2c553cf65a",
+    "amendment-stress-r5-t14-not-executable.md": "9c2071b85e3ee335452b17bfa083e4f08e53346c3c5ae4c1d17598e5465e44fd",
+    "derive_p4_r5.py": "b005b2c4e6b446bfe74835f911996ee58e57c1d2892817c87734423081f9fa4d",
+    "stress-p4-r4-manifest.json": "f32803972bae57bc298b106b7d831d56cd559b70ed7bc7f536ab1f9e9556cfce"
+  },
+  "outputs": {
+    "stress-p4-r5-raw.jsonl": "3c066f35f410629f7715ec532ae1d8651b8548881cff6a552ae4ce64c0a31340",
+    "stress-p4-r5-scores.csv": "e50d248785e82088639a951ef58f8842135c161b7a31ad13d6c333141c0f52db"
+  },
+  "derived_at_utc": "2026-07-31T11:45:02+00:00",
+  "derived_at_moscow": "2026-07-31T14:45:02+03:00"
+}

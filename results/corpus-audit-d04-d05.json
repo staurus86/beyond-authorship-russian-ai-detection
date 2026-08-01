@@ -1,0 +1,2806 @@
+{
+  "audit": "соответствие D04 и D05 в feature-matrix-v5.csv профилям prep-v5",
+  "extractor": "disc-v1",
+  "parser_revision": "stanza 1.14.0/ru-syntagrus",
+  "prep_version": "prep-v4",
+  "stats": {
+    "checked": 1882,
+    "match": 1814,
+    "mismatch": 68,
+    "no_cache": 0,
+    "no_matrix_value": 0
+  },
+  "mismatch_documents": [
+    {
+      "document_id": "human_seo_alaev_0012",
+      "prose_sha256_current": "eb5d5c19c5cbb58e0fc2a3d3f32c0460b45c9f53f608c281c8f8ba841c9e116a",
+      "features": {
+        "D04": {
+          "matrix": 3.91645,
+          "recomputed": 5.19751,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 16.9713,
+          "recomputed": 13.5135,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "test",
+        "holdout_time_prep-v5": "train",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 16,
+        "test_in": 2,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_alaev_0013",
+      "prose_sha256_current": "59ed8cb17ef6160fc341bf87810e81c111ded5c5565699dfc06207825d9a79f3",
+      "features": {
+        "D04": {
+          "matrix": 5.5371,
+          "recomputed": 4.90677,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 3.32226,
+          "recomputed": 2.94406,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "test",
+        "holdout_time_prep-v5": "train",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 16,
+        "test_in": 2,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_alaev_0019",
+      "prose_sha256_current": "564bc412d023f7e2177ae0ede6bb0280c5fbe002841795b793a807523819a8ed",
+      "features": {
+        "D04": {
+          "matrix": 1.9802,
+          "recomputed": 2.28571,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 3.9604,
+          "recomputed": 3.42857,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "test",
+        "holdout_time_prep-v5": "train",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 16,
+        "test_in": 2,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_devaka_ru_0001",
+      "prose_sha256_current": "3c1af64528c2c775ac06b51f88279ef8aa084e4594b8bd4fc176ddef7eb86722",
+      "features": {
+        "D04": {
+          "matrix": 4.60829,
+          "recomputed": 2.82087,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 4.60829,
+          "recomputed": 5.64175,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "train",
+        "holdout_time_prep-v5": "train",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 17,
+        "test_in": 1,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_devaka_ru_0002",
+      "prose_sha256_current": "08c4fe6fe63573e6460f31594f1cef925f2c52f0bebb732cb4e6ddc63d038d1e",
+      "features": {
+        "D04": {
+          "matrix": 4.85437,
+          "recomputed": 4.88599,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 4.85437,
+          "recomputed": 4.88599,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "train",
+        "holdout_time_prep-v5": "train",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 17,
+        "test_in": 1,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_devaka_ru_0004",
+      "prose_sha256_current": "825594b5f50320282813cd5339c6ec920c8a89dcaaa3301de4f84af01f2bdcf8",
+      "features": {
+        "D04": {
+          "matrix": 5.41126,
+          "recomputed": 9.3985,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 8.65801,
+          "recomputed": 10.0251,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "train",
+        "holdout_time_prep-v5": "train",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 17,
+        "test_in": 1,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_devaka_ru_0005",
+      "prose_sha256_current": "b576a761f54f5488dd612d2615b3e3bbd9643f1ab94a2ea601068f9cbbb6af76",
+      "features": {
+        "D04": {
+          "matrix": 2.01884,
+          "recomputed": 2.0517,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 11.4401,
+          "recomputed": 9.02749,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "train",
+        "holdout_time_prep-v5": "train",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 17,
+        "test_in": 1,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_devaka_ru_0006",
+      "prose_sha256_current": "ba3c30fb48acf96aa2ef277d3d1724e45870b59618e3c7cbead8cdc7c22cf010",
+      "features": {
+        "D04": {
+          "matrix": 4.662,
+          "recomputed": 4.06504,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 2.7195,
+          "recomputed": 0.0,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "train",
+        "holdout_time_prep-v5": "train",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 17,
+        "test_in": 1,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_devaka_ru_0007",
+      "prose_sha256_current": "db4fed3078fd32be1a41d26e59696e041740ec811659af71689b0c7aaefdc95c",
+      "features": {
+        "D04": {
+          "matrix": 4.095,
+          "recomputed": 4.7259,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 6.55201,
+          "recomputed": 6.61626,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "train",
+        "holdout_time_prep-v5": "train",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 17,
+        "test_in": 1,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_devaka_ru_0009",
+      "prose_sha256_current": "f8c7773581cbdea322289203d467d174b33a659e6e99d0dc25fd08ef01d120da",
+      "features": {
+        "D04": {
+          "matrix": 0.681663,
+          "recomputed": 0.838574,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 3.40832,
+          "recomputed": 2.09644,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "train",
+        "holdout_time_prep-v5": "train",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 17,
+        "test_in": 1,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_devaka_ru_0011",
+      "prose_sha256_current": "cdb00bf59377dcda07f7ce3c6c904cd019efe0d01f9604fb80240a2122501a4c",
+      "features": {
+        "D04": {
+          "matrix": 1.47929,
+          "recomputed": 1.0929,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 7.39645,
+          "recomputed": 6.55738,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "train",
+        "holdout_time_prep-v5": "train",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 17,
+        "test_in": 1,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_devaka_ru_0012",
+      "prose_sha256_current": "3b181168cb521970b92127e5b78811d65917337334f7a4022aa241a7f5d160d6",
+      "features": {
+        "D04": {
+          "matrix": 4.44444,
+          "recomputed": 5.2879,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 13.3333,
+          "recomputed": 12.926,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "train",
+        "holdout_time_prep-v5": "train",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 17,
+        "test_in": 1,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_devaka_ru_0013",
+      "prose_sha256_current": "c2058aac5388823f3b0de357f612c6ae1ae6acb7bd3342c2f5c5a9a698be12b7",
+      "features": {
+        "D04": {
+          "matrix": 5.56586,
+          "recomputed": 3.98936,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 12.987,
+          "recomputed": 14.6277,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "train",
+        "holdout_time_prep-v5": "train",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 17,
+        "test_in": 1,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_devaka_ru_0014",
+      "prose_sha256_current": "5cb8386b17f728e44e0fc40578f867b47674713c8ff06122536c540d76e168ca",
+      "features": {
+        "D04": {
+          "matrix": 4.0,
+          "recomputed": 3.61337,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 8.0,
+          "recomputed": 8.13008,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "train",
+        "holdout_time_prep-v5": "train",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 17,
+        "test_in": 1,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_devaka_ru_0017",
+      "prose_sha256_current": "4e81f3c3b9f636f0386434ac2ed9b01d050f606a93f5fb0ae0b265a5521b4e7f",
+      "features": {
+        "D04": {
+          "matrix": 5.78035,
+          "recomputed": 5.25762,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 0.0,
+          "recomputed": 0.0,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "train",
+        "holdout_time_prep-v5": "test",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 16,
+        "test_in": 2,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_devaka_ru_0026",
+      "prose_sha256_current": "85443183ea9c27ff7a3fba0738da290c8ae29c2c9334e4266595b458e7aebac9",
+      "features": {
+        "D04": {
+          "matrix": 6.84211,
+          "recomputed": 6.95088,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 2.10526,
+          "recomputed": 1.85357,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "train",
+        "holdout_time_prep-v5": "train",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 17,
+        "test_in": 1,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_devaka_ru_0033",
+      "prose_sha256_current": "6a7f085736fc70f19b20bf996aa208136049fe7c5e50999a4faae1b885c81c24",
+      "features": {
+        "D04": {
+          "matrix": 1.86047,
+          "recomputed": 1.67645,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 1.86047,
+          "recomputed": 1.67645,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "train",
+        "holdout_time_prep-v5": "train",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 17,
+        "test_in": 1,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_devaka_ru_0035",
+      "prose_sha256_current": "bb4c53558dc20b441fc8eea11486108205cb6671761888f6eb114d6448da12c7",
+      "features": {
+        "D04": {
+          "matrix": 7.12831,
+          "recomputed": 7.38916,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 1.01833,
+          "recomputed": 1.64204,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "train",
+        "holdout_time_prep-v5": "train",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 17,
+        "test_in": 1,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_drmax_0001",
+      "prose_sha256_current": "8fa792276f6eccd8ecfd0f2ca197f1d57c0f9cebd34c74378b2e96e9e5ccd523",
+      "features": {
+        "D04": {
+          "matrix": 1.40449,
+          "recomputed": 1.07411,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 4.21348,
+          "recomputed": 3.22234,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "test",
+        "holdout_time_prep-v5": "train",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 16,
+        "test_in": 2,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_drmax_0002",
+      "prose_sha256_current": "5710c154e0af8ded2a01b852982500982a60ee6dd1fe9586d16f7ea581a2bca3",
+      "features": {
+        "D04": {
+          "matrix": 3.9604,
+          "recomputed": 4.35137,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 6.93069,
+          "recomputed": 7.6149,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "test",
+        "holdout_time_prep-v5": "train",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 16,
+        "test_in": 2,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_drmax_0003",
+      "prose_sha256_current": "91477ae9f0168a5feacc9f13af68eb5eb5994fe9afb5c48c0ad7b54457504386",
+      "features": {
+        "D04": {
+          "matrix": 2.52366,
+          "recomputed": 3.04035,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 8.20189,
+          "recomputed": 6.08071,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "test",
+        "holdout_time_prep-v5": "train",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 16,
+        "test_in": 2,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_drmax_0004",
+      "prose_sha256_current": "c1c9465e203b7b0d4b79372a1659102c7f2080c437694e0054a51baf7fa0ea56",
+      "features": {
+        "D04": {
+          "matrix": 2.53036,
+          "recomputed": 2.30216,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 5.5668,
+          "recomputed": 6.33094,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "test",
+        "holdout_time_prep-v5": "train",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 16,
+        "test_in": 2,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_drmax_0005",
+      "prose_sha256_current": "219364b77e229674b2b6199250abf67a879c4fab12cdbbe1c945ae2a904e8fe5",
+      "features": {
+        "D04": {
+          "matrix": 3.56506,
+          "recomputed": 6.31484,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 1.18835,
+          "recomputed": 4.05954,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "test",
+        "holdout_time_prep-v5": "test",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 15,
+        "test_in": 3,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_drmax_0006",
+      "prose_sha256_current": "b06e5246612c847f35ddde288609f51f2d2d4b2fc63cd1d1c10cbcda0811ae79",
+      "features": {
+        "D04": {
+          "matrix": 4.79042,
+          "recomputed": 4.23601,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 3.99202,
+          "recomputed": 3.32829,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "test",
+        "holdout_time_prep-v5": "test",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 15,
+        "test_in": 3,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_drmax_0007",
+      "prose_sha256_current": "41a9cd6eb38b6aa377d47fcc61c9194dc1ea420eb26b52e85aa98e9976a98ddd",
+      "features": {
+        "D04": {
+          "matrix": 3.20718,
+          "recomputed": 2.87219,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 1.28287,
+          "recomputed": 1.91479,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "test",
+        "holdout_time_prep-v5": "test",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 15,
+        "test_in": 3,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_drmax_0009",
+      "prose_sha256_current": "0adf01df0b5bdfd12805e274643ce0507a88378ea1fa93914f499504a5b02b3e",
+      "features": {
+        "D04": {
+          "matrix": 1.47059,
+          "recomputed": 0.75188,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 2.94118,
+          "recomputed": 3.7594,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "test",
+        "holdout_time_prep-v5": "test",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 15,
+        "test_in": 3,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_drmax_0010",
+      "prose_sha256_current": "7b4d427041e5604d9097b1dfcc6ca35c1e3a0732c428f3339748f0f3a4b4b8aa",
+      "features": {
+        "D04": {
+          "matrix": 5.0077,
+          "recomputed": 3.28371,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 5.77812,
+          "recomputed": 5.47285,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "test",
+        "holdout_time_prep-v5": "test",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 15,
+        "test_in": 3,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_drmax_0011",
+      "prose_sha256_current": "491be33564f030a2cdef0f2c996a3835ba734922fde8caf50a451eb04030c05b",
+      "features": {
+        "D04": {
+          "matrix": 4.86381,
+          "recomputed": 4.62657,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 2.43191,
+          "recomputed": 1.98282,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "test",
+        "holdout_time_prep-v5": "test",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 15,
+        "test_in": 3,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_drmax_0012",
+      "prose_sha256_current": "1a456db1f18a8653edec4a840117539601227774bac2f33b662a3037092aca1f",
+      "features": {
+        "D04": {
+          "matrix": 3.0581,
+          "recomputed": 2.97324,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 2.29358,
+          "recomputed": 3.63396,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "test",
+        "holdout_time_prep-v5": "test",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 15,
+        "test_in": 3,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_drmax_0013",
+      "prose_sha256_current": "6c5bf813d6fb01cc565ffc06679ca24e963aba310eb34b13b130144b78f61750",
+      "features": {
+        "D04": {
+          "matrix": 0.74184,
+          "recomputed": 5.05515,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 3.7092,
+          "recomputed": 3.67647,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "test",
+        "holdout_time_prep-v5": "test",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 15,
+        "test_in": 3,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_drmax_0014",
+      "prose_sha256_current": "3e3068544b3135eec8bb807f986747e81fde459f4d9612b8173f7c160641714c",
+      "features": {
+        "D04": {
+          "matrix": 1.9544,
+          "recomputed": 2.46711,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 5.21173,
+          "recomputed": 4.52303,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "test",
+        "holdout_time_prep-v5": "test",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 15,
+        "test_in": 3,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_drmax_0016",
+      "prose_sha256_current": "be5acc933f4c08772666a4e353c59e302f8a582b1f2111f83eff1107e9915fad",
+      "features": {
+        "D04": {
+          "matrix": 2.25225,
+          "recomputed": 3.20641,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 2.25225,
+          "recomputed": 1.2024,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "test",
+        "holdout_time_prep-v5": "test",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 15,
+        "test_in": 3,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_drmax_0017",
+      "prose_sha256_current": "54c063abe9d39de82c2873cc45b81450d87cebab62f0eb4bf0959990d5bfa73f",
+      "features": {
+        "D04": {
+          "matrix": 1.65289,
+          "recomputed": 2.18914,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 3.71901,
+          "recomputed": 4.5972,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "test",
+        "holdout_time_prep-v5": "test",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 15,
+        "test_in": 3,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_drmax_0018",
+      "prose_sha256_current": "a13ef684334d09ca1dd300f4cba673aefd05d1e4344a0294140720a652452518",
+      "features": {
+        "D04": {
+          "matrix": 3.77618,
+          "recomputed": 2.71672,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 3.0896,
+          "recomputed": 5.92739,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "test",
+        "holdout_time_prep-v5": "test",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 15,
+        "test_in": 3,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_drmax_0019",
+      "prose_sha256_current": "2c39a3114afcbfe1da5ed36b11cc08fee977fa753fc019c49c06d4e24a072c6d",
+      "features": {
+        "D04": {
+          "matrix": 2.28311,
+          "recomputed": 2.33879,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 2.66362,
+          "recomputed": 4.67758,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "test",
+        "holdout_time_prep-v5": "test",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 15,
+        "test_in": 3,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_drmax_0020",
+      "prose_sha256_current": "e19f47a5b8332ff8d30d80f4ee2877588960437fb79e4d11602e5b6e4a7670de",
+      "features": {
+        "D04": {
+          "matrix": 2.69833,
+          "recomputed": 2.1692,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 2.15866,
+          "recomputed": 3.03688,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "test",
+        "holdout_time_prep-v5": "test",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 15,
+        "test_in": 3,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_drmax_0021",
+      "prose_sha256_current": "8767ca12be23329b056bb5e6ffa6aab33992c5a66cb0daeb3fa118704f52145e",
+      "features": {
+        "D04": {
+          "matrix": 2.77008,
+          "recomputed": 2.14316,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 1.38504,
+          "recomputed": 1.2859,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "test",
+        "holdout_time_prep-v5": "test",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 15,
+        "test_in": 3,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_drmax_0025",
+      "prose_sha256_current": "d24f73c0b5e3b8ad92b952a597f6c5e494bff73c86591a69caf71e18ceb02973",
+      "features": {
+        "D04": {
+          "matrix": 2.07814,
+          "recomputed": 1.72473,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 2.49377,
+          "recomputed": 3.10452,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "test",
+        "holdout_time_prep-v5": "test",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 15,
+        "test_in": 3,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_drmax_su_0001",
+      "prose_sha256_current": "282f5936bfc32f24c8f08b814a38e9518f90ff59d74b1b713c889001f9e44d5b",
+      "features": {
+        "D04": {
+          "matrix": 3.1348,
+          "recomputed": 1.24224,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 7.83699,
+          "recomputed": 5.59006,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "train",
+        "holdout_time_prep-v5": "train",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 17,
+        "test_in": 1,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_drmax_su_0002",
+      "prose_sha256_current": "a54521f5cb9eaf576baa47b3109a61db816227bd852c0e328ebe936521e9e1cd",
+      "features": {
+        "D04": {
+          "matrix": 2.07814,
+          "recomputed": 2.88184,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 2.49377,
+          "recomputed": 1.92123,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "train",
+        "holdout_time_prep-v5": "test",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 16,
+        "test_in": 2,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_drmax_su_0003",
+      "prose_sha256_current": "62eacbb37949fe0d4d754024fc970be846f0739b3fb42eee82d40db769bc8b90",
+      "features": {
+        "D04": {
+          "matrix": 1.20919,
+          "recomputed": 0.94162,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 1.20919,
+          "recomputed": 1.88324,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "train",
+        "holdout_time_prep-v5": "test",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 16,
+        "test_in": 2,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_drmax_su_0004",
+      "prose_sha256_current": "1c9d9864bebebc9e7fa8aaa21a849a3b51fb9d057096f52dd4a7a0930f04218b",
+      "features": {
+        "D04": {
+          "matrix": 5.67045,
+          "recomputed": 4.76858,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 1.00067,
+          "recomputed": 1.96353,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "train",
+        "holdout_time_prep-v5": "test",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 16,
+        "test_in": 2,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_drmax_su_0005",
+      "prose_sha256_current": "88d052fbc0974ac173eb853dd251284134cbae3486ddf630cd0340ad2ac041da",
+      "features": {
+        "D04": {
+          "matrix": 4.8852,
+          "recomputed": 4.66356,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 2.4426,
+          "recomputed": 1.99867,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "train",
+        "holdout_time_prep-v5": "test",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 16,
+        "test_in": 2,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_drmax_su_0008",
+      "prose_sha256_current": "10a418e14e39af614a5a0100a7ef470b417ac41d9ba87d494ac49e2b281a103e",
+      "features": {
+        "D04": {
+          "matrix": 4.86131,
+          "recomputed": 4.4186,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 0.857878,
+          "recomputed": 0.930233,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "train",
+        "holdout_time_prep-v5": "test",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 16,
+        "test_in": 2,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_labrika_0001",
+      "prose_sha256_current": "f4366801c447ccabd4c3ae1735aa7ff52c2e1a6cf9f9ea526457c424ce87d01b",
+      "features": {
+        "D04": {
+          "matrix": 10.989,
+          "recomputed": 11.3379,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 0.0,
+          "recomputed": 0.0,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "test",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "train",
+        "holdout_time_prep-v5": "train",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 16,
+        "test_in": 2,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_labrika_0002",
+      "prose_sha256_current": "f6df9e397d4acf81aaf0cca39456e7256e1bfe69986f16cd066e8f434a14fcf8",
+      "features": {
+        "D04": {
+          "matrix": 3.55114,
+          "recomputed": 3.52578,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 1.42045,
+          "recomputed": 1.76289,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "test",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "train",
+        "holdout_time_prep-v5": "train",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 16,
+        "test_in": 2,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_madcats_ru_0007",
+      "prose_sha256_current": "771969324d7debd795ba3c2b1a59e6fd2cc3c8a518d6314826c0923fd82169d9",
+      "features": {
+        "D04": {
+          "matrix": 1.41243,
+          "recomputed": 1.2285,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 2.82486,
+          "recomputed": 2.457,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "test",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "train",
+        "holdout_time_prep-v5": "test",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 15,
+        "test_in": 3,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_seoprofy_ua_0001",
+      "prose_sha256_current": "1a848029904d29dfea4e92edcbfd0f863afd1e1580eeaa4cbd2f2a9ce9b96669",
+      "features": {
+        "D04": {
+          "matrix": 0.888494,
+          "recomputed": 1.07066,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 6.66371,
+          "recomputed": 7.76231,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "train",
+        "holdout_time_prep-v5": "train",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 17,
+        "test_in": 1,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_sosnovskij_0007",
+      "prose_sha256_current": "dae7c1f4f5533f7bbd58346e391c64db6e9e8edb4f3c7b47bec5f7e6ebf13703",
+      "features": {
+        "D04": {
+          "matrix": 5.63204,
+          "recomputed": 2.58065,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 5.63204,
+          "recomputed": 5.16129,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "train",
+        "holdout_time_prep-v5": "train",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 17,
+        "test_in": 1,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_sosnovskij_0011",
+      "prose_sha256_current": "c67ca9f5918ef05a5e7eb1ef2a87317cb073c7a87fb3f86686f74000ea75b736",
+      "features": {
+        "D04": {
+          "matrix": 2.08768,
+          "recomputed": 3.1348,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 5.56715,
+          "recomputed": 2.08986,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "train",
+        "holdout_time_prep-v5": "train",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 17,
+        "test_in": 1,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_sosnovskij_0012",
+      "prose_sha256_current": "fb1ac6ed63884e82bc01ca4f52904fc6b0c8d02be177b467df2161a9d6decb0a",
+      "features": {
+        "D04": {
+          "matrix": 5.31263,
+          "recomputed": 6.61058,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 16.3465,
+          "recomputed": 16.226,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "train",
+        "holdout_time_prep-v5": "train",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 17,
+        "test_in": 1,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_sosnovskij_0015",
+      "prose_sha256_current": "a74aeb10f803eb34cfcbee275802f1732c662710a29ef06911fbbdf970098ec4",
+      "features": {
+        "D04": {
+          "matrix": 0.94518,
+          "recomputed": 1.37174,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 9.4518,
+          "recomputed": 5.48697,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "train",
+        "holdout_time_prep-v5": "train",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 17,
+        "test_in": 1,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_sosnovskij_0016",
+      "prose_sha256_current": "b4fe46799067e1074bf0be4f43ba14294b9b06c2afc0f3fb49e86304bb59e6bf",
+      "features": {
+        "D04": {
+          "matrix": 3.71195,
+          "recomputed": 5.92593,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 15.9614,
+          "recomputed": 20.0,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "train",
+        "holdout_time_prep-v5": "train",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 17,
+        "test_in": 1,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_sosnovskij_0019",
+      "prose_sha256_current": "3179e9d3137997dfe0940fd3adf0d0ecb30afca963feaeea4410fa156c8d935e",
+      "features": {
+        "D04": {
+          "matrix": 4.51722,
+          "recomputed": 6.87876,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 7.90514,
+          "recomputed": 7.73861,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "train",
+        "holdout_time_prep-v5": "train",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 17,
+        "test_in": 1,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_sosnovskij_0021",
+      "prose_sha256_current": "f4e099637de3449ea10427c3a36149e6f961f02c6a227dfa10a54f3888c97369",
+      "features": {
+        "D04": {
+          "matrix": 3.20307,
+          "recomputed": 2.67738,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 7.68738,
+          "recomputed": 6.69344,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "train",
+        "holdout_time_prep-v5": "train",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 17,
+        "test_in": 1,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_sosnovskij_0022",
+      "prose_sha256_current": "0cf982a7f94c02193bee1ab82ce5ae36302c0bb35a468b8bf28029f25d1b7c4c",
+      "features": {
+        "D04": {
+          "matrix": 4.96689,
+          "recomputed": 6.10998,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 4.13907,
+          "recomputed": 3.05499,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "train",
+        "holdout_time_prep-v5": "train",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 17,
+        "test_in": 1,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_sosnovskij_0025",
+      "prose_sha256_current": "bdd08317c699ddad13e3fc767d4ba620516217380cd829d2e8323ff611283469",
+      "features": {
+        "D04": {
+          "matrix": 4.82196,
+          "recomputed": 6.32467,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 7.04748,
+          "recomputed": 2.10822,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "train",
+        "holdout_time_prep-v5": "train",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 17,
+        "test_in": 1,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_sosnovskij_0028",
+      "prose_sha256_current": "5167c04b163b40f82c7c602723ec4ac14fac6c04f72e8a5bf55ea915d511b60d",
+      "features": {
+        "D04": {
+          "matrix": 7.20906,
+          "recomputed": 7.99017,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 3.0896,
+          "recomputed": 0.614628,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "train",
+        "holdout_time_prep-v5": "train",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 17,
+        "test_in": 1,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_sosnovskij_0029",
+      "prose_sha256_current": "72b9c4dbb21eb709112a64df55ca96d80e14e147727c47ab75df946d42693493",
+      "features": {
+        "D04": {
+          "matrix": 2.92887,
+          "recomputed": 3.37458,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 15.8996,
+          "recomputed": 16.3105,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "train",
+        "holdout_time_prep-v5": "train",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 17,
+        "test_in": 1,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_sosnovskij_0030",
+      "prose_sha256_current": "0fde2c22811e5d653041ce808043ffff6fcd4dd4ef18d3ac5ba503dd202c75a5",
+      "features": {
+        "D04": {
+          "matrix": 1.09111,
+          "recomputed": 0.77101,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 4.36443,
+          "recomputed": 3.85505,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "train",
+        "holdout_time_prep-v5": "train",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 17,
+        "test_in": 1,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_sosnovskij_0033",
+      "prose_sha256_current": "5ffe0868bc85295574db77ad98151505ee66e0dea044558a4f3ec082ae1d96c7",
+      "features": {
+        "D04": {
+          "matrix": 1.52827,
+          "recomputed": 2.25734,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 9.16964,
+          "recomputed": 4.51467,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "train",
+        "holdout_time_prep-v5": "train",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 17,
+        "test_in": 1,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_sosnovskij_0034",
+      "prose_sha256_current": "216110bf03ec2c889f9ee85b2365cdb2d82abb8931daa595e6535dd9096cc905",
+      "features": {
+        "D04": {
+          "matrix": 3.03424,
+          "recomputed": 4.88281,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 11.7035,
+          "recomputed": 4.88281,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "train",
+        "holdout_time_prep-v5": "train",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 17,
+        "test_in": 1,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_sosnovskij_0035",
+      "prose_sha256_current": "75d27bc68fa93e411952933e215e9a3a525e61ef608323ef9c8d985502ec75fc",
+      "features": {
+        "D04": {
+          "matrix": 1.51172,
+          "recomputed": 2.28833,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 9.07029,
+          "recomputed": 1.14416,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "train",
+        "holdout_time_prep-v5": "train",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 17,
+        "test_in": 1,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_sosnovskij_0036",
+      "prose_sha256_current": "eb081d04c4011b6bd893e0f1090884f5f40ebf92d5755f5fcaedde3fc041dca8",
+      "features": {
+        "D04": {
+          "matrix": 4.43951,
+          "recomputed": 5.70125,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 11.0988,
+          "recomputed": 3.42075,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "train",
+        "holdout_time_prep-v5": "train",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 17,
+        "test_in": 1,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_sosnovskij_0037",
+      "prose_sha256_current": "d64a921c40e3df1e24c8f2ae23e0aaf15b5ad0cd620985ea0523abb69efb52c4",
+      "features": {
+        "D04": {
+          "matrix": 6.87467,
+          "recomputed": 6.68577,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 5.81703,
+          "recomputed": 1.91022,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "train",
+        "holdout_time_prep-v5": "train",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 17,
+        "test_in": 1,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_sosnovskij_0039",
+      "prose_sha256_current": "0100b4489b57de0ad4e5f171b5028b7148425458f522635b9a14aa0bd8b85dd6",
+      "features": {
+        "D04": {
+          "matrix": 4.42478,
+          "recomputed": 5.17063,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 5.16224,
+          "recomputed": 0.0,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "train",
+        "holdout_time_prep-v5": "train",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 17,
+        "test_in": 1,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_sosnovskij_ru_0003",
+      "prose_sha256_current": "36e275e9f4c91be356f68190c5485f442ed19d26d358c6a1a3ad5ca58893fa8e",
+      "features": {
+        "D04": {
+          "matrix": 6.99301,
+          "recomputed": 8.73362,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 10.4895,
+          "recomputed": 13.1004,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "train",
+        "holdout_time_prep-v5": "train",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 17,
+        "test_in": 1,
+        "outside": 0
+      }
+    },
+    {
+      "document_id": "human_seo_sosnovskij_ru_0005",
+      "prose_sha256_current": "1acfccf1ac952c03ab41df0b373448e70d53903d4bd1814dceaf1e9c872a03f5",
+      "features": {
+        "D04": {
+          "matrix": 3.62694,
+          "recomputed": 4.01606,
+          "missing_reason": ""
+        },
+        "D05": {
+          "matrix": 13.9896,
+          "recomputed": 14.7256,
+          "missing_reason": ""
+        }
+      },
+      "holdout_roles": {
+        "holdout_author_prep-v5": "train",
+        "holdout_genre_analytics_prep-v5": "train",
+        "holdout_genre_commercial_prep-v5": "train",
+        "holdout_genre_news_prep-v5": "train",
+        "holdout_genre_prose_prep-v5": "train",
+        "holdout_genre_science_prep-v5": "train",
+        "holdout_genre_seo_prep-v5": "test",
+        "holdout_genre_translation_prep-v5": "train",
+        "holdout_model_Anthropic_prep-v5": "train",
+        "holdout_model_DeepSeek_prep-v5": "train",
+        "holdout_model_NVIDIA_prep-v5": "train",
+        "holdout_model_OpenAI_prep-v5": "train",
+        "holdout_prompt_P1_prep-v5": "train",
+        "holdout_prompt_P2_prep-v5": "train",
+        "holdout_prompt_P3_prep-v5": "train",
+        "holdout_source_prep-v5": "train",
+        "holdout_time_prep-v5": "test",
+        "holdout_topic_prep-v5": "train"
+      },
+      "role_summary": {
+        "train_in": 16,
+        "test_in": 2,
+        "outside": 0
+      }
+    }
+  ],
+  "note": "метрики моделей не читались; аудит проверяет входы",
+  "checked_at_utc": "2026-07-31T18:18:34+00:00",
+  "checked_at_moscow": "2026-07-31T21:18:34+03:00"
+}

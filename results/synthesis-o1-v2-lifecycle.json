@@ -1,0 +1,14 @@
+{
+  "manifest": "synthesis-o1-v2-manifest.json",
+  "manifest_sha256": "e48a02fed857db025d2535ba561c138d5b781d4b6f4d20f5e5b859263927a306",
+  "execution_status": null,
+  "lifecycle_status": "invalidated",
+  "reason": "вклад процедуры 2 посчитан на матрице до исправления; четыре из шестнадцати оценок изменились",
+  "reusable_scope": "",
+  "basis": "07-analysis/invalidation-decision-2026-07-31-p2-discourse.json",
+  "basis_sha256": "e31cf1b74f08f443c0a90eb40475cd1af68650a6ee51bdaa3791bc06f232f7b2",
+  "recorded_at_utc": "2026-07-31T20:05:24+00:00",
+  "recorded_at_moscow": "2026-07-31T23:05:24+03:00",
+  "superseded_by": "synthesis-o1-v2r3-manifest.json",
+  "superseded_by_sha256": "e0d6436a1eda03fdeaa206cc6350a529085141fa7266c5ad143767172bf8e5b0"
+}

@@ -1,0 +1,46 @@
+{
+  "series": "instability-v1",
+  "status": "exploratory",
+  "spec": "07-analysis/instability-v1-spec.md",
+  "rule": "сортировка по flip_rate убыв., max_abs_delta убыв., document_id возр., transform_number возр.; первые 30",
+  "source_attempt": "20260731T220132Z",
+  "procedure_revision": "r11",
+  "n_cases": 30,
+  "boundary_flip_rate": 0.75,
+  "documents": 28,
+  "by_transform": {
+    "t02": 1,
+    "t04": 2,
+    "t05": 1,
+    "t11": 26
+  },
+  "by_origin": {
+    "A": 26,
+    "H": 4
+  },
+  "length_tertile_bounds": {
+    "low": 1378,
+    "high": 1721
+  },
+  "checks": {
+    "cells_read": 600,
+    "all_cases_have_flip": true,
+    "all_cases_have_flipped_splits": true
+  },
+  "inputs_sha256": {
+    "stress-p2a-r11-cells.csv": "c6a28430a87cbcf2471ce5aaf5f0f54380ef7b5295c37693eff7682024045243",
+    "stress-p2a-r11-scores.csv": "9b5880822e225a8b46a75eafcd833adf15be0bce98ce989e2b7adeaf605e72c8",
+    "stress-p2a-r11-features.csv": "8a46de346bf9e1cc53812c702648af613854b9efe1e41f2d8af8d1f25d752874",
+    "stress-panel-v1.csv": "39d96e19c6cbf291d4a8940f00a9915e55be5a0dee2ddc979fbcc676b231efce",
+    "feature-matrix-v5.csv": "421fc634e69ed20fa9ffac1b965905cb2b2a675d93fb214f1e995cd53706636d"
+  },
+  "code_sha256": {
+    "select_instability_cases.py": "257b3cdf36b7cbd4e35eb5db7b8dd5a6af027168acdc0cb6bbcceac60848ac0b",
+    "stress_transforms.py": "d62f65605583e74eb74a65263a34def50f663be62b0907ab40eefea5665ffb90"
+  },
+  "outputs": {
+    "cases_csv": "instability-v1-cases.csv",
+    "cases_md": "instability-v1-cases.md"
+  },
+  "created_at": "2026-08-01T09:06:53+00:00"
+}

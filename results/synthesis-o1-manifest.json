@@ -1,0 +1,38 @@
+{
+  "created_at": "2026-07-28T19:10:29+00:00",
+  "rule": "procedures-2-4-registration.md §4",
+  "scale_convention": {
+    "proc1_common": {
+      "direction": "as_is",
+      "note": "индекс уже растёт с AI-подобием"
+    },
+    "proc1_format": {
+      "direction": "as_is",
+      "note": "то же"
+    },
+    "p2a_score": {
+      "direction": "as_is",
+      "note": "вероятность класса A"
+    },
+    "p2b_score": {
+      "direction": "as_is",
+      "note": "вероятность класса A"
+    },
+    "proc3_nll": {
+      "direction": "invert",
+      "note": "низкий NLL = лучше предсказуем = более AI-подобно; при синтезе знак обращается"
+    },
+    "proc4_judge": {
+      "direction": "as_is",
+      "note": "шкала рубрики растёт с выраженностью"
+    }
+  },
+  "inputs": {
+    "score-v1-o1-contrasts.csv": "cf210b7fb6b363d37b0b186d4da9c9746b0a4846c9cb1b9906443697034d6393",
+    "clf-v1-p2b-o1-contrasts.csv": "967b4003d416371ffa3e17495da93049a5fc832f2627e126c38b06527d03cd0e",
+    "nll-v1-o1-contrasts.csv": "79fe65bb2f4c108ddbe31dc83080c6bb0309d4152b011c3f54d373e3a30ec278",
+    "judge-v1-o1-contrasts.csv": "1cae5323ee8bc2a932364a87b7f0294f142ce5619464d00466ad3fe1232cfe5c"
+  },
+  "not_finished": [],
+  "code_sha256": "3a223516c9c5cf422edcb538415624f3423eb5757ff2ab90d8cd090979d5b50c"
+}

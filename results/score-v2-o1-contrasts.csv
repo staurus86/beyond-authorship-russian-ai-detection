@@ -1,0 +1,5 @@
+variant,contrast,status,n_pairs,dropped_pairs,mean_diff,ci_low,ci_high,p_bootstrap,alpha,significant_at_alpha
+O1-full,P3-P1,confirmatory,359,0,-1.7655,-2.6639,-0.8773,0.0004,0.0250,True
+O1-full,P2-P1,зарегистрированный дополнительный,360,0,3.2812,2.0186,4.6068,0.0004,0.0250,True
+O1-net,P3-P1,sensitivity,359,0,2.0264,0.8953,3.1429,0.0016,0.0250,False
+O1-net,P2-P1,sensitivity,360,0,-1.6860,-3.2913,-0.0343,0.0416,0.0250,False

@@ -1,0 +1,14 @@
+{
+  "manifest": "error-v2-manifest.json",
+  "manifest_sha256": "db6007d701c4bc36915007848fbdafa337a72484a8e2817764d436de6c879420",
+  "execution_status": "exploratory",
+  "lifecycle_status": "invalidated",
+  "reason": "карточки отбирались по предсказаниям процедуры 2 на матрице до исправления",
+  "reusable_scope": "",
+  "basis": "07-analysis/invalidation-decision-2026-07-31-p2-discourse.json",
+  "basis_sha256": "e31cf1b74f08f443c0a90eb40475cd1af68650a6ee51bdaa3791bc06f232f7b2",
+  "recorded_at_utc": "2026-07-31T20:05:24+00:00",
+  "recorded_at_moscow": "2026-07-31T23:05:24+03:00",
+  "superseded_by": "error-v2r3-manifest.json",
+  "superseded_by_sha256": "2cbbf535cebee5035c0f2882712d873ae562489fe6cdf6ab9ad38af5970a4ee4"
+}

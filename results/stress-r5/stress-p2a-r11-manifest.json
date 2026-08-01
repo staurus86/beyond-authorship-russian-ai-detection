@@ -1,0 +1,223 @@
+{
+  "created_at": "2026-07-31T22:01:44+00:00",
+  "procedure": "P2a-stress",
+  "series": "clf-v2-valid",
+  "status": "completed",
+  "gate_detail": "completed: 4640 строк, 464 пар × 10 преобразований, 0 лишних сочетаний, max|Δ| = 0.00e+00, 1471 applied_no_change в допуске, 600 ячеек → 60 документов",
+  "gate_checks": {
+    "not_executable_left": {
+      "rows": 0,
+      "cells": 0,
+      "dropped": [
+        6,
+        7,
+        8,
+        9,
+        12,
+        14
+      ]
+    },
+    "holdouts": {
+      "got": 18,
+      "expected": 18,
+      "missing": [],
+      "unexpected": []
+    },
+    "rows": {
+      "got": 4640,
+      "expected": 4640
+    },
+    "pairs": {
+      "expected": 464,
+      "with_all_transforms": 464,
+      "incomplete": 0,
+      "missing": 0
+    },
+    "extra_pairs": {
+      "count": 0,
+      "examples": []
+    },
+    "verification": {
+      "max_abs_diff": 0.0,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    "applied_no_change": {
+      "rows": 1471,
+      "out_of_tolerance": 258,
+      "tolerance": 1e-08,
+      "blocking": false,
+      "note": "prose совпал; full и счётчики могли измениться"
+    },
+    "input_unchanged_features": {
+      "mismatched_rows": 0
+    },
+    "input_unchanged": {
+      "rows": 1275,
+      "out_of_tolerance": 0,
+      "tolerance": 1e-08,
+      "blocking": true
+    },
+    "cells": {
+      "got": 600,
+      "expected": 600
+    },
+    "documents": {
+      "got": 60,
+      "expected": 60
+    }
+  },
+  "registration": {
+    "amendment": "02-preregistration/amendment-p2-stress-units.md",
+    "amendment_sha256": "3717cd12987bdb2461397a72bc677a9e09ae6e8f45bfe6b3bf60e496074dec78",
+    "hash_file": "07-analysis/p2-stress-units.sha256.md",
+    "decision_status": "prospective protocol clarification based on frozen split audit",
+    "note": "расхождение с прежним допущением о 660 строках обнаружено аудитом замороженных разбиений до получения результатов P2; correction note — analysis-closure.md §6.2, прежняя запись сохранена"
+  },
+  "aggregation": {
+    "rule": "amendment-p2-stress-units.md §3",
+    "delta_threshold": 0.05,
+    "threshold_scale": "вероятность, не шкала 0–100",
+    "steps": [
+      "1. mean_delta_prob = mean(delta_prob по eligible holdout) для каждой ячейки документ × преобразование",
+      "2. instability_rate = mean(|delta_prob| > 0.05 по eligible holdout)",
+      "3. flip_rate = mean(decision_changed по eligible holdout)",
+      "4. свёртка по 60 документам с равным весом каждого",
+      "5. таблица по каждому holdout отдельно; интервалы — бутстрап с кластеризацией по document_id"
+    ],
+    "files": {
+      "cells": "stress-p2a-r11-cells.csv",
+      "documents": "stress-p2a-r11-by-document.csv",
+      "by_holdout": "stress-p2a-r11-by-holdout.csv"
+    },
+    "n_cells": 600,
+    "n_documents": 60,
+    "n_holdouts": 18,
+    "why": "усреднение внутри ячейки снимает разницу в числе моделей: подгруппа human_hard_rusltc_* с 18 моделями не получает восемнадцатикратный вес против документа с одной моделью"
+  },
+  "units_of_analysis": {
+    "documents": 60,
+    "primary_cells": 600,
+    "document_holdout_pairs": 464,
+    "technical_rows": 4640,
+    "transformation_denominator": 10,
+    "independence_note": "технические строки независимыми наблюдениями не считаются; единица наблюдения — документ"
+  },
+  "panel": "stress-panel-v1.csv",
+  "documents": 60,
+  "transformations": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    10,
+    11,
+    13,
+    15,
+    16
+  ],
+  "rows": 4640,
+  "rows_ok": 4640,
+  "rows_expected": 4640,
+  "classifier": {
+    "model": "LogisticRegression",
+    "features": [
+      "L01",
+      "L02",
+      "L04",
+      "L05",
+      "S01",
+      "S02",
+      "S03",
+      "S06",
+      "S08",
+      "R01",
+      "M01",
+      "D04",
+      "D05",
+      "C01",
+      "C02",
+      "F04",
+      "F05",
+      "F06",
+      "F01",
+      "R06",
+      "R07",
+      "P01"
+    ],
+    "n_features": 22,
+    "estimand": "full",
+    "penalty": "l2",
+    "class_weight": "balanced",
+    "random_state": 20260727,
+    "c_grid": [
+      0.01,
+      0.1,
+      1.0,
+      10.0
+    ],
+    "inner_selection_metric": "ROC AUC",
+    "inner_fold_source": "p2a-inner-folds-valid.json",
+    "n_holdouts": 18,
+    "n_baseline_cells": 12112,
+    "note": "baseline = P(AI) из holdout-модели clf-v2-valid, для которой оригинал документа был в test-наборе; модель обучена на тех же train-ID, carried inner folds, выбранном C, scaler, признаках и solver, что в clf-v2-valid"
+  },
+  "verification": {
+    "method": "полный второй прогон по всем 18 holdout",
+    "max_abs_diff": 0.0,
+    "tolerance": 1e-08,
+    "binary_mismatches": 0,
+    "passed": true,
+    "covers": "held-out P(AI) по всем holdout, бинарные решения",
+    "gate": "жёсткий: при провале манифест получает status=blocked, reason=frozen_model_not_reproducible, stress-p2a-scores.csv не создаётся, код возврата 1"
+  },
+  "eligible_holdouts": {
+    "audit_file": "stress-p2a-r11-eligible-holdouts.csv",
+    "sum_eligible_split_count": 464,
+    "expected_rows": 4640,
+    "note": "holdout-разбиения диагностические и пересекаются по осям; панельный документ входит в test от одной до 18 моделей (18 документов human_hard_rusltc_* никогда не в train). Каждый преобразованный вариант оценён ВСЕМИ соответствующими моделями; произвольный выбор одного split_name запрещён"
+  },
+  "threshold": "not applicable",
+  "threshold_note": "analysis-closure.md §6.1: порог 5.0 пункта к P2 не применяется — шкала вероятности. Порог 0.05 для instability_rate и flip_rate задан амендментом §3 до расчёта",
+  "outputs": {
+    "eligible_audit": "stress-p2a-r11-eligible-holdouts.csv",
+    "baseline": "stress-p2a-r11-baseline-scores.csv",
+    "technical_rows": "stress-p2a-r11-scores.csv",
+    "cells": "stress-p2a-r11-cells.csv",
+    "by_document": "stress-p2a-r11-by-document.csv",
+    "by_holdout": "stress-p2a-r11-by-holdout.csv"
+  },
+  "execution_inputs": {
+    "runtime_snapshot_sha256": "55f07e3c0a74ddb8c3334c1f6f31bc9a89aa79c18c5c2889102bc6b5406b8bcc",
+    "execution_inputs_sha256": "52646087ecd38cd974435ec60ddb6ee96663e13fef6866d52209da1a3e0e2919",
+    "matrix_sha256": "421fc634e69ed20fa9ffac1b965905cb2b2a675d93fb214f1e995cd53706636d"
+  },
+  "inputs": {
+    "stress-panel-v1.csv": "39d96e19c6cbf291d4a8940f00a9915e55be5a0dee2ddc979fbcc676b231efce",
+    "feature-matrix-v5.csv": "421fc634e69ed20fa9ffac1b965905cb2b2a675d93fb214f1e995cd53706636d",
+    "stress-p2a-features.csv": "8a46de346bf9e1cc53812c702648af613854b9efe1e41f2d8af8d1f25d752874",
+    "p2a-inner-folds-valid.json": "7d49f357f1306842f446529e6503d6d22bbb04581fde10e6ec9bfed82506180f"
+  },
+  "splits": {
+    "holdout_author_prep-v5.json": "6cea917b6797b7b1bd840aea74a3d1fbb6da02da3da00c104287e14896b086e9",
+    "holdout_genre_analytics_prep-v5.json": "1c4dc4953a5d47403b08496c62fa230faaae37d04bfc64ee2a311785ccb8a4bc",
+    "holdout_genre_commercial_prep-v5.json": "5c1a7627b6e6f9e3adb97dc51bb57b638990d31875cc623972fe8eda2073e862",
+    "holdout_genre_news_prep-v5.json": "3d0f87722d2e281093cc1e489f005a7699303928e4cbf1a9222964a9b0613112",
+    "holdout_genre_prose_prep-v5.json": "744ee3d223aadb555f53dc778177309d1fbdc6d8a427b57da6067cdad395ffb7",
+    "holdout_genre_science_prep-v5.json": "2ebdb3343f90a36e49ecebcdf61aa85a973fa9b9541027bf5a052634375aaab6",
+    "holdout_genre_seo_prep-v5.json": "bf1452991df9b3548b381dcd60a4e78d4f1dbd6f597328c97ea516c462c2c80d",
+    "holdout_genre_translation_prep-v5.json": "bd260aaf72d398f4fe77b3cf8b08638baf34e40dc158ec12fde61fc31e465775",
+    "holdout_model_Anthropic_prep-v5.json": "f83ff2c7b3294521a93b8081b33a68f9fa3ee880419f69b5fda8b33221f7badd",
+    "holdout_model_DeepSeek_prep-v5.json": "e2c0a880a3b36ca0bd681c1c7aec6cbee4c9efc1da2d441193e20331d5df255f",
+    "holdout_model_NVIDIA_prep-v5.json": "46af844ea8ae2c0f12f9b6f40b930d171818d47c9e716d650fd2d4b7110b2699",
+    "holdout_model_OpenAI_prep-v5.json": "d840736e9200be62a9fc0f27195791ec45eb282d643676f57788c8956c97b80f",
+    "holdout_prompt_P1_prep-v5.json": "cf85fbe22ad1e04e05972df91430dd75290648eaf31108f13056932057d33ae7",
+    "holdout_prompt_P2_prep-v5.json": "035f462b64e8d2e2607d71dc422da25bc9ecc25e87fd61d608e2855837667672",
+    "holdout_prompt_P3_prep-v5.json": "025a4907190e989839d662c521ef9563f992abd2ce08f1ccc216cb96c39d60a6",
+    "holdout_source_prep-v5.json": "afef1cdc67d3243ce7ef739ef1e0f5e3959077fd0b2a43b18a2b4f766d338dc8",
+    "holdout_time_prep-v5.json": "f86247badc7ff48991900311c0e7011a00ce03ac03ba82a7668074c04e8ad9bf",
+    "holdout_topic_prep-v5.json": "66651f8903f97f5764ebe381684d88e19acec7c537eb215d79bc8f02c110da9b"
+  },
+  "code_sha256": "8290adf00984dc21372e05dad12eb511630fdcf84d4a708ea03d495efc6ecff4"
+}

@@ -1,0 +1,19 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Вердикты коррекции извлечения по 113 кандидатам}
+\label{tab:s3}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.307\linewidth}>{\raggedright\arraybackslash}p{0.307\linewidth}>{\raggedright\arraybackslash}p{0.307\linewidth}}
+\toprule
+Вердикт & Документов & Действие \\
+\midrule
+extraction-defect & 75 & повторная экстракция исправленным парсером \\
+intermediary-defect & 28 & детерминированное удаление точных каскадов \\
+unresolved & 9 & не редактируется, происхождение не установлено \\
+source-property & 1 & не редактируется, повтор есть в источнике \\
+\bottomrule
+\end{tabular}
+\begin{minipage}{\linewidth}\footnotesize\vspace{2pt}
+\textit{Примечание.} Единица анализа — документ. Знаменатель: 113 кандидатов с долей дословно повторённых предложений выше 0.1, найденные при просмотре 1916 документов; скорректированы 103. Данные: препроцессинг prep-v5, коррекция correction-v5.0. Счётчики документов по вердикту. Шкала: шкалы нет. Сокращения: extraction-defect — дефект извлечения текста; intermediary-defect — дефект промежуточного файла; unresolved — происхождение повтора не установлено; source-property — повтор присутствует в источнике. Пропуски: десять документов из 113 остались без правки: девять unresolved и один source-property. Поправка на множественные сравнения не применялась.
+\end{minipage}
+\end{table}

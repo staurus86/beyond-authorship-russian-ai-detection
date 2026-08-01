@@ -1,0 +1,33 @@
+{
+  "documents_total": 1882,
+  "documents_human": 803,
+  "documents_pseudonymized": 803,
+  "distinct_authors": 309,
+  "model_ids_preserved": true,
+  "mapping_location": "вне репозитория, 00-admin/private/",
+  "ordering": "случайная перестановка кодов; алфавитный порядок не используется. Секрет перестановки и таблица соответствия хранятся вне репозитория и не публикуются: вместе с известным списком исходных значений они позволили бы восстановить соответствие",
+  "invariants_passed": 9,
+  "breakdown_by_identifier_kind": {
+    "other_label": {
+      "documents": 86,
+      "distinct_values": 13
+    },
+    "person_name": {
+      "documents": 396,
+      "distinct_values": 279
+    },
+    "source_placeholder": {
+      "documents": 315,
+      "distinct_values": 16
+    },
+    "study_author": {
+      "documents": 6,
+      "distinct_values": 1
+    }
+  },
+  "breakdown_note": "person_name — прямые ФИО; source_placeholder — заглушки вида unknown@источник; other_label — обозначения групп без имени, например «студент-переводчик TSU»; study_author — автор исследования. Замена применяется ко всем четырём типам, поэтому число псевдонимизированных строк равно всей человеческой части, а не только строкам с ФИО",
+  "splits_files_processed": 22,
+  "splits_membership_unchanged": true,
+  "reidentification": "это псевдонимизация, а не анонимизация: ссылки на публичные первоисточники сохранены для provenance, и по ним автор публикации устанавливается",
+  "output_sha256": "9d4fcac6b33e3e672bae851f30538193158f8ade72db3da628d7d6530f108fd9"
+}

@@ -1,0 +1,100 @@
+{
+  "subject": "пересчёт genre_percentile для D04 и D05 после исправления матрицы v5-r2",
+  "why": "перцентиль считается по слою нормализованных значений, а не по итоговой матрице; дефект D04 и D05 присутствовал и в слое, поэтому ранги остались от прежних значений",
+  "artifacts": {
+    "layer_source": {
+      "file": "06-features/features-normalized-prep-v5.csv",
+      "sha256": "cc4d7cdbc6e9d45ffdd6a24546c690318acf575d47b695f45cf5f09eea241ee8"
+    },
+    "layer_fixed": {
+      "file": "06-features/features-normalized-prep-v5-r2.csv",
+      "sha256": "0546ae1443d369404cde64b0c88fed3a026ee26e8065b119c3c0185441d5d19a",
+      "changed_values": 134,
+      "changed_documents": 68,
+      "gates": "118 566 строк, 1882 документа, состав изменённых совпал с аудитом, raw_value не тронут"
+    },
+    "percentiles_old": {
+      "file": "06-features/genre-percentiles-prep-v5.csv",
+      "sha256": "fc54372fe6c6bf7bcda91db5b6fc865724741e6985f300ebcb5462c16592a2c1"
+    },
+    "percentiles_new": {
+      "file": "06-features/genre-percentiles-prep-v5-r2.csv",
+      "sha256": "af8b9d764ed209194ac6ca0484b3e2f6725a26680a656d8d69ada91608b62415"
+    },
+    "key_new": {
+      "file": "06-features/genre-percentiles-prep-v5-r2.key.json",
+      "sha256": "cfa3994c1d7ae5912b43b1c3930738e6a377d022700113887e86bb201be73baa"
+    }
+  },
+  "method": {
+    "rule_version": "percentile-v1.0",
+    "rule_identical_to_v5": true,
+    "note": "правило, реестр и определение референсной выборки совпадают с ключом v5; изменились только входные значения"
+  },
+  "results": {
+    "values_total": 86702,
+    "keys_identical": true,
+    "percentiles_changed": 817,
+    "by_feature": {
+      "D04": 487,
+      "D05": 330
+    },
+    "features_touched": [
+      "D04",
+      "D05"
+    ],
+    "changed_for_documents_whose_value_unchanged": 684,
+    "note_pool_shift": "ранг считается как доля строго меньших внутри пары признак × жанр, поэтому смена значения у 68 документов двигает ранги их соседей по пулу"
+  },
+  "consumers": {
+    "reads_column": [
+      "09-tools/score_style_index.py:197"
+    ],
+    "index_features": [
+      "C01",
+      "C02",
+      "F01",
+      "L01",
+      "L02",
+      "L03",
+      "L04",
+      "L05",
+      "M01",
+      "M02",
+      "M05",
+      "P01",
+      "R01",
+      "R04",
+      "R06",
+      "R07",
+      "S01",
+      "S02",
+      "S03",
+      "S04",
+      "S05",
+      "S09"
+    ],
+    "d04_d05_in_index": false,
+    "index_percentiles_changed": 0,
+    "stress_p1": "строит жанровые пулы сам из матрицы, колонку не читает; пулы независимы по признакам, поэтому правка D04 и D05 его не задевает",
+    "not_reading": [
+      "clf_run.py",
+      "stress_run_p2.py",
+      "fairness_run.py",
+      "error_run.py",
+      "synthesis_o1.py",
+      "nll_zero_shot.py",
+      "judge_run.py"
+    ]
+  },
+  "matrix_column_state": {
+    "file": "06-features/feature-matrix-v5-r2.csv",
+    "sha256": "ceaf9b6a18a8081ed68ea65ef259bc462e1752ba7ec21419a872ad5c8f01f592",
+    "column_matches_old_input": true,
+    "rows_d04_d05": 3764,
+    "rows_that_would_change": 817,
+    "status": "решение по матрице выносится отдельно; файл не перезаписывается"
+  },
+  "recorded_at_utc": "2026-07-31T20:29:23+00:00",
+  "recorded_at_moscow": "2026-07-31T23:29:23+03:00"
+}

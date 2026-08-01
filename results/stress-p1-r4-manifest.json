@@ -1,0 +1,95 @@
+{
+  "created_at": "2026-07-30T15:49:37+00:00",
+  "procedure": "P1",
+  "revision": "r2",
+  "status": "completed",
+  "gate_detail": "completed: 660 строк, features_common 18 у 574 / 17 при m02_missing у 86, знаменатели 0.57/0.12, 0 выпавших категорий, 116 input_unchanged с нулевой delta, 167 applied_no_change (из них вне допуска 43, не блокирует), прежний прогон помечен invalidated",
+  "gate_checks": {
+    "rows": {
+      "got": 660,
+      "expected": 660
+    },
+    "features_common": {
+      "full_18": 574,
+      "valid_17_m02_missing": 86,
+      "invalid": 0
+    },
+    "features_format": {
+      "invalid": 0
+    },
+    "denominator_common": {
+      "expected": 0.57,
+      "invalid": 0
+    },
+    "denominator_format": {
+      "expected": 0.12,
+      "invalid": 0
+    },
+    "dropped_categories": {
+      "rows": 0
+    },
+    "applied_no_change": {
+      "rows": 167,
+      "out_of_tolerance": 43,
+      "tolerance": 0.0001,
+      "blocking": false,
+      "note": "prose совпал; full и счётчики могли измениться"
+    },
+    "input_unchanged": {
+      "rows": 116,
+      "out_of_tolerance": 0,
+      "tolerance": 1e-09,
+      "blocking": true
+    },
+    "previous_run": {
+      "file": "stress-p1-r3-manifest.json",
+      "invalidated": true,
+      "note": "помечен invalidated",
+      "overwritten": false
+    }
+  },
+  "panel": "stress-panel-v1.csv",
+  "documents": 60,
+  "transformations": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    10,
+    11,
+    13,
+    14,
+    15,
+    16
+  ],
+  "not_executable": {
+    "6": "лёгкая человеческая редактура — ветки A→H в корпусе нет",
+    "7": "глубокая человеческая редактура — ветки A→H в корпусе нет",
+    "8": "машинный рерайт — прогон модели-рерайтера не выполнялся",
+    "9": "перевод и обратный перевод — прогон переводчика не выполнялся",
+    "12": "перефразирование — прогон модели не выполнялся"
+  },
+  "denominator": 11,
+  "threshold": 5.0,
+  "percentile_reference": "замороженный жанровый пул серии v2; преобразованные значения в пул не добавляются",
+  "rows": 660,
+  "rows_scored": 660,
+  "supersedes": {
+    "file": "stress-p1-r3-manifest.json",
+    "invalidated": true,
+    "reason": "features_common=14, знаменатель 0.51 вместо 0.57 — M01/M02/M05/C01 не были посчитаны",
+    "detail": "stress-p1-invalidation.md",
+    "note": "прежний прогон сохранён и не перезаписан"
+  },
+  "inputs": {
+    "stress-panel-v1.csv": "39d96e19c6cbf291d4a8940f00a9915e55be5a0dee2ddc979fbcc676b231efce",
+    "feature-matrix-v5.csv": "421fc634e69ed20fa9ffac1b965905cb2b2a675d93fb214f1e995cd53706636d",
+    "score-v2-scores.csv": "1a949cb37c9b8951aab9b8414d9d17be2f06150e2ed1796066197b0ead337c9a"
+  },
+  "code_sha256": {
+    "stress_run_p1.py": "c85c6695c0f2fa6d99f11f655b2b7fc16fe07ec6c1e4665bb8db732a63c480d8",
+    "stress_transforms.py": "8e5398d3d0b2a05e5ddc83700343e4ea925f0ab5be5a7171ae73a6b76e620378",
+    "stress_panel.py": "cdc3c3a125e9eec1466bccefa34e8749afdbc3e002cb9ad6d3753ace89e73447"
+  }
+}

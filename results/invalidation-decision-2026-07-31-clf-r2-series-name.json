@@ -1,0 +1,100 @@
+{
+  "decision": "инвалидирование обеих серий P2 на матрице v5-r2 из-за дефекта разбора имени серии",
+  "lifecycle_status": "invalidated",
+  "status": "invalidated_for_substantive_use",
+  "recorded_before_new_run": true,
+  "defect": {
+    "where": "09-tools/clf_run.py, выбор схемы вложенного CV и строгого режима подбора C",
+    "what": "схема сравнивалась с полным именем серии, а имя несёт ещё и ревизию матрицы. Суффикс -r2 не совпал ни с «clf-v2-legacy», ни с «clf-v2-valid»: clf-v2-legacy-r2 читал схему B вместо схемы A, а в clf-v2-valid-r2 отключилась жёсткая проверка одноклассового validation",
+    "second_defect": "09-tools/preflight_v2_run.py: серии с суффиксом ревизии не было в таблице профилей, поэтому дочерние манифесты обеих серий выписаны с пустым блоком хешей кода",
+    "evidence": {
+      "legacy_r2_vs_valid_r2": "совпали C и AUROC во всех 139 строках метрик P2a",
+      "inner_folds_skipped": "legacy-v2 — 49 строк с пропущенными inner fold, legacy-r2 — 0",
+      "old_pair_for_contrast": "valid-v2 и legacy-v2 совпадали лишь в 124 строках из 139",
+      "child_manifest_code_block": "пуст у clf-v2-valid-r2 и clf-v2-legacy-r2, непуст у clf-v2-valid"
+    },
+    "found_by": "сверка перед переводом downstream на серию r2"
+  },
+  "scope": {
+    "historical_diagnostics": "разрешено",
+    "substantive_conclusions": "запрещено",
+    "files": "не удаляются и не перезаписываются"
+  },
+  "invalidated": [
+    {
+      "file": "clf-v2r2-p2a-metrics.csv",
+      "sha256": "2ba9ca545edeece8dd8d203fe850b218b958ce88fd2ce1286a82bfceceb16d37"
+    },
+    {
+      "file": "clf-v2r2-p2a-slices.csv",
+      "sha256": "cae9bd56cedbe92fdbbd227715ab26980644b01894fc5dbf3c7ad8abce290898"
+    },
+    {
+      "file": "clf-v2r2-p2b-metrics.csv",
+      "sha256": "2e53b0af4260c178317b733ac42e790d3d641f8de48276c50fb77cdde13f266e"
+    },
+    {
+      "file": "clf-v2r2-p2b-o1-contrasts.csv",
+      "sha256": "624dc45eabe42a407b2dcd7e8928f0b4654087e80f388bdac9bd93b9edb95585"
+    },
+    {
+      "file": "clf-v2r2-manifest.json",
+      "sha256": "2b247e347520cfbd1be3be56f4fa12c6d0ff1b3c5bf00c82a9dfa479bf60f3eb"
+    },
+    {
+      "file": "clf-v2r2-report.md",
+      "sha256": "3a868e00074534af7dbcf4f267fa371852433b1a5078a8a02128733733fa577f"
+    },
+    {
+      "file": "clf-v2r2-legacy-p2a-metrics.csv",
+      "sha256": "2ba9ca545edeece8dd8d203fe850b218b958ce88fd2ce1286a82bfceceb16d37"
+    },
+    {
+      "file": "clf-v2r2-legacy-p2a-slices.csv",
+      "sha256": "cae9bd56cedbe92fdbbd227715ab26980644b01894fc5dbf3c7ad8abce290898"
+    },
+    {
+      "file": "clf-v2r2-legacy-p2b-metrics.csv",
+      "sha256": "2e53b0af4260c178317b733ac42e790d3d641f8de48276c50fb77cdde13f266e"
+    },
+    {
+      "file": "clf-v2r2-legacy-p2b-o1-contrasts.csv",
+      "sha256": "624dc45eabe42a407b2dcd7e8928f0b4654087e80f388bdac9bd93b9edb95585"
+    },
+    {
+      "file": "clf-v2r2-legacy-manifest.json",
+      "sha256": "97efce6a3b9985f6e2a595ce56a0374d63332a0a5c038f6dfd59694172ef726a"
+    },
+    {
+      "file": "clf-v2r2-legacy-report.md",
+      "sha256": "ac1543ffc28cad085b932eb8f3bc3a1d2a70b4b0084ef76bc292990ea4f97b1b"
+    },
+    {
+      "file": "manifests-v2/clf-v2-valid-r2-manifest.json",
+      "sha256": "53565241432114f5f7c7d6cc34b9da5700468250937b7eead069db64c11e289b"
+    },
+    {
+      "file": "manifests-v2/clf-v2-legacy-r2-manifest.json",
+      "sha256": "5aa95e9230d55e415a1114854d01258b9c02a8abb04cbfe7332f6bdff933b775"
+    }
+  ],
+  "not_affected": {
+    "feature-matrix-v5-r2.csv": "дефект в разборе имени серии, не в матрице; артефакт и его аудит остаются действующими",
+    "предшествующее решение об инвалидировании": "остаётся в силе, прежние серии v2 непригодны независимо от этого дефекта"
+  },
+  "fix": {
+    "code": [
+      "09-tools/clf_run.py: base_series() отбрасывает суффикс ревизии, схема и строгий режим сравниваются с базовым именем",
+      "09-tools/preflight_v2_run.py: профили заведены для серий с суффиксом ревизии, неизвестная серия теперь роняет запись манифеста"
+    ],
+    "test": "09-tools/test_series_revision_synth.py — 21 проверка на синтетике, провалов нет",
+    "successor_series": [
+      "clf-v2-valid-r2b",
+      "clf-v2-legacy-r2b"
+    ],
+    "successor_hash": null,
+    "expectation": "valid-r2b ожидается побитово равным valid-r2: одноклассовых validation в схеме B нет, поэтому строгий режим не менял бы результат. Совпадение будет проверено и записано, расхождение — основание для отдельного разбора"
+  },
+  "decided_at_utc": "2026-07-31T19:12:01+00:00",
+  "decided_at_moscow": "2026-07-31T22:12:01+03:00"
+}

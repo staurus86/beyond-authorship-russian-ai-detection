@@ -1,0 +1,5 @@
+estimand,contrast,status,n_pairs,dropped_pairs,n_clusters,mean_diff_nll,ci_low,ci_high,p_bootstrap,alpha,sign_after_convention,convention_note
+full,P3-P1,exploratory,359,0,45,0.1140,0.0964,0.1313,0.0004,0.0250,-,знак обращён: ниже NLL — более AI-подобно
+net,P3-P1,not available,,,,,,,,,,у перплексии нет честного аналога net-estimand
+full,P2-P1,exploratory,360,0,45,0.0125,-0.0065,0.0298,0.1988,0.0250,-,знак обращён: ниже NLL — более AI-подобно
+net,P2-P1,not available,,,,,,,,,,у перплексии нет честного аналога net-estimand

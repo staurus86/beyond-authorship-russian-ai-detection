@@ -1,0 +1,11 @@
+# Переводы строк фиксируются: расчёты сверяют хеши файлов, и подстановка CRLF
+# при клонировании на Windows сломала бы сверку.
+* text=auto eol=lf
+*.png binary
+*.pdf binary
+*.csv text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.py text eol=lf
+*.tex text eol=lf
+SHA256SUMS text eol=lf

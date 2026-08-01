@@ -1,0 +1,40 @@
+{
+  "target": "07-analysis/scoring-spec.md",
+  "target_sha256": "3d5e18c8abd854c5928b5425fbba727084f819deda381066b66f23551d3893af",
+  "target_unchanged": true,
+  "note": "спецификация не редактировалась; поправка внешняя, хеш сохранён прежним",
+  "errata": [
+    {
+      "id": "erratum-2026-08-01-weight-matrix-shape",
+      "file": "07-analysis/scoring-spec-erratum-2026-08-01.md",
+      "sha256": "df821cfc6daa3592f575d792461c310408bbfab0606c1fe91fa3cffa52115010",
+      "section": "§1",
+      "type": "документальная поправка, не методологический амендмент",
+      "recorded": "13 категорий × 7 доменов",
+      "actual": "13 категорий × 8 столбцов; восьмой — «Смешанный», используется для жанров seo, commercial и translation",
+      "source_of_truth": "ai-text-detector/references/domain-adaptation.md, раздел «Матрица весов по доменам»",
+      "columns_used": [
+        "News",
+        "Creative",
+        "Opinion",
+        "Scientific",
+        "Смешанный"
+      ],
+      "columns_not_used": [
+        "Factual",
+        "Conversational",
+        "Progr./Affil. SEO"
+      ],
+      "cause": "при составлении спецификации производный столбец «Смешанный» не был учтён в счёте",
+      "changes": {
+        "weights": "нет",
+        "mapping": "нет",
+        "code": "нет",
+        "results": "нет"
+      },
+      "date_claim_revised": "дата 12 июля 2026 документирована отметкой времени файла и записью в спецификации; криптографическим доказательством не является",
+      "journal": "00-admin/status-2026-08-01.md"
+    }
+  ],
+  "created_at": "2026-08-01T19:49:38+00:00"
+}

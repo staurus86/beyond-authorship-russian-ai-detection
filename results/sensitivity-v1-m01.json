@@ -1,0 +1,31 @@
+{
+  "check": "m01_not_growing",
+  "transform_id": "s01",
+  "amendment": "02-preregistration/amendment-sensitivity-truncation.md",
+  "criterion": {
+    "median_delta_z_max": 0.0,
+    "per_document_max": 0.5
+  },
+  "documents": 60,
+  "skipped": [],
+  "median_delta_z": 0.007913,
+  "max_delta_z": 2.854932,
+  "min_delta_z": -0.720669,
+  "documents_above_doc_max": [
+    "deepseek_pro_b004_P2_r1",
+    "deepseek_pro_b009_P2_r2",
+    "deepseek_pro_b021_P2_r2",
+    "deepseek_pro_b037_P2_r2",
+    "gpt_b040_P2_r1",
+    "human_hard_rusltc_0001",
+    "human_news_buriy_2014_0034",
+    "human_news_gazeta_0040",
+    "human_prose_taiga_magazines_0053",
+    "human_science_cyberleninka_0032"
+  ],
+  "passed": false,
+  "corpus_sigma": 0.01450127,
+  "feature_semantics": "M01 = SD косинусов соседних пар (normalized_value)",
+  "comparison_t11": "у t11 медиана Δz равна +7.86",
+  "created_at": "2026-08-01T10:26:54+00:00"
+}

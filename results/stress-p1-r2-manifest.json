@@ -1,0 +1,91 @@
+{
+  "created_at": "2026-07-30T08:26:07+00:00",
+  "procedure": "P1",
+  "revision": "r2",
+  "status": "incomplete",
+  "gate_detail": "6 строк с недопустимым features_common (значения [2]); 17 допустимо только при m02_missing=1; 6 строк с features_format != 4; 6 строк со знаменателем common != 0.57 (встречено ['0.0500']); 6 строк со знаменателем format != 0.12; 6 строк с выпавшими категориями: Dependencies, Information-theoretic, Lexical Richness, Readability, Semantic; 72 из 160 applied_no_change вне допуска 0.0001: max|Δ| = 13.043500",
+  "gate_checks": {
+    "rows": {
+      "got": 660,
+      "expected": 660
+    },
+    "features_common": {
+      "full_18": 545,
+      "valid_17_m02_missing": 109,
+      "invalid": 6
+    },
+    "features_format": {
+      "invalid": 6
+    },
+    "denominator_common": {
+      "expected": 0.57,
+      "invalid": 6
+    },
+    "denominator_format": {
+      "expected": 0.12,
+      "invalid": 6
+    },
+    "dropped_categories": {
+      "rows": 6
+    },
+    "applied_no_change": {
+      "rows": 160,
+      "out_of_tolerance": 72,
+      "tolerance": 0.0001
+    },
+    "previous_run": {
+      "file": "stress-p1-manifest.json",
+      "invalidated": true,
+      "note": "помечен invalidated",
+      "overwritten": false
+    }
+  },
+  "panel": "stress-panel-v1.csv",
+  "documents": 60,
+  "transformations": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    10,
+    11,
+    13,
+    14,
+    15,
+    16
+  ],
+  "not_executable": {
+    "6": "лёгкая человеческая редактура — ветки A→H в корпусе нет",
+    "7": "глубокая человеческая редактура — ветки A→H в корпусе нет",
+    "8": "машинный рерайт — прогон модели-рерайтера не выполнялся",
+    "9": "перевод и обратный перевод — прогон переводчика не выполнялся",
+    "12": "перефразирование — прогон модели не выполнялся"
+  },
+  "denominator": 11,
+  "threshold": 5.0,
+  "percentile_reference": "замороженный жанровый пул серии v2; преобразованные значения в пул не добавляются",
+  "rows": 660,
+  "rows_scored": 654,
+  "supersedes": {
+    "file": "stress-p1-manifest.json",
+    "invalidated": true,
+    "reason": "features_common=14, знаменатель 0.51 вместо 0.57 — M01/M02/M05/C01 не были посчитаны",
+    "detail": "stress-p1-invalidation.md",
+    "note": "прежний прогон сохранён и не перезаписан"
+  },
+  "inputs": {
+    "stress-panel-v1.csv": "39d96e19c6cbf291d4a8940f00a9915e55be5a0dee2ddc979fbcc676b231efce",
+    "feature-matrix-v5.csv": "421fc634e69ed20fa9ffac1b965905cb2b2a675d93fb214f1e995cd53706636d",
+    "score-v2-scores.csv": "1a949cb37c9b8951aab9b8414d9d17be2f06150e2ed1796066197b0ead337c9a"
+  },
+  "code_sha256": {
+    "stress_run_p1.py": "7b11029335708a8e4495526290ae49e4c0d235792a48955adeb703e32a85445b",
+    "stress_transforms.py": "42b98b9849e3c5ba6d064493ccdd2df5c0e1382c6b838970b7d6fd0721274f2a",
+    "stress_panel.py": "cdc3c3a125e9eec1466bccefa34e8749afdbc3e002cb9ad6d3753ace89e73447"
+  },
+  "invalidated": true,
+  "invalidated_at_utc": "2026-07-30T09:13:09+00:00",
+  "invalidated_at_moscow": "2026-07-30T12:13:09+03:00",
+  "invalidated_reason": "incomplete format metadata: F01/R06/R07 тождественно нулевые — manifest_row в build_texts и score_stage собирается без колонок full_bold_spans, heading_md, list_items (stress-format-features-defect.md). Дополнительно: препроцессинг панели отличается от prep-v5 по BOM и boilerplate у 6 документов из 60 (stress-format-gate.md), и эмбеддинги недетерминированы — 43 группы из 50 (stress-embed-nondeterminism.md). Решение PI 2026-07-30: путь 1, панель пересобирается штатным препроцессингом, embed получает детерминированную ревизию."
+}

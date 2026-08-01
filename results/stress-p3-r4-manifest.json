@@ -1,0 +1,38 @@
+{
+  "created_at": "2026-07-30T18:39:23+00:00",
+  "procedure": "P3-stress",
+  "status": "completed",
+  "gate_detail": "completed: 660 строк, 0 coverage_errors, 0 invalid, 167 applied_no_change в допуске",
+  "panel": "stress-panel-v1.csv",
+  "documents": 60,
+  "transformations": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    10,
+    11,
+    13,
+    14,
+    15,
+    16
+  ],
+  "rows": 660,
+  "skipped": 0,
+  "applied_no_change_count": 167,
+  "applied_no_change_sentinel_tol": 1e-06,
+  "nll_model": {
+    "model": "ai-forever/rugpt3large_based_on_gpt2",
+    "revision": "29c569320be2e08f29757898ec3866413725acd7",
+    "device": "cpu",
+    "dtype": "float32"
+  },
+  "threshold": "not applicable",
+  "threshold_note": "analysis-closure.md §6.1: к процедурам вне шкалы 0–100 порог напрямую не применяется",
+  "inputs": {
+    "stress-panel-v1.csv": "39d96e19c6cbf291d4a8940f00a9915e55be5a0dee2ddc979fbcc676b231efce",
+    "nll-v2-scores.csv": "e902c3ee4c8a77800b1418ea60852d719592b17b3c4cad8bdac1737fc44e67af"
+  },
+  "code_sha256": "b36c4a12ff5144439c4eee56f00cb80bff0c0475f2bb92c3bbad7c8f91542d10"
+}

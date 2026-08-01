@@ -1,0 +1,18 @@
+Документ,Источник,Жанр,Доля повторов,Максимальная кратность,Длиннейший повторённый блок,Модальный сдвиг,Механизм,Вердикт
+human_news_buriy_2014_0014,buriy_2014,news,0.320,2,12,44,блочный повтор с постоянным смещением,confirmed_defect
+human_news_buriy_2014_0045,buriy_2014,news,0.317,2,10,23,блочный повтор с постоянным смещением,confirmed_defect
+human_news_buriy_2014_0040,buriy_2014,news,0.262,2,8,33,блочный повтор с постоянным смещением,confirmed_defect
+human_news_buriy_2014_0024,buriy_2014,news,0.235,2,10,11,блочный повтор с постоянным смещением,confirmed_defect
+human_seo_madcats_0005,madcats,seo,0.206,2,18,106,разрозненные повторы,legitimate_source_property
+human_news_buriy_2014_0042,buriy_2014,news,0.161,2,5,50,блочный повтор с постоянным смещением,confirmed_defect
+human_seo_drmax_0013,drmax,seo,0.157,2,7,52,блочный повтор с постоянным смещением,confirmed_defect
+human_seo_devaka_ru_0019,devaka_ru,seo,0.148,2,1,2,разрозненные повторы,unresolved
+human_seo_convertmonster_0001,convertmonster,seo,0.138,4,1,,кратность выше двух,confirmed_defect
+human_science_spbgu_0042,spbgu,science,0.135,8,9,40,повторы по обе стороны структурного заголовка,legitimate_source_property
+human_seo_devaka_ru_0027,devaka_ru,seo,0.132,2,10,5,блочный повтор с постоянным смещением,confirmed_defect
+human_science_spbgu_0062,spbgu,science,0.129,5,5,33,кратность выше двух,legitimate_source_property
+human_science_spbgu_0044,spbgu,science,0.118,2,11,36,повторы по обе стороны структурного заголовка,legitimate_source_property
+human_science_urfu_0039,urfu,science,0.117,2,3,39,блочный повтор с постоянным смещением,unresolved
+human_seo_drmax_0024,drmax,seo,0.106,3,4,5,блочный повтор с постоянным смещением,unresolved
+human_news_buriy_2014_0048,buriy_2014,news,0.105,2,4,2,разрозненные повторы,confirmed_defect
+human_seo_devaka_ru_0021,devaka_ru,seo,0.103,2,6,7,блочный повтор с постоянным смещением,confirmed_defect

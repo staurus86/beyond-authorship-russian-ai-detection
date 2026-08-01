@@ -1,0 +1,5 @@
+Канал,Модель,Оболочка и доступ,Открытые веса,Температура и top-p
+real_claude,claude-opus-4-8,"вложенный CLI, чистый процесс на ячейку",нет,по умолчанию канала
+gpt,gpt-5.5,"codex exec, reasoning effort high",нет,по умолчанию канала
+deepseek_pro,deepseek-v4-pro,HTTPS API без оболочки,да,1.0 / 1.0
+nemotron,nemotron-3-ultra-free,HTTPS API через шлюз,да,1.0 / 1.0

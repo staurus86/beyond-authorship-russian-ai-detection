@@ -1,0 +1,78 @@
+{
+  "component": "матрица весов индекса стиля, процедура 1",
+  "source_file": "ai-text-detector/references/domain-adaptation.md",
+  "source_sha256": "e7b061501ae1bfad1e38cbc3a48902ede268641df9949959ee3d56444d40dce4",
+  "source_documented_date": "2026-07-12",
+  "date_evidence": "дата документирована отметкой времени файла и записью в scoring-spec.md §1. Это документальное свидетельство, а не криптографическое доказательство: отметку времени можно изменить, и на неё нельзя ссылаться как на неопровержимую",
+  "matrix_shape": {
+    "categories": 13,
+    "columns": 8
+  },
+  "shape_note": "13 категорий × 8 столбцов: семь доменов и производный «Смешанный». Формулировка «13 × 7» в scoring-spec.md §1 считает только домены",
+  "columns": [
+    {
+      "domain": "News",
+      "used": true,
+      "genres": [
+        "news"
+      ],
+      "status": "used in this study"
+    },
+    {
+      "domain": "Creative",
+      "used": true,
+      "genres": [
+        "prose"
+      ],
+      "status": "used in this study"
+    },
+    {
+      "domain": "Opinion",
+      "used": true,
+      "genres": [
+        "analytics"
+      ],
+      "status": "used in this study"
+    },
+    {
+      "domain": "Scientific",
+      "used": true,
+      "genres": [
+        "science"
+      ],
+      "status": "used in this study"
+    },
+    {
+      "domain": "Factual",
+      "used": false,
+      "genres": null,
+      "status": "not used in this study"
+    },
+    {
+      "domain": "Conversational",
+      "used": false,
+      "genres": null,
+      "status": "not used in this study"
+    },
+    {
+      "domain": "Progr./Affil. SEO",
+      "used": false,
+      "genres": null,
+      "status": "not used in this study"
+    },
+    {
+      "domain": "Смешанный",
+      "used": true,
+      "genres": [
+        "commercial",
+        "seo",
+        "translation"
+      ],
+      "status": "used in this study"
+    }
+  ],
+  "column_sums_verified": true,
+  "spec": "07-analysis/scoring-spec.md",
+  "published_scope": "только эта таблица; остальной пакет ai-text-detector в репозиторий не входит",
+  "checks_passed": 19
+}

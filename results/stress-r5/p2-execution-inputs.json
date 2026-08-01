@@ -1,0 +1,29 @@
+{
+  "attempt_id": "20260731T220132Z",
+  "provenance_class": "execution_input",
+  "runtime_snapshot": {
+    "file": "p2-runtime-snapshot.json",
+    "sha256": "55f07e3c0a74ddb8c3334c1f6f31bc9a89aa79c18c5c2889102bc6b5406b8bcc"
+  },
+  "code_table": {
+    "file": "stress-r6-code.sha256.md",
+    "sha256": "b32042f9128ae9a0c633915c16be84eea3b44b1059ab2694cc440740cdc14cc1"
+  },
+  "stages": {
+    "features": {
+      "return_code": 0,
+      "started_utc": "2026-07-31T22:01:33+00:00",
+      "finished_utc": "2026-07-31T22:01:43+00:00",
+      "log": "logs/p2-features.log",
+      "log_sha256": "ee922849efb33308fd3896e7ba1510eee21556ddcd042577e7a61817a9aa48a8"
+    },
+    "score": {
+      "return_code": 0,
+      "started_utc": "2026-07-31T22:01:43+00:00",
+      "finished_utc": "2026-07-31T22:01:50+00:00",
+      "log": "logs/p2-score.log",
+      "log_sha256": "30d0a52ab7d392c9ac98baaf944e4b5dfffbcc459cee2e90e5f2782774e54ca1"
+    }
+  },
+  "written_at_utc": "2026-07-31T22:01:33+00:00"
+}

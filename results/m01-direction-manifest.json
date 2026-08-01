@@ -1,0 +1,28 @@
+{
+  "series": "m01-direction",
+  "status": "post hoc diagnostic",
+  "upstream_series": "clf-v2-valid",
+  "matrix": "feature-matrix-v5.csv",
+  "estimand": "full",
+  "model": "main",
+  "feature": "M01",
+  "feature_semantics": "normalized_value = SD косинусов соседних пар; raw_value = среднее, в модель не идёт",
+  "label_convention": "y=1 — класс A, отрицательный коэффициент толкает к H",
+  "n_holdouts": 18,
+  "coef_negative_count": 18,
+  "median_higher_in_H_count": 18,
+  "median_abs_rank": 4.0,
+  "code_sha256": {
+    "m01_direction.py": "c9094bcf0f21bae574215f6d8ffc4c0bbbc62a177ece645fe7836e2e0ea23a9e",
+    "clf_run.py": "b780c0073cfb458ad7c9025853e80e49352e6a64441302fe5dd090d4e7a49e41",
+    "error_run.py": "7c9589139162698753fbe5fe71caf7c3347e3dcafb9e4faed888d6aff6ea4359"
+  },
+  "inputs_sha256": {
+    "feature-matrix-v5.csv": "421fc634e69ed20fa9ffac1b965905cb2b2a675d93fb214f1e995cd53706636d"
+  },
+  "outputs": [
+    "m01-direction.csv",
+    "m01-direction.md"
+  ],
+  "created_at": "2026-08-01T09:54:38+00:00"
+}

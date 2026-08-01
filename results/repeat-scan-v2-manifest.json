@@ -1,0 +1,100 @@
+{
+  "series": "repeat-scan-v2",
+  "status": "post hoc diagnostic",
+  "spec": "07-analysis/repeat-scan-v2-spec.md",
+  "reason": "скан v1 покрывал только origin_class == H; утверждение об односторонности дефекта требовало симметричного расчёта",
+  "parameters": {
+    "profile": "prose",
+    "sentence_split": "(?<=[.!?])\\s+",
+    "min_sentence_chars": 40,
+    "threshold": 0.1,
+    "denominator_rule": "sum(n) по предложениям с n>1, делённое на общее число предложений после фильтра длины; повтор трижды даёт 3",
+    "source_of_parameters": "09-tools/text_defects_scan.py, строки 46-48 и 131"
+  },
+  "audit_a_prep_v4": {
+    "documents": 1916,
+    "historic_registry": "documents-registry.csv.bak-before-correction-exclusion",
+    "by_class_historic": [
+      {
+        "class": "H",
+        "documents": 837,
+        "candidates": 97,
+        "share": 0.11589008363201912,
+        "median_repeat": 0.0,
+        "median_glued": 0.0
+      },
+      {
+        "class": "A",
+        "documents": 1079,
+        "candidates": 0,
+        "share": 0.0,
+        "median_repeat": 0.0,
+        "median_glued": 0.0
+      }
+    ],
+    "by_class_current": [
+      {
+        "class": "H",
+        "documents": 803,
+        "candidates": 63,
+        "share": 0.0784557907845579,
+        "median_repeat": 0.0,
+        "median_glued": 0.0
+      },
+      {
+        "class": "A",
+        "documents": 1079,
+        "candidates": 0,
+        "share": 0.0,
+        "median_repeat": 0.0,
+        "median_glued": 0.0
+      }
+    ],
+    "skipped_no_long_sentences": []
+  },
+  "audit_b_prep_v5": {
+    "documents": 1882,
+    "by_class": [
+      {
+        "class": "H",
+        "documents": 803,
+        "candidates": 17,
+        "share": 0.021170610211706103,
+        "median_repeat": 0.0,
+        "median_glued": 0.0
+      },
+      {
+        "class": "A",
+        "documents": 1079,
+        "candidates": 0,
+        "share": 0.0,
+        "median_repeat": 0.0,
+        "median_glued": 0.0
+      }
+    ],
+    "skipped_no_long_sentences": []
+  },
+  "control_check": {
+    "expected_human_candidates_v1": 97,
+    "got": 97,
+    "passed": true
+  },
+  "verdicts": {
+    "pending": 114,
+    "defect": 0,
+    "legitimate": 0
+  },
+  "inputs_sha256": {
+    "documents-registry.csv": "d3cd478ffed7a886004eab8d14494eed687a4a29a112deff7ec80a3ed2cb6fac",
+    "documents-registry.csv.bak-before-correction-exclusion": "b62fb28f13109050b563728e5854f435ce71b9e0192096a276fc988bd3d47e9e"
+  },
+  "code_sha256": {
+    "repeat_scan_v2.py": "53f96a740aac771ccf05b7c3a345ec407a6da1dae817e0715d3633b825214cbf"
+  },
+  "outputs": [
+    "repeat-scan-v2-prep-v4.csv",
+    "repeat-scan-v2-prep-v5.csv",
+    "repeat-scan-v2-report.md"
+  ],
+  "created_at": "2026-08-01T10:18:03+00:00"
+}

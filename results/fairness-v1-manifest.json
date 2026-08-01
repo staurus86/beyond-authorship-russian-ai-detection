@@ -1,0 +1,23 @@
+{
+  "created_at": "2026-07-29T09:15:31+00:00",
+  "procedure": "fairness-v1",
+  "status": "exploratory",
+  "spec": "07-analysis/fairness-v1-spec.md",
+  "seed": 20260727,
+  "threshold": 0.5,
+  "bootstrap": 5000,
+  "preflight_passed": true,
+  "blocks_checked": 72,
+  "tolerance": 1e-09,
+  "tercile_bounds": {
+    "short_max": 1026,
+    "mid_max": 2010
+  },
+  "inputs": {
+    "documents-registry.csv": "b62fb28f13109050b563728e5854f435ce71b9e0192096a276fc988bd3d47e9e",
+    "feature-matrix.csv": "5ab84d2721add25a82f446a7f5155dd9f15c5756f07940ac276934e8edc030da",
+    "clf-v1-p2a-metrics.csv": "57717423086f8f9cfbd452fa07389b888e7d3767e0d0768304cdd319684aa617",
+    "clf_run.py": "49ae19acc015c19bed39cb2bfeaf6ad1cda7513eed7867c2bcb7d3bf900b332c",
+    "fairness_run.py": "e2d75d058f476ca3c10ba1d936fe390524a626ab6921eadea22d1a3b5fccfab6"
+  }
+}

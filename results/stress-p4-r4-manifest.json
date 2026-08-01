@@ -1,0 +1,59 @@
+{
+  "created_at": "2026-07-31T08:56:01+00:00",
+  "procedure": "P4-stress",
+  "status": "completed",
+  "gate_detail": "completed: 660 ячеек, у каждой n_valid=3 (сумма 1980), журнал сверен, 167 applied_no_change в допуске",
+  "panel": "stress-panel-v1.csv",
+  "documents": 60,
+  "transformations": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    10,
+    11,
+    13,
+    14,
+    15,
+    16
+  ],
+  "rows": 660,
+  "applied_no_change_count": 167,
+  "applied_no_change_sentinel_tol": 0,
+  "judge": {
+    "model": "gemma3:12b-it-qat",
+    "digest": "5d4fa005e7bb5931be8bc35224080a9b316c7e1c069c9481a6a51b607f4252e2",
+    "seeds": [
+      20260727,
+      20260728,
+      20260729
+    ],
+    "sampling": {
+      "temperature": 1.0,
+      "top_p": 1.0,
+      "top_k": 64
+    },
+    "num_ctx": 16384
+  },
+  "raw_record_fields": [
+    "document_id",
+    "transform_number",
+    "seed",
+    "attempt",
+    "text_hash",
+    "score",
+    "status",
+    "response",
+    "total_duration_ns"
+  ],
+  "prompt_sha256": "3e70655f807d3aa0b8c0ef7dae0eb7be3bed7691d134602ad92b4637e3c35b5d",
+  "threshold": "not applicable",
+  "threshold_note": "analysis-closure.md §6.1: к процедурам вне шкалы 0–100 порог напрямую не применяется",
+  "inputs": {
+    "stress-panel-v1.csv": "39d96e19c6cbf291d4a8940f00a9915e55be5a0dee2ddc979fbcc676b231efce",
+    "judge-v2-scores.csv": "0bc5a01f7bf608e05fe6f46859f80d8a41a1b7aacfbb5b1e900b243394b9eee2",
+    "proc4-judge-spec.md": "f4f7218e2b934bf2adb3948f60e78f6bd16d74b47ea45fdba8657a44fc66728e"
+  },
+  "code_sha256": "6d2f232cfe84af5479e08e0a930954af2e825cd5877f6235793225a86031d1c5"
+}

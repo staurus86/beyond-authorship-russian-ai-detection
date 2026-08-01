@@ -1,0 +1,17 @@
+{
+  "manifest": "error-v2-manifest.json",
+  "manifest_sha256": "db6007d701c4bc36915007848fbdafa337a72484a8e2817764d436de6c879420",
+  "execution_status": "completed",
+  "lifecycle_status": "current",
+  "supersedes_record": {
+    "file": "error-v2-lifecycle.json",
+    "sha256": "608e98d78c993d700b02623d80437ee3918b4b5008b3f2d79296d3ea40dd3e74"
+  },
+  "reason": "отмена инвалидации: причина, записанная 31 июля, оказалась ошибочной. Прогон шёл на feature-matrix-v5.csv, где D04 и D05 посчитаны по prep-v5 корректно; дефект был в аудите, который сравнивал их с пересчётом по prep-v4",
+  "evidence": "07-analysis/defect-2026-08-01-d04-d05-wrong-profile.json",
+  "basis": "07-analysis/rollback-decision-2026-08-01-d04-d05.json",
+  "basis_sha256": "78bd2a6629f2093d1766e521f14a6e251827ffaebfd9cc09d81199f73793884e",
+  "note": "прежняя запись не изменяется и не удаляется: она остаётся протоколом того, что было решено 31 июля и на каком основании",
+  "recorded_at_utc": "2026-07-31T21:29:46+00:00",
+  "recorded_at_moscow": "2026-08-01T00:29:46+03:00"
+}

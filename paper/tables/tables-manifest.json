@@ -1,0 +1,241 @@
+{
+  "series": "tables-v1",
+  "approved": "восемь основных таблиц и шестнадцать Supplementary, решение PI 2026-08-01",
+  "registry": "08-paper/tables-registry.md",
+  "rule": "скрипт только читает и форматирует; ручная правка чисел в выходных файлах запрещена, правка идёт в источник",
+  "transform_denominator": {
+    "transforms": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      10,
+      11,
+      13,
+      15,
+      16
+    ],
+    "excluded": "t14 — not executable по амендменту ревизии r5"
+  },
+  "tables": [
+    {
+      "number": 1,
+      "kind": "main",
+      "file": "tab-01-corpus-and-conditions",
+      "title": "Состав корпуса и условия производства текста"
+    },
+    {
+      "number": 2,
+      "kind": "main",
+      "file": "tab-02-four-operationalisations",
+      "title": "Четыре операционализации машинности и направление их шкал"
+    },
+    {
+      "number": 3,
+      "kind": "main",
+      "file": "tab-03-o1-contrasts",
+      "title": "Контрасты первичного исхода O1 по четырём процедурам, оба estimand и оба контраста"
+    },
+    {
+      "number": 4,
+      "kind": "main",
+      "file": "tab-04-classifier-and-ablation",
+      "title": "Классификатор: качество по вариантам модели и ablation структурных признаков"
+    },
+    {
+      "number": 5,
+      "kind": "main",
+      "file": "tab-05-formal-register-fairness",
+      "title": "Цена ошибки по подгруппам человеческого корпуса: формальный регистр, перевод и жанры"
+    },
+    {
+      "number": 6,
+      "kind": "main",
+      "file": "tab-06-calibration-and-risk-coverage",
+      "title": "Калибровка вероятностей и обмен покрытия на риск"
+    },
+    {
+      "number": 7,
+      "kind": "main",
+      "file": "tab-07-stress-ten-transformations",
+      "title": "Устойчивость решения к десяти преобразованиям текста по четырём процедурам"
+    },
+    {
+      "number": 8,
+      "kind": "main",
+      "file": "tab-08-mixed-effects-status",
+      "title": "Три предрегистрированные mixed-effects модели: идентифицируемость и статус"
+    },
+    {
+      "number": 1,
+      "kind": "supp",
+      "file": "tab-S01-corpus-flow",
+      "title": "Поток данных и исключения по стратам"
+    },
+    {
+      "number": 2,
+      "kind": "supp",
+      "file": "tab-S02-machine-channels",
+      "title": "Каналы генерации машинной части: модели, доступ и параметры"
+    },
+    {
+      "number": 3,
+      "kind": "supp",
+      "file": "tab-S03-preprocessing-verdicts",
+      "title": "Вердикты коррекции извлечения по 113 кандидатам"
+    },
+    {
+      "number": 4,
+      "kind": "supp",
+      "file": "tab-S04-fpr-by-holdout",
+      "title": "Доля ложных срабатываний основной модели по каждому из 18 групповых holdout"
+    },
+    {
+      "number": 5,
+      "kind": "supp",
+      "file": "tab-S05-classifier-quality-by-holdout",
+      "title": "Качество основной модели по каждому из 18 групповых holdout"
+    },
+    {
+      "number": 6,
+      "kind": "supp",
+      "file": "tab-S06-calibration-by-holdout",
+      "title": "Калибровка вероятностей по каждому из 18 групповых holdout"
+    },
+    {
+      "number": 7,
+      "kind": "supp",
+      "file": "tab-S07-stress-by-transform-and-procedure",
+      "title": "Стресс-тест построчно: десять преобразований × четыре процедуры"
+    },
+    {
+      "number": 8,
+      "kind": "supp",
+      "file": "tab-S08-mixed-identifiability",
+      "title": "Диагностика идентифицируемости трёх mixed-effects моделей"
+    },
+    {
+      "number": 9,
+      "kind": "supp",
+      "file": "tab-S09-repeat-audit",
+      "title": "Аудит дословных повторов: документы, прошедшие симметричный скан"
+    },
+    {
+      "number": 10,
+      "kind": "supp",
+      "file": "tab-S10-blind-instability-cards",
+      "title": "Слепой разбор тридцати случаев нестабильности: вердикты оценщика"
+    },
+    {
+      "number": 11,
+      "kind": "supp",
+      "file": "tab-S11-preflight-invariants",
+      "title": "Шесть инвариантов допуска к расчёту серии v2"
+    },
+    {
+      "number": 12,
+      "kind": "supp",
+      "file": "tab-S12-manifest-revisions",
+      "title": "Шесть ревизий манифеста допуска и причины перехода"
+    },
+    {
+      "number": 13,
+      "kind": "supp",
+      "file": "tab-S13-reuse-gate",
+      "title": "Шлюз переиспользования разборов: сверка на sentinel-выборке"
+    },
+    {
+      "number": 14,
+      "kind": "supp",
+      "file": "tab-S14-index-decomposition",
+      "title": "Декомпозиция индекса стиля на стилевую и структурную части, две серии"
+    },
+    {
+      "number": 15,
+      "kind": "supp",
+      "file": "tab-S15-t10-t11-feature-shift",
+      "title": "Сдвиг признаков при сокращении и расширении текста: снятая интерпретация через объём"
+    },
+    {
+      "number": 16,
+      "kind": "supp",
+      "file": "tab-S16-limitations-groups",
+      "title": "Двадцать один пункт ограничений, свёрнутый в шесть групп основного текста"
+    }
+  ],
+  "inputs_sha256": {
+    "04-corpus/documents-registry.csv": "d3cd478ffed7a886004eab8d14494eed687a4a29a112deff7ec80a3ed2cb6fac",
+    "08-paper/tables/sources/descriptive-tables.json": "f87423ae9228841d49cce36e5a2a438233c2b4bf812ea1510d5205eb40ff01d5",
+    "07-analysis/synthesis-o1-v2.csv": "e6d91c736e44c9be422803daa635d487ebaa88fc62a43c426e38397b968a1c7f",
+    "07-analysis/clf-v2-p2a-metrics.csv": "e4f3e8252ba58d8aa98f4efd91ecf6320f0705a610d62f3737e6035b4da64c24",
+    "07-analysis/clf-v2-p2b-o1-contrasts.csv": "c147580edc34109a1d108d41e8376a4b86b9341e82b62c446eb17e79b684ec53",
+    "07-analysis/fairness-v2-groups.csv": "593ec3698c1eeb829ebfd7f9a182fe1a83ecbbaeb1f572e2b098447dafee0140",
+    "07-analysis/calibration-v1-by-holdout.csv": "5424ac55573ae8334ece7519514b9d9e7e097d0861247f6983bbe6d3318d9ce8",
+    "07-analysis/calibration-v1-manifest.json": "0e95e54f72bb8b98f12e9131725748610ec509e18b3d6de2a9a95320c25984b0",
+    "07-analysis/stress-r5-attempts/20260731T220132Z/stress-p2a-r11-cells.csv": "c6a28430a87cbcf2471ce5aaf5f0f54380ef7b5295c37693eff7682024045243",
+    "07-analysis/stress-p1-r4-scores.csv": "7bda533b1cebd2100f9e823f6330b9f77746542cd630397db8bee306a9ff0dd9",
+    "07-analysis/stress-p3-r4-scores.csv": "c4cd8ed925dc4fa1de8add48b23562ba8f4f68d264f270b3461e9ae335f139a9",
+    "07-analysis/stress-p4-r5-scores.csv": "e50d248785e82088639a951ef58f8842135c161b7a31ad13d6c333141c0f52db",
+    "07-analysis/mixed-identifiability.json": "585f59e553a9257fc27965ff0297e2a96ed4b5e37ce5d385f494fb9750104069",
+    "07-analysis/mixed-m1-v2.json": "95c5f9af914a03d13f253e46b4995171b486e30211738137ed8999deacf1c4d6",
+    "07-analysis/stress-r5-attempts/20260731T220132Z/stress-p2a-r11-scores.csv": "9b5880822e225a8b46a75eafcd833adf15be0bce98ce989e2b7adeaf605e72c8",
+    "07-analysis/repeat-scan-v2-verdicts.csv": "8e79753b07f56cb339b403fd57ad5c316911563647b754b2f8f0b217a511d064",
+    "07-analysis/instability-v1-blind-verdicts.csv": "b8849d4a8544ece46aa9d399f4f638d6315484360d54c2f65f85e6892072fc85",
+    "07-analysis/score-v2-index-decomposition.md": "1dd66b5e04c40e58111a7ed38fceeb49ed3ad245c1c77b334121af3a32528ad6",
+    "07-analysis/score-v1-index-decomposition.md": "d88ac06a725b40c2ab1f220050f919b937e6641760a1d31eb458d32ab30e44f5",
+    "07-analysis/stress-t10-t11-volume-defect.md": "fd0c062f8a839c331537578d3d8c9a2001340584f9faf5fd56b3577df85e8b95"
+  },
+  "outputs_sha256": {
+    "tab-01-corpus-and-conditions.csv": "4a70ac324aefbfadb0b8065bd2f7ed75ccf66b22ef77b45f49dfcc48c73c8faf",
+    "tab-01-corpus-and-conditions.tex": "b9dd4315d0ae1e345ff2396aaee933405f5ef7511dde2deca14f54b0a76f49ea",
+    "tab-02-four-operationalisations.csv": "dbf62daa2a88bf177c5df6e4b6a3f0eb2469c9da412c592a27f6388967cc1a7c",
+    "tab-02-four-operationalisations.tex": "c8007df94c87b75aed97314f3286ba86bd013900c9c1b53752c57d24db5cffa5",
+    "tab-03-o1-contrasts.csv": "b1f3c82b0db68b7d8a4d1670eba7c8efe3f83c59975f70b2e422c1710a1f9d9f",
+    "tab-03-o1-contrasts.tex": "bad7ce23163e5e1824f06465859942c786a3cf6f417e13a2b0b27e6e1f4691ed",
+    "tab-04-classifier-and-ablation.csv": "3be75b64773b7fd30c26e4d3a73d48eae0575a4115f19a576deb5d12187b9fb0",
+    "tab-04-classifier-and-ablation.tex": "1a829661b7c9e2efd3febbe67a2d06e7329366eb6629a754ba29aba8515ac551",
+    "tab-05-formal-register-fairness.csv": "6b5d138ad9f73da1236122bcc95095b0928a58b99f2638ff75430ccf788586a2",
+    "tab-05-formal-register-fairness.tex": "f53e45ac47a74d2f956809bda60416c623fde0e03fb3634d84db4abc7d596896",
+    "tab-06-calibration-and-risk-coverage.csv": "7c79577ad4eaa8a0434dcc4ad968bf1c48c4837065ed4f77051fc41866d2043c",
+    "tab-06-calibration-and-risk-coverage.tex": "59f00e7128b282f82b4485271f267be5d043c0df2dfbcd78335d1845a2e39ca0",
+    "tab-07-stress-ten-transformations.csv": "516168c99a45858b7dccf9ff429ecf45bbbb44a0c2772bacfe6ee3948a6e8bcb",
+    "tab-07-stress-ten-transformations.tex": "6c8bd00625dd1ccdecf865641fcac268929d7ef412774488cbf55a617aa0aa6f",
+    "tab-08-mixed-effects-status.csv": "d7acba76355da6bdf5176cb5cf27d1ca7d764e5413c89143eb379392544c3af3",
+    "tab-08-mixed-effects-status.tex": "bdce8f88757497a43b81ac65a29e242f774f0bc09e8e5d09b2fa07b774d65190",
+    "tab-S01-corpus-flow.csv": "a73681d213d2360258261abf7ff26e26184876d5d1dba79000929f2f33cd7cb5",
+    "tab-S01-corpus-flow.tex": "9e085745286ac602a4895bf8f5e5d7816ffbbc812d6a95db370e89f67bbfd42d",
+    "tab-S02-machine-channels.csv": "ca6d1355486f331116c46fc721b87a43533de05e008349f80648951086842f9b",
+    "tab-S02-machine-channels.tex": "681d494cd323cab53e0d9f8c1bce0a602852dfd116d60c9b52ca22538030bbaf",
+    "tab-S03-preprocessing-verdicts.csv": "dbeec2dcd60657d73e190e2828c7608ee58d78a7582d09286367d543bcf4ffb0",
+    "tab-S03-preprocessing-verdicts.tex": "570a15a66d09523393cf9667a3ae2ea9a295205d17b2fa32a82d935efeb1a4a2",
+    "tab-S04-fpr-by-holdout.csv": "31e34dceeeb79d7c472b8b8d4eaee73ec3c81b564f5ebaa82743a63706ca6d31",
+    "tab-S04-fpr-by-holdout.tex": "892da2177669c2e36b0f1f914104aa1175b2f60c81aa76f4910974e54c60e78c",
+    "tab-S05-classifier-quality-by-holdout.csv": "7169b4cc0346f3bed0a852ef40b49feb3ca985919a7d4db32c3c67634ce7301c",
+    "tab-S05-classifier-quality-by-holdout.tex": "da212f165f48c8c75de5e7daa56388ff881ef47a5d9cce7027cd017a8b93a26b",
+    "tab-S06-calibration-by-holdout.csv": "740484c5c022155aa9f1af4ee6a8db8010e69bea1f24f7a74fb8981142d44d36",
+    "tab-S06-calibration-by-holdout.tex": "97c209c6c247df55779d3928a1f32324358006a814a12a8e94df73652cce4e37",
+    "tab-S07-stress-by-transform-and-procedure.csv": "537750b6469eb85609c79e334cc5b9e63f935ecd955e98ffba385a62cae3e170",
+    "tab-S07-stress-by-transform-and-procedure.tex": "26eb862797849dee3c1cf18bd5ad1079a520f76b4132b6e70634661ef412f340",
+    "tab-S08-mixed-identifiability.csv": "1e185379953c36784e16abb0587c7251d28d888bc72755bc043995ff9245e06e",
+    "tab-S08-mixed-identifiability.tex": "abb4d44f0cb5b1bd783c968337a297e6adc4800b0e38ba92700c8f3afe5aee54",
+    "tab-S09-repeat-audit.csv": "d1d2dcb399540ad2ff3fd9c2856620470b9def10107e807b45d8cc5f7a44fd68",
+    "tab-S09-repeat-audit.tex": "cf582821bd32fc7feba270b0c94f9b5fca692c669570e51a38d3dc1419c54eb9",
+    "tab-S10-blind-instability-cards.csv": "de075edf267feec3e0a4327a96e366f772a90e6e49ad0509770d75b431ee07b7",
+    "tab-S10-blind-instability-cards.tex": "58348f4d9fb8309e72be42b8bd9fd9c8a2936cf9137ad6026a834c57eca02acb",
+    "tab-S11-preflight-invariants.csv": "5367f4146a8627df31a1b17487663eeb06d8abdabfcd0cfa738af0a2895f8b0c",
+    "tab-S11-preflight-invariants.tex": "e419603281d495c6adb02a461d9317cdb6ba04dbcfc80181071d0879d849efb0",
+    "tab-S12-manifest-revisions.csv": "7034235435608a13d20aba27c2249182efaa5ea484c78cabf9bdf479a93ea7bd",
+    "tab-S12-manifest-revisions.tex": "f2c400b3d28ad11385b72173b549c6a34cb1d55283133b78930f44cc3e08b592",
+    "tab-S13-reuse-gate.csv": "feb1c964ffdf5be9abe54c727ed31c8cc04f23f851b9072fb77530b8bb4f83fa",
+    "tab-S13-reuse-gate.tex": "234b91dac63c758f6f8d7a55649960627b7f5c34e5351346db4338f434796e03",
+    "tab-S14-index-decomposition.csv": "c5835ca14acdb9acdbeff4c5beb2e78ad2fe4452861af93478f433c53b000ecf",
+    "tab-S14-index-decomposition.tex": "fc36c782d79c13785d18ae2d77be6fbe8d663cee8530bd2518f1be1bc5059762",
+    "tab-S15-t10-t11-feature-shift.csv": "f1fc6729d51d443cd8377cbdcab7bb97c570fada2e27c2e464b85304590bb76d",
+    "tab-S15-t10-t11-feature-shift.tex": "f25e1058854f328a33011c5c93041ef346c646ed0e12cce3036488a3c846ccad",
+    "tab-S16-limitations-groups.csv": "2e0e783631982a210b6125cc6d45fe4c68190decf3e17d10a2fe6e9213445df9",
+    "tab-S16-limitations-groups.tex": "fb0c76f6b91f142b696b9119be3b97039c53e5882c4ced7a58e2b764c63bbb48"
+  },
+  "code_sha256": "dccec021aab8f3f84b09f66e18a7aa3d8c488c686773299d78004c427e4318f7",
+  "created_at": "2026-08-01T16:26:10+00:00"
+}

@@ -1,0 +1,19 @@
+# Каталоги и файлы, которые не должны попасть в публикацию даже случайно.
+__pycache__/
+*.pyc
+.env
+.venv/
+venv/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+
+# Приватные материалы исследования: таблица псевдонимов и секрет перестановки.
+**/private/
+author-pseudonyms*.csv
+pseudonymization-secret.json
+
+# Локальные артефакты запуска.
+*.log
+.cache/
+models/

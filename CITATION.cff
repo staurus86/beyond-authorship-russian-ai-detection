@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+title: >-
+  Условия производства текста как конфаундер оценки машинности:
+  четыре операционализации на русскоязычном корпусе
+message: >-
+  Если вы используете эти данные или код, сошлитесь на эту запись.
+type: dataset
+authors:
+  - family-names: Kirichenko
+    given-names: Stanislav
+    orcid: https://orcid.org/0009-0001-2914-9541
+    email: staurus86@gmail.com
+    affiliation: Independent Researcher
+keywords:
+  - AI-generated text detection
+  - Russian-language text
+  - production conditions
+  - source confounding
+  - preprocessing sensitivity
+license: CC-BY-4.0
+license-url: https://creativecommons.org/licenses/by/4.0/
+repository-code: '[URL репозитория подставляется при релизе]'
+doi: '[DOI подставляется при релизе]'
+version: 1.0.0
+date-released: '2026-08-01'

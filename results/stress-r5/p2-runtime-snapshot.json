@@ -1,0 +1,119 @@
+{
+  "provenance_class": "execution_input",
+  "note": "снят до запуска любого дочернего процесса третьей попытки",
+  "attempt_id": "20260731T220132Z",
+  "revision": {
+    "p2": "r6",
+    "upstream": "r5",
+    "basis": "02-preregistration/amendment-stress-r6-p2-matrix.md"
+  },
+  "scope": "P2 ревизии r6 на матрице v5-r2; P1 и P3 берутся из попытки 20260731T133820Z и не пересчитываются",
+  "platform": {
+    "python": "3.14.0",
+    "system": "Windows-11-10.0.26200-SP0"
+  },
+  "libraries": {
+    "scikit-learn": "1.8.0",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1"
+  },
+  "classifier": {
+    "estimator": "LogisticRegression",
+    "penalty": "l2",
+    "solver": "lbfgs",
+    "max_iter": 5000,
+    "class_weight": "balanced",
+    "random_state": 20260727,
+    "c_grid": [
+      0.01,
+      0.1,
+      1.0,
+      10.0
+    ],
+    "inner_folds": 3,
+    "selection_metric": "ROC AUC",
+    "scaler": "StandardScaler",
+    "verify_tolerance": 1e-08,
+    "sentinel_tolerance": 1e-08,
+    "delta_threshold": 0.05
+  },
+  "matrix": {
+    "file": "feature-matrix-v5-r2.csv",
+    "sha256": "ceaf9b6a18a8081ed68ea65ef259bc462e1752ba7ec21419a872ad5c8f01f592",
+    "why": "D04 и D05 согласованы с prep-v5; прежняя матрица давала расхождение инварианта неизменённого входа"
+  },
+  "carried_inner_folds": {
+    "file": "splits-v5/p2a-inner-folds-valid.json",
+    "sha256": "7d49f357f1306842f446529e6503d6d22bbb04581fde10e6ec9bfed82506180f",
+    "split_names": [
+      "holdout_author",
+      "holdout_genre_analytics",
+      "holdout_genre_commercial",
+      "holdout_genre_news",
+      "holdout_genre_prose",
+      "holdout_genre_science",
+      "holdout_genre_seo",
+      "holdout_genre_translation",
+      "holdout_model_Anthropic",
+      "holdout_model_DeepSeek",
+      "holdout_model_NVIDIA",
+      "holdout_model_OpenAI",
+      "holdout_prompt_P1",
+      "holdout_prompt_P2",
+      "holdout_prompt_P3",
+      "holdout_source",
+      "holdout_time",
+      "holdout_topic"
+    ],
+    "folds_per_split": {
+      "holdout_author": 3,
+      "holdout_genre_analytics": 3,
+      "holdout_genre_commercial": 3,
+      "holdout_genre_news": 3,
+      "holdout_genre_prose": 3,
+      "holdout_genre_science": 3,
+      "holdout_genre_seo": 3,
+      "holdout_genre_translation": 3,
+      "holdout_model_Anthropic": 3,
+      "holdout_model_DeepSeek": 3,
+      "holdout_model_NVIDIA": 3,
+      "holdout_model_OpenAI": 3,
+      "holdout_prompt_P1": 3,
+      "holdout_prompt_P2": 3,
+      "holdout_prompt_P3": 3,
+      "holdout_source": 2,
+      "holdout_time": 3,
+      "holdout_topic": 3
+    }
+  },
+  "active_inputs_manifest": {
+    "file": "stress-r5-active-inputs.json",
+    "sha256": "26a7f7f5345e70a3d02fe9f545e1448719366fe047e4a69255d2087bdcbc9635"
+  },
+  "caches": {
+    "stress-stanza-v2": {
+      "index_sha256": null,
+      "index_keys": 0,
+      "cached_records": 0,
+      "files_on_disk": 0
+    },
+    "stress-embed-v2": {
+      "index_sha256": null,
+      "index_keys": 0,
+      "cached_records": 0,
+      "files_on_disk": 0
+    },
+    "stress-ner-v2": {
+      "index_sha256": null,
+      "index_keys": 0,
+      "cached_records": 0,
+      "files_on_disk": 0
+    }
+  },
+  "code_table": {
+    "file": "stress-r6-code.sha256.md",
+    "sha256": "b32042f9128ae9a0c633915c16be84eea3b44b1059ab2694cc440740cdc14cc1"
+  },
+  "taken_at_utc": "2026-07-31T22:01:33+00:00",
+  "taken_at_moscow": "2026-08-01T01:01:33+03:00"
+}

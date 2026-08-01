@@ -1,0 +1,12 @@
+{
+  "manifest": "fairness-v2r3-manifest.json",
+  "manifest_sha256": "de33efad58f7ed4a9dda4945c2379530b66f704e3b4c5b5cb6206df0ef769ba2",
+  "execution_status": "exploratory",
+  "lifecycle_status": "invalidated",
+  "reason": "прогон шёл на feature-matrix-v5-r2, где D04 и D05 записаны по профилям prep-v4; исходная матрица v5 была корректна",
+  "reusable_scope": "",
+  "basis": "07-analysis/rollback-decision-2026-08-01-d04-d05.json",
+  "basis_sha256": "78bd2a6629f2093d1766e521f14a6e251827ffaebfd9cc09d81199f73793884e",
+  "recorded_at_utc": "2026-07-31T21:29:27+00:00",
+  "recorded_at_moscow": "2026-08-01T00:29:27+03:00"
+}

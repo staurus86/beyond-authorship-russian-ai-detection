@@ -1,0 +1,88 @@
+{
+  "decision": "откат правки D04 и D05: действующей остаётся feature-matrix-v5.csv",
+  "approved_by": "PI, 2026-08-01",
+  "reason": "аудит и пересчёт шли по профилям prep-v4 из-за модульного умолчания extract_discourse.PREP_VERSION. Исходная матрица v5 была корректна: у 68 документов аудита она совпадает с пересчётом по prep-v5 в 68 случаях из 68, у контрольной выборки вне списка — в 40 из 40. Матрица v5-r2 совпадает с prep-v4 в 68 из 68",
+  "evidence": {
+    "file": "07-analysis/defect-2026-08-01-d04-d05-wrong-profile.json",
+    "sha256": "fb73cb510363aa42fd5f258612779c4e3ea5dc7edf7c13062ee88cf811c5c8b7"
+  },
+  "invalidated": [
+    {
+      "file": "06-features/feature-matrix-v5-r2.csv",
+      "sha256": "ceaf9b6a18a8081ed68ea65ef259bc462e1752ba7ec21419a872ad5c8f01f592"
+    },
+    {
+      "file": "06-features/feature-matrix-v5-r2-manifest.json",
+      "sha256": "8568ed6519d5bd5608316276a05a7eb2618dcb1becdf6e7939f6b5c2ab36b39f"
+    },
+    {
+      "file": "06-features/features-normalized-prep-v5-r2.csv",
+      "sha256": "0546ae1443d369404cde64b0c88fed3a026ee26e8065b119c3c0185441d5d19a"
+    },
+    {
+      "file": "06-features/genre-percentiles-prep-v5-r2.csv",
+      "sha256": "af8b9d764ed209194ac6ca0484b3e2f6725a26680a656d8d69ada91608b62415"
+    },
+    {
+      "file": "06-features/genre-percentiles-prep-v5-r2.key.json",
+      "sha256": "cfa3994c1d7ae5912b43b1c3930738e6a377d022700113887e86bb201be73baa"
+    },
+    {
+      "file": "07-analysis/corpus-audit-d04-d05.json",
+      "sha256": "c891ffbc3d0a537a8f925ace94da489c49bb980b6afb361e991ab16635f1b820"
+    },
+    {
+      "file": "07-analysis/genre-percentile-d04-d05-recompute.json",
+      "sha256": "e3a627730a374c912418bf84308b5bc2967bd80a99d66d2cfe23b7f0f4ba3a84"
+    }
+  ],
+  "restored_to_current": [
+    {
+      "file": "06-features/feature-matrix-v5.csv",
+      "sha256": "421fc634e69ed20fa9ffac1b965905cb2b2a675d93fb214f1e995cd53706636d"
+    },
+    {
+      "file": "07-analysis/clf-v2-p2a-metrics.csv",
+      "sha256": "e4f3e8252ba58d8aa98f4efd91ecf6320f0705a610d62f3737e6035b4da64c24"
+    },
+    {
+      "file": "07-analysis/clf-v2-legacy-p2a-metrics.csv",
+      "sha256": "2cb9bc81c67d4ae5993a16f7b6d2a135134720c888c898ea76b0fb3b2f46a8bf"
+    },
+    {
+      "file": "07-analysis/fairness-v2-groups.csv",
+      "sha256": "593ec3698c1eeb829ebfd7f9a182fe1a83ecbbaeb1f572e2b098447dafee0140"
+    },
+    {
+      "file": "07-analysis/error-v2-analysis.csv",
+      "sha256": "ace022db47631bfccdde7cc3d0d33d15257ed30d1eb4a1151a99942c9a569fef"
+    },
+    {
+      "file": "07-analysis/synthesis-o1-v2.csv",
+      "sha256": "e6d91c736e44c9be422803daa635d487ebaa88fc62a43c426e38397b968a1c7f"
+    }
+  ],
+  "also_invalidated_runs": [
+    "clf-v2-valid-r2, r2b, r3 и clf-v2-legacy-r2, r2b, r3 со всеми выходами",
+    "fairness-v2-r3, error-v2-r3, synthesis-v2-r3",
+    "clf-v2r3-comparison.md",
+    "стресс-ревизии r6 и r7: вход P2 указывал на v5-r2"
+  ],
+  "reinstated": [
+    "clf-v2-valid",
+    "clf-v2-legacy",
+    "fairness-v2",
+    "error-v2",
+    "synthesis-o1-v2"
+  ],
+  "reinstatement_note": "прежние записи жизненного цикла неизменяемы; отмена оформляется новой записью со ссылкой на отменяемую и причиной",
+  "paper_numbers": "числа процедуры 2, fairness и синтеза возвращаются к значениям на матрице v5",
+  "root_fix": "recompute() и родственные функции получают версию препроцессинга явным аргументом; молчаливое чтение чужого модульного умолчания запрещается",
+  "not_affected": [
+    "процедуры 1, 3 и 4 — D04 и D05 не читают",
+    "находка о пяти непосчитанных признаках стресс-P2 — верна и независима"
+  ],
+  "files_deleted": "ни один файл не удаляется",
+  "decided_at_utc": "2026-07-31T21:29:11+00:00",
+  "decided_at_moscow": "2026-08-01T00:29:11+03:00"
+}

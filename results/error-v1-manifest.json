@@ -1,0 +1,25 @@
+{
+  "created_at": "2026-07-29T09:33:32+00:00",
+  "procedure": "error-v1",
+  "status": "exploratory",
+  "spec": "07-analysis/error-v1-spec.md",
+  "model": "main/full",
+  "cards": 120,
+  "candidates": {
+    "false_positive": 134,
+    "false_negative": 51
+  },
+  "scores_rechecked": 90,
+  "tolerance": 1e-09,
+  "not_executable": {
+    "гибридные классы": "в корпусе отсутствуют",
+    "нестабильные из стресс-тестов": "стресс-тесты не запускались",
+    "несогласие разметчиков": "разметки людьми нет, заменено расхождением процедур"
+  },
+  "inputs": {
+    "fairness-v1-predictions.csv": "929b74e5e8489449638ba8487eadd7e0bfaa0bd8a43a02f177909bad04801bd1",
+    "documents-registry.csv": "b62fb28f13109050b563728e5854f435ce71b9e0192096a276fc988bd3d47e9e",
+    "feature-matrix.csv": "5ab84d2721add25a82f446a7f5155dd9f15c5756f07940ac276934e8edc030da",
+    "error_run.py": "36b901cb6bb95267d37808bcde96a4fb00d3db3bc3d7969d4768cfacdf0413e6"
+  }
+}

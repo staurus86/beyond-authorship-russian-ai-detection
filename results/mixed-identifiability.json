@@ -1,0 +1,135 @@
+{
+  "created_at": "2026-07-29T17:56:17+00:00",
+  "models": [
+    {
+      "model": "M1",
+      "purpose": "машинный корпус, даёт O1",
+      "n": 1079,
+      "columns_candidate": 23,
+      "rank": "22",
+      "aliased": [
+        "wrapper=none"
+      ],
+      "clusters": {
+        "задание (brief_id)": {
+          "clusters": 45,
+          "min_size": 23,
+          "median_size": 24,
+          "singletons": 0
+        },
+        "повтор (repeat_index)": {
+          "clusters": 2,
+          "min_size": 539,
+          "median_size": 540,
+          "singletons": 0
+        }
+      },
+      "crosstabs": {},
+      "verdict": "не идентифицируема"
+    },
+    {
+      "model": "M2",
+      "purpose": "человеческий корпус, даёт O2",
+      "n": 803,
+      "columns_candidate": 22,
+      "rank": "7",
+      "aliased": [
+        "genre=science",
+        "genre=seo",
+        "genre=translation",
+        "level=1 × genre=prose",
+        "level=1 × genre=science",
+        "level=1 × genre=seo",
+        "level=1 × genre=translation",
+        "level=2 × genre=prose",
+        "level=2 × genre=science",
+        "level=2 × genre=seo",
+        "level=2 × genre=translation",
+        "level=3 × genre=prose",
+        "level=3 × genre=science",
+        "level=3 × genre=seo",
+        "level=3 × genre=translation"
+      ],
+      "clusters": {
+        "источник": {
+          "clusters": 124,
+          "min_size": 1,
+          "median_size": 1,
+          "singletons": 85
+        },
+        "автор": {
+          "clusters": 302,
+          "min_size": 1,
+          "median_size": 1,
+          "singletons": 244
+        },
+        "задание (brief_id)": {
+          "clusters": 0,
+          "min_size": 0,
+          "median_size": 0,
+          "singletons": 0
+        }
+      },
+      "crosstabs": {
+        "genre → regulation_level": {
+          "rows": 5,
+          "single_valued": [
+            "news",
+            "prose",
+            "science",
+            "seo"
+          ]
+        }
+      },
+      "verdict": "не идентифицируема"
+    },
+    {
+      "model": "M3",
+      "purpose": "объединённый корпус, даёт O3",
+      "n": 1882,
+      "columns_candidate": 11,
+      "rank": "11",
+      "aliased": [],
+      "clusters": {
+        "задание (brief_id)": {
+          "clusters": 45,
+          "min_size": 23,
+          "median_size": 24,
+          "singletons": 0
+        },
+        "источник": {
+          "clusters": 128,
+          "min_size": 1,
+          "median_size": 1,
+          "singletons": 85
+        },
+        "автор": {
+          "clusters": 306,
+          "min_size": 1,
+          "median_size": 1,
+          "singletons": 244
+        },
+        "канал": {
+          "clusters": 4,
+          "min_size": 269,
+          "median_size": 270,
+          "singletons": 0
+        }
+      },
+      "crosstabs": {
+        "genre → origin": {
+          "rows": 7,
+          "single_valued": [
+            "analytics",
+            "commercial",
+            "news",
+            "prose",
+            "science",
+            "translation"
+          ]
+        }
+      },
+      "verdict": "идентифицируема"
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "created_at": "2026-07-29T18:07:52+00:00",
+  "model": "M1",
+  "series": "v2",
+  "converged": false,
+  "method": "REML, цепочка bfgs → lbfgs → cg, принят первый сошедшийся",
+  "n_obs": 1079,
+  "n_briefs": 45,
+  "response": "index_common_plus_format, score-v2-scores.csv",
+  "formula": "index ~ C(prompt) + C(genre) + C(channel) + C(wrapper) + log_length + log_length_rcs1 + C(prompt):C(genre) + C(prompt):C(channel)",
+  "random_effects": {
+    "groups": "brief_id",
+    "variance_components": "repeat_index"
+  },
+  "spline_knots_log_length": [
+    7.154146056737438,
+    7.365180126021013,
+    7.694939084900401
+  ],
+  "nested_coding": {
+    "factor": "wrapper_version",
+    "nested_in": "gpt",
+    "rule": "внутри канала базовым берётся алфавитно первый уровень; вне канала все наблюдения в базовой категории",
+    "reason": "вне gpt версия обёртки определена каналом, поэтому фактор даёт одну лишнюю степень свободы при любом выборе базового уровня"
+  },
+  "design_rank_checked": true,
+  "prompt_terms": [
+    {
+      "term": "C(prompt)[T.P2]",
+      "estimate": 6.759805257989894,
+      "ci_low": 4.151310509560644,
+      "ci_high": 9.368300006419144,
+      "p_value": 3.790976507181049e-07
+    },
+    {
+      "term": "C(prompt)[T.P3]",
+      "estimate": -4.157164223928195,
+      "ci_low": -6.817801257136113,
+      "ci_high": -1.4965271907202773,
+      "p_value": 0.002195815982047396
+    }
+  ],
+  "group_variance": 5.647779708474762,
+  "scale": 52.43647537882574,
+  "inputs": {
+    "documents-registry.csv": "d3cd478ffed7a886004eab8d14494eed687a4a29a112deff7ec80a3ed2cb6fac",
+    "score-v2-scores.csv": "1a949cb37c9b8951aab9b8414d9d17be2f06150e2ed1796066197b0ead337c9a",
+    "mixed-identifiability.json": "585f59e553a9257fc27965ff0297e2a96ed4b5e37ce5d385f494fb9750104069",
+    "analysis-closure.md": "639f00c9cc90984ed61a6c02cd453857a8272668a7b585d370f9acb457bedd08"
+  },
+  "code_sha256": "3d8cee2b1ff7fd4ad6cc1d806f20cfdbe0a5fa9da278901b313175a1075327f5",
+  "optimizer_attempts": [
+    {
+      "method": "bfgs",
+      "converged": false,
+      "warnings": [
+        "ConvergenceWarning: Gradient optimization failed, |grad| = 35.258107",
+        "ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals",
+        "ConvergenceWarning: MixedLM optimization failed, trying a different optimizer may help.",
+        "ConvergenceWarning: The Hessian matrix at the estimated parameter values is not positive definite.",
+        "ConvergenceWarning: The MLE may be on the boundary of the parameter space."
+      ]
+    },
+    {
+      "method": "lbfgs",
+      "converged": false,
+      "warnings": [
+        "ConvergenceWarning: Gradient optimization failed, |grad| = 15.623280",
+        "ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals",
+        "ConvergenceWarning: MixedLM optimization failed, trying a different optimizer may help."
+      ]
+    },
+    {
+      "method": "cg",
+      "converged": false,
+      "warnings": [
+        "ConvergenceWarning: Gradient optimization failed, |grad| = 4.472461",
+        "ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals",
+        "ConvergenceWarning: MixedLM optimization failed, trying a different optimizer may help."
+      ]
+    }
+  ],
+  "optimizer_warnings": [
+    "bfgs: ConvergenceWarning: Gradient optimization failed, |grad| = 35.258107",
+    "bfgs: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals",
+    "bfgs: ConvergenceWarning: MixedLM optimization failed, trying a different optimizer may help.",
+    "bfgs: ConvergenceWarning: The Hessian matrix at the estimated parameter values is not positive definite.",
+    "bfgs: ConvergenceWarning: The MLE may be on the boundary of the parameter space.",
+    "lbfgs: ConvergenceWarning: Gradient optimization failed, |grad| = 15.623280",
+    "lbfgs: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals",
+    "lbfgs: ConvergenceWarning: MixedLM optimization failed, trying a different optimizer may help.",
+    "cg: ConvergenceWarning: Gradient optimization failed, |grad| = 4.472461",
+    "cg: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals",
+    "cg: ConvergenceWarning: MixedLM optimization failed, trying a different optimizer may help."
+  ],
+  "status": "отказ сходимости: коэффициенты не интерпретируются"
+}

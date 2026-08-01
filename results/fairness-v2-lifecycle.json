@@ -1,0 +1,14 @@
+{
+  "manifest": "fairness-v2-manifest.json",
+  "manifest_sha256": "3d3563aca8772ea17975ae20946248ff44247308550e9301f3983c9dd7353f43",
+  "execution_status": "exploratory",
+  "lifecycle_status": "invalidated",
+  "reason": "аудит опирался на процедуру 2, посчитанную на матрице до исправления D04 и D05",
+  "reusable_scope": "",
+  "basis": "07-analysis/invalidation-decision-2026-07-31-p2-discourse.json",
+  "basis_sha256": "e31cf1b74f08f443c0a90eb40475cd1af68650a6ee51bdaa3791bc06f232f7b2",
+  "recorded_at_utc": "2026-07-31T20:05:23+00:00",
+  "recorded_at_moscow": "2026-07-31T23:05:23+03:00",
+  "superseded_by": "fairness-v2r3-manifest.json",
+  "superseded_by_sha256": "de33efad58f7ed4a9dda4945c2379530b66f704e3b4c5b5cb6206df0ef769ba2"
+}

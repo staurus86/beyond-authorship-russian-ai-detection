@@ -1,0 +1,21 @@
+\begin{table*}[htbp]
+\centering
+\small
+\caption{Цена ошибки по подгруппам человеческого корпуса: формальный регистр, перевод и жанры}
+\label{tab:5}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.131\linewidth}>{\raggedright\arraybackslash}p{0.131\linewidth}>{\raggedright\arraybackslash}p{0.131\linewidth}>{\raggedright\arraybackslash}p{0.131\linewidth}>{\raggedright\arraybackslash}p{0.131\linewidth}>{\raggedright\arraybackslash}p{0.131\linewidth}>{\raggedright\arraybackslash}p{0.131\linewidth}}
+\toprule
+Подгруппа & Помета hard-human & Holdout с подгруппой & Медиана FPR & Размах FPR & Медиана разности с остальным тестом & Худший holdout \\
+\midrule
+весь человеческий тест & — & 18 & 0.0380 & 0.0255–0.3098 & — & genre\_seo \\
+genre=science & HH-formal-register & 18 & 0.0659 & 0.0419–0.5210 & 0.0429 & genre\_seo \\
+genre=translation & HH-translation & 18 & 0.0342 & 0.0137–0.1233 & −0.0087 & genre\_seo \\
+genre=news & HH-polished & 18 & 0.0132 & 0.0000–0.0658 & −0.0380 & genre\_prose \\
+genre=seo & — & 4 & 0.0261 & 0.0000–0.3766 & −0.0095 & genre\_seo \\
+genre=prose & — & 2 & 0.0639 & 0.0000–0.1278 & 0.0089 & genre\_prose \\
+\bottomrule
+\end{tabular}
+\begin{minipage}{\linewidth}\footnotesize\vspace{2pt}
+\textit{Примечание.} Единица анализа — человеческий документ внутри группового holdout. Знаменатель: 18 групповых holdout; в каждом подгруппа считается на человеческой части своего теста. Данные: серия v2, статус current. Медиана и размах FPR по holdout, где подгруппа представлена; разность — FPR подгруппы минус FPR остального человеческого теста того же holdout. Интервалы 95\%, кластерный бутстрап по автору и документу; кластер — задание, заданий 45. Шкала: меньше значит меньше ложных обвинений человека. Сокращения: FPR — доля ложных срабатываний; HH — hard-human, пометы поверх корпуса: formal-register — формальный научный регистр, translation — переводная проза, polished — редакторски вычищенный текст. Пропуски: каждая помета hard-human совпадает с жанром один в один: formal-register — все 167 документов science, polished — все 152 news, translation — все 73 translation. Поэтому строки не дублируются, а помета показана колонкой; отделить эффект пометы от эффекта жанра этот дизайн не позволяет. Прочерк в колонке разности означает, что подгруппа совпала со всем человеческим тестом. Поправка на множественные сравнения не применялась. Подгрупповой анализ описательный.
+\end{minipage}
+\end{table*}

@@ -1,0 +1,44 @@
+{
+  "invalidated": true,
+  "invalidated_reason": "features_common=14 вместо 17-18: M01/M02/M05/C01 не были посчитаны, знаменатель 0.51 вместо 0.57 — delta несопоставима с baseline. Подробно: stress-p1-invalidation.md",
+  "invalidated_at": "2026-07-29",
+  "created_at": "2026-07-29T19:33:15+00:00",
+  "procedure": "P1",
+  "panel": "stress-panel-v1.csv",
+  "documents": 60,
+  "transformations": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    10,
+    11,
+    13,
+    14,
+    15,
+    16
+  ],
+  "not_executable": {
+    "6": "лёгкая человеческая редактура — ветки A→H в корпусе нет",
+    "7": "глубокая человеческая редактура — ветки A→H в корпусе нет",
+    "8": "машинный рерайт — прогон модели-рерайтера не выполнялся",
+    "9": "перевод и обратный перевод — прогон переводчика не выполнялся",
+    "12": "перефразирование — прогон модели не выполнялся"
+  },
+  "denominator": 11,
+  "threshold": 5.0,
+  "percentile_reference": "замороженный жанровый пул серии v2; преобразованные значения в пул не добавляются",
+  "rows": 660,
+  "rows_scored": 654,
+  "inputs": {
+    "stress-panel-v1.csv": "39d96e19c6cbf291d4a8940f00a9915e55be5a0dee2ddc979fbcc676b231efce",
+    "feature-matrix-v5.csv": "421fc634e69ed20fa9ffac1b965905cb2b2a675d93fb214f1e995cd53706636d",
+    "score-v2-scores.csv": "1a949cb37c9b8951aab9b8414d9d17be2f06150e2ed1796066197b0ead337c9a"
+  },
+  "code_sha256": {
+    "stress_run_p1.py": "384894bfcf8bd0dc9019047e690c8ead1ec568881ee38dad0ea8a03f09c0465c",
+    "stress_transforms.py": "42b98b9849e3c5ba6d064493ccdd2df5c0e1382c6b838970b7d6fd0721274f2a",
+    "stress_panel.py": "cdc3c3a125e9eec1466bccefa34e8749afdbc3e002cb9ad6d3753ace89e73447"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "created_at": "2026-07-28T10:01:42+00:00",
+  "procedure": "judge-v1",
+  "status": "exploratory",
+  "judge": {
+    "model": "gemma3:12b-it-qat",
+    "digest": "5d4fa005e7bb5931be8bc35224080a9b316c7e1c069c9481a6a51b607f4252e2",
+    "size_bytes": 8928675346,
+    "ollama_version": "0.18.0",
+    "quantization_level": "Q4_0",
+    "parameter_size": "12.2B",
+    "family": "gemma3",
+    "capabilities": [
+      "completion",
+      "vision"
+    ],
+    "declared_context_length": 131072,
+    "num_ctx": 16384,
+    "num_predict": 200,
+    "template": "{{- range $i, $_ := .Messages }}\n{{- $last := eq (len (slice $.Messages $i)) 1 }}\n{{- if or (eq .Role \"user\") (eq .Role \"system\") }}<start_of_turn>user\n{{ .Content }}<end_of_turn>\n{{ if $last }}<start_of_turn>model\n{{ end }}\n{{- else if eq .Role \"assistant\" }}<start_of_turn>model\n{{ .Content }}{{ if not $last }}<end_of_turn>\n{{ end }}\n{{- end }}\n{{- end }}\n",
+    "default_parameters": "temperature                    1\ntop_k                          64\ntop_p                          0.95\nstop                           \"<end_of_turn>\"",
+    "longest_document": "human_science_urfu_0019",
+    "longest_document_tokens": 11960,
+    "sampling": {
+      "temperature": 1.0,
+      "top_p": 1.0,
+      "top_k": 64
+    },
+    "seeds": [
+      20260727,
+      20260728,
+      20260729
+    ],
+    "response_schema": {
+      "type": "object",
+      "properties": {
+        "score": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "reason": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "score",
+        "reason"
+      ]
+    },
+    "documents": 1916,
+    "calls": 5748
+  },
+  "prompt_sha256": "3e70655f807d3aa0b8c0ef7dae0eb7be3bed7691d134602ad92b4637e3c35b5d",
+  "inputs": {
+    "prep-v4/manifest.csv": "a250921bf9eba3d0d0ab8d5b3011ca0d9b3c7bff24aa853a3655bd3a766bff76",
+    "score-v1-pairs.csv": "990f7683ebf95d2ada4a0df059acde4862b25adab42aed9b8118154e3ec72471",
+    "proc4-judge-spec.md": "f4f7218e2b934bf2adb3948f60e78f6bd16d74b47ea45fdba8657a44fc66728e"
+  },
+  "code_sha256": "0d40d1a67b4e322b4b819a10fcca106c6179930565bf4ae255175f7a8cc344e6",
+  "call_statuses": {
+    "ok": 5744,
+    "invalid": 4
+  },
+  "agreement": {
+    "documents_with_three": 1912,
+    "exact_match_share": 0.16684100418410042,
+    "mean_range": 4.718684759916493,
+    "median_range": 3.0,
+    "share_range_over_20": 0.0036534446764091857,
+    "icc_2_1": 0.5380242259579935,
+    "icc_documents": 1912
+  },
+  "documents_scored": 1916,
+  "documents_missing": 0
+}

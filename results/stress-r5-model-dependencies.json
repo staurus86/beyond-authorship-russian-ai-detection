@@ -1,0 +1,93 @@
+{
+  "revision": "r5",
+  "python": "3.14.0",
+  "procedures": {
+    "p1": {
+      "embeddings": {
+        "model": "BAAI/bge-m3",
+        "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+        "mode": "BAAI/bge-m3@5617a9f61b02, sentence-transformers 5.5.1, deterministic cpu/1thread/bs1",
+        "max_seq": 512,
+        "batch": 1,
+        "cache": "stress-embed-v2",
+        "index": "keys.json",
+        "index_sha256": "5ea69178752f7dd00fe7d0f1b18e1c19d9ab6319c719db93dd5e0a57a7ce7bfa",
+        "index_keys": 1,
+        "cached_records": 594,
+        "files_on_disk": 594
+      },
+      "parsing": {
+        "revision": "stanza 1.14.0/ru-syntagrus",
+        "cache": "stress-stanza-v2",
+        "index": "keys.json",
+        "index_sha256": "2ad5653a3369fc560cacebe543d48be474ffabf7e8235817db9354081e8161ea",
+        "index_keys": 660,
+        "cached_records": 711,
+        "files_on_disk": 711
+      },
+      "ner": {
+        "revision": "natasha 1.6.0/slovnet 0.6.0/navec 0.10.0",
+        "cache": "stress-ner-v2",
+        "index": "keys.json",
+        "index_sha256": "056ae7e3acf9a6efe4b537a9856fab95a3e771daa42140e5bb0006a2be38b87c",
+        "index_keys": 660,
+        "cached_records": 711,
+        "files_on_disk": 711
+      }
+    },
+    "p2": {
+      "shares_caches_with": "p1",
+      "libraries": {
+        "scikit-learn": "1.8.0",
+        "numpy": "2.4.6",
+        "scipy": "1.17.1"
+      },
+      "classifier": {
+        "estimator": "LogisticRegression",
+        "penalty": "l2",
+        "solver": "lbfgs (по умолчанию sklearn)",
+        "max_iter": 5000,
+        "class_weight": "balanced",
+        "random_state": 20260727,
+        "c_grid": [
+          0.01,
+          0.1,
+          1.0,
+          10.0
+        ],
+        "inner_folds": 3,
+        "selection_metric": "ROC AUC",
+        "scaler": "StandardScaler"
+      }
+    },
+    "p3": {
+      "model": "ai-forever/rugpt3large_based_on_gpt2",
+      "revision": "29c569320be2e08f29757898ec3866413725acd7",
+      "device": "cpu",
+      "dtype": "float32"
+    },
+    "p4": {
+      "source": "деривация из r4, судья повторно не вызывался",
+      "model": "gemma3:12b-it-qat",
+      "digest": "5d4fa005e7bb5931be8bc35224080a9b316c7e1c069c9481a6a51b607f4252e2",
+      "seeds": [
+        20260727,
+        20260728,
+        20260729
+      ],
+      "sampling": {
+        "temperature": 1.0,
+        "top_p": 1.0,
+        "top_k": 64
+      },
+      "ollama_client_version": "0.18.0",
+      "ollama_server_runtime_version": null,
+      "ollama_version_note": "Версия клиента 0.18.0 зафиксирована в журнале дня 2026-07-31. Версия server runtime, фактически обслуживавшего запросы, в манифесте r4 не сохранялась. Приравнивать версию клиента к версии сервера нельзя: это разные компоненты, и совпадение их версий не проверялось. Для будущих ревизий писать в манифест версию сервера, полученную из его же ответа."
+    }
+  },
+  "built_at_utc": "2026-07-31T13:53:27+00:00",
+  "built_at_moscow": "2026-07-31T16:53:27+03:00",
+  "provenance_class": "reconstructed_provenance_metadata",
+  "provenance_note": "Собран после запуска из журналов, индексов кешей и констант кода. Процесс этот файл при старте не читал. Достоверность опирается на provenance-аудит 2026-07-31: ни один из 27 отслеживаемых файлов не изменялся после старта попытки 13:38:20 UTC, расхождений хешей ноль.",
+  "reconstruction_detail": "версии и ревизии считаны из констант кода, preflight-манифеста и индексов кешей"
+}

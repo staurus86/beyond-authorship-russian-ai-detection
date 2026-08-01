@@ -1,0 +1,14 @@
+{
+  "manifest": "clf-v2r2-legacy-manifest.json",
+  "manifest_sha256": "97efce6a3b9985f6e2a595ce56a0374d63332a0a5c038f6dfd59694172ef726a",
+  "execution_status": "exploratory",
+  "lifecycle_status": "invalidated",
+  "reason": "суффикс ревизии увёл схему A на схему B: прогон повторил valid-r2 строка в строку",
+  "reusable_scope": "",
+  "basis": "07-analysis/invalidation-decision-2026-07-31-clf-r2-series-name.json",
+  "basis_sha256": "90379ec20d120405d8970ea382bb9c92ef4dbccbcf63b164f0e7ea70f8d53db9",
+  "recorded_at_utc": "2026-07-31T19:20:09+00:00",
+  "recorded_at_moscow": "2026-07-31T22:20:09+03:00",
+  "superseded_by": "clf-v2r2b-legacy-manifest.json",
+  "superseded_by_sha256": "c6d72265d3ab4848f09b61ff0c3d25c0c3db1c487a122c8a8d81dfc8d8b099ee"
+}

@@ -1,0 +1,14 @@
+{
+  "manifest": "stress-p3-r4-manifest.json",
+  "manifest_sha256": "69493e7fe4a60471539cd5c074814b4d461d460fc89107a578b37851a78942be",
+  "execution_status": "completed",
+  "lifecycle_status": "superseded",
+  "reason": "t14 переведено в not executable амендментом r5; прогон завершён штатно, десять преобразований остаются корректной исторической частью",
+  "reusable_scope": "десять преобразований 1,2,3,4,5,10,11,13,15,16; строки t14 из области пригодности исключены",
+  "basis": "02-preregistration/amendment-stress-r5-lifecycle-status.md",
+  "basis_sha256": "759784ae43c00487d75e4f201d38f41b66991a13a9b10fcbee18f97ad6651388",
+  "recorded_at_utc": "2026-07-31T12:03:55+00:00",
+  "recorded_at_moscow": "2026-07-31T15:03:55+03:00",
+  "superseded_by": "stress-p3-r5-manifest.json",
+  "superseded_by_sha256": ""
+}

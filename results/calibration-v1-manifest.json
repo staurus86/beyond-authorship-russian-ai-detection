@@ -1,0 +1,123 @@
+{
+  "series": "calibration-v1",
+  "spec": "02-preregistration/amendment-calibration-spec.md",
+  "mode": "read-only; clf_run.py и fairness_run.py не запускались и не импортировались",
+  "source": "fairness-v2-predictions.csv",
+  "source_sha256": "c5f2d10e55bb8f63f0e6e70225b414b89cd959d6086fa8adafc76474239d378d",
+  "frozen_metrics": "clf-v2-p2a-metrics.csv",
+  "model": "main",
+  "estimand": "full",
+  "statuses": {
+    "brier": "зарегистрированная метрика",
+    "ece_mce": "название зарегистрировано, операционализация уточнена post hoc до расчёта — описательные",
+    "risk_coverage": "то же — описательное",
+    "bins_5_20": "sensitivity",
+    "worst_holdout": "описательный экстремум по каждой метрике отдельно",
+    "document_level": "sensitivity ансамблевой свёртки"
+  },
+  "bins_main": 10,
+  "bins_sensitivity": [
+    5,
+    20
+  ],
+  "coverage_targets": [
+    1.0,
+    0.9,
+    0.8,
+    0.7,
+    0.5
+  ],
+  "preflight": {
+    "input_sha256": {
+      "expected": "c5f2d10e55bb8f63f0e6e70225b414b89cd959d6086fa8adafc76474239d378d",
+      "got": "c5f2d10e55bb8f63f0e6e70225b414b89cd959d6086fa8adafc76474239d378d",
+      "passed": true
+    },
+    "rows": {
+      "expected": 12112,
+      "got": 12112,
+      "passed": true
+    },
+    "splits": {
+      "expected": 18,
+      "got": 18,
+      "passed": true
+    },
+    "unique_pairs": {
+      "duplicates": 0,
+      "passed": true
+    },
+    "probability_range": {
+      "violations": 0,
+      "passed": true
+    },
+    "decision_consistency": {
+      "violations": 0,
+      "passed": true
+    },
+    "frozen_metrics_match": {
+      "mismatched_splits": [],
+      "passed": true
+    }
+  },
+  "summary": {
+    "brier_macro": 0.03651496055555556,
+    "ece_10_macro": 0.05710248444444445,
+    "mce_10_macro": 0.2647091627777778,
+    "ece_5_macro": 0.05567775333333333,
+    "ece_20_macro": 0.05814468611111111,
+    "worst_brier": {
+      "split_name": "holdout_genre_seo",
+      "value": 0.17963966
+    },
+    "worst_ece_10": {
+      "split_name": "holdout_genre_seo",
+      "value": 0.19732729
+    },
+    "worst_mce_10": {
+      "split_name": "holdout_genre_seo",
+      "value": 0.75479813
+    },
+    "risk_macro": {
+      "at_100": 0.046823027777777776,
+      "at_90": 0.01886304111111111,
+      "at_80": 0.01243805388888889,
+      "at_70": 0.008485289444444445,
+      "at_50": 0.005949138333333333
+    },
+    "coverage_macro": {
+      "at_100": 1.0,
+      "at_90": 0.9002680555555556,
+      "at_80": 0.8003515,
+      "at_70": 0.6997453888888888,
+      "at_50": 0.5008639444444445
+    },
+    "risk_pooled": {
+      "at_100": 0.0500330250990753,
+      "at_90": 0.023484084028988165,
+      "at_80": 0.018369453044375646,
+      "at_70": 0.01627742392073602,
+      "at_50": 0.013703153376258874
+    },
+    "coverage_pooled": {
+      "at_100": 1.0,
+      "at_90": 0.9000165125495376,
+      "at_80": 0.8000330250990753,
+      "at_70": 0.6999669749009247,
+      "at_50": 0.5000825627476883
+    },
+    "document_level_sensitivity": {
+      "documents": 1882,
+      "brier": 0.049857399658221044,
+      "ece_10": 0.04381055906541504,
+      "mce_10": 0.20684246536643028,
+      "bins_nonempty_10": 10
+    }
+  },
+  "code_sha256": {
+    "calibration_run.py": "9f54f61eb1db986b642bc50b2d85dfc2f3c181b293ef7783ff3432951f7367db"
+  },
+  "provenance_limitation": "хеш файла предсказаний в манифест прогона не записан; побитовая неизменность с момента исходного прогона не доказана, доказано соответствие замороженным метрикам и совпадение решений с базовыми вероятностями стресс-P2 r11",
+  "precision_limitation": "fairness_run.py:183 пишет round(score, 6); расхождение с неокруглёнными базовыми вероятностями стресс-P2 не выше 4.999e-07, все 12112 решений совпадают",
+  "created_at": "2026-08-01T13:14:56+00:00"
+}
