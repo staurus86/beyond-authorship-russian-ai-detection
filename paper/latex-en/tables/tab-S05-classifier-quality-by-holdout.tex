@@ -1,0 +1,33 @@
+\begin{sidewaystable}[p]
+\centering
+\scriptsize
+\caption{Quality of the main model on each of the 18 group holdouts}
+\label{tab:s5}
+\begin{tabular}{>{\RaggedRight\hspace{0pt}\arraybackslash}p{0.078\linewidth}>{\RaggedRight\hspace{0pt}\arraybackslash}p{0.078\linewidth}>{\RaggedRight\hspace{0pt}\arraybackslash}p{0.078\linewidth}>{\RaggedRight\hspace{0pt}\arraybackslash}p{0.078\linewidth}>{\RaggedRight\hspace{0pt}\arraybackslash}p{0.078\linewidth}>{\RaggedRight\hspace{0pt}\arraybackslash}p{0.078\linewidth}>{\RaggedRight\hspace{0pt}\arraybackslash}p{0.078\linewidth}>{\RaggedRight\hspace{0pt}\arraybackslash}p{0.078\linewidth}>{\RaggedRight\hspace{0pt}\arraybackslash}p{0.078\linewidth}>{\RaggedRight\hspace{0pt}\arraybackslash}p{0.078\linewidth}}
+\toprule
+Holdout & Documents & Machine & Human & AUROC & Balanced accuracy & MCC & TPR at 1\% FPR & Selected C & Features \\
+\midrule
+author & 764 & 269 & 495 & 0.9910 & 0.9524 & 0.9079 & 0.8848 & 0.1 & 22 \\
+genre\_analytics & 751 & 359 & 392 & 0.9987 & 0.9817 & 0.9628 & 0.9861 & 1.0 & 22 \\
+genre\_commercial & 752 & 360 & 392 & 0.9974 & 0.9636 & 0.9264 & 0.9750 & 1.0 & 22 \\
+genre\_news & 392 & 0 & 392 & not defined &  &  & — & 0.1 & 22 \\
+genre\_prose & 572 & 0 & 572 & not defined &  &  & — & 0.01 & 22 \\
+genre\_science & 392 & 0 & 392 & not defined &  &  & — & 0.1 & 22 \\
+genre\_seo & 983 & 360 & 623 & 0.9433 & 0.8382 & 0.6560 & 0.0306 & 10.0 & 22 \\
+genre\_translation & 392 & 0 & 392 & not defined &  &  & — & 0.1 & 22 \\
+model\_Anthropic & 662 & 270 & 392 & 1.0000 & 0.9847 & 0.9634 & 1.0000 & 10.0 & 22 \\
+model\_DeepSeek & 662 & 270 & 392 & 0.9958 & 0.9655 & 0.9284 & 0.9222 & 0.01 & 22 \\
+model\_NVIDIA & 661 & 269 & 392 & 0.9902 & 0.9580 & 0.9154 & 0.8848 & 0.1 & 22 \\
+model\_OpenAI & 662 & 270 & 392 & 0.9973 & 0.9761 & 0.9502 & 0.9519 & 0.1 & 22 \\
+prompt\_P1 & 752 & 360 & 392 & 0.9994 & 0.9820 & 0.9632 & 0.9861 & 10.0 & 22 \\
+prompt\_P2 & 752 & 360 & 392 & 1.0000 & 0.9834 & 0.9660 & 1.0000 & 10.0 & 22 \\
+prompt\_P3 & 751 & 359 & 392 & 0.9777 & 0.9225 & 0.8494 & 0.6518 & 10.0 & 22 \\
+source & 1003 & 539 & 464 & 0.9950 & 0.9668 & 0.9338 & 0.9351 & 0.1 & 22 \\
+time & 458 & 0 & 458 & not defined &  &  & — & 0.1 & 22 \\
+topic & 751 & 359 & 392 & 0.9983 & 0.9740 & 0.9472 & 0.9694 & 1.0 & 22 \\
+\bottomrule
+\end{tabular}
+\begin{minipage}{\linewidth}\footnotesize\vspace{2pt}
+\textit{Note.} Unit of analysis: group holdout. Denominator: 18 holdouts; test composition is set by the grouping variable. Data: series v2, status current. Metrics are computed on the test set of each holdout; C is selected by nested cross-validation on the training part. Scale: AUROC, balanced accuracy, MCC and TPR: higher is better. Abbreviations: MCC — Matthews correlation coefficient; TPR — proportion of machine texts correctly identified; C — regularisation parameter. Missing values: AUROC is not defined on five single-class holdouts: the test set lacks one of the two classes, so there is no ranking to compare. No correction for multiple comparisons was applied.
+\end{minipage}
+\end{sidewaystable}

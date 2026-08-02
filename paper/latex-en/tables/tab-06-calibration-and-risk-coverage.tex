@@ -1,0 +1,23 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Probability calibration and the coverage–risk trade-off}
+\label{tab:6}
+\begin{tabular}{l>{\hspace{0pt}}p{2.4cm}>{\hspace{0pt}}p{2.4cm}>{\hspace{0pt}}p{1.9cm}>{\hspace{0pt}}p{2.6cm}}
+\toprule
+Quantity & Macro-average over 18 holdouts & Range across holdouts & Worst holdout & Quantity status \\
+\midrule
+Brier & 0.0365 & 0.0109–0.1796 & genre\_seo & registered metric \\
+ECE, 10 bins & 0.0571 & 0.0113–0.1973 & genre\_seo & descriptive \\
+MCE, 10 bins & 0.2647 & 0.0523–0.7548 & genre\_seo & descriptive \\
+Risk at 100\% coverage & 0.0468 & 0.0173–0.2014 & genre\_seo & descriptive \\
+Risk at 90\% coverage & 0.0189 & 0.0000–0.1774 & genre\_seo & descriptive \\
+Risk at 80\% coverage & 0.0124 & 0.0000–0.1425 & genre\_seo & descriptive \\
+Risk at 70\% coverage & 0.0085 & 0.0000–0.1076 & genre\_seo & descriptive \\
+Risk at 50\% coverage & 0.0059 & 0.0000–0.0854 & genre\_seo & descriptive \\
+\bottomrule
+\end{tabular}
+\begin{minipage}{\linewidth}\footnotesize\vspace{2pt}
+\textit{Note.} The unit of analysis is a document within a group holdout. Denominator: 18 group holdouts; the macro-average is taken over holdouts, not over documents, so large holdouts do not outweigh small ones. Data: series calibration-v1, computed read-only from the fairness-v2 predictions. Brier is the mean squared deviation of the probability from the outcome; ECE and MCE are the mean and maximum gap between probability and frequency on equal-frequency bins; risk is the share of erroneous decisions among those retained as coverage is reduced. No intervals were computed. Scale: lower is better for all quantities in the table. Abbreviations: ECE — expected calibration error; MCE — maximum calibration error; coverage — the share of documents on which a decision is made, the rest go to abstention. Missing values: none; no threshold is selected from this table. No correction for multiple comparisons was applied.
+\end{minipage}
+\end{table}

@@ -1,0 +1,32 @@
+\begin{sidewaystable}[p]
+\centering
+\scriptsize
+\caption{Аудит дословных повторов: документы, прошедшие симметричный скан}
+\label{tab:s9}
+\begin{tabular}{>{\RaggedRight\hspace{0pt}\arraybackslash}p{0.170\linewidth}>{\RaggedRight\hspace{0pt}\arraybackslash}p{0.079\linewidth}>{\RaggedRight\hspace{0pt}\arraybackslash}p{0.079\linewidth}>{\RaggedRight\hspace{0pt}\arraybackslash}p{0.079\linewidth}>{\RaggedRight\hspace{0pt}\arraybackslash}p{0.079\linewidth}>{\RaggedRight\hspace{0pt}\arraybackslash}p{0.079\linewidth}>{\RaggedRight\hspace{0pt}\arraybackslash}p{0.079\linewidth}>{\RaggedRight\hspace{0pt}\arraybackslash}p{0.079\linewidth}>{\RaggedRight\hspace{0pt}\arraybackslash}p{0.079\linewidth}}
+\toprule
+Документ & Источник & Жанр & Доля повторов & Максимальная кратность & Длиннейший повторённый блок & Модальный сдвиг & Механизм & Вердикт \\
+\midrule
+human\_news\_buriy\_2014\_0014 & buriy\_2014 & news & 0.320 & 2 & 12 & 44 & блочный повтор с постоянным смещением & confirmed\_defect \\
+human\_news\_buriy\_2014\_0045 & buriy\_2014 & news & 0.317 & 2 & 10 & 23 & блочный повтор с постоянным смещением & confirmed\_defect \\
+human\_news\_buriy\_2014\_0040 & buriy\_2014 & news & 0.262 & 2 & 8 & 33 & блочный повтор с постоянным смещением & confirmed\_defect \\
+human\_news\_buriy\_2014\_0024 & buriy\_2014 & news & 0.235 & 2 & 10 & 11 & блочный повтор с постоянным смещением & confirmed\_defect \\
+human\_seo\_madcats\_0005 & madcats & seo & 0.206 & 2 & 18 & 106 & разрозненные повторы & legitimate\_source\_property \\
+human\_news\_buriy\_2014\_0042 & buriy\_2014 & news & 0.161 & 2 & 5 & 50 & блочный повтор с постоянным смещением & confirmed\_defect \\
+human\_seo\_drmax\_0013 & drmax & seo & 0.157 & 2 & 7 & 52 & блочный повтор с постоянным смещением & confirmed\_defect \\
+human\_seo\_devaka\_ru\_0019 & devaka\_ru & seo & 0.148 & 2 & 1 & 2 & разрозненные повторы & unresolved \\
+human\_seo\_convertmonster\_0001 & convertmonster & seo & 0.138 & 4 & 1 &  & кратность выше двух & confirmed\_defect \\
+human\_science\_spbgu\_0042 & spbgu & science & 0.135 & 8 & 9 & 40 & повторы по обе стороны структурного заголовка & legitimate\_source\_property \\
+human\_seo\_devaka\_ru\_0027 & devaka\_ru & seo & 0.132 & 2 & 10 & 5 & блочный повтор с постоянным смещением & confirmed\_defect \\
+human\_science\_spbgu\_0062 & spbgu & science & 0.129 & 5 & 5 & 33 & кратность выше двух & legitimate\_source\_property \\
+human\_science\_spbgu\_0044 & spbgu & science & 0.118 & 2 & 11 & 36 & повторы по обе стороны структурного заголовка & legitimate\_source\_property \\
+human\_science\_urfu\_0039 & urfu & science & 0.117 & 2 & 3 & 39 & блочный повтор с постоянным смещением & unresolved \\
+human\_seo\_drmax\_0024 & drmax & seo & 0.106 & 3 & 4 & 5 & блочный повтор с постоянным смещением & unresolved \\
+human\_news\_buriy\_2014\_0048 & buriy\_2014 & news & 0.105 & 2 & 4 & 2 & разрозненные повторы & confirmed\_defect \\
+human\_seo\_devaka\_ru\_0021 & devaka\_ru & seo & 0.103 & 2 & 6 & 7 & блочный повтор с постоянным смещением & confirmed\_defect \\
+\bottomrule
+\end{tabular}
+\begin{minipage}{\linewidth}\footnotesize\vspace{2pt}
+\textit{Примечание.} Единица анализа — документ. Знаменатель: скан прошли обе части корпуса, 1882 документа; порог отбора — доля дословно повторённых предложений выше 0.1. Данные: скан repeat-scan-v2, профили prep-v4 и prep-v5. Доля повторов — сумма кратностей повторяющихся предложений, делённая на число предложений документа. Шкала: больше значит сильнее засорён повторами. Сокращения: модальный сдвиг — наиболее частое расстояние между повторяющимися предложениями в позициях. Пропуски: в таблице только документы, прошедшие порог; остальные в скан не попали и строк не имеют. Поправка на множественные сравнения не применялась.
+\end{minipage}
+\end{sidewaystable}

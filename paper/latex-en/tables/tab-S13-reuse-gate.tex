@@ -1,0 +1,18 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{The parse reuse gate: reconciliation on the sentinel sample}
+\label{tab:s13}
+\begin{tabular}{>{\RaggedRight\hspace{0pt}\arraybackslash}p{0.460\linewidth}>{\RaggedRight\hspace{0pt}\arraybackslash}p{0.460\linewidth}}
+\toprule
+Parse stage & Reconciliation result on the sentinel sample \\
+\midrule
+Stanza & bitwise match on six documents \\
+NER & bitwise match on six documents \\
+embeddings & vector discrepancy up to 3.5·10⁻⁷, sem-v1 features up to 2.5·10⁻⁶, against a tolerance of 1·10⁻⁴ \\
+\bottomrule
+\end{tabular}
+\begin{minipage}{\linewidth}\footnotesize\vspace{2pt}
+\textit{Note.} The unit of analysis is the text parse stage. Denominator: six documents of the sentinel sample, three of each class. Data: the feature\_reuse\_gate gate, series v2. The reconciliation is built on recomputation from scratch and comparison against the cache. Scale: the smaller the discrepancy, the more reliable the reuse. Abbreviations: NER — named entity recognition; sem-v1 — the family of semantic features. Missing values: bitwise agreement never happens for embeddings: the cache was computed in batches across document boundaries, and the summation order differs. No correction for multiple comparisons was applied.
+\end{minipage}
+\end{table}

@@ -1,0 +1,19 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Generation channels of the machine part: models, access and parameters}
+\label{tab:s2}
+\begin{tabular}{lllll}
+\toprule
+Channel & Model & Wrapper and access & Open weights & Temperature and top-p \\
+\midrule
+real\_claude & claude-opus-4-8 & nested CLI, clean process per cell & no & channel default \\
+gpt & gpt-5.5 & codex exec, reasoning effort high & no & channel default \\
+deepseek\_pro & deepseek-v4-pro & HTTPS API without a wrapper & yes & 1.0 / 1.0 \\
+nemotron & nemotron-3-ultra-free & HTTPS API via a gateway & yes & 1.0 / 1.0 \\
+\bottomrule
+\end{tabular}
+\begin{minipage}{\linewidth}\footnotesize\vspace{2pt}
+\textit{Note.} Unit of analysis: the generation channel. Denominator: four channels, 1079 machine documents; each channel produced 270 documents, except nemotron with 269. Data: corpus registry. The table describes generation conditions; it contains no run numbers. Scale: none. Abbreviations: top-p — the share of probability mass in sampling; ``channel default'' means the wrapper does not disclose the parameters. Missing entries: temperature and top-p are unavailable for two channels: the wrapper does not report them, so between-channel differences cannot be attributed to the model. No multiple-comparison correction was applied.
+\end{minipage}
+\end{table}

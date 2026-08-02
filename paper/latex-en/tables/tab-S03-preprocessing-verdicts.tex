@@ -1,0 +1,19 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Extraction correction verdicts for the 113 candidates}
+\label{tab:s3}
+\begin{tabular}{>{\RaggedRight\hspace{0pt}\arraybackslash}p{0.302\linewidth}>{\RaggedRight\hspace{0pt}\arraybackslash}p{0.302\linewidth}>{\RaggedRight\hspace{0pt}\arraybackslash}p{0.302\linewidth}}
+\toprule
+Verdict & Documents & Action \\
+\midrule
+extraction-defect & 75 & re-extraction with the fixed parser \\
+intermediary-defect & 28 & deterministic removal of exact cascades \\
+unresolved & 9 & not edited; origin of the repetition not established \\
+source-property & 1 & not edited; the repetition is present in the source \\
+\bottomrule
+\end{tabular}
+\begin{minipage}{\linewidth}\footnotesize\vspace{2pt}
+\textit{Note.} Unit of analysis: the document. Denominator: 113 candidates with a verbatim sentence duplication share above 0.1, found in a review of 1916 documents; 103 were corrected. Data: preprocessing prep-v5, correction correction-v5.0. Document counts by verdict. Scale: none. Abbreviations: extraction-defect — a defect in text extraction; intermediary-defect — a defect in an intermediary file; unresolved — the origin of the repetition is not established; source-property — the repetition is present in the source. Missing entries: ten of the 113 documents were left unedited: nine unresolved and one source-property. No multiple-comparison correction was applied.
+\end{minipage}
+\end{table}

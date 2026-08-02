@@ -1,0 +1,37 @@
+{
+  "series": "figures-v1-en",
+  "derived_from": "09-tools/build_figures.py — та же геометрия и те же данные, надписи переведены",
+  "data_series": "v2",
+  "note": "скрипт только читает и рисует; ни одно число не пересчитывается",
+  "inputs_sha256": {
+    "04-corpus/documents-registry.csv": "d3cd478ffed7a886004eab8d14494eed687a4a29a112deff7ec80a3ed2cb6fac",
+    "07-analysis/synthesis-o1-v2.csv": "e6d91c736e44c9be422803daa635d487ebaa88fc62a43c426e38397b968a1c7f",
+    "07-analysis/clf-v2-p2a-metrics.csv": "e4f3e8252ba58d8aa98f4efd91ecf6320f0705a610d62f3737e6035b4da64c24",
+    "07-analysis/calibration-v1-by-holdout.csv": "5424ac55573ae8334ece7519514b9d9e7e097d0861247f6983bbe6d3318d9ce8",
+    "07-analysis/calibration-v1-manifest.json": "0e95e54f72bb8b98f12e9131725748610ec509e18b3d6de2a9a95320c25984b0",
+    "07-analysis/stress-r5-attempts/20260731T220132Z/stress-p2a-r11-cells.csv": "c6a28430a87cbcf2471ce5aaf5f0f54380ef7b5295c37693eff7682024045243",
+    "07-analysis/stress-r5-attempts/20260731T220132Z/stress-p2a-r11-scores.csv": "9b5880822e225a8b46a75eafcd833adf15be0bce98ce989e2b7adeaf605e72c8",
+    "04-corpus/derived/prep-v5/full/nemotron_b016_P1_r1.txt": "4f979c30d3264022f8e8af4c3844566cb04a67a00c0d6628f9dc377215b1d6db",
+    "04-corpus/derived/stress-v3/t02/full/nemotron_b016_P1_r1.txt": "4f979c30d3264022f8e8af4c3844566cb04a67a00c0d6628f9dc377215b1d6db",
+    "04-corpus/derived/prep-v5/prose/nemotron_b016_P1_r1.txt": "54f8c2ecea44eab8f346b81a2481553aaba481503f6dab40b07863b330ad9ccc",
+    "04-corpus/derived/stress-v3/t02/prose/nemotron_b016_P1_r1.txt": "cb85e240e90eae8fbac96403ebae1b23847a76025d34142590b905bdff9fdb9d"
+  },
+  "outputs_sha256": {
+    "fig-01-design-and-corpus.pdf": "3c2cc169086909bd487f66ec90a154f99aa667b9786d6a8a2ffee18b41554ea7",
+    "fig-01-design-and-corpus.png": "8d49caa9ff66e95fc300927f9403fed3d50d355af59f8707c0110a8a8dc2602c",
+    "fig-02-o1-four-procedures.pdf": "148725dfdebdc9e852be821c9a360a02eca843186fcdb8bd9c87ae2fe20aa239",
+    "fig-02-o1-four-procedures.png": "721975359a286bacfb6815aa05e3a89636b0438edfbae21dba50d24d32546051",
+    "fig-03-classifier-heterogeneity.pdf": "5f9a41c17b478ad68d815af4da20c29d557a1f2d1c6e9de8a9e38bed0f1a2fa8",
+    "fig-03-classifier-heterogeneity.png": "e1896db4bbd9935b262050e1556ecb594391a121d4d1508f090aa99e977c8d61",
+    "fig-04-calibration-and-risk-coverage.pdf": "215641289633ae924acf9d990980b321dfe2af24bdfca0ebd35a25adcaa26e07",
+    "fig-04-calibration-and-risk-coverage.png": "d54f93ae5d11995f9fade43472c8e671842ef68aa1ac9142acd8f38f77bb12ba",
+    "fig-05-stress-ten-transformations.pdf": "25faf4c9d4535971e2395cbb41f24deb238f77cf8285713257de94d240b29b14",
+    "fig-05-stress-ten-transformations.png": "21068e92ac7b3d96b2aaf3cbde838a20100b887567172d4721183a8ee4987a06",
+    "fig-06-t02-pipeline-mechanism.pdf": "45f495d03f6abe1e3299b0f62be10a758b163bc02eb94c0d3fa5915af53024d2",
+    "fig-06-t02-pipeline-mechanism.png": "313e41714c116a76f7612bffa5824e648e63686f5d7fc9ba174f72f5e70df0dd"
+  },
+  "code_sha256": {
+    "build_figures_en.py": "e54642f74030fefd349d51536a6bdb8df62b53fa6d86e9e1ae60ad5f729c4da2"
+  },
+  "created_at": "2026-08-02T19:44:51+00:00"
+}

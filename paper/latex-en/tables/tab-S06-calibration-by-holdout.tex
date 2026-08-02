@@ -1,0 +1,33 @@
+\begin{sidewaystable}[p]
+\centering
+\scriptsize
+\caption{Probability calibration on each of the 18 group holdouts}
+\label{tab:s6}
+\begin{tabular}{lllllllllll}
+\toprule
+Holdout & Documents & Machine & Brier & ECE-10 & MCE-10 & Non-empty bins & ECE-5 & ECE-20 & Risk at 100\% coverage & Risk at 50\% coverage \\
+\midrule
+genre\_seo & 983 & 360 & 0.1796 & 0.1973 & 0.7548 & 10 & 0.1973 & 0.1973 & 0.2014 & 0.0854 \\
+genre\_prose & 572 & 0 & 0.0674 & 0.1727 & 0.6253 & 10 & 0.1727 & 0.1727 & 0.0927 & 0.0035 \\
+prompt\_P3 & 751 & 359 & 0.0645 & 0.0572 & 0.1973 & 9 & 0.0572 & 0.0573 & 0.0759 & 0.0106 \\
+model\_DeepSeek & 662 & 270 & 0.0382 & 0.1021 & 0.2046 & 10 & 0.1021 & 0.1021 & 0.0347 & 0.0000 \\
+model\_NVIDIA & 661 & 269 & 0.0335 & 0.0148 & 0.0757 & 10 & 0.0148 & 0.0196 & 0.0408 & 0.0030 \\
+author & 764 & 269 & 0.0305 & 0.0171 & 0.0523 & 10 & 0.0063 & 0.0200 & 0.0419 & 0.0026 \\
+time & 458 & 0 & 0.0289 & 0.0803 & 0.4668 & 10 & 0.0803 & 0.0803 & 0.0393 & 0.0000 \\
+genre\_commercial & 752 & 360 & 0.0258 & 0.0313 & 0.2040 & 10 & 0.0313 & 0.0338 & 0.0372 & 0.0000 \\
+genre\_news & 392 & 0 & 0.0254 & 0.0682 & 0.4415 & 10 & 0.0682 & 0.0682 & 0.0408 & 0.0000 \\
+genre\_science & 392 & 0 & 0.0254 & 0.0682 & 0.4415 & 10 & 0.0682 & 0.0682 & 0.0408 & 0.0000 \\
+genre\_translation & 392 & 0 & 0.0254 & 0.0682 & 0.4415 & 10 & 0.0682 & 0.0682 & 0.0408 & 0.0000 \\
+source & 1003 & 539 & 0.0249 & 0.0216 & 0.0666 & 10 & 0.0071 & 0.0216 & 0.0329 & 0.0020 \\
+model\_OpenAI & 662 & 270 & 0.0209 & 0.0332 & 0.1280 & 10 & 0.0332 & 0.0332 & 0.0242 & 0.0000 \\
+topic & 751 & 359 & 0.0172 & 0.0187 & 0.1035 & 10 & 0.0185 & 0.0227 & 0.0266 & 0.0000 \\
+prompt\_P1 & 752 & 360 & 0.0134 & 0.0189 & 0.1223 & 9 & 0.0189 & 0.0191 & 0.0186 & 0.0000 \\
+model\_Anthropic & 662 & 270 & 0.0127 & 0.0242 & 0.2337 & 9 & 0.0242 & 0.0242 & 0.0181 & 0.0000 \\
+prompt\_P2 & 752 & 360 & 0.0125 & 0.0225 & 0.1390 & 8 & 0.0225 & 0.0226 & 0.0173 & 0.0000 \\
+genre\_analytics & 751 & 359 & 0.0109 & 0.0113 & 0.0664 & 10 & 0.0111 & 0.0156 & 0.0186 & 0.0000 \\
+\bottomrule
+\end{tabular}
+\begin{minipage}{\linewidth}\footnotesize\vspace{2pt}
+\textit{Note.} Unit of analysis: document within a group holdout. Denominator: 18 group holdouts. Data: series calibration-v1, read-only over fairness-v2 predictions. Bins are equal-frequency; ties in probability are assigned to bins by the mid-rank rule. ECE-5 and ECE-20 give the sensitivity to the number of bins. Intervals were not computed. Scale: lower is better. Abbreviations: ECE — expected calibration error; MCE — maximum calibration error; the number after the hyphen is the bin count. Missing values: the non-empty bins column shows how many of the ten bins received at least one document: on small holdouts some bins are empty, and ECE is computed over the filled ones. No correction for multiple comparisons was applied.
+\end{minipage}
+\end{sidewaystable}

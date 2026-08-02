@@ -114,7 +114,7 @@ Tufts et al., 2025. Tufts, B., Zhao, X., Li, L (2025). A Practical Examination o
 
 Tulchinskii et al., 2023. Tulchinskii, E., Kuznetsov, K., Kushnareva, L., Cherniavskii, D., Nikolenko, S., Burnaev, E., Barannikov, S., Piontkovskaya, I (2023). Intrinsic Dimension Estimation for Robust Detection of AI-Generated Texts. NeurIPS 2023, Advances in Neural Information Processing Systems 36.
 
-Venkatraman et al., 2024. Venkatraman, S., Uchendu, A., Lee, D (2024). GPT-who: An Information Density-based Machine-Generated Text Detector. Findings of the ACL: NAACL 2024, pp. 103–115. https://arxiv.org/abs/2509.18880.**
+Venkatraman et al., 2024. Venkatraman, S., Uchendu, A., Lee, D (2024). GPT-who: An Information Density-based Machine-Generated Text Detector. Findings of the ACL: NAACL 2024, pp. 103–115. https://aclanthology.org/2024.findings-naacl.8/
 
 Vera-Jimenez et al., 2026. Vera-Jimenez, A., Jaeger, S., Ibenye, C., Ghosh, D (2026). Cross-Prompt Generalization in Detecting AI-Generated Fake News Using Interpretable Linguistic Features. arXiv:2606.04199, submitted 2026-06-02. https://arxiv.org/abs/2606.04199
 

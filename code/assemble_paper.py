@@ -31,17 +31,17 @@ for stream in (sys.stdout, sys.stderr):
 
 # Источники и их хеши на момент составления манифеста.
 SOURCES = {
-    "introduction.md": "2955442be999b1c266aea8eabd3a7248e93c0670f7723bc81e9823f3c0ec2dca",
-    "research-gap.md": "5688ab9b3b716391194ae6af601f17b307ae8b6d33c8592b3ab590c34bc9b2cc",
-    "related-work.md": "101a8b005b67110521205e917983b355e5e87c84c70a3952d3060fb3eff7d499",
-    "methods.md": "d959f160ec06286986f69775319f9590d4ebbaba03c600a7177c4b7032149303",
-    "results.md": "4d1e8d4a84e9cb066d0ea868a98422d5d8295afaf8828044ec9f6fcc511c2a44",
-    "discussion.md": "bf1b4766026292feaebb1e52eadf9746cd52357b56fde434be4a48d781cf2a11",
-    "main-claim-and-limitations.md": "365c8098a37d994cc9ddfa9fd4435a5d1df2899f2fdfd3a467da0c76fb4dce63",
-    "declarations.md": "a997db593a7dbb0eba561eb737b7f506264f6403568865a6d860da00222eb161",
+    "introduction.md": "203f669b2243122e5f27836d083682df4cb0e84b3b8e4f803551be9e2691a3c0",
+    "research-gap.md": "ffc0fb1ba8d0b2b604389108aa89c8dd48f18a9e462714454b08d7715e756a2b",
+    "related-work.md": "76d0e507f4928067986160857588e1dc13aace8cdcc64d2dffbc9bcec71459ed",
+    "methods.md": "65d2603fbdb99f880c5fd5cad72989b2206f27a6dbb0b603b12b45c1a92d4141",
+    "results.md": "a6170649f22eb05c358fcb4f335576474ed561eb23e4f4a063b2d000cadb5360",
+    "discussion.md": "ddb527128e8a35e7c0f400f72e53104c28362fed7f30dcd896a4b17d6b57c819",
+    "main-claim-and-limitations.md": "75c9f43dbd84cc3e751487e140a8c57574e8448be69360a47570737e7c59d9c1",
+    "declarations.md": "2f86a3d2ab3f74a2e7a3c785d412ad16148472be2991b5c8b22d8408c8307bb6",
     "appendix-reproducibility.md": "d2fae90ac291ca6429c8d9ad3fbb6b1e27ff68d68e0d38ef59c1747ba35348b4",
-    "figures-list.md": "3df6b1319480ea4c98f5fc9f4a07f45367416d750a242e846e067041e8525a69",
-    "supplementary.md": "77e8564eac18b1a83c877467c931f7f7a86a4e648fbe7c9c08df35cf63c31c7f",
+    "figures-list.md": "dd2d095a3235a4a91decb486ce8ae2904c199110020142b2887e0e72a1a0e29e",
+    "supplementary.md": "dc5f4bb419b23cd2a4be0a0b8aed3afea435b7fd79abe71c14d692ab33575776",
 }
 
 # Порядок разделов рукописи: (заголовок, файл, что взять)

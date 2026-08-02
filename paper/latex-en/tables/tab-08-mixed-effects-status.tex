@@ -1,0 +1,18 @@
+\begin{table*}[htbp]
+\centering
+\small
+\caption{Three preregistered mixed-effects models: identifiability and status}
+\label{tab:8}
+\begin{tabular}{>{\RaggedRight\hspace{0pt}\arraybackslash}p{0.120\linewidth}>{\RaggedRight\hspace{0pt}\arraybackslash}p{0.120\linewidth}>{\RaggedRight\hspace{0pt}\arraybackslash}p{0.120\linewidth}>{\RaggedRight\hspace{0pt}\arraybackslash}p{0.120\linewidth}>{\RaggedRight\hspace{0pt}\arraybackslash}p{0.120\linewidth}>{\RaggedRight\hspace{0pt}\arraybackslash}p{0.120\linewidth}>{\RaggedRight\hspace{0pt}\arraybackslash}p{0.120\linewidth}}
+\toprule
+Model & Corpus & Primary outcome & Observations & Design matrix rank & Aliased levels & Status \\
+\midrule
+M1 & machine & O1 & 1079 & 22 of 23 & 1 & not identifiable; fitting was run and did not converge \\
+M2 & human & O2 & 803 & 7 of 22 & 15 & not identifiable \\
+M3 & combined & O3 & 1882 & 11 of 11 & 0 & identifiable \\
+\bottomrule
+\end{tabular}
+\begin{minipage}{\linewidth}\footnotesize\vspace{2pt}
+\textit{Note.} Unit of analysis: the observation is a document. Denominator: 1079 machine, 803 human and 1882 combined documents. Data: series v2, identifiability diagnostics of 2026-07-29. Design matrix rank against the number of candidate columns; aliased levels are factors indistinguishable by design. The table reports no effect estimates: no model produced the primary outcome. Scale: none; the table describes the status of the procedure. Abbreviations: REML — restricted maximum likelihood; aliased level — a factor level linearly dependent on the remaining design columns. Missing entries: the estimates column is omitted deliberately: M1 did not converge, M2 is not identifiable by design, and M3 has no support for the registered estimand, so there are no numbers that could be published. No multiple-comparison correction was applied.
+\end{minipage}
+\end{table*}

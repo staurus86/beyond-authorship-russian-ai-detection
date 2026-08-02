@@ -1,0 +1,83 @@
+{
+  "generated_utc": "2026-08-02T19:44:52+00:00",
+  "generator": "09-tools/build_latex_paper.py",
+  "generator_sha256": "a5801c5116f764c4467e6621aacc7ab1e40cc8d7297c0ffa5e832d717b5cbcdc",
+  "inputs": {
+    "manuscript-final.md": "3c9f8fadb68e82175d93cb688c264ecebb967f1d9fe999ab235dcd4c4f14a34c",
+    "references-section.md": "37c9a53171fc3c8251034fe4af5e547cabfb64692b6358cecabf78d1bae27bc9",
+    "abstract.md": "fc8b12088587e3a7c3c251f2c6f9417a6b7bbb0cf6ef7802d86ca606374096db",
+    "declarations.md": "2f86a3d2ab3f74a2e7a3c785d412ad16148472be2991b5c8b22d8408c8307bb6",
+    "title-and-keywords.md": "7d453b2078b3bb533346c7108f01321cd397060c6307b1daf1784fb398d78549",
+    "tables": {
+      "tab-01-corpus-and-conditions.tex": "d92874fb052fb58a9c7d43f6aa4468a741f40559c37edeb907badffcd6363de5",
+      "tab-02-four-operationalisations.tex": "c8007df94c87b75aed97314f3286ba86bd013900c9c1b53752c57d24db5cffa5",
+      "tab-03-o1-contrasts.tex": "be9ff85085ee72d51956a5212f4bb1713e67b79e0205f0c8403eb36ff71fa5d4",
+      "tab-04-classifier-and-ablation.tex": "1a829661b7c9e2efd3febbe67a2d06e7329366eb6629a754ba29aba8515ac551",
+      "tab-05-formal-register-fairness.tex": "f53e45ac47a74d2f956809bda60416c623fde0e03fb3634d84db4abc7d596896",
+      "tab-06-calibration-and-risk-coverage.tex": "59f00e7128b282f82b4485271f267be5d043c0df2dfbcd78335d1845a2e39ca0",
+      "tab-07-stress-ten-transformations.tex": "2ec3153932bd6616ffc853dd5a5d306c289932034676a5a23525642da8a8d754",
+      "tab-08-mixed-effects-status.tex": "830e3ab5147149153372cc6f5d774804c7ca1a865d8f21daf030e235ca614279",
+      "tab-S01-corpus-flow.tex": "9e085745286ac602a4895bf8f5e5d7816ffbbc812d6a95db370e89f67bbfd42d",
+      "tab-S02-machine-channels.tex": "681d494cd323cab53e0d9f8c1bce0a602852dfd116d60c9b52ca22538030bbaf",
+      "tab-S03-preprocessing-verdicts.tex": "570a15a66d09523393cf9667a3ae2ea9a295205d17b2fa32a82d935efeb1a4a2",
+      "tab-S04-fpr-by-holdout.tex": "892da2177669c2e36b0f1f914104aa1175b2f60c81aa76f4910974e54c60e78c",
+      "tab-S05-classifier-quality-by-holdout.tex": "da212f165f48c8c75de5e7daa56388ff881ef47a5d9cce7027cd017a8b93a26b",
+      "tab-S06-calibration-by-holdout.tex": "97c209c6c247df55779d3928a1f32324358006a814a12a8e94df73652cce4e37",
+      "tab-S07-stress-by-transform-and-procedure.tex": "80852b8c54267d51af1a0b9e6761978a683e294fa2b37468a7844707962decdb",
+      "tab-S08-mixed-identifiability.tex": "abb4d44f0cb5b1bd783c968337a297e6adc4800b0e38ba92700c8f3afe5aee54",
+      "tab-S09-repeat-audit.tex": "cf582821bd32fc7feba270b0c94f9b5fca692c669570e51a38d3dc1419c54eb9",
+      "tab-S10-blind-instability-cards.tex": "58348f4d9fb8309e72be42b8bd9fd9c8a2936cf9137ad6026a834c57eca02acb",
+      "tab-S11-preflight-invariants.tex": "e419603281d495c6adb02a461d9317cdb6ba04dbcfc80181071d0879d849efb0",
+      "tab-S12-manifest-revisions.tex": "f2c400b3d28ad11385b72173b549c6a34cb1d55283133b78930f44cc3e08b592",
+      "tab-S13-reuse-gate.tex": "234b91dac63c758f6f8d7a55649960627b7f5c34e5351346db4338f434796e03",
+      "tab-S14-index-decomposition.tex": "fc36c782d79c13785d18ae2d77be6fbe8d663cee8530bd2518f1be1bc5059762",
+      "tab-S15-t10-t11-feature-shift.tex": "f25e1058854f328a33011c5c93041ef346c646ed0e12cce3036488a3c846ccad",
+      "tab-S16-limitations-groups.tex": "e4b93c80bd94ff02d1af8a3795edfdbf7544f7e0fbcd2ecb40788f05e2ff7bc8"
+    },
+    "figures": {
+      "fig-01-design-and-corpus.pdf": "686da602766b8319b38b1ce335266325ac14f4b27ac4869c42c8f62dd33413ce",
+      "fig-02-o1-four-procedures.pdf": "c256498ea0a31b4bd15fb3cf172fea049a726b5ca905edcbb180d70456135639",
+      "fig-03-classifier-heterogeneity.pdf": "7c309935ba7f392fc62bf7875f8f0231056315c8665cf1c5ee05f1eb0bea180f",
+      "fig-04-calibration-and-risk-coverage.pdf": "1295926fdc530bd665211a18fd02cff95b5ed129f67a8222128a9457d788c1aa",
+      "fig-05-stress-ten-transformations.pdf": "5bd3e98356ffa166d14b19164367c95fbb82492cc2dbea7acafb88b5fa8332f1",
+      "fig-06-t02-pipeline-mechanism.pdf": "ea047d040f24ee90b01896b09dcc943142c6ace9dde70000cdd9ebffa79afaaf"
+    }
+  },
+  "outputs": {
+    "main.tex": "be5ae0ffc40c30cf273f65afed5f875741069fa7d601fac6a00cf290447d74c5",
+    "references.bib": "df7c235da594862d30dc65c7e4c8e4020733f7b54c456dcd2353b402b720abce",
+    "tables_copies": {
+      "tab-01-corpus-and-conditions.tex": "d92874fb052fb58a9c7d43f6aa4468a741f40559c37edeb907badffcd6363de5",
+      "tab-02-four-operationalisations.tex": "c89e24d8711d14ff2daf16ce0f474a3cc4569f10fbcf6a8eb6a9da3f0c292171",
+      "tab-03-o1-contrasts.tex": "206349d445b9e212fce33ee7525f350d9822574ee01f5977fa40168af6433697",
+      "tab-04-classifier-and-ablation.tex": "b09523e604258548a84fea8c142422d99f54253259cb4b6954bc1a3dcf5faf9f",
+      "tab-05-formal-register-fairness.tex": "9899e830360f6c2fc83d4c60595e85eda2f9d13fd862a821df0c05a0dc629318",
+      "tab-06-calibration-and-risk-coverage.tex": "45793a500da87699b214ef3e54bcc7710b2b26c6146569c0aeca9ef4865a1108",
+      "tab-07-stress-ten-transformations.tex": "a7c836b73fcc59577a2a17a902dbb3713e9fb8033006d534674f9e55a0464e76",
+      "tab-08-mixed-effects-status.tex": "de410f856fb4088ddd8d2001e13226686624e59ddcb5500b4fef8e27b60f0c0d",
+      "tab-S01-corpus-flow.tex": "6d985797faa21d3f103fc639de94fe8bae225b97a2bcc051980ab9ef67b78ce4",
+      "tab-S02-machine-channels.tex": "bc7f66dbb6c72edf3dd980e7ab60ba764f113b4f46e337b4333370b148600b9c",
+      "tab-S03-preprocessing-verdicts.tex": "c6bf67317015c2699676936c365ab62471210a649298c23e5e6d2eb6bed03644",
+      "tab-S04-fpr-by-holdout.tex": "4bdc15e4e21e168d27bf6288616982b510827c38d34d2f97919c10a7f0c46dcc",
+      "tab-S05-classifier-quality-by-holdout.tex": "a8b1e621f0c8d0816b3233ce067b64b4497662e120603d7b4c5dd6717adddf4c",
+      "tab-S06-calibration-by-holdout.tex": "5621ebe7b52f0c38c4d671a98371ff5581e8b1779fe89d2497c5b6d9fee413c5",
+      "tab-S07-stress-by-transform-and-procedure.tex": "518ca64920c541ad58ec431b2d3860443cb138e301967831c20ec9a68d228a6f",
+      "tab-S08-mixed-identifiability.tex": "7f0a5c2dec4c3aee0b299f586e950bdebd4c395cb4f4999c4330b708ca75da62",
+      "tab-S09-repeat-audit.tex": "2225dfe3178a2bfc00bf3b6588b17816161e31d8a5b26bfd632ca7d7beaaadbb",
+      "tab-S10-blind-instability-cards.tex": "4337a4279f4415e6e5b50e3d832f586a98975f375ac73b19f9c1b5788e2cece0",
+      "tab-S11-preflight-invariants.tex": "66588e9216ce762502a205d6ee5d29e693cc70b3e4bb7630878057d30b5aa720",
+      "tab-S12-manifest-revisions.tex": "c13d53a0682f77f73c56e8b8d4c5451b01ce33ab164f9f9a0824eeeafad16f7f",
+      "tab-S13-reuse-gate.tex": "7dcb7a072e35405a202165cddc1b515b6cbeaac15862b6e1f8d96efcc0368047",
+      "tab-S14-index-decomposition.tex": "84382e307248e70a57fbc5b7082774fa079b335b88f5246abd6d6cf06cbb2e40",
+      "tab-S15-t10-t11-feature-shift.tex": "a26d43ace677c9e76815f6768bb917040c92cbbc63dc06c13b4232b8841a2ef3",
+      "tab-S16-limitations-groups.tex": "e6d463d59209d643c22919214a517c684f751dae7338e57bc29e62b43a670e43"
+    }
+  },
+  "notes": [
+    "Цитаты в тексте — дословный текст замороженной рукописи, не \\cite.",
+    "references.bib — машиночитаемый параллельный артефакт, в компиляцию не входит.",
+    "Нумерация таблиц задаётся \\setcounter перед каждым \\input: таблица 8 стоит в тексте раньше таблицы 2.",
+    "Копии таблиц в latex/tables адаптированы к ширине полосы (окружение, спецификация колонок, переносы); содержимое ячеек не менялось — шлюз G6 сверяет словесные токены каждой изменённой копии с каноническим файлом.",
+    "Запись Venkatraman et al., 2024: из источника срезан хвост '**'; URL записи требует проверки PI — см. status-2026-08-02.md."
+  ]
+}

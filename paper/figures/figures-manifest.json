@@ -18,21 +18,21 @@
     "04-corpus/derived/stress-v3/t02/prose/nemotron_b016_P1_r1.txt": "cb85e240e90eae8fbac96403ebae1b23847a76025d34142590b905bdff9fdb9d"
   },
   "outputs_sha256": {
-    "fig-01-design-and-corpus.pdf": "0b0c71908e220e9a95e5cd82aece5f89aa4d051766bfab967c18b1a4de960c27",
+    "fig-01-design-and-corpus.pdf": "686da602766b8319b38b1ce335266325ac14f4b27ac4869c42c8f62dd33413ce",
     "fig-01-design-and-corpus.png": "07b543eb4182055531946f7bca7e518be2cbef4fe10c831ef92e5e1166df4fae",
-    "fig-02-o1-four-procedures.pdf": "ea17dea13bd65a2dc6deea2ec122f8b586711bced515dbb53a357d64006fe36f",
+    "fig-02-o1-four-procedures.pdf": "c256498ea0a31b4bd15fb3cf172fea049a726b5ca905edcbb180d70456135639",
     "fig-02-o1-four-procedures.png": "7a652059bae977a2d4769ac5ea0650ededde8b5695a1caf09f94595721f817a7",
-    "fig-03-classifier-heterogeneity.pdf": "3df883d51b7b2cbb12af890e0fcf781559ae7a45c746975bcb76c0e53cc516fd",
+    "fig-03-classifier-heterogeneity.pdf": "7c309935ba7f392fc62bf7875f8f0231056315c8665cf1c5ee05f1eb0bea180f",
     "fig-03-classifier-heterogeneity.png": "4a517361b1deac83ba7a993004101c0b599de57d84844923a8d3f10b4b74892a",
-    "fig-04-calibration-and-risk-coverage.pdf": "b59c15f008ed1ce2da8aad2300acf03f266cb4ac15a580e8697f6f36788fa31e",
+    "fig-04-calibration-and-risk-coverage.pdf": "1295926fdc530bd665211a18fd02cff95b5ed129f67a8222128a9457d788c1aa",
     "fig-04-calibration-and-risk-coverage.png": "7a70a1c8ec24d567c124117c19d70b860f948a89d1b6ef26b72b79490556dfb5",
-    "fig-05-stress-ten-transformations.pdf": "65c469ea00429f52316618c298f2aa63489cd1f1ae7a4e8f27c2ce32b6c38cd9",
-    "fig-05-stress-ten-transformations.png": "a94fb3a18a8eff94463e00a1976d1f39459c2fd8133d614acf9c899cf254a678",
-    "fig-06-t02-pipeline-mechanism.pdf": "8c7a498da60f3a88fb2bd593667d2d9eff1129b66d5f6422593ae412d0b27c7d",
+    "fig-05-stress-ten-transformations.pdf": "5bd3e98356ffa166d14b19164367c95fbb82492cc2dbea7acafb88b5fa8332f1",
+    "fig-05-stress-ten-transformations.png": "221b251c26ae4daaa4b1e6b79bb66ccd9fbaf1b08728738e3263afcde6160052",
+    "fig-06-t02-pipeline-mechanism.pdf": "ea047d040f24ee90b01896b09dcc943142c6ace9dde70000cdd9ebffa79afaaf",
     "fig-06-t02-pipeline-mechanism.png": "656ec25162a7247a005fa60c6f4222f75befdcd9ec2e042a00f847030ec98698"
   },
   "code_sha256": {
-    "build_figures.py": "d81c323c05282c99edf96de9c3a78c522460b03f5b50e63bac74c4719db99548"
+    "build_figures.py": "b46afbde151c90ad285ffdb50cf929b14f4fadae4f570aed035954d474bee342"
   },
-  "created_at": "2026-08-01T16:04:22+00:00"
+  "created_at": "2026-08-02T19:30:03+00:00"
 }

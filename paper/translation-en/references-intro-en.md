@@ -1,0 +1,1 @@
+The list contains 68 sources — all that are cited in the text. A further 5 records of the systematic sample are not cited in the manuscript and are not included in the list: the completeness of the search matrix is documented separately, in `01-literature/evidence-matrix.csv`.

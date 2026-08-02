@@ -1,0 +1,31 @@
+\begin{table*}[htbp]
+\centering
+\scriptsize
+\caption{Primary outcome O1 contrasts across the four procedures, both estimands and both contrasts}
+\label{tab:3}
+\begin{tabular}{lllllllll}
+\toprule
+Contrast & Estimand & Procedure & Contrast population & Pairs & Effect, raw scale & 95\% CI & p & Sign under the convention \\
+\midrule
+P3 − P1 & full & 1 — style index score-v2 & whole corpus, 45 tasks & 359 & −1.7655 & [−2.6639; −0.8773] & 0.0004 & − \\
+P3 − P1 & full & 2 — classifier P2b & seo genre only, 15 tasks & 120 & −0.0941 & [−0.1473; −0.0463] & 0.0028 & − \\
+P3 − P1 & full & 3 — zero-shot nll-v2 & whole corpus, 45 tasks & 359 & +0.1140 & [0.0964; 0.1313] & 0.0004 & − \\
+P3 − P1 & full & 4 — judge model judge-v2 & whole corpus, 45 tasks & 359 & +0.5153 & [0.1806; 0.8552] & 0.0032 & + \\
+P3 − P1 & net & 1 — style index score-v2 & whole corpus, 45 tasks & 359 & +2.0264 & [0.8953; 3.1429] & 0.0016 & + \\
+P3 − P1 & net & 2 — classifier P2b & seo genre only, 15 tasks & 120 & +0.0169 & [−0.0134; 0.0496] & 0.3168 & + \\
+P3 − P1 & net & 3 — zero-shot nll-v2 & whole corpus, 45 tasks & — & not defined & — & — & — \\
+P3 − P1 & net & 4 — judge model judge-v2 & whole corpus, 45 tasks & — & not defined & — & — & — \\
+P2 − P1 & full & 1 — style index score-v2 & whole corpus, 45 tasks & 360 & +3.2812 & [2.0186; 4.6068] & 0.0004 & + \\
+P2 − P1 & full & 2 — classifier P2b & seo genre only, 15 tasks & 120 & +0.0523 & [0.0325; 0.0738] & 0.0002 & + \\
+P2 − P1 & full & 3 — zero-shot nll-v2 & whole corpus, 45 tasks & 360 & +0.0125 & [−0.0065; 0.0298] & 0.1988 & − \\
+P2 − P1 & full & 4 — judge model judge-v2 & whole corpus, 45 tasks & 360 & +0.5125 & [0.0181; 1.0472] & 0.0392 & + \\
+P2 − P1 & net & 1 — style index score-v2 & whole corpus, 45 tasks & 360 & −1.6860 & [−3.2913; −0.0343] & 0.0416 & − \\
+P2 − P1 & net & 2 — classifier P2b & seo genre only, 15 tasks & 120 & +0.0722 & [0.0395; 0.1036] & 0.0014 & + \\
+P2 − P1 & net & 3 — zero-shot nll-v2 & whole corpus, 45 tasks & — & not defined & — & — & — \\
+P2 − P1 & net & 4 — judge model judge-v2 & whole corpus, 45 tasks & — & not defined & — & — & — \\
+\bottomrule
+\end{tabular}
+\begin{minipage}{\linewidth}\footnotesize\vspace{2pt}
+\textit{Note.} The unit of analysis is a pair of texts produced by the same model for the same task in two modes. Denominator: 359 or 360 pairs for procedures 1, 3 and 4 with 45 clusters; 120 pairs for procedure 2 with 15 clusters, since it computes the contrast on the seo genre only. Data: series v2, status current. Intervals are 95\%, cluster bootstrap over tasks; the cluster is the task, 45 tasks in total. The absolute difference is published with its own interval; there is no single number across the four procedures, and no pooled effect was computed. Scale: interpretation convention: higher means more AI-like. For procedure 3 it inverts the sign of the raw metric, so magnitudes are not comparable across procedures. Abbreviations: estimand full — the full score; net — the score without structural components; P1, P2 and P3 are task modes. Missing values: the net estimand is defined only for procedures 1 and 2; zero-shot NLL and the judge have no decomposition into components by construction, and the cell means ``quantity not defined'', not ``not computed''. The primary outcome family is closed by a Bonferroni correction for the two registered tests, α = 0.025 per test; the intervals are unadjusted.
+\end{minipage}
+\end{table*}

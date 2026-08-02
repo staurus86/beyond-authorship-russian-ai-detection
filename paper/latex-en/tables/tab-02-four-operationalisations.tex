@@ -1,0 +1,19 @@
+\begin{table*}[htbp]
+\centering
+\small
+\caption{Four operationalisations of machine-likeness and the direction of their scales}
+\label{tab:2}
+\begin{tabular}{>{\RaggedRight\hspace{0pt}\arraybackslash}p{0.120\linewidth}>{\RaggedRight\hspace{0pt}\arraybackslash}p{0.120\linewidth}>{\RaggedRight\hspace{0pt}\arraybackslash}p{0.120\linewidth}>{\RaggedRight\hspace{0pt}\arraybackslash}p{0.120\linewidth}>{\RaggedRight\hspace{0pt}\arraybackslash}p{0.120\linewidth}>{\RaggedRight\hspace{0pt}\arraybackslash}p{0.120\linewidth}>{\RaggedRight\hspace{0pt}\arraybackslash}p{0.120\linewidth}}
+\toprule
+Procedure & Input & Origin of weights & Scale & Direction under the convention & Registration status & Instability event rule \\
+\midrule
+1 — style index & feature matrix & weights fixed before data collection & 0–100 points & higher values mean higher machine-likeness & confirmatory & $|$Δ$|$ $>$ 5.0 points; exactly 5.0 does not count as an event \\
+2 — classifier & the same feature matrix & weights learned from the data & probability of class A, 0–1 & higher values mean higher machine-likeness & exploratory & $|$Δp$|$ $>$ 0.05 and a decision flip relative to the threshold \\
+3 — zero-shot NLL & raw text, prose profile & no weights, a model metric & mean token NLL & lower values mean higher machine-likeness & exploratory & no binary threshold is applied; the continuous ΔNLL is published \\
+4 — judge model & raw text, prose profile & rubric fixed before the run & 0–100 rubric scale & higher values mean higher machine-likeness & exploratory & $|$Δ$|$ $>$ 5.0 points on the median of three seeds \\
+\bottomrule
+\end{tabular}
+\begin{minipage}{\linewidth}\footnotesize\vspace{2pt}
+\textit{Note.} The unit of analysis is the scoring procedure. Denominator: four procedures applied to the same corpus. Data: series v2. The table describes procedures; it contains no numerical estimates. Scale: interpretation convention: higher means more AI-like. For procedure 3 it inverts the sign of the raw metric, so magnitudes are not comparable across procedures. Abbreviations: NLL — negative log-likelihood, averaged over tokens; confirmatory — a preregistered analysis; exploratory — an analysis whose operationalisation was written after viewing the results of procedure 1. Missing values: none. No correction for multiple comparisons was applied.
+\end{minipage}
+\end{table*}

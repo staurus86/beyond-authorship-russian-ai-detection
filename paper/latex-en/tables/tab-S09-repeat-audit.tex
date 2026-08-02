@@ -1,0 +1,32 @@
+\begin{sidewaystable}[p]
+\centering
+\scriptsize
+\caption{Audit of verbatim repeats: documents that passed the symmetric scan threshold}
+\label{tab:s9}
+\begin{tabular}{>{\RaggedRight\hspace{0pt}\arraybackslash}p{0.170\linewidth}>{\RaggedRight\hspace{0pt}\arraybackslash}p{0.079\linewidth}>{\RaggedRight\hspace{0pt}\arraybackslash}p{0.079\linewidth}>{\RaggedRight\hspace{0pt}\arraybackslash}p{0.079\linewidth}>{\RaggedRight\hspace{0pt}\arraybackslash}p{0.079\linewidth}>{\RaggedRight\hspace{0pt}\arraybackslash}p{0.079\linewidth}>{\RaggedRight\hspace{0pt}\arraybackslash}p{0.079\linewidth}>{\RaggedRight\hspace{0pt}\arraybackslash}p{0.079\linewidth}>{\RaggedRight\hspace{0pt}\arraybackslash}p{0.079\linewidth}}
+\toprule
+Document & Source & Genre & Repeat share & Maximum multiplicity & Longest repeated block & Modal offset & Mechanism & Verdict \\
+\midrule
+human\_news\_buriy\_2014\_0014 & buriy\_2014 & news & 0.320 & 2 & 12 & 44 & block repeat with constant offset & confirmed\_defect \\
+human\_news\_buriy\_2014\_0045 & buriy\_2014 & news & 0.317 & 2 & 10 & 23 & block repeat with constant offset & confirmed\_defect \\
+human\_news\_buriy\_2014\_0040 & buriy\_2014 & news & 0.262 & 2 & 8 & 33 & block repeat with constant offset & confirmed\_defect \\
+human\_news\_buriy\_2014\_0024 & buriy\_2014 & news & 0.235 & 2 & 10 & 11 & block repeat with constant offset & confirmed\_defect \\
+human\_seo\_madcats\_0005 & madcats & seo & 0.206 & 2 & 18 & 106 & scattered repeats & legitimate\_source\_property \\
+human\_news\_buriy\_2014\_0042 & buriy\_2014 & news & 0.161 & 2 & 5 & 50 & block repeat with constant offset & confirmed\_defect \\
+human\_seo\_drmax\_0013 & drmax & seo & 0.157 & 2 & 7 & 52 & block repeat with constant offset & confirmed\_defect \\
+human\_seo\_devaka\_ru\_0019 & devaka\_ru & seo & 0.148 & 2 & 1 & 2 & scattered repeats & unresolved \\
+human\_seo\_convertmonster\_0001 & convertmonster & seo & 0.138 & 4 & 1 &  & multiplicity above two & confirmed\_defect \\
+human\_science\_spbgu\_0042 & spbgu & science & 0.135 & 8 & 9 & 40 & repeats on both sides of a structural heading & legitimate\_source\_property \\
+human\_seo\_devaka\_ru\_0027 & devaka\_ru & seo & 0.132 & 2 & 10 & 5 & block repeat with constant offset & confirmed\_defect \\
+human\_science\_spbgu\_0062 & spbgu & science & 0.129 & 5 & 5 & 33 & multiplicity above two & legitimate\_source\_property \\
+human\_science\_spbgu\_0044 & spbgu & science & 0.118 & 2 & 11 & 36 & repeats on both sides of a structural heading & legitimate\_source\_property \\
+human\_science\_urfu\_0039 & urfu & science & 0.117 & 2 & 3 & 39 & block repeat with constant offset & unresolved \\
+human\_seo\_drmax\_0024 & drmax & seo & 0.106 & 3 & 4 & 5 & block repeat with constant offset & unresolved \\
+human\_news\_buriy\_2014\_0048 & buriy\_2014 & news & 0.105 & 2 & 4 & 2 & scattered repeats & confirmed\_defect \\
+human\_seo\_devaka\_ru\_0021 & devaka\_ru & seo & 0.103 & 2 & 6 & 7 & block repeat with constant offset & confirmed\_defect \\
+\bottomrule
+\end{tabular}
+\begin{minipage}{\linewidth}\footnotesize\vspace{2pt}
+\textit{Note.} Unit of analysis: document. Denominator: both parts of the corpus went through the scan, 1882 documents; selection threshold — share of verbatim repeated sentences above 0.1. Data: scan repeat-scan-v2, profiles prep-v4 and prep-v5. Repeat share is the sum of multiplicities of repeated sentences divided by the number of sentences in the document. Scale: higher means more heavily contaminated with repeats. Abbreviations: modal offset — the most frequent distance, in positions, between repeated sentences. Missing values: the table lists only documents above the threshold; the rest did not enter the scan and have no rows. No correction for multiple comparisons was applied.
+\end{minipage}
+\end{sidewaystable}

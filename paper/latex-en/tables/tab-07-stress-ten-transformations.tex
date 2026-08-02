@@ -1,0 +1,25 @@
+\begin{table*}[htbp]
+\centering
+\small
+\caption{Stability of the decision under ten text transformations across four procedures}
+\label{tab:7}
+\begin{tabular}{>{\RaggedRight\hspace{0pt}\arraybackslash}p{0.120\linewidth}>{\RaggedRight\hspace{0pt}\arraybackslash}p{0.120\linewidth}>{\RaggedRight\hspace{0pt}\arraybackslash}p{0.120\linewidth}>{\RaggedRight\hspace{0pt}\arraybackslash}p{0.120\linewidth}>{\RaggedRight\hspace{0pt}\arraybackslash}p{0.120\linewidth}>{\RaggedRight\hspace{0pt}\arraybackslash}p{0.120\linewidth}>{\RaggedRight\hspace{0pt}\arraybackslash}p{0.120\linewidth}}
+\toprule
+Transformation & Feature input unchanged & Procedure 2: instability & Procedure 2: decision flip & Procedure 1: share of $|$Δ$|$ $>$ 5 points & Procedure 3: median $|$ΔNLL$|$ & Procedure 4: share of $|$Δ$|$ $>$ 5 points \\
+\midrule
+t11 text expansion & 0.000 & 0.633 & 0.451 & 0.567 & 0.4366 & 0.233 \\
+t04 paragraph reordering & 0.250 & 0.089 & 0.055 & 0.267 & 0.0279 & 0.133 \\
+t02 markdown markup change & 0.533 & 0.126 & 0.023 & 0.067 & 0.0000 & 0.033 \\
+t05 punctuation correction & 0.017 & 0.055 & 0.017 & 0.100 & 0.0066 & 0.050 \\
+t10 text shortening & 0.000 & 0.269 & 0.015 & 0.567 & 0.1584 & 0.117 \\
+t03 heading removal & 0.600 & 0.051 & 0.003 & 0.000 & 0.0000 & 0.000 \\
+t13 spelling errors & 0.000 & 0.051 & 0.001 & 0.050 & 0.1207 & 0.000 \\
+t15 homoglyphs & 0.000 & 0.002 & 0.001 & 0.000 & 0.0216 & 0.033 \\
+t01 em-dash replacement & 0.083 & 0.000 & 0.000 & 0.000 & 0.0019 & 0.033 \\
+t16 transfer between formats & 0.450 & 0.143 & 0.000 & 0.217 & 0.0000 & 0.050 \\
+\bottomrule
+\end{tabular}
+\begin{minipage}{\linewidth}\footnotesize\vspace{2pt}
+\textit{Note.} Unit of analysis: for procedure 2, the document × eligible-model pair; for procedures 1, 3 and 4, the document. Denominator: 60 panel documents; for procedure 2 the shares follow the registered aggregation rule — the mean over eligible models within a document, then equal weight for the 60 documents (464 pairs per transformation in total); for the remaining procedures, 60 documents per transformation. Data: procedure 2 — stress revision r5, procedure 4 — r5, procedures 1 and 3 — r4 within the validity domain of the ten transformations. Shares and medians by cell; no intervals were computed. The instability event is defined by each procedure's own rule, so the columns are not additive across procedures. Scale: lower means a more stable decision. Abbreviations: Δ — shift of the score after the transformation; NLL — negative log-likelihood; decision flip — crossing the 0.5 threshold; ``feature input unchanged'' — the share of documents whose prose profile, full profile and all markup counters matched after the transformation, that is, the procedure received the same input as before. Missing entries: transformation t14 is excluded: the revision r5 amendment moved it to not executable status, so the denominator is ten rather than eleven. No multiple-comparison correction was applied. The stress test is descriptive.
+\end{minipage}
+\end{table*}

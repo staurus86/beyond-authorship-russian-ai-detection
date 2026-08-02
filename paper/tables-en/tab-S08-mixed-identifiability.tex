@@ -1,0 +1,24 @@
+\begin{table*}[htbp]
+\centering
+\scriptsize
+\caption{Identifiability diagnostics for the three mixed-effects models}
+\label{tab:s8}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.092\linewidth}>{\raggedright\arraybackslash}p{0.092\linewidth}>{\raggedright\arraybackslash}p{0.092\linewidth}>{\raggedright\arraybackslash}p{0.092\linewidth}>{\raggedright\arraybackslash}p{0.092\linewidth}>{\raggedright\arraybackslash}p{0.092\linewidth}>{\raggedright\arraybackslash}p{0.092\linewidth}>{\raggedright\arraybackslash}p{0.092\linewidth}>{\raggedright\arraybackslash}p{0.092\linewidth}>{\raggedright\arraybackslash}p{0.092\linewidth}}
+\toprule
+Model & Observations & Design rank & Random effect & Clusters & Minimum size & Median size & Single-observation clusters & Aliased levels & Verdict \\
+\midrule
+M1 & 1079 & 22 of 23 & task (brief\_id) & 45 & 23 & 24 & 0 & wrapper=none & not identifiable \\
+M1 &  &  & replicate (repeat\_index) & 2 & 539 & 540 & 0 &  &  \\
+M2 & 803 & 7 of 22 & source & 124 & 1 & 1 & 85 & genre=science; genre=seo; genre=translation; level=1 × genre=prose; level=1 × genre=science; level=1 × genre=seo; level=1 × genre=translation; level=2 × genre=prose; level=2 × genre=science; level=2 × genre=seo; level=2 × genre=translation; level=3 × genre=prose; level=3 × genre=science; level=3 × genre=seo; level=3 × genre=translation & not identifiable \\
+M2 &  &  & author & 302 & 1 & 1 & 244 &  &  \\
+M2 &  &  & task (brief\_id) & 0 & 0 & 0 & 0 &  &  \\
+M3 & 1882 & 11 of 11 & task (brief\_id) & 45 & 23 & 24 & 0 & none & identifiable \\
+M3 &  &  & source & 128 & 1 & 1 & 85 &  &  \\
+M3 &  &  & author & 306 & 1 & 1 & 244 &  &  \\
+M3 &  &  & channel & 4 & 269 & 270 & 0 &  &  \\
+\bottomrule
+\end{tabular}
+\begin{minipage}{\linewidth}\footnotesize\vspace{2pt}
+\textit{Note.} Unit of analysis: each row describes one random effect of one model. Denominator: three preregistered models; 1079, 803 and 1882 observations. Data: series v2, diagnostics of 2026-07-29. Design matrix rank against the number of candidate columns; aliased levels were identified before fitting. Scale: none. Abbreviations: aliased level — a factor level linearly dependent on the remaining design columns; a single-observation cluster does not allow the random-effect variance to be estimated. Missing values: observations, rank, aliased levels and verdict refer to the model as a whole and appear in its first row; for M2 the random effect ``task'' has zero clusters because human texts receive no tasks. The table contains no effect estimates: the identifiability check preceded fitting, and some models never reached fitting. No correction for multiple comparisons was applied.
+\end{minipage}
+\end{table*}

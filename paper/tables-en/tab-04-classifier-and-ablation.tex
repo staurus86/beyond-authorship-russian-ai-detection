@@ -1,0 +1,22 @@
+\begin{table*}[htbp]
+\centering
+\scriptsize
+\caption{Classifier: performance across model variants and ablation of structural features}
+\label{tab:4}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.115\linewidth}>{\raggedright\arraybackslash}p{0.115\linewidth}>{\raggedright\arraybackslash}p{0.115\linewidth}>{\raggedright\arraybackslash}p{0.115\linewidth}>{\raggedright\arraybackslash}p{0.115\linewidth}>{\raggedright\arraybackslash}p{0.115\linewidth}>{\raggedright\arraybackslash}p{0.115\linewidth}>{\raggedright\arraybackslash}p{0.115\linewidth}}
+\toprule
+Model variant & Feature set & Holdouts with defined AUROC & Median AUROC & AUROC range & Median FPR & P3 − P1 contrast, full matrix & P3 − P1 contrast, without structural features \\
+\midrule
+source-only & source platform identifier only & 13 of 18 & 1.0000 & 0.5000–1.0000 & 1.0000 & — & — \\
+main+M02 & plus the paragraph similarity feature & 13 of 18 & 0.9979 & 0.9606–1.0000 & 0.0332 & — & — \\
+main & 22 style features & 13 of 18 & 0.9973 & 0.9433–1.0000 & 0.0380 & −0.0941 [−0.1473; −0.0463], p = 0.0028 & +0.0169 [−0.0134; 0.0496], p = 0.3168 \\
+format-only & four structural features & 13 of 18 & 0.9775 & 0.9154–1.0000 & 0.0118 & — & — \\
+genre-only & genre only & 13 of 18 & 0.6667 & 0.5000–0.7259 & 1.0000 & — & — \\
+length-only & text length only & 13 of 18 & 0.4364 & 0.2957–0.6138 & 0.6276 & — & — \\
+negative-control & shuffled class labels & 13 of 13 & 0.3614 & 0.1279–0.4440 & — & — & — \\
+\bottomrule
+\end{tabular}
+\begin{minipage}{\linewidth}\footnotesize\vspace{2pt}
+\textit{Note.} The unit of analysis for the performance metrics is the group holdout; for the contrasts, a pair of texts produced by the same model for the same task. Denominator: 18 group holdouts; the contrast is computed on 120 pairs with 15 clusters, on the seo genre only. Data: series v2, status current. Median and range across holdouts; the contrast is the absolute difference in probabilities with a 95\% interval and a wild cluster bootstrap p. Intervals are 95\%, cluster bootstrap over author and document; the cluster is the task, 45 tasks in total. Scale: AUROC: higher means better separation; FPR: lower means fewer false accusations of a human; the contrast in class-A probability: higher means more AI-like. Abbreviations: AUROC — area under the ROC curve; FPR — false positive rate on human texts; ablation — a comparison of the model with and without the features, not a decomposition of the score into summands. Missing values: AUROC is not defined on five single-class holdouts, so the column states on how many it was computed; the contrast was computed for the main model only, the other variants show a dash; for the negative-control model FPR was not computed and there are thirteen holdouts: it was run through a series of cluster permutations and holds post hoc status. For the source-only model an AUROC of 1.0000 coexists with an FPR of 1.0000: ranking by platform is error-free, but at the 0.5 threshold the model declares the entire human test set of an unseen platform machine-generated. The primary outcome family is closed by a Bonferroni correction for the two registered tests, α = 0.025 per test; the intervals are unadjusted.
+\end{minipage}
+\end{table*}

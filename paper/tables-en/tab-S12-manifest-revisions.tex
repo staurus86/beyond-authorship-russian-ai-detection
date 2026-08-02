@@ -1,0 +1,21 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Six revisions of the admission manifest and the reasons for moving to the next one}
+\label{tab:s12}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.460\linewidth}>{\raggedright\arraybackslash}p{0.460\linewidth}}
+\toprule
+Revision & What forced the move to the next one \\
+\midrule
+1 & edit to clf\_run.py under the amendment on two inner CV schemes \\
+2 & procedure 1 did not create a child manifest — the chain was broken \\
+3 & the pick\_c call in P2b kept the old number of return values and stopped the run \\
+4 & the fairness and error-analysis reports labelled themselves series v1 and referenced the v1 verification file although they were verified against v2 \\
+5 & error analysis retrained the model with its own GroupKFold instead of the registered scheme \\
+6 & in effect \\
+\bottomrule
+\end{tabular}
+\begin{minipage}{\linewidth}\footnotesize\vspace{2pt}
+\textit{Note.} The unit of analysis is the manifest revision. Denominator: six revisions on 29 July 2026. Data: admission manifests of the v2 series. The table describes the history of the runs; it contains no numbers. Scale: none. Abbreviations: inner CV — nested cross-validation; GroupKFold — a split with non-overlapping groups. Missing values: a faulty manifest is not deleted but marked invalidated with a reason, so there are exactly as many rows as there were revisions. No correction for multiple comparisons was applied.
+\end{minipage}
+\end{table}

@@ -258,7 +258,7 @@ def fig5():
             color=[ACCENT if s[1] > 0.1 else SOFT for s in stats], label="смена решения")
     ax.plot([s[2] for s in stats], list(y), "o", color=INK, markersize=4,
             label="нестабильность |Δp| > 0.05")
-    ax.set_xlabel("Доля от 464 пар «документ × допустимая модель»")
+    ax.set_xlabel("Средняя по 60 документам доля допустимых моделей (всего 464 пары)")
     ax.set_title("Устойчивость решения к десяти преобразованиям, процедура 2", fontsize=9.5)
     ax.legend(fontsize=7.5, frameon=False, loc="upper center",
               bbox_to_anchor=(0.5, -0.16), ncol=2)

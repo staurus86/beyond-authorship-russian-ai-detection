@@ -38,10 +38,9 @@ Belarus — это список стран профиля, а не место р
 
 ## 1. Acknowledgements
 
-Автор благодарит участников, предоставивших тексты для человеческой части корпуса,
-и авторов открытых источников, чьи публикации вошли в выборку по лицензии
-источника. Имена участников не раскрываются: персональные данные хранятся отдельно
-и не публикуются, как предусмотрено планом управления данными.
+Автор благодарит авторов открытых источников, чьи публикации вошли в выборку по
+лицензии источника. Набор текстов от участников планировался, но не проводился:
+благодарностей участникам нет, потому что участников не было.
 
 Поимённых благодарностей нет. Если автор решит кого-то назвать, имя добавляется
 сюда до подачи.
@@ -124,8 +123,10 @@ draft, Writing — review and editing.
 **Публикуемый текст:**
 
 > Code, feature matrices, run manifests with input and code hashes, preregistration
-> and amendments are available in a public GitHub repository, archived with a
-> versioned release in Zenodo (DOI: 10.5281/zenodo.21749574). Source texts of the
+> and amendments are available in a public GitHub repository, archived in Zenodo
+> (concept DOI 10.5281/zenodo.21749574, which resolves to the latest version;
+> the v1.0.0 release is archived under version DOI 10.5281/zenodo.21750014).
+> Source texts of the
 > human subcorpus are distributed as links rather than copies: they remain under the
 > licences of their sources. For each such document the repository publishes the
 > URL, the access date and the hash of the normalised text, which is sufficient to
@@ -139,12 +140,14 @@ draft, Writing — review and editing.
 ## 6. Ethics statement
 
 Одобрение этического комитета не требовалось. Исследование работает с
-опубликованными текстами и с текстами, переданными авторами по письменному
-согласию; вмешательства в поведение участников не было, экспериментов с людьми не
-проводилось, персональные данные в анализ не входят и не публикуются.
+опубликованными текстами: человеческая часть корпуса собрана из открытых
+источников, шесть документов взяты из существовавшего до исследования личного
+архива автора. Экспериментов с людьми не проводилось, персональные данные в
+анализ не входят и не публикуются.
 
-Участники передавали тексты добровольно, с правом выйти из исследования до
-публикации набора данных. Оплату труда авторов и редакторов оговаривали заранее.
+Набор участников с передачей текстов по письменному согласию планировался —
+формы согласия и реестр подготовлены и опубликованы в репозитории, — но не
+проводился: ни один текст внешних участников в корпус не вошёл, выплат не было.
 
 **Риск применения результатов автор считает главным этическим вопросом работы.**
 Детекторы машинного текста применяют для обвинений, и ошибка первого рода стоит
@@ -179,23 +182,34 @@ draft, Writing — review and editing.
 > verification against the frozen source artifacts. The author assumes full
 > responsibility for the study design, analyses, interpretations, and manuscript.
 
-**Инструменты и то, что о них записано.** Работа шла с 24 июля по 1 августа 2026,
+**Инструменты и то, что о них записано.** Работа шла с 24 июля по 2 августа 2026,
 даты сессий восстанавливаются по журналам `00-admin/status-*.md`.
 
 | Инструмент | Что зафиксировано в журналах |
 |---|---|
-| Claude в интерфейсе Claude Code | версия названа один раз, в записи от 2026-08-01: Claude Opus 5. Для сессий 24–31 июля версия модели в журнал не заносилась |
+| Claude в интерфейсе Claude Code | версия названа в записи от 2026-08-01: Claude Opus 5; сессия 2026-08-02 — Claude Fable 5. Для сессий 24–31 июля версия модели в журнал не заносилась |
 | Codex | записаны название и роль — независимая сверка чисел в режиме чтения, 31 июля и 1 августа. Версия не записана: интерфейс её не показывал |
 
 Публикуется ровно это, без реконструкции по памяти: назвать версию модели для
 ранних сессий нечем, и подстановка сегодняшней была бы догадкой.
 
+**Перевод рукописи.** Английская версия рукописи получена машинным переводом
+замороженного русского текста (Claude Fable 5, 2 августа 2026) с
+автоматическими шлюзами сверки: числа, идентификаторы, структура и код-спаны
+сверены с оригиналом байт в байт, смысловая сверка ключевых разделов выполнена
+отдельным проходом. Русский текст остаётся источником истины.
+
 **Публикуемая формулировка об инструментах:**
 
-> Work was carried out between 24 July and 1 August 2026 using Claude in the Claude
-> Code interface (model version recorded in the project log only for the final
-> session: Claude Opus 5) and Codex for independent read-only verification of
-> reported numbers (version not recorded; the interface did not display it).
+> Work was carried out between 24 July and 2 August 2026 using Claude in the Claude
+> Code interface (model version recorded in the project log for the final sessions:
+> Claude Opus 5 on 1 August, Claude Fable 5 on 2 August) and Codex for independent
+> read-only verification of reported numbers (version not recorded; the interface
+> did not display it). The English version of the manuscript was machine-translated
+> from the frozen Russian text (Claude Fable 5, 2 August 2026) under scripted
+> verification gates: numbers, identifiers, structure and code spans were checked
+> against the source byte for byte, and key sections underwent a separate semantic
+> fidelity review. The Russian text remains the source of record.
 
 Конкретные эпизоды — какое расхождение нашла независимая сверка и когда — остаются в
 appendix о воспроизводимости, а не в этой декларации.

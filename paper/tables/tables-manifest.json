@@ -188,11 +188,11 @@
   },
   "outputs_sha256": {
     "tab-01-corpus-and-conditions.csv": "4a70ac324aefbfadb0b8065bd2f7ed75ccf66b22ef77b45f49dfcc48c73c8faf",
-    "tab-01-corpus-and-conditions.tex": "b9dd4315d0ae1e345ff2396aaee933405f5ef7511dde2deca14f54b0a76f49ea",
+    "tab-01-corpus-and-conditions.tex": "d92874fb052fb58a9c7d43f6aa4468a741f40559c37edeb907badffcd6363de5",
     "tab-02-four-operationalisations.csv": "dbf62daa2a88bf177c5df6e4b6a3f0eb2469c9da412c592a27f6388967cc1a7c",
     "tab-02-four-operationalisations.tex": "c8007df94c87b75aed97314f3286ba86bd013900c9c1b53752c57d24db5cffa5",
     "tab-03-o1-contrasts.csv": "b1f3c82b0db68b7d8a4d1670eba7c8efe3f83c59975f70b2e422c1710a1f9d9f",
-    "tab-03-o1-contrasts.tex": "bad7ce23163e5e1824f06465859942c786a3cf6f417e13a2b0b27e6e1f4691ed",
+    "tab-03-o1-contrasts.tex": "be9ff85085ee72d51956a5212f4bb1713e67b79e0205f0c8403eb36ff71fa5d4",
     "tab-04-classifier-and-ablation.csv": "3be75b64773b7fd30c26e4d3a73d48eae0575a4115f19a576deb5d12187b9fb0",
     "tab-04-classifier-and-ablation.tex": "1a829661b7c9e2efd3febbe67a2d06e7329366eb6629a754ba29aba8515ac551",
     "tab-05-formal-register-fairness.csv": "6b5d138ad9f73da1236122bcc95095b0928a58b99f2638ff75430ccf788586a2",
@@ -200,9 +200,9 @@
     "tab-06-calibration-and-risk-coverage.csv": "7c79577ad4eaa8a0434dcc4ad968bf1c48c4837065ed4f77051fc41866d2043c",
     "tab-06-calibration-and-risk-coverage.tex": "59f00e7128b282f82b4485271f267be5d043c0df2dfbcd78335d1845a2e39ca0",
     "tab-07-stress-ten-transformations.csv": "516168c99a45858b7dccf9ff429ecf45bbbb44a0c2772bacfe6ee3948a6e8bcb",
-    "tab-07-stress-ten-transformations.tex": "6c8bd00625dd1ccdecf865641fcac268929d7ef412774488cbf55a617aa0aa6f",
+    "tab-07-stress-ten-transformations.tex": "2ec3153932bd6616ffc853dd5a5d306c289932034676a5a23525642da8a8d754",
     "tab-08-mixed-effects-status.csv": "d7acba76355da6bdf5176cb5cf27d1ca7d764e5413c89143eb379392544c3af3",
-    "tab-08-mixed-effects-status.tex": "bdce8f88757497a43b81ac65a29e242f774f0bc09e8e5d09b2fa07b774d65190",
+    "tab-08-mixed-effects-status.tex": "830e3ab5147149153372cc6f5d774804c7ca1a865d8f21daf030e235ca614279",
     "tab-S01-corpus-flow.csv": "a73681d213d2360258261abf7ff26e26184876d5d1dba79000929f2f33cd7cb5",
     "tab-S01-corpus-flow.tex": "9e085745286ac602a4895bf8f5e5d7816ffbbc812d6a95db370e89f67bbfd42d",
     "tab-S02-machine-channels.csv": "ca6d1355486f331116c46fc721b87a43533de05e008349f80648951086842f9b",
@@ -216,7 +216,7 @@
     "tab-S06-calibration-by-holdout.csv": "740484c5c022155aa9f1af4ee6a8db8010e69bea1f24f7a74fb8981142d44d36",
     "tab-S06-calibration-by-holdout.tex": "97c209c6c247df55779d3928a1f32324358006a814a12a8e94df73652cce4e37",
     "tab-S07-stress-by-transform-and-procedure.csv": "537750b6469eb85609c79e334cc5b9e63f935ecd955e98ffba385a62cae3e170",
-    "tab-S07-stress-by-transform-and-procedure.tex": "26eb862797849dee3c1cf18bd5ad1079a520f76b4132b6e70634661ef412f340",
+    "tab-S07-stress-by-transform-and-procedure.tex": "80852b8c54267d51af1a0b9e6761978a683e294fa2b37468a7844707962decdb",
     "tab-S08-mixed-identifiability.csv": "1e185379953c36784e16abb0587c7251d28d888bc72755bc043995ff9245e06e",
     "tab-S08-mixed-identifiability.tex": "abb4d44f0cb5b1bd783c968337a297e6adc4800b0e38ba92700c8f3afe5aee54",
     "tab-S09-repeat-audit.csv": "d1d2dcb399540ad2ff3fd9c2856620470b9def10107e807b45d8cc5f7a44fd68",
@@ -234,7 +234,7 @@
     "tab-S15-t10-t11-feature-shift.csv": "f1fc6729d51d443cd8377cbdcab7bb97c570fada2e27c2e464b85304590bb76d",
     "tab-S15-t10-t11-feature-shift.tex": "f25e1058854f328a33011c5c93041ef346c646ed0e12cce3036488a3c846ccad",
     "tab-S16-limitations-groups.csv": "2e0e783631982a210b6125cc6d45fe4c68190decf3e17d10a2fe6e9213445df9",
-    "tab-S16-limitations-groups.tex": "fb0c76f6b91f142b696b9119be3b97039c53e5882c4ced7a58e2b764c63bbb48"
+    "tab-S16-limitations-groups.tex": "e4b93c80bd94ff02d1af8a3795edfdbf7544f7e0fbcd2ecb40788f05e2ff7bc8"
   },
   "code_sha256": "dccec021aab8f3f84b09f66e18a7aa3d8c488c686773299d78004c427e4318f7",
   "created_at": "2026-08-01T16:26:10+00:00"

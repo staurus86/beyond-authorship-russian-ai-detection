@@ -8,6 +8,10 @@
   "ordering": "случайная перестановка кодов; алфавитный порядок не используется. Секрет перестановки и таблица соответствия хранятся вне репозитория и не публикуются: вместе с известным списком исходных значений они позволили бы восстановить соответствие",
   "invariants_passed": 9,
   "breakdown_by_identifier_kind": {
+    "study_author": {
+      "documents": 6,
+      "distinct_values": 1
+    },
     "other_label": {
       "documents": 86,
       "distinct_values": 13
@@ -19,10 +23,6 @@
     "source_placeholder": {
       "documents": 315,
       "distinct_values": 16
-    },
-    "study_author": {
-      "documents": 6,
-      "distinct_values": 1
     }
   },
   "breakdown_note": "person_name — прямые ФИО; source_placeholder — заглушки вида unknown@источник; other_label — обозначения групп без имени, например «студент-переводчик TSU»; study_author — автор исследования. Замена применяется ко всем четырём типам, поэтому число псевдонимизированных строк равно всей человеческой части, а не только строкам с ФИО",

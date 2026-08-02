@@ -1,0 +1,21 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Six invariants for admission to the v2 series computation}
+\label{tab:s11}
+\begin{tabular}{>{\RaggedRight\hspace{0pt}\arraybackslash}p{0.302\linewidth}>{\RaggedRight\hspace{0pt}\arraybackslash}p{0.302\linewidth}>{\RaggedRight\hspace{0pt}\arraybackslash}p{0.302\linewidth}}
+\toprule
+No. & Invariant & Result \\
+\midrule
+1 & the registry contains 1882 documents & passed \\
+2 & none of the 34 excluded documents entered the matrix & passed \\
+3 & raw and normalised values of the 1814 unchanged documents match v4 & passed, 114 282 values compared, zero discrepancies \\
+4 & the percentile implementation reproduces v4 on the v4 composition & passed, 88 114 values \\
+5 & the v5 percentiles are computed on the new reference sample & passed \\
+6 & series v1 results are not overwritten & passed \\
+\bottomrule
+\end{tabular}
+\begin{minipage}{\linewidth}\footnotesize\vspace{2pt}
+\textit{Note.} The unit of analysis is the invariant. Denominator: six invariants; admission is granted only when all six pass. Data: admission manifest, revision 6. The table describes a gate; it contains no scores. Scale: none. Abbreviations: raw and normalized — the raw and normalised feature value; percentile implementation — computation of percentiles on the reference sample. Missing values: none. No correction for multiple comparisons was applied.
+\end{minipage}
+\end{table}
